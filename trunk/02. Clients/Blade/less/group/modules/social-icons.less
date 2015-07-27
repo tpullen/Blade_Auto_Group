@@ -1,0 +1,29 @@
+// Name:            Social Icons
+// Description:     Defines styles for Social Icons
+//
+// Module:          `social-icons`
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@social-icons-link-border      : 1px solid darken((@tertiary-background), 10%);
+@social-icons-link-radius      : 4px;
+@social-icons-link-shadow      : @base-box-shadow;
+
+/* ========================================================================
+   Module:  Social Icons
+ ========================================================================== */
+
+.hook-social-icons-link() {
+
+    border: @social-icons-link-border;
+    .border-radius(@social-icons-link-radius);
+    .box-shadow(@social-icons-link-shadow);
+
+}
+
+.hook-social-icons-misc() {
+
+}

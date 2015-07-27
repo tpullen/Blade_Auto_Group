@@ -1,0 +1,547 @@
+/*
+ * Ratios default 9:3 ratio
+ * 1. Get height from width
+ * 2. Get width from height
+ */
+#ratio {
+  /* 1 */
+  /* 2 */
+}
+/*
+ * Font size to rem with px fallback
+ */
+/*
+ * Font size increase rem with px fallback
+ */
+/*
+ * For clearing floats like a boss h5bp.com/q
+ */
+/*
+ * Webkit-style focus
+ */
+/*
+ * Center-align a block level element
+ */
+/*
+ * Inline block with IE7 Hack
+ * *display: inline;
+ * *zoom: 1;
+ */
+/*
+ * Placeholder text
+ */
+/*
+ * CSS image replacement
+ * Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+ */
+/*
+ * Background Images
+ */
+/*
+ * Top
+ */
+/*
+ * Bottom
+ */
+/*
+ * Right
+ */
+/*
+ * Left
+ */
+/*
+ * Fonts
+ */
+/*
+ * Block level inputs
+ * 1. Make inputs at least the height of their button counterpart
+ * 2. Makes inputs behave like true block-level elements
+ * 3. IE7 Love
+ */
+/*
+ * Form field states
+ */
+/*
+ * Border Radius
+ */
+/*
+ * Backface visibility
+ * Prevent browsers from flickering when using CSS 3D transforms.
+ * Default value is `visible`, but can be changed to `hidden
+ * See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+ */
+/*
+ * Background clipping
+ * Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+ */
+/*
+ * Background sizing
+ */
+/*
+ * Box sizing
+ */
+/*
+ * User select
+ * For selecting text on the page
+ */
+/*
+ * Resize anything
+ */
+/*
+ * Opacity
+ */
+/*
+ * Add an alphatransparency value to any background or border color (via Elyse Holladay)
+ */
+/*
+ * Reset filters for IE
+ */
+/*
+ * Button backgrounds
+ */
+/*
+ * Center-align
+ */
+/*
+ * Layout
+ */
+/*
+ * IE7 Hacks
+ */
+/*
+ * Text overflow
+ */
+/*
+ * Gradient bar
+ */
+/*!
+ * GForces Less 1.0
+ */
+/* ========================================================================
+   Section: New Car Details
+ ========================================================================== */
+[class*="newcars"] .container-5ojyw,
+[class*="newvans"] .container-5ojyw,
+[class*="newbikes"] .container-5ojyw {
+  padding-top: 40px;
+}
+[class*="newcars"] .container-yjqqs .media,
+[class*="newvans"] .container-yjqqs .media,
+[class*="newbikes"] .container-yjqqs .media {
+  padding: 0;
+  margin: 0;
+}
+[class*="newcars"] .container-yjqqs .media > .inner,
+[class*="newvans"] .container-yjqqs .media > .inner,
+[class*="newbikes"] .container-yjqqs .media > .inner {
+  margin: 0;
+}
+[class*="newcars"] .hr,
+[class*="newvans"] .hr,
+[class*="newbikes"] .hr {
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+[class*="newcars"] .tour-360,
+[class*="newvans"] .tour-360,
+[class*="newbikes"] .tour-360 {
+  padding: 0;
+}
+[class*="newcars"] .tour-360 .tabs,
+[class*="newvans"] .tour-360 .tabs,
+[class*="newbikes"] .tour-360 .tabs {
+  padding: 0;
+}
+[class*="newcars"] .tour-360 .tabs .tab-nav,
+[class*="newvans"] .tour-360 .tabs .tab-nav,
+[class*="newbikes"] .tour-360 .tabs .tab-nav {
+  text-align: center;
+}
+[class*="newcars"] .tour-360 .tab-content,
+[class*="newvans"] .tour-360 .tab-content,
+[class*="newbikes"] .tour-360 .tab-content {
+  padding: 0;
+}
+[class*="newcars"] .tour-360 .responsive-video,
+[class*="newvans"] .tour-360 .responsive-video,
+[class*="newbikes"] .tour-360 .responsive-video {
+  padding-top: 0;
+}
+/* Sub-row `sticky-nav`
+ ========================================================================== */
+[class*="newcars"] .container-x5adb .sticky-module .sticky-module-inset,
+[class*="newvans"] .container-x5adb .sticky-module .sticky-module-inset,
+[class*="newbikes"] .container-x5adb .sticky-module .sticky-module-inset {
+  display: none;
+}
+[class*="newcars"] .container-x5adb .sticky-module .sticky-module-inset.fixed,
+[class*="newvans"] .container-x5adb .sticky-module .sticky-module-inset.fixed,
+[class*="newbikes"] .container-x5adb .sticky-module .sticky-module-inset.fixed {
+  display: block;
+  top: 0;
+}
+[class*="newcars"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2,
+[class*="newvans"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2,
+[class*="newbikes"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2 {
+  height: 58px;
+  font-size: 0px;
+  font-size: 0rem;
+}
+[class*="newcars"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2:after,
+[class*="newvans"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2:after,
+[class*="newbikes"] .container-x5adb .sticky-module .sticky-module-inset.fixed .layout-1 .span2:after {
+  vertical-align: middle;
+  height: 100%;
+  content: " ";
+  display: inline-block;
+}
+[class*="newcars"] .container-x5adb .sticky-module .row-fluid,
+[class*="newvans"] .container-x5adb .sticky-module .row-fluid,
+[class*="newbikes"] .container-x5adb .sticky-module .row-fluid {
+  background: #666666;
+}
+[class*="newcars"] .container-x5adb .sticky-module .media,
+[class*="newvans"] .container-x5adb .sticky-module .media,
+[class*="newbikes"] .container-x5adb .sticky-module .media {
+  vertical-align: middle;
+  float: none;
+  padding: 0;
+  max-width: 105px;
+  border: solid 1px #666666;
+  display: inline-block;
+}
+[class*="newcars"] .container-x5adb .sticky-module .media .inner,
+[class*="newvans"] .container-x5adb .sticky-module .media .inner,
+[class*="newbikes"] .container-x5adb .sticky-module .media .inner {
+  margin: 0;
+}
+[class*="newcars"] .container-x5adb .sticky-module .media .image-count,
+[class*="newvans"] .container-x5adb .sticky-module .media .image-count,
+[class*="newbikes"] .container-x5adb .sticky-module .media .image-count,
+[class*="newcars"] .container-x5adb .sticky-module .media .gallery-icon,
+[class*="newvans"] .container-x5adb .sticky-module .media .gallery-icon,
+[class*="newbikes"] .container-x5adb .sticky-module .media .gallery-icon,
+[class*="newcars"] .container-x5adb .sticky-module .media .video-count,
+[class*="newvans"] .container-x5adb .sticky-module .media .video-count,
+[class*="newbikes"] .container-x5adb .sticky-module .media .video-count {
+  display: none;
+}
+[class*="newcars"] .container-x5adb .sticky-module .custom-html.title,
+[class*="newvans"] .container-x5adb .sticky-module .custom-html.title,
+[class*="newbikes"] .container-x5adb .sticky-module .custom-html.title {
+  line-height: normal;
+  clear: none;
+  padding: 10px 0 0 0px;
+  float: left;
+}
+[class*="newcars"] .container-x5adb .sticky-module .custom-html.title h3,
+[class*="newvans"] .container-x5adb .sticky-module .custom-html.title h3,
+[class*="newbikes"] .container-x5adb .sticky-module .custom-html.title h3 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-size: 1rem;
+}
+[class*="newcars"] .container-x5adb .sticky-module .button,
+[class*="newvans"] .container-x5adb .sticky-module .button,
+[class*="newbikes"] .container-x5adb .sticky-module .button {
+  padding: 10px 20px 0 0;
+  text-align: right;
+  float: right;
+}
+[class*="newcars"] .container-x5adb .sticky-module .button .btn,
+[class*="newvans"] .container-x5adb .sticky-module .button .btn,
+[class*="newbikes"] .container-x5adb .sticky-module .button .btn {
+  line-height: 35px;
+}
+[class*="newcars"] .container-x5adb .sticky-module .span2,
+[class*="newvans"] .container-x5adb .sticky-module .span2,
+[class*="newbikes"] .container-x5adb .sticky-module .span2 {
+  width: 10%;
+  margin-left: 0 !important;
+}
+[class*="newcars"] .container-x5adb .sticky-module .span10,
+[class*="newvans"] .container-x5adb .sticky-module .span10,
+[class*="newbikes"] .container-x5adb .sticky-module .span10 {
+  width: 90%;
+  margin-left: 0 !important;
+}
+/* Start Tablet */
+/* End Tablet */
+/* Start Mobile */
+/* End Mobile */
+/* Sub-row `sticky-nav`
+ ========================================================================== */
+[class*="newcars"] .container-bu1j0,
+[class*="newvans"] .container-bu1j0,
+[class*="newbikes"] .container-bu1j0 {
+  /* ".btn" styles */
+  /* Fixed specific styles */
+}
+[class*="newcars"] .container-bu1j0 .row-p1aik,
+[class*="newvans"] .container-bu1j0 .row-p1aik,
+[class*="newbikes"] .container-bu1j0 .row-p1aik {
+  height: 42px;
+}
+[class*="newcars"] .container-bu1j0 .row-fluid,
+[class*="newvans"] .container-bu1j0 .row-fluid,
+[class*="newbikes"] .container-bu1j0 .row-fluid {
+  font-size: 0px;
+  font-size: 0rem;
+}
+[class*="newcars"] .container-bu1j0 .button,
+[class*="newvans"] .container-bu1j0 .button,
+[class*="newbikes"] .container-bu1j0 .button {
+  width: 16.66666667%;
+}
+[class*="newcars"] .container-bu1j0 .btn,
+[class*="newvans"] .container-bu1j0 .btn,
+[class*="newbikes"] .container-bu1j0 .btn {
+  /* Remove default */
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  /* Add custom */
+  text-align: center;
+  min-height: 40px;
+  line-height: 40px;
+  display: block;
+  overflow: hidden;
+  font-weight: bold;
+  text-transform: none;
+  color: #000000;
+  background: #e5e5e5;
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 2px #b2b2b2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1.0666666666666667rem;
+  /* Hover and active state */
+}
+[class*="newcars"] .container-bu1j0 .btn:hover,
+[class*="newvans"] .container-bu1j0 .btn:hover,
+[class*="newbikes"] .container-bu1j0 .btn:hover,
+[class*="newcars"] .container-bu1j0 .btn.active,
+[class*="newvans"] .container-bu1j0 .btn.active,
+[class*="newbikes"] .container-bu1j0 .btn.active {
+  background: #ffffff;
+  color: #000000;
+  border-bottom-color: #2f905d;
+}
+[class*="newcars"] .container-bu1j0 .btn span,
+[class*="newvans"] .container-bu1j0 .btn span,
+[class*="newbikes"] .container-bu1j0 .btn span {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 3px 0 ;
+}
+[class*="newcars"] .container-bu1j0 .btn:before,
+[class*="newvans"] .container-bu1j0 .btn:before,
+[class*="newbikes"] .container-bu1j0 .btn:before {
+  display: none;
+}
+[class*="newcars"] .container-bu1j0 .btn:after,
+[class*="newvans"] .container-bu1j0 .btn:after,
+[class*="newbikes"] .container-bu1j0 .btn:after {
+  content: ' ';
+  vertical-align: middle;
+  margin-left: 5px;
+  display: inline-block;
+}
+[class*="newcars"] .container-bu1j0 .to-top,
+[class*="newvans"] .container-bu1j0 .to-top,
+[class*="newbikes"] .container-bu1j0 .to-top {
+  display: inline-block;
+}
+[class*="newcars"] .container-bu1j0 .fixed,
+[class*="newvans"] .container-bu1j0 .fixed,
+[class*="newbikes"] .container-bu1j0 .fixed {
+  top: 58px !important;
+  background: #ffffff;
+}
+/* Sub-row `vehicle-info`
+ ========================================================================== */
+[class*="newcars"] .container-yjqqs,
+[class*="newvans"] .container-yjqqs,
+[class*="newbikes"] .container-yjqqs {
+  /* Title module
+	Move over the top of the image */
+  /* Price module
+	Move over the top of the image */
+}
+[class*="newcars"] .container-yjqqs .container,
+[class*="newvans"] .container-yjqqs .container,
+[class*="newbikes"] .container-yjqqs .container {
+  position: relative;
+}
+[class*="newcars"] .container-yjqqs .row-sadt5,
+[class*="newvans"] .container-yjqqs .row-sadt5,
+[class*="newbikes"] .container-yjqqs .row-sadt5 {
+  position: absolute;
+  overflow: hidden;
+  top: 38px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+[class*="newcars"] .container-yjqqs .title h3,
+[class*="newvans"] .container-yjqqs .title h3,
+[class*="newbikes"] .container-yjqqs .title h3 {
+  margin-left: 44px;
+  line-height: normal;
+  font-weight: bold;
+  padding: 10px;
+  max-width: 350px;
+  color: #ffffff;
+  font-family: 'museo_sans', Arial, Verdana, Helvetica, sans-serif;
+  background: #666666;
+  font-size: 35px;
+  font-size: 2.3333333333333335rem;
+  display: inline-block;
+}
+[class*="newcars"] .container-yjqqs .title h3 .model,
+[class*="newvans"] .container-yjqqs .title h3 .model,
+[class*="newbikes"] .container-yjqqs .title h3 .model {
+  display: block;
+}
+[class*="newcars"] .container-yjqqs .price .price-now,
+[class*="newvans"] .container-yjqqs .price .price-now,
+[class*="newbikes"] .container-yjqqs .price .price-now {
+  padding: 10px;
+  color: #ffffff;
+  background: #666666;
+  margin-left: 44px;
+  font-size: 25px;
+  font-size: 1.6666666666666667rem;
+  display: inline-block;
+}
+[class*="newcars"] .container-yjqqs .button,
+[class*="newvans"] .container-yjqqs .button,
+[class*="newbikes"] .container-yjqqs .button {
+  display: block;
+  padding-top: 7px;
+  margin-left: 44px;
+  -webkit-animation-name: bounceInLeft;
+  -moz-animation-name: bounceInLeft;
+  -o-animation-name: bounceInLeft;
+  -ms-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+[class*="newcars"] .container-yjqqs .button .btn,
+[class*="newvans"] .container-yjqqs .button .btn,
+[class*="newbikes"] .container-yjqqs .button .btn {
+  text-align: center;
+  margin: 0;
+  min-width: 180px;
+}
+[class*="newcars"] .container-yjqqs .button .btn span,
+[class*="newvans"] .container-yjqqs .button .btn span,
+[class*="newbikes"] .container-yjqqs .button .btn span {
+  background: none;
+  padding: 3px 0;
+}
+[class*="newcars"] .container-yjqqs .button:first-child,
+[class*="newvans"] .container-yjqqs .button:first-child,
+[class*="newbikes"] .container-yjqqs .button:first-child {
+  padding-top: 15px;
+}
+[class*="newcars"] .container-yjqqs .button + .button,
+[class*="newvans"] .container-yjqqs .button + .button,
+[class*="newbikes"] .container-yjqqs .button + .button {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+[class*="newcars"] .container-yjqqs .button + .button + .button,
+[class*="newvans"] .container-yjqqs .button + .button + .button,
+[class*="newbikes"] .container-yjqqs .button + .button + .button {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+  -o-animation-delay: 1.75s;
+  -ms-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+/* Sub-row `reviews-section`
+ ========================================================================== */
+[class*="newcars"] .reviews-section,
+[class*="newvans"] .reviews-section,
+[class*="newbikes"] .reviews-section {
+  margin: 0 auto;
+  max-width: 1080px;
+  /* Adjust heading */
+}
+[class*="newcars"] .reviews-section .custom-html h2,
+[class*="newvans"] .reviews-section .custom-html h2,
+[class*="newbikes"] .reviews-section .custom-html h2 {
+  text-align: left;
+  font-size: 25px;
+  font-size: 1.6666666666666667rem;
+}
+/* Sub-module `custom-html`
+ ========================================================================== */
+[class*="newcars"] .tours-title h2,
+[class*="newvans"] .tours-title h2,
+[class*="newbikes"] .tours-title h2 {
+  /* Make all h2 act the same as other ones */
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 30px;
+  font-size: 2rem;
+}
+/* Sub-module `cms`
+ ========================================================================== */
+[class*="newcars"] .cms .sticky-module-inset.fixed,
+[class*="newvans"] .cms .sticky-module-inset.fixed,
+[class*="newbikes"] .cms .sticky-module-inset.fixed {
+  top: 100px !important;
+}
+[class*="newcars"] .cms .sticky-module-inset.fixed .container,
+[class*="newvans"] .cms .sticky-module-inset.fixed .container,
+[class*="newbikes"] .cms .sticky-module-inset.fixed .container {
+  max-width: 980px;
+}
+/* Sub-module `featured-offers`
+ ========================================================================== */
+[class*="newcars"] .featured-offers .heading,
+[class*="newvans"] .featured-offers .heading,
+[class*="newbikes"] .featured-offers .heading {
+  /* Adjust heading to match other h2's */
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 50px;
+  font-size: 30px;
+  font-size: 2rem;
+}
+/* Sub-module `media`
+ ========================================================================== */
+[class*="newcars"] .media-wrap,
+[class*="newvans"] .media-wrap,
+[class*="newbikes"] .media-wrap {
+  padding-bottom: 20px;
+}
+/* Video module remove margin */
+[class*="newcars"] .media.video,
+[class*="newvans"] .media.video,
+[class*="newbikes"] .media.video {
+  margin-bottom: 0;
+  padding-bottom: 3px;
+  padding-top: 0px;
+}
+/*!
+ * GForces Less 1.0
+ */

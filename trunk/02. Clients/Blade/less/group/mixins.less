@@ -1,0 +1,73 @@
+
+// Define custom mixins
+// This makes it easier to control styles for buttons etc.
+
+#custom-mixins() {
+
+	/* Primary Button */
+	.primary-button {
+		font-weight: @button-font-weight;
+		text-transform: @button-text-transform;
+
+		&:before {
+			content: ' ';
+			float: left;
+			width: 27px;
+			height: 26px;
+			background: url('../images/primary-button-icon.png') 0 0 no-repeat;
+			margin: @button-icon-margin;
+		}
+
+	}
+
+	.primary-button-hover {
+
+		&:before {
+			background-position: -27px 0;
+		}
+
+	}
+
+	/* Secondary Button */
+	.secondary-button {
+		color: @button-secondary-color;
+		background: @button-secondary-background;
+
+		&:before {
+			background: url('../images/secondary-button-icon.png') 0 0 no-repeat;
+		}
+
+	}
+
+	.secondary-button-hover {
+		color: @button-secondary-hover-color;
+		background: @button-secondary-hover-background;
+
+		&:before {
+			background-position: -27px 0;
+		}
+
+	}
+
+	/* Tertairy Button */
+	.tertairy-button {
+		color: @button-tertairy-color;
+		background: @button-tertairy-background;
+
+		&:before {
+			background: url('../images/tertiary-button-icon.png') 0 0 no-repeat;
+		}
+
+	}
+
+	.tertairy-button-hover {
+		color: @button-tertairy-hover-color;
+		background: @button-tertairy-hover-background;
+
+		&:before {
+			background-position: -27px 0;
+		}
+
+	}
+
+}

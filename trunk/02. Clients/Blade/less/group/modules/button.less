@@ -1,0 +1,137 @@
+// Name:            Button
+// Description:     Defines styles for buttons
+//
+// Module:          `button`
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@button-border-width                : 0;
+@button-border-style                : solid;
+
+@button-box-shadow                  : none;
+@button-border-radius               : 0;
+
+@button-font-weight                 : 900;
+@button-text-transform              : uppercase;
+
+@button-height                      : 52px;
+@button-small-height                : 35px;
+@button-large-height                : 52px;
+
+@button-line-height                 : 52px;
+@button-small-line-height           : 35px;
+@button-large-line-height           : 52px;
+
+@button-font-size                   : 13px;
+@button-small-font-size             : 13px;
+@button-large-font-size             : 13px;
+
+@button-icon-margin					: 12px 10px 0 0;
+
+@button-background                  : transparent;
+@button-border                      : none;
+@button-color                       : #000;
+@button-hover-background            : @button-background;
+@button-hover-color                 : #000;
+@button-active-background           : @button-background;
+@button-active-color                : #000;
+
+@button-secondary-background        : #000;
+@button-secondary-color             : #fff;
+@button-secondary-hover-background  : @button-secondary-background;
+@button-secondary-hover-color       : #fff;
+@button-secondary-active-background : @button-secondary-background;
+@button-secondary-active-color      : #fff;
+
+@button-tertairy-background         : transparent;
+@button-tertairy-color              : #000;
+@button-tertairy-hover-background   : @button-tertairy-background;
+@button-tertairy-hover-color        : #000;
+@button-tertairy-active-background  : @button-tertairy-background;
+@button-tertairy-active-color       : #000;
+
+@button-chat-background             : @button-secondary-background;
+@button-chat-color                  : #fff;
+@button-chat-hover-background       : lighten(@button-chat-background, 10%);
+@button-chat-hover-color            : #fff;
+@button-chat-active-background      : lighten(@button-chat-background, 10%);
+@button-chat-active-color           : #fff;
+
+@button-link-color                  : @link-color;
+@button-link-hover-color            : @link-color-hover;
+@button-link-hover-text-decoration  : underline;
+@button-link-disabled-color         : #999;
+
+@button-save-default                : true;
+@button-chat-default                : true;
+
+/* ========================================================================
+   Module: Button
+ ========================================================================== */
+
+ .hook-button() {
+    #custom-mixins > .primary-button;
+
+    .secondary & {
+        #custom-mixins > .secondary-button;
+    }
+
+    .tertairy & {
+        #custom-mixins > .tertairy-button;
+    }
+
+    /* Remove all styles for a link looking button */
+    .link & {
+        background: none;
+        border: none;
+        padding: 0;
+        line-height: normal;
+        text-decoration: underline;
+        color: @link-color;
+        .box-shadow(none);
+    }
+
+}
+
+.hook-button-hover() {
+    #custom-mixins > .primary-button-hover;
+
+    .secondary & {
+        #custom-mixins > .secondary-button-hover;
+    }
+
+    .tertairy & {
+        #custom-mixins > .tertairy-button-hover;
+    }
+
+    .link & {
+        background: none;
+        text-decoration: none;
+        color: @link-color-hover;
+    }
+
+}
+
+.hook-button-active() {
+    #custom-mixins > .primary-button-hover;
+
+    .secondary & {
+        #custom-mixins > .secondary-button-hover;
+    }
+
+    .tertairy & {
+        #custom-mixins > .tertairy-button-hover;
+    }
+
+    .link & {
+        background: none;
+        text-decoration: none;
+        color: @link-color-hover;
+    }
+
+}
+
+.hook-button-misc() {}

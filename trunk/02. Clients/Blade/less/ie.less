@@ -1,0 +1,94 @@
+
+// Core site styles
+@import "../../../01. Core/src/scaffolding/mixins.less";
+@import "../../../01. Core/src/auto.variables.less";
+@import "../../../01. Core/src/ie/new-details.less";
+
+
+/*!
+ * GForces Less 1.0
+ */
+
+@primary-color                   : #00093c;
+@secondary-color                 : #404040;
+@tertiary-color                  : #2f905d;
+
+@primary-background              : #2f905d;
+@secondary-background            : #00093c;
+@tertiary-background             : #e5e5e5;
+@tertiary-background-offset      : contrast(@tertiary-background, darken(@tertiary-background, 50%), lighten(@tertiary-background, 50%));
+
+@body-background                 : #fff;
+
+@base-box-shadow                 : none;
+@base-border-radius              : 0;
+
+// Box List Count
+@box-list-columns                : 4;
+@used-box-list-columns           : 4;
+@offer-box-list-columns          : 4;
+@new-box-list-columns            : 4;
+@location-box-list-columns       : 3;
+
+// Links
+@link-color                      : @primary-color;
+@link-color-hover                : darken(@link-color, 15%);
+
+// Typography
+@text-color                      : contrast(@body-background, #404040);
+@text-color-invert               : contrast(@text-color, black, white);
+@sans-font-family                : Arial, Verdana, Helvetica, sans-serif;
+@serif-font-family               : Georgia, "Times New Roman", Times, serif;
+@mono-font-family                : Monaco, Menlo, Consolas, "Courier New", monospace;
+@base-font-face                  : 'museo_sans', Arial, Verdana, Helvetica, sans-serif;
+
+@base-font-size                  : 15px;
+@base-font-family                : @sans-font-family;
+@base-line-height                : 20px;
+@alt-font-family                 : @base-font-face;
+
+@paragraph-padding               : 0 0 20px;
+
+@headings-transform              : none;
+@headings-font-family            : @base-font-face;
+@headings-font-weight            : bold;
+@headings-color                  : @primary-color;
+@headings-padding                : 0 0 20px;
+
+@h1-transform                    : uppercase;
+@h1-font-size                    : 24px;
+@h1-padding                      : 0 0 40px;
+@h1-font-family                  : @base-font-face;
+
+@h2-transform                    : uppercase;
+@h2-font-size                    : 24px;
+@h2-padding                      : 0 0 40px;
+@h2-font-family                  : @base-font-face;
+
+@input-height                    : 30px;
+@input-padding-horizontal        : 6px;
+@input-border                    : #ddd;
+@input-text-color                : #444;
+@input-background                : #fff;
+
+@dropdown-background             : @input-background;
+@dropdown-border                 : rgba(0,0,0,.2);
+@dropdown-divider-top            : #e5e5e5;
+@dropdown-divider-bottom         : #fff;
+
+@dropdown-link-color             : #333;
+@dropdown-link-color-hover       : #fff;
+@dropdown-link-color-active      : #fff;
+
+@dropdown-link-background-active : @link-color;
+@dropdown-link-background-hover  : @dropdown-link-background-active;
+
+@grid-footer-height              : 240px;
+@grid-footer-clear-height        : 260px;
+
+// New car Detail Vars
+@newcars-sticky-btns             : 6;
+
+// Search
+@search-version                  : 2;
+@search-advanced-version         : 1;
