@@ -1,0 +1,103 @@
+// Name:            Nav
+// Description:     Defines styles for list navigations
+//
+// Module:          `nav`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@nav-item-padding                  : 10px 0;
+
+@nav-navbar-background             : transparent;
+@nav-item-font-size                : 13px;
+@nav-item-background               : transparent;
+@nav-item-color                    : #000;
+@nav-item-hover-background         : transparent;
+@nav-item-hover-color              : @tertiary-color;
+
+@nav-dropdown-font-size            : @nav-item-font-size;
+@nav-dropdown-padding              : 10px 15px;
+@nav-dropdown-width                : 200px;
+@nav-dropdown-background           : @nav-item-hover-background;
+@nav-dropdown-item-background      : @nav-dropdown-background;
+@nav-dropdown-color                : contrast(@nav-dropdown-background, #404040);
+@nav-dropdown-hover-background     : darken(@nav-dropdown-background, 10%);
+@nav-dropdown-hover-color          : contrast(@nav-dropdown-hover-background, #404040);
+
+@nav-navbar-collapse-desktop-width : @nav-navbar-collapse-width + 1;
+
+
+/* ========================================================================
+   Module: Nav
+ ========================================================================== */
+
+.hook-responsive-desktop() {
+
+
+}
+
+// Hooks
+// ========================================================================
+
+.hook-nav-misc;
+
+.hook-nav() {
+    width: 100%;
+    display: table;
+}
+.hook-nav-item() {
+    text-align: center;
+
+    &:first-child {
+        text-align: left;
+    }
+
+    &:last-child {
+        text-align: right;
+    }
+
+}
+.hook-nav-link() {
+    text-transform: uppercase; 
+    font-family: @base-font-face;
+
+    > span {
+        padding-bottom: 15px;
+        border-bottom: 3px solid transparent;
+    }
+
+}
+.hook-nav-hover() {
+
+    > span {
+        border-color: @primary-background;
+    }
+
+}
+.hook-nav-active() {
+
+    > span {
+        border-color: @primary-background;
+    }
+    
+}
+
+.hook-nav-dropdown() {}
+.hook-nav-dropdown-item() {}
+.hook-nav-dropdown-link() {}
+.hook-nav-dropdown-hover() {}
+.hook-nav-dropdown-active() {}
+
+.hook-nav-navbar() {}
+.hook-nav-navbar-item() {
+    display: table-cell;
+}
+.hook-nav-navbar-btn() {}
+.hook-nav-collapse() {}
+.hook-toggle-nav() {}
+.hook-toggle-nav-icon() {}
+
+.hook-nav-misc() {}

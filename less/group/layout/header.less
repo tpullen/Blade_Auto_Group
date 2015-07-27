@@ -1,0 +1,539 @@
+// Name:            Header
+// Description:     Defines styles for the Header
+//
+// ========================================================================
+
+    @header__item--font-size                    : 14px;
+    @header__item--padding                      : 0 10px;
+    @header__item--color                        : @primary-color;
+    @header__item--font-family                  : @base-font-face;
+    @header__item--height                       : @button-line-height;
+
+// ========================================================================
+
+.header-container {
+    margin-bottom: 3px;
+    position: relative;
+    z-index: (@zindex-search + 5);
+
+    /* Important z-index stuff */
+    .search-open & {
+        z-index: (@zindex-dropdown + 10);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .row-4vuwj {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .button,
+    .live-chat {
+        padding: @header__item--padding;
+
+        .btn {
+            /* Remove default styles */
+            padding: 0;
+            border: none;
+            background: none;
+            /* Styling */
+            font-weight: normal;
+            text-transform: none;
+            color: @header__item--color;
+            height: @header__item--height;
+            line-height: @header__item--height;
+            font-family: @header__item--font-family;
+            .font-size(@header__item--font-size);
+
+            span {
+                top: -2px;
+                position: relative;
+            }
+
+        }
+
+    }
+
+    .logo,
+    .social-icons,
+    .saved-vehicles,
+    .live-chat,
+    .contact-numbers,
+    .button {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .social-icons,
+    .saved-vehicles {
+        width: 160px;
+    }
+
+    .live-chat,
+    .contact-numbers {
+        width: 110px;
+    }
+    
+    .logo {
+        width: 360px;
+    }
+
+    .social-icons {
+        height: @header__item--height;        
+        padding: @header__item--padding;
+        line-height: @header__item--height;
+
+        ul {
+            width: auto;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            background: url('../images/@{franchise-name}/sprite-header-social-icons.png') 0 0 no-repeat;
+
+            &.icon-twitter {
+                background-position: -36px 0;
+            }
+
+            &.icon-youtube {
+                width: 23px;
+                background-position: -72px 0;
+            }
+
+            &.icon-blogger {
+                background-position: -104px 0;
+            }
+
+        }
+
+        a:hover {
+            background: none;
+
+            .icon {
+                width: 26px;
+                height: 26px;
+                background: url('../images/@{franchise-name}/sprite-header-social-icons.png') 0 -31px no-repeat;
+
+                &.icon-twitter {
+                    background-position: -36px -31px;
+                }
+
+                &.icon-youtube {
+                    width: 23px;
+                    background-position: -72px -31px;
+                }
+
+                &.icon-blogger {
+                    background-position: -104px -31px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .live-chat {
+
+        .btn {
+
+            .icon {
+                width: 26px;
+                height: 26px;
+                margin: -3px 10px 0 0;
+                background: url('../images/@{franchise-name}/header-chat-icon.png') 0 0 no-repeat;
+            }
+
+        }        
+
+    }
+
+    .saved-vehicles {
+        padding: @header__item--padding;        
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: @header__item--color;
+            height: @header__item--height;
+            line-height: @header__item--height;
+            font-family: @header__item--font-family;
+            .font-size(@header__item--font-size);
+        }
+
+        .count {
+            color: #fff;
+            padding: 6px 10px;
+            margin-right: 5px;
+            background: @primary-background;
+            .border-radius(30px);
+        }
+
+    }
+
+    .contact-numbers {
+        padding: @header__item--padding;
+
+        > a {
+            text-decoration: none;
+            color: @header__item--color;
+            height: @header__item--height;
+            line-height: @header__item--height;
+            font-family: @header__item--font-family;
+            .font-size(@header__item--font-size);
+
+            .icon {
+                width: 26px;
+                height: 26px;
+                margin: -4px 7px 0 0;
+                display: inline-block;
+                background: url('../images/@{franchise-name}/header-phone-icon.png') 0 0 no-repeat;
+            }
+
+        }
+
+    }
+
+}
+
+/* Add z-index for menu in IE7 */
+.container-un2g5 {
+    position: relative;
+    z-index: (@zindex-search + 1);
+}
+
+#primary-menu {
+    z-index: (@zindex-search + 1);
+
+    .toggle-nav {
+        display: none;
+    }
+
+}
+
+.navbar .nav .back-to-group {
+    display: none;
+}
+
+// Responsive
+// ========================================================================
+
+.hook-responsive-tablet() {
+
+    .header-container {
+        z-index: (@zindex-popover + 10);
+
+        /* Primary Menu Container */
+        .container-un2g5 {
+            background: @body-background;
+        }
+
+        .toggle-nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            line-height: 30px;
+            height: 30px;
+            text-align: center;
+            z-index: (@zindex-popover - 2);
+            -webkit-backface-visibility: hidden;
+            color: contrast(@secondary-background, #404040);
+            .transition(all .5s ease-in-out);
+
+            &:before {
+                content: 'Menu';
+                .inline-block();
+            }
+
+            .icon {
+                margin: -5px 0 0 5px;
+            }
+
+        }
+
+    }
+
+    #primary-menu .container {
+        border: none;
+    }
+
+    #primary-menu .nav-collapse {
+        position: static;
+        left: 0;
+        top: 30px;
+        bottom: 0;
+        width: 100%;
+        // causing elements to disappear while scrolling
+        // overflow-y: auto;
+        // -webkit-overflow-scrolling: touch;
+        z-index: (@zindex-popover + 1);
+        background: @body-background;
+    }
+
+}
+
+.hook-responsive-mobile() {
+
+    .header-container {
+        position: relative;
+        border-top: 0;
+        padding-top: 42px;
+        margin-bottom: 1px;
+        z-index: (@zindex-popover + 11);
+
+        &:after {
+            content: ' ';
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 42px;
+            background: @secondary-background;
+            z-index: (@zindex-popover - 4);
+        }
+
+        .logo {
+            padding: 0;
+        }
+
+        .btn {
+            margin: 0;
+            height: 42px;
+            line-height: 42px;
+            .font-size(@base-font-size);
+            .inline-block;
+        }
+
+        .social-icons,
+        .back-to-group,
+        .cc.header-links {
+            display: none;
+        }
+
+        .cc.saved-vehicles {
+            display: block;
+            text-align: center;
+            position: fixed;
+            border: none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            left: 25%;
+            width: 25%;
+            right: auto;
+            top: 0;
+            z-index: (@zindex-popover - 2);
+
+            a {
+                border: none;
+                background: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                .font-size(13);
+            }
+
+            a:after {
+                content: 'Saved';
+                height: 42px;
+                line-height: 42px;
+                color: contrast(@secondary-background, #404040);
+                .inline-block;
+            }
+
+            span {
+                display: none;
+            }
+
+            .count {
+                display: inline;
+                .font-size(16px);
+            }
+
+        }
+
+
+        .live-chat.module {
+            position: fixed;
+            top: 0;
+            left: 38%;
+            width: 24%;
+            line-height: 42px;
+            height: 42px;
+            text-align: center;
+            z-index: (@zindex-popover - 2);
+            -webkit-backface-visibility: hidden;
+            color: contrast(@secondary-background, #404040);
+            .transition(all .5s ease-in-out);
+
+            .btn {
+                display: block;
+                padding: 0;
+                line-height: 42px;
+                min-height: 42px;
+                font-family: @sans-font-family;
+                .font-size(13);
+                span {
+                    padding: 0;
+                    line-height: 42px;
+                    min-height: 42px;
+                    display: block;
+                }
+            }
+
+            .icon {
+                display: none !important;
+            }
+        }
+
+        .btn-search {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 38%;
+            line-height: 42px;
+            height: 42px;
+            text-align: center;
+            z-index: (@zindex-popover - 2);
+            -webkit-backface-visibility: hidden;
+            color: contrast(@secondary-background, #404040);
+            .transition(all .5s ease-in-out);
+            .font-size(13);
+
+            &:after {
+                content: 'Used Search';
+                .inline-block();
+            }
+
+            .icon {
+                margin: -5px 5px 0 0;
+
+                & when (@header-icon-color = #000000) {
+                    .create-icon(16px; "black"; 35);
+                }
+
+                & when (@header-icon-color = #ffffff) {
+                    .create-icon(16px; "white"; 35);
+                }
+            }
+        }
+
+        .contact-numbers {
+            position: fixed;
+            top: 0;
+            right: 23%;
+            width: 15%;
+            line-height: 42px;
+            height: 42px;
+            text-align: center;
+            z-index: (@zindex-popover - 2);
+
+            .department .label {
+                display: none;
+            }
+
+            .toggle-contact {
+                -webkit-backface-visibility: hidden;
+                .transition(all .5s ease-in-out);
+                .font-size(13);
+
+                &.active {
+                    .opacity(30);
+                }
+
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: contrast(@secondary-background, #404040);
+            }
+
+            .close {
+                display: none;
+            }
+
+            .toggle-body {
+                position: fixed;
+                left: 0;
+                top: 42px;
+                bottom: 0;
+                width: 100%;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                z-index: (@zindex-popover - 8);
+                background: @body-background;
+            }
+
+            li {
+                background: @tertiary-background;
+                border-bottom: solid 1px @body-background;
+
+                a {
+                    color: contrast(@tertiary-background, #404040);
+                }
+
+            }
+
+            .icon {
+                margin: -5px 0 0 0;
+
+                & when (@header-icon-color = #000000) {
+                    .create-icon(16px; "black"; 29);
+                }
+
+                & when (@header-icon-color = #ffffff) {
+                    .create-icon(16px; "white"; 29);
+                }
+
+            }
+
+        }
+
+        .toggle-nav {
+            position: fixed;
+            width: 23%;
+            height: 42px;
+            line-height: 42px;
+            .font-size(13);
+
+            .icon {
+                margin-left: 0;
+                margin-right: 3px;
+            }
+        }
+
+    }
+
+    #primary-menu .nav-collapse {
+        position: fixed;
+        top: 42px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .nav {
+            padding-bottom: 50px;
+        }
+
+    }
+
+}
+

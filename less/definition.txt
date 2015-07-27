@@ -1,0 +1,17 @@
+
+/* Folders */
+
+// Common
+The common folder is to holde common .less files between the group and franchise this is mainly used for the homepage elements e.g. the banner styling. 
+This would be held in common/homepage/banner.less
+Then import into the homepages as needed using variables to re-define colours etc.
+This folder also contains the mian variables.less file for your custom variables - use @section__element--property_modifier
+
+// Franchise
+The franchise folder contains elements that are used within the franchise by default this will always contain a layout.less file.
+
+// Franchise Name
+The franchise name folder will be converted to match the name of each franchise this contains a variables.less file
+
+// Group
+The group folder contains the group and site styles

@@ -1,0 +1,102 @@
+// Name:            Adverts
+// Description:     Defines styles for Adverts
+//
+// Module:          `adverts`
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+
+/* ========================================================================
+    Module:  User Adverts
+========================================================================== */
+
+.hook-adverts() {}
+.hook-adverts-inner() {}
+
+.hook-adverts-item() {
+
+    /* Animation */
+    &.cycle-slide-active {
+
+        .caption {
+            visibility: visible;
+
+            .title span {
+                visibility: visible;
+                .animation-duration(1s);
+                .animation-name(bounceInDown);
+            }
+
+            .sub-title span {
+                visibility: visible;
+                .animation-delay(1s);
+                .animation-duration(1s);
+                .animation-name(bounceInLeft);
+            }
+
+            .content ul {
+                visibility: visible;
+                .animation-delay(2s);
+                .animation-duration(1s);
+                .animation-name(bounceInLeft);
+            }
+
+            .btn {
+                visibility: visible;
+                .animation-delay(3s);
+                .animation-duration(1s);
+                .animation-name(bounceInUp);
+            }
+
+        }
+
+    }
+
+}
+
+.hook-adverts-link() {}
+
+.hook-adverts-caption() {
+
+    .cycle-slide & {
+        /* Animation */
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+}
+
+.hook-adverts-inset() {}
+
+.hook-adverts-title() {
+    /* Animation */
+    visibility: hidden;
+    .cssanimate;
+}
+
+.hook-adverts-sub-title() {
+    /* Animation */
+    visibility: hidden;
+    .cssanimate;
+}
+
+.hook-adverts-content() {
+    /* Animation */
+    visibility: hidden;
+    .cssanimate;
+}
+
+.hook-adverts-ul() {}
+.hook-adverts-li() {}
+
+.hook-adverts-btn() {
+    /* Animation */
+    visibility: hidden;
+    .cssanimate;
+    .transition(none); // removing transition as creates a flicker effect of the button when cycling through adverts
+}
+
+.hook-adverts-misc() {}

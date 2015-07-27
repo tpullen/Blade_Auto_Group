@@ -1,0 +1,38 @@
+// Name:            Featured Offers
+// Description:     Defines styles for Featured Offers
+//
+// Module:          `featured-offers`
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@featured-offers-footer-btn-background        : lighten(@button-secondary-background, 15%);
+@featured-offers-footer-btn-background-bottom : darken(@reevoo-btn-background, 10%);
+@featured-offers-footer-btn-background-hover  : darken(@reevoo-btn-background, 10%);
+
+/* ========================================================================
+   Module: Featured Offers
+ ========================================================================== */
+
+.hook-featured-offers() {}
+.hook-featured-offers-inner() {}
+
+.hook-featured-offers-heading() {}
+.hook-featured-offers-count() {}
+
+.hook-featured-offers-item() {}
+.hook-featured-offers-inset() {}
+
+.hook-featured-offers-footer() {}
+
+.hook-featured-offers-footer-btn() {
+    #custom-mixins > .secondary-button;
+}
+
+.hook-featured-offers-footer-btn-hover() {
+    #custom-mixins > .secondary-button-hover;
+}
+
+.hook-featured-offers-misc() {}

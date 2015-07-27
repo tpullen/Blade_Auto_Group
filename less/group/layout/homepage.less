@@ -1,0 +1,764 @@
+// Name:            Layout
+// Description:     Defines styles for the Layout
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@banner-width : 1680px;
+
+// Global homepage bits
+// ========================================================================
+
+/* Hide page info (breadcrumbs etc) from the homepage */
+.homepage .page-info {
+	display: none;
+}
+
+.homepage #content-wrap .container {
+	width: 1680px;
+}
+
+// Full Home Banner - Responsive
+// ========================================================================
+
+/*
+ * 1. Responsive banner - banner scales with the window width
+ * 2. Cropping banner - banner sides are cropped as the window resizes (desktop/tablet)
+ * 3. Hidden banner - hide part of the banner under the header
+ * 4. Contained controls - arrows and dots positions together
+ */
+
+.homepage .home-banner {
+	position: relative;
+	z-index: 5;
+	/* 2. Needs a height */
+	// height: 643px;
+
+	.container {
+		max-width: @banner-width;
+	}
+
+	.banner .caption .caption-inset {
+		left: 50%;
+		padding-top: 60px;
+		max-width: 1170px;
+		margin-left: -(1170px / 2);
+		.font-size(20px);
+	}
+
+	/* Remove default margin */
+	.banner .inner {
+		margin-bottom: 0;
+	}
+
+	/* 4. Un-comment below if needed */
+	/*.controls {
+		text-align: right; // Define the position of the controls left/center/right
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		width: @grid-column-width1200;
+		margin-left: -(@grid-column-width1200 / 2);
+		z-index: 200;
+
+		.cycle-next {
+			position: static;
+			float: right;
+			margin: 2px 0px 0 5px;
+			.create-icon(16px; 'white'; 47);
+		}
+
+		.cycle-prev {
+			position: static;
+			margin: 0;
+			.create-icon(16px; 'white'; 3);
+			.inline-block;
+		}
+
+		.cycle-pager-container {
+			position: static;
+			width: auto;
+			.inline-block;
+		}
+
+	}*/
+
+}
+
+.hook-responsive-desktop() {
+
+	.homepage .home-banner {
+
+		.banner .caption .caption-inset {
+			/* Remove the absolue styles - do not add padding to the sides */
+			padding: 10px 0;
+	        left: 0;
+	        margin-left: 0;
+	    }
+
+	    /* 4. */
+	    /*.controls {
+			width: @grid-column-width980;
+			margin-left: -(@grid-column-width980 / 2);
+		}*/
+
+	}
+
+}
+
+
+.hook-responsive-tablet() {
+
+	.homepage .home-banner {
+
+		.banner {
+			margin-top: 0;
+		}
+
+		.banner .caption .caption-inset {
+			// Reduce font size
+			.font-size(14px);
+		}
+
+		/* 4. */
+		/* .controls {
+			width: @grid-column-width768;
+			margin-left: -(@grid-column-width768 / 2);
+		} */
+
+	}
+
+}
+
+.hook-responsive-mobile() {
+
+	.homepage .home-banner {
+		margin-bottom: 10px;
+
+	    .banner .caption {
+	    	position: absolute;
+            top: auto !important;
+            bottom: 0 !important;
+            left: 3%;
+            width: 94%;
+            background: #000;
+            background: #000;
+            background: rgba(0, 0, 0, 0.7);
+
+	    	.caption-inset {
+	    		background: none !important;
+	    		margin-left: 0;
+		        max-width: auto;
+		        padding: 12px 4% 45px !important;
+		        .font-size(12);
+
+		        .title {
+		        	padding-bottom: 8px;
+
+		        	span {
+			        	background: none !important;
+	                    text-align: left !important;
+	                    max-width: none;
+	                    color: #fff;
+	                    padding: 0;
+	                    .font-size(22) !important;
+	                }
+
+                }
+
+                .sub-title,
+                .content {
+                    display: none;
+                }
+
+                .btn {
+                	width: auto;
+                	line-height: 33px;
+                	min-height: 33px;
+                    padding: 0 10px;
+                    margin: 0;
+                    .font-size(16) !important;
+                }
+
+		    }
+
+		}
+
+	    /* 4. */
+	    .controls {
+	    	position: static;
+			margin: 0;
+
+			.cycle-next,
+			.cycle-prev {
+				display: none;
+			}
+
+			.cycle-pager-container {
+				display: block;
+				top: auto;
+				bottom: 0;
+
+		        ul {
+		            float: none;
+		            text-align: center;
+		        }
+
+		    }
+
+		}
+
+	}
+
+}
+
+.hook-responsive-tablet() {
+
+	.homepage .container-om7nw .container {
+		width: auto;
+		max-width: 768px;
+		padding: 0;
+	}
+
+}
+
+// Search
+// ========================================================================
+
+.homepage .container-om7nw {
+	margin-bottom: 20px;
+	background: @secondary-background;
+}
+
+// Full Width Search -- Version 1 - remove as needed
+// ========================================================================
+
+& when(@search-version = 1) {
+
+	.homepage .search {
+		padding: 0;
+
+		.search-header {
+
+			.reset-all {
+				/* Hide reset all */
+				display: none;
+			}
+
+			.total-count {
+				padding: 0 10px;
+				width: auto;
+			}
+
+		}
+
+		/* Move and display the search button */
+		.search-vehicles {
+			position: absolute;
+			display: block;
+			right: 10px;
+			top: 60px;
+			padding: 0;
+
+			.btn {
+				/* Change the line height to match the height of the filters */
+				line-height: 47px;
+			}
+
+		}
+
+		.filter-inset {
+			/* Adjust padding to allow the search button in */
+			padding: 10px 220px 10px 10px;
+		}
+
+		.filter {
+			/* Filter width without vehicle type */
+			width: 26.5%;
+		}
+
+		/* Width with vehicle type visible */
+		.filter-vehicle-type {
+			width: 17%;
+
+			~ .filter:not(.filter-price):not(.filter-distance) {
+				width: 17%;
+			}
+
+		}
+
+		.filter-price {
+			//width: @search-price-width;
+		}
+
+		.filter-distance {
+			//width: @search-distance-width;
+		}
+
+	}
+
+}
+
+.hook-responsive-desktop() {
+
+	& when(@search-version = 1) {
+
+		.homepage .search {
+
+			.filter {
+				width: 32%;
+				margin-bottom: 15px;
+			}
+
+			/* Width with vehicle type visible */
+			.filter-vehicle-type {
+				width: 32%;
+
+				~ .filter:not(.filter-price):not(.filter-distance) {
+					width: 32%;
+				}
+
+			}
+
+			.filter-price {
+				width: 48%;
+				margin-bottom: 0;
+			}
+
+			.filter-distance {
+				width: 49%;
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+}
+
+.hook-responsive-mobile() {
+
+	& when(@search-version = 1) {
+		.homepage .module-search {
+			padding-bottom: 10px;
+		}
+		/* Reset any styles we applied above */
+		.homepage .search {
+			display: block !important;
+			height: auto !important;
+			position: static !important;
+			padding-top: 0;
+			z-index: 1 !important;
+			background: @tertiary-background;
+        	.border-radius(0);
+
+			.search-header {
+	            text-align: left;
+	            padding: 10px 3%;
+	            background: @secondary-background;
+	            .heading {
+	                line-height: normal;
+	                padding: 0;
+	                border-bottom: 0;
+	            }
+	        }
+
+	        .search-header .total-count {
+	            display: none;
+	        }
+
+			.search-vehicles {
+				position: static;
+				width: auto;
+				padding: 0 3% 16px;
+			}
+
+			.filters {
+	            margin-bottom: 0;
+	        }
+		}
+	}
+}
+
+
+// Full Width Search -- Version 2 - remove as needed
+// ========================================================================
+
+& when(@search-version = 2) {
+
+	.homepage .search {
+		padding: 0;
+
+		.search-header {
+
+			.reset-all {
+				/* Hide reset all */
+				display: none;
+			}
+
+			.total-count {
+				padding: 0 15px;
+				right: 0;
+				top: 0;
+				//background: @search-filters-background;
+			}
+
+		}
+
+		/* Move and display the search button */
+		.search-vehicles {
+			text-align: center;
+			position: absolute;
+			display: block;
+			right: 15px;
+			top: 50px;
+			padding: 0;
+			width: 125px;
+
+			.btn {
+				/* Change the line height to match the height of the filters */
+				line-height: 47px;
+			}
+
+		}
+
+		& when (@search-type-style = 'radio') {
+
+			/*.filter-model {
+
+				.filter-heading {
+					margin-top: 32px;
+					padding: @search-filter-value-padding;
+					background: @search-filter-value-background;
+					border: @search-filter-value-border;
+				}
+
+				.label, .value {
+					color: @text-color;
+					padding: 0;
+					background: none;
+					border: none;
+					.inline-block;
+				}
+
+			}
+
+			.filter-make {
+
+				.filter-heading {
+					margin-top: 32px;
+					padding: @search-filter-value-padding;
+					background: @search-filter-value-background;
+					border: @search-filter-value-border;
+				}
+
+				.label, .value {
+					padding: 0;
+					background: none;
+					border: none;
+					.inline-block;
+				}
+
+			}*/
+
+		}
+
+		.filter-advanced {
+			float: none;
+			width: 120px;
+		}
+
+	}
+
+}
+
+.hook-responsive-desktop() {
+
+	& when(@search-version = 2) {
+
+		.homepage .search {
+
+			.search-vehicles {
+				right: 10px;
+				top: 107px;
+
+				.btn {
+					display: block;
+					line-height: 25px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.hook-responsive-tablet() {
+
+	& when(@search-version = 2) {
+
+		.homepage .search {
+
+			.search-vehicles {
+				top: 136px;
+			}
+
+		}
+
+	}
+
+}
+
+.hook-responsive-mobile() {
+
+	& when(@search-version = 2) {
+		.homepage .module-search {
+			padding-bottom: 10px;
+		}
+		/* Reset any styles we applied above */
+		.homepage .search {
+			background: @tertiary-background;
+        	.border-radius(0);
+
+			.search-vehicles {
+				position: static;
+				width: auto;
+				padding: 0 3% 16px;
+
+				.btn {
+					line-height: 47px;
+				}
+
+			}
+
+			.filters {
+	            margin-bottom: 0;
+	        }
+
+			.filter-model,
+			.filter-make {
+
+				.filter-heading {
+					margin-top: 0;
+					padding: 0;
+					border: none;
+					background: none;
+
+					.label {
+						//padding: @search-filter-heading-label-padding;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// Jumps
+// ========================================================================
+
+/*
+ - Most jumps have absolute text and buttons
+ - A good way to implement this is shown below using a custom class
+ - Just add absolute to the custom class field of the module
+ - Adjust CSS as needed below
+ - This solution reduces the amount of CSS needed and allows easy amendments to be made
+ - To change the button style use the button classes "secondary", "tertiary".
+*/
+
+.absolute.module {
+	position: relative;
+
+	.title {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		top: 10px;
+		color: #fff;
+	}
+
+	.sub-title {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		top: 50px;
+		color: #fff;
+	}
+
+	.content {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		top: 100px;
+		color: #fff;
+	}
+
+	.button {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	/* Provide an inverted colour */
+	&.is-inverted {
+
+		.title,
+		.sub-title,
+		.content {
+			color: #000;
+		}
+
+	}
+
+	/* Provide right positioning of the text */
+	&.is-aligned-right {
+		text-align: right;
+	}
+
+	/* Provide center positioning of the text */
+	&.is-aligned-center {
+		text-align: center;
+	}
+
+}
+
+
+// Jump Types
+// ========================================================================
+
+/*
+ - Your MOBILE designs will now include 2 types of jump point
+ - 1 - A simplified version featuring a title and arrow icon
+ - 2 - A standard version with title and button absolutely positioned on a thumbnail
+*/
+.hook-responsive-mobile() {
+
+	.jump.module.mobile-jump-simple {
+		padding: 0;
+        margin-bottom: 1px;
+        background: @secondary-background;
+
+        a {
+            color: contrast(@secondary-background);
+        }
+
+        .inner {
+            padding: 12px 0 12px 3%;
+        }
+
+        .thumb,
+        .sub-title,
+        .content,
+        .button {
+            display: none;
+        }
+
+        .title {
+        	position: static;
+            text-align: left;
+            padding: 0;
+            color: contrast(@secondary-background);
+            .font-size(24);
+
+            &:before {
+            	content: ' ';
+            	float: right;
+            	margin: 3px 5px 0 0;
+
+            	& when (contrast(@secondary-background) = #000000) {
+	                .create-icon(25px; 'black'; 47);
+	            }
+
+	            & when (contrast(@secondary-background) = #ffffff) {
+	                .create-icon(25px; 'white'; 47);
+	            }
+
+            }
+
+        }
+
+        .strapline {
+            text-align: left;
+            padding: 0;
+            color: contrast(@secondary-background);
+            .font-size(24);
+
+            &:before {
+            	content: ' ';
+            	float: right;
+            	margin: 3px 5px 0 0;
+
+            	& when (contrast(@secondary-background) = #000000) {
+	                .create-icon(25px; 'black'; 47);
+	            }
+
+	            & when (contrast(@secondary-background) = #ffffff) {
+	                .create-icon(25px; 'white'; 47);
+	            }
+
+            }
+
+        }
+
+    }
+
+    .jump.module.mobile-jump-standard {
+        position: relative;
+        float: none;
+        text-align: left;
+        background: #000;
+        width: 100%;
+        margin-bottom: 1px;
+
+        .thumb {
+            float: none;
+            width: 100%;
+            padding-bottom: 0;
+            .opacity(70);
+        }
+
+        .sub-title,
+        .content {
+            display: none;
+        }
+
+        .title {
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 3%;
+            width: 94%;
+            padding: 8px 0;
+
+            span {
+            	display: block;
+                .font-size(18);
+            }
+
+        }
+
+        .button {
+            width: auto;
+            position: absolute;
+            top: 70px;
+            left: 3%;
+
+            .btn {
+                padding: 0 25px;
+                .font-size(15);
+            }
+
+        }
+
+    }
+
+}

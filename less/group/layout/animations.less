@@ -1,0 +1,176 @@
+// Name:            Animations
+// Description:     Defines styles for CSS3 animations
+//
+// Module:          `animations`
+//
+//
+// ========================================================================
+
+// Animations:
+/*
+    Spin                 - .spin
+    Flash                - .flash
+    Shake                - .shake
+    Bounce               - .bounce
+    Tada                 - .tada
+    Swing                - .swing
+    Wobble               - .wobble
+    Wiggle               - .wiggle
+    Pulse                - .pulse
+    Flip                 - .flip
+    Flip in X            - .flipInX
+    Flip in Y            - .flipInY
+    Fade in              - .fadeIn
+    Fade in Up           - .fadeInUp
+    Fade in Down         - .fadeInDown
+    Fade in Left         - .fadeInLeft
+    Fade in Right        - .fadeInRight
+    Bounce in            - .bounceIn
+    Bounce in Up         - .bounceInUp
+    Bounce in Down       - .bounceInDown
+    Bounce in Left       - .bounceInLeft
+    Bounce in Right      - .bounceInRight
+    Rotate in            - .rotateIn
+    Rotate in Up Left    - .rotateInUpLeft
+    Rotate in Down Left  - .rotateInDownLeft
+    Rotate in Up Right   - .rotateInUpRight
+    Rotate in Down Right - .rotateInDownRight
+    Light Speed in       - .lightSpeedIn
+    Roll in              - .rollIn
+    Fade Out             - .fadeOut
+    Fade in From None    - .fadeInFromNone
+    Stretch Left         - .stretchLeft
+    Stretch Right        - .stretchRight
+*/
+// ========================================================================
+
+// How to use an animation either include the relevent class within the HTML for the animation to work or
+// using css apply the animation .animation-name(ANIMATION_NAME);
+
+// Default animations used for modals
+// To use call the keyframes #animation > .fadeInDown; then call the animation name .animation-name(fadeInDown);
+// You can also use &:extend(.cssanim); instead of adding the class to the module in question.
+// ========================================================================
+
+/* Example
+
+    // Call Keyframes
+    #animation > .fadeInDown;
+
+    // Add animation to element
+    .animate-me {
+        .animation-name(fadeInDown);
+        .cssanimate;
+    }
+
+*/
+
+.fade {
+    opacity: 0;
+    .transition(opacity .15s linear);
+    &.in {
+        opacity: 1;
+    }
+}
+
+.collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    .transition(height .35s ease);
+    &.in {
+        height: auto;
+    }
+}
+
+// Only run animations on non touch devices
+
+.no-touch {
+
+    #animation > .bounceInDown;
+    #animation > .bounceInLeft;
+    #animation > .bounceInUp;
+    #animation > .fadeInUp;
+    #animation > .fadeInLeft;
+    #animation > .fadeInRight;
+    #animation > .pulse;
+
+    // These classes are needed to create animations
+
+    .animate {
+        visibility: hidden;
+        .animation-play-state(paused);
+    }
+
+    .animate.load {
+        visibility: visible;
+        .animation-play-state(running);
+    }
+
+}
+
+// Custom Animations
+
+/*
+ * Bounce Left
+ */
+
+.ani-bounce-left {
+    0%, 10%, 20%, 80%, 100% { .translate(0, 0); }
+    5% { .translate(-7px, 0); }
+    15% { .translate(-3px, 0); }
+}
+
+@-webkit-keyframes bounceLeft { .ani-bounce-left; }
+@-moz-keyframes    bounceLeft { .ani-bounce-left; }
+@-o-keyframes      bounceLeft { .ani-bounce-left; }
+@keyframes         bounceLeft { .ani-bounce-left; }
+
+/*
+ * Bounce Right
+ */
+
+.ani-bounce-right {
+    0%, 10%, 20%, 80%, 100% { .translate(0, 0); }
+    5% { .translate(7px, 0); }
+    15% { .translate(3px, 0); }
+}
+
+@-webkit-keyframes bounceRight { .ani-bounce-right; }
+@-moz-keyframes    bounceRight { .ani-bounce-right; }
+@-o-keyframes      bounceRight { .ani-bounce-right; }
+@keyframes         bounceRight { .ani-bounce-right; }
+
+
+/*
+ * Fade Out Up
+ */
+
+.ani-fadeOutUp {
+    0% { .opacity(100); .translate(0, 0); }
+    100% { .opacity(0); .translate(0, -80px); }
+}
+
+@-webkit-keyframes fadeOutUp { .ani-fadeOutUp; }
+@-moz-keyframes    fadeOutUp { .ani-fadeOutUp; }
+@-o-keyframes      fadeOutUp { .ani-fadeOutUp; }
+@keyframes         fadeOutUp { .ani-fadeOutUp; }
+
+.fadeOutUp {
+    .animation-name(fadeOutUp);
+}
+
+
+.cssanimate {
+    .animation-delay(0.15s);
+    .animation-duration(1s);
+    .animation-fill-mode(both);
+}
+
+.cssanimate.infinite {
+    .animation-iteration-count(infinite);
+}
+
+.cssanimate.hinge {
+    .animation-duration(2s);
+}

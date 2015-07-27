@@ -1,0 +1,124 @@
+// Name:            Log In
+// Description:     Defines styles for the log in scrreen
+//
+// ========================================================================
+
+@import "../../../01. Core/src/auto.variables.less";
+@import "../../../01. Core/src/auto.scaffolding.less";
+@import "group/variables.less";                                         
+
+// Variables
+// ========================================================================
+
+@log-in-background          : @body-background;
+@log-in-line-height         : @base-line-height;
+@log-in-error-background    : @error-background;
+@log-in-error-border        : 1px solid @error-border;
+@log-in-error-color         : @error-text;
+@log-in-error-border-radius : @base-border-radius;
+
+/* ========================================================================
+   Module:  Main Styles
+ ========================================================================== */
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    background: @log-in-background;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 5% 0;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+
+.error-message {
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    margin-bottom: @log-in-line-height;
+    background-color: @log-in-error-background;
+    border: @log-in-error-border;
+    color: @log-in-error-color;
+    .border-radius(@log-in-error-border-radius);
+}
+
+.client-logo {
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.client-logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.control-group {
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .label {
+        float: left;
+        width: 90px;
+        color: @text-color;
+        cursor: pointer;
+        display: block;
+        padding: 8px 0;
+
+        .required {
+            float: none;
+        }
+
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+}
+
+.controls {
+    float: left;
+    width: 285px;
+    padding: 0 0 10px;
+
+    input {
+        background: #fff;
+        border: solid 1px darken(@log-in-background, 10%);
+        width: 100%;
+        padding: 7px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+}
+
+.btns {
+    margin-left: 90px;
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    width: 90px;
+    margin: 0 auto;
+    display: block;
+    background: #242424;
+    border: solid 1px #242424;
+    text-align: center;
+}
+
+@media (max-width: 385px) {
+
+    .btns,
+    .client-logo {
+        margin-left: 0;
+    }
+
+}
