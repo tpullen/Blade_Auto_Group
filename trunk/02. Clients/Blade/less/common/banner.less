@@ -1,0 +1,273 @@
+// Name:            Banner
+// Description:     Defines styles for the Banner
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@banner-width : 1680px;
+
+// Full Home Banner - Responsive
+// ========================================================================
+
+/*
+ * 1. Responsive banner - banner scales with the window width
+ * 2. Cropping banner - banner sides are cropped as the window resizes (desktop/tablet)
+ * 3. Hidden banner - hide part of the banner under the header
+ * 4. Contained controls - arrows and dots positions together
+ */
+
+.homepage .home-banner {
+	position: relative;
+	z-index: 5;
+	/* 2. Needs a height */
+	// height: 643px;
+
+	.container {
+		max-width: @banner-width;
+	}
+
+	.banner .caption .caption-inset {
+		left: 50%;
+		max-width: 1170px;
+		padding-top: 60px;
+		margin-left: -(1170px / 2);
+		.font-size(20px);
+
+		.title span {
+			padding-left: 0;
+			max-width: 460px;
+			padding-right: 0;
+			background: none;
+			text-transform: none;
+			color: @primary-color;
+			.font-size(40px);
+		}
+
+		.sub-title span {
+			margin-bottom: 0; 
+			background: none;
+			padding: 0 0 10px; 
+			text-transform: none;
+			color: @primary-color; 
+			.font-size(20px);
+		}
+
+		.content li {
+			padding: 5px 0;
+			font-weight: 100;
+			background: none;
+			.font-size(16px);
+		}
+
+		.btn {
+			padding: 0;
+			margin-top: 10px;
+		}
+
+	}
+
+	/* Remove default margin */
+	.banner {
+		padding-bottom: 0;
+
+		.inner {
+			margin-bottom: 0;
+		}
+
+	}
+
+	/*Bottom triangle*/
+	.banner {
+
+		&:after {
+			content:  ' ';
+			left: 0;
+       		width: 0;
+			bottom: 0;
+			height: 0;
+			z-index: 101;
+			position: absolute;
+			border-style: solid;
+			border-width: 0 0px 60px 1680px;
+			border-color: transparent transparent @body-background transparent;
+       	}
+
+	}
+
+	/* 4. Un-comment below if needed */
+	.controls {
+		/*text-align: right; // Define the position of the controls left/center/right
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		width: @grid-column-width1200;
+		margin-left: -(@grid-column-width1200 / 2);
+		z-index: 200;*/
+
+		.cycle-next,
+		.cycle-prev {
+			top: 50%;
+			left: 8.5%;
+			width: 36px;
+			height: 36px;
+			position: absolute;
+			background: url('../images/@{franchise-name}/sprite-cycle-arrows.png') 0 0 no-repeat;
+		}
+
+		.cycle-next {
+			left: auto;
+			right: 8.5%;
+			background-position: -36px 0;
+		}
+
+		.cycle-pager-container {
+			left: 50%;
+			bottom: 10%;
+			text-align: left;
+			max-width: 1170px;
+			position: absolute;
+			margin-left: -(1170px / 2);
+		}
+
+	}
+
+}
+
+.hook-responsive-desktop() {
+
+	.homepage .home-banner {
+
+		.banner .caption .caption-inset {
+			/* Remove the absolue styles - do not add padding to the sides */
+			padding: 10px 0;
+	        left: 0;
+	        margin-left: 0;
+	    }
+
+	    /* 4. */
+	    /*.controls {
+			width: @grid-column-width980;
+			margin-left: -(@grid-column-width980 / 2);
+		}*/
+
+	}
+
+}
+
+
+.hook-responsive-tablet() {
+
+	.homepage .home-banner {
+
+		.banner {
+			margin-top: 0;
+		}
+
+		.banner .caption .caption-inset {
+			// Reduce font size
+			.font-size(14px);
+		}
+
+		/* 4. */
+		/* .controls {
+			width: @grid-column-width768;
+			margin-left: -(@grid-column-width768 / 2);
+		} */
+
+	}
+
+}
+
+.hook-responsive-mobile() {
+
+	.homepage .home-banner {
+		margin-bottom: 10px;
+
+	    .banner .caption {
+	    	position: absolute;
+            top: auto !important;
+            bottom: 0 !important;
+            left: 3%;
+            width: 94%;
+            background: #000;
+            background: #000;
+            background: rgba(0, 0, 0, 0.7);
+
+	    	.caption-inset {
+	    		background: none !important;
+	    		margin-left: 0;
+		        max-width: auto;
+		        padding: 12px 4% 45px !important;
+		        .font-size(12);
+
+		        .title {
+		        	padding-bottom: 8px;
+
+		        	span {
+			        	background: none !important;
+	                    text-align: left !important;
+	                    max-width: none;
+	                    color: #fff;
+	                    padding: 0;
+	                    .font-size(22) !important;
+	                }
+
+                }
+
+                .sub-title,
+                .content {
+                    display: none;
+                }
+
+                .btn {
+                	width: auto;
+                	line-height: 33px;
+                	min-height: 33px;
+                    padding: 0 10px;
+                    margin: 0;
+                    .font-size(16) !important;
+                }
+
+		    }
+
+		}
+
+	    /* 4. */
+	    .controls {
+	    	position: static;
+			margin: 0;
+
+			.cycle-next,
+			.cycle-prev {
+				display: none;
+			}
+
+			.cycle-pager-container {
+				display: block;
+				top: auto;
+				bottom: 0;
+
+		        ul {
+		            float: none;
+		            text-align: center;
+		        }
+
+		    }
+
+		}
+
+	}
+
+}
+
+.hook-responsive-tablet() {
+
+	.homepage .container-om7nw .container {
+		width: auto;
+		max-width: 768px;
+		padding: 0;
+	}
+
+}

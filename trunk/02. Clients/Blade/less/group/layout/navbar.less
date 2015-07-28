@@ -9,7 +9,8 @@
 // Variables
 // ========================================================================
 
-@nav-item-padding                  : 10px 0;
+@nav-item-padding                  : 10px @nav-item-side-padding;
+@nav-item-side-padding             : 35px;
 
 @nav-navbar-background             : transparent;
 @nav-item-font-size                : 13px;
@@ -20,12 +21,12 @@
 
 @nav-dropdown-font-size            : @nav-item-font-size;
 @nav-dropdown-padding              : 10px 15px;
-@nav-dropdown-width                : 200px;
-@nav-dropdown-background           : @nav-item-hover-background;
+@nav-dropdown-width                : 150px;
+@nav-dropdown-background           : @primary-background;
 @nav-dropdown-item-background      : @nav-dropdown-background;
-@nav-dropdown-color                : contrast(@nav-dropdown-background, #404040);
-@nav-dropdown-hover-background     : darken(@nav-dropdown-background, 10%);
-@nav-dropdown-hover-color          : contrast(@nav-dropdown-hover-background, #404040);
+@nav-dropdown-color                : #fff;
+@nav-dropdown-hover-background     : #fff;
+@nav-dropdown-hover-color          : @tertiary-color;
 
 @nav-navbar-collapse-desktop-width : @nav-navbar-collapse-width + 1;
 
@@ -36,7 +37,6 @@
 
 .hook-responsive-desktop() {
 
-
 }
 
 // Hooks
@@ -44,19 +44,15 @@
 
 .hook-nav-misc;
 
-.hook-nav() {
-    width: 100%;
-    display: table;
-}
+.hook-nav() {}
 .hook-nav-item() {
-    text-align: center;
 
-    &:first-child {
-        text-align: left;
+    &:first-child a {
+        padding-left: 0;
     }
 
-    &:last-child {
-        text-align: right;
+    &:last-child a {
+        padding-right: 0;
     }
 
 }
@@ -85,16 +81,20 @@
     
 }
 
-.hook-nav-dropdown() {}
+.hook-nav-dropdown() {
+    left: @nav-item-side-padding;
+}
 .hook-nav-dropdown-item() {}
-.hook-nav-dropdown-link() {}
+.hook-nav-dropdown-link() {
+    text-transform: uppercase; 
+    font-family: @base-font-face;
+}
+
 .hook-nav-dropdown-hover() {}
 .hook-nav-dropdown-active() {}
 
 .hook-nav-navbar() {}
-.hook-nav-navbar-item() {
-    display: table-cell;
-}
+.hook-nav-navbar-item() {}
 .hook-nav-navbar-btn() {}
 .hook-nav-collapse() {}
 .hook-toggle-nav() {}
