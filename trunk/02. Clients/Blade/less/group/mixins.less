@@ -6,8 +6,12 @@
 
 	/* Primary Button */
 	.primary-button {
+		color: @button-color;
+		background: @button-background;
 		font-weight: @button-font-weight;
+		font-family: @button-font-family;
 		text-transform: @button-text-transform;
+		.font-size(@button-font-size);
 
 		&:before {
 			content: ' ';
@@ -21,6 +25,8 @@
 	}
 
 	.primary-button-hover {
+		color: @button-hover-color;
+		background: @button-hover-background;
 
 		&:before {
 			background-position: -27px 0;

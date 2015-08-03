@@ -38,6 +38,31 @@
 
 .container-z9jg1 {
 
+    .scroll-to {
+        display: block;
+        margin: 0 15px;
+
+        a {
+            color: #000;
+            font-weight: 900;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: @base-font-face;
+            .font-size(13px);
+
+            &:before {
+                content: ' ';
+                width: 27px;
+                height: 26px;
+                margin-right: 10px;
+                display: inline-block;
+                background: url('../images/@{franchise-name}/scroll-arrow.png') 0 0 no-repeat;
+            }
+
+        }
+
+    }
+
     .franchise-jump.module {
         float: left;
         width: 12.57%;
@@ -51,7 +76,7 @@
 
 }
 
-// New and used jumps
+// Servicing and used jumps
 // ========================================================================
 
 .container-ttibi {
@@ -62,8 +87,6 @@
         content: ' ';
         top: 0;
         left: 0;
-        width: 0;
-        height: 0;
         position: absolute;
         border-style: solid;
         border-width: 60px 0px 0 1680px;
@@ -87,8 +110,6 @@
 
             &:after {
                 content: ' ';
-                width: 0;
-                height: 0;
                 top: -87px;
                 right: -139px;
                 position: absolute;
@@ -106,8 +127,6 @@
             &:after {
                 content: ' ';
                 left: 0;
-                width: 0;
-                height: 0;
                 top: -179px;
                 position: absolute;
                 border-style: solid;
@@ -146,21 +165,37 @@
 // ========================================================================
 
 .container-ghe1u {
+    overflow: hidden;
     position: relative;
 
-    &:after {
+    /*&:after {
         content:  ' ';
         left: 0;
-        width: 0;
         bottom: 0;
-        height: 0;
         position: absolute;
         border-style: solid;
         border-width: 0 0px 60px 1680px;
         border-color: transparent transparent @body-background transparent;
+    }*/
+
+    .container {
+        position: relative;
+
+        &:after {
+            content: ' ';
+            top: 0;
+            left: 50%;
+            width: 303px;
+            position: absolute; 
+            margin-left: -264px;
+            border-top: 515px solid #fafafc; 
+            border-left: 110px solid transparent; 
+            border-right: 110px solid transparent;
+        }
+
     }
 
-    .standard-jump.module {
+    .image-jump.module {
         min-width: 730px;
         overflow: hidden;
         padding-bottom: 0;
@@ -189,6 +224,300 @@
 
     }
 
+    .content-jump.module {
+        top: 14%;
+        width: 18%;
+        z-index: 10;
+        position: absolute;
+
+        &.offers-jump-content {
+            left: 5%;
+        }
+
+        &.why-buy-jump-content {
+            right: 5%;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+    }
+
+}
+
+// Location Map and Search
+// ========================================================================
+
+.container-cm77r {
+    overflow: hidden;
+    position: relative;
+
+    .jump-locations.module {
+        width: 72.5%;
+        padding-bottom: 0;
+        position: relative;
+        margin-left: -255px !important;
+
+        .image {
+            padding-bottom: 0;
+        }
+
+        &:after {
+            content: ' ';
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            border-style: solid;
+            border-width: 0 814px 29px 0px;
+            border-color: transparent transparent @body-background transparent;
+        }
+
+        &:before {
+            content: ' '; 
+            right: 0;
+            bottom: 0;
+            width: 62px;
+            z-index: 10;
+            position: absolute; 
+            border-right: 0px solid transparent;
+            border-left: 158px solid transparent; 
+            border-top: 722px solid @body-background; 
+        }
+
+    }
+
+    .location-search.module {
+        float: left;
+        margin-top: 50px;
+        padding-bottom: 0;
+        position: relative;
+
+        >.inner {
+           background: none; 
+           padding-bottom: 0;
+        }
+
+        .control-label {
+            font-weight: 100;
+            line-height: normal;
+            margin-bottom: 35px;
+            color: @primary-color;
+            font-family: @base-font-face;
+            .font-size(40px);
+
+            &:after {
+                content: 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
+                display: block;
+                font-weight: 100;
+                padding-top: 20px;
+                color: @secondary-color;
+                font-family: @base-font-face;
+                line-height: @base-line-height;
+                .font-size(16px);
+            }
+
+        }
+
+        input {
+            width: 250px;
+            height: 47px;
+            background: #fff;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+        }
+
+        .btn {
+            padding: 0;
+            margin: 30px 0 0;
+
+            &:before {
+                display: block;
+                margin-top: 5px;
+            }
+
+        }
+
+        .view-all-locations {
+            bottom: -1px;
+            left: 110px;
+            position: absolute;
+
+            a {
+                padding: 0;
+                line-height: 35px;
+                text-decoration: none;
+                #custom-mixins > .primary-button;
+
+                &:before {
+                    margin-top: 5px;
+                }
+
+                &:hover {
+                    #custom-mixins > .primary-button-hover;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+// Jumps Cycle
+// ========================================================================
+
+.container-iq0m1 {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content:  ' ';
+        left: 0;
+        width: 0;
+        bottom: 0;
+        height: 0;
+        z-index: 101;
+        position: absolute;
+        border-style: solid;
+        border-width: 0 0px 60px 1680px;
+        border-color: transparent transparent #c1ccd2 transparent;
+    }
+
+    .jumps-cycle.module {
+        padding-bottom: 0;
+        margin-right: -255px;
+
+        .inner {
+            margin-bottom: 0;
+        }
+
+        .cycle-next,
+        .cycle-prev {
+            top: 25%;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            background: url('../images/@{franchise-name}/sprite-cycle-arrows.png') 0 0 no-repeat;
+        }
+
+        .cycle-next {
+            top: 34%;
+            background-position: -36px 0;
+        }
+
+        [class*=cycle-pager-container] {
+            top: 47%;
+            bottom: auto;
+            text-align: left;
+
+            ul {
+                width: 17px;
+                margin-left: 9px;
+
+                li a {
+                    float: none;
+                    background-image: url('../images/@{franchise-name}/sprite-cycle-pagi-alt.png');
+                }
+
+            }
+
+        }
+
+        .thumb {
+            width: 62.7%;
+            float: right;
+            padding-bottom: 0;
+            position: relative;  
+
+            &:before {
+                content: ' ';
+                top: 0;
+                left: 0;
+                z-index: 10;
+                position: absolute;
+                border-style: solid;
+                border-width: 0 894px 31px 0;
+                border-color: transparent @body-background transparent transparent;
+            }   
+
+            &:after {
+                content: ' ';
+                top: 0;
+                left: 0;
+                position: absolute;
+                border-style: solid;
+                border-width: 502px 0 0 115px;
+                border-color: transparent transparent transparent @body-background;
+            }
+
+        }
+
+        .strapline,
+        .content,
+        .button {
+            width: 30%;
+            float: right;
+            display: block;
+            text-align: right;
+            margin-right: 46px;
+        }
+
+        .strapline {
+            padding-top: 100px;
+        }
+
+    }
+
+}
+
+// Valuation Jump
+// ========================================================================
+
+.container-xnjhm {
+    position: relative;
+    background: #c1ccd2;
+
+    &:after {
+        content: ' ';
+        right: 0;
+        top: -81px;
+        width: 620px;
+        z-index: 101;
+        position: absolute; 
+        margin-left: -264px;
+        border-top: 778px solid #b9c5cb; 
+        border-left: 178px solid transparent; 
+    }
+
+    .valuation-jump.module {
+        margin-top: 37px;
+        
+        .thumb {
+            float: left;
+            width: 70.3%;
+            margin-left: -186px;
+        }
+
+        .title,
+        .content,
+        .button {
+            width: 30%;
+            float: right;
+            text-align: left;
+        }
+        .title {
+            padding-top: 100px;
+        }
+
+        .button {
+            margin-top: 30px;
+        }
+
+    }
+
 }
 
 // Jumps
@@ -197,21 +526,20 @@
 .is-consistant.module {
 	position: relative;
 
-	.title {
+	.title,
+    .strapline {
         font-weight: 100;
+        line-height: normal;
         color: @primary-color;
         font-family: @base-font-face;
         .font-size(40px);
-	}
-
-	.sub-title {
-
 	}
 
 	.content {
         font-weight: 100;
         color: @secondary-color;
         font-family: @base-font-face;
+        line-height: @base-line-height;
         .font-size(18px);
 	}
 
@@ -221,7 +549,12 @@
         .btn {
             padding: 0;
         }
+
 	}
+
+    &.secondary .button .btn {       
+        background: none;
+    }
 
 	/* Provide an inverted colour */
 	&.is-inverted {
