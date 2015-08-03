@@ -1,0 +1,101 @@
+/*!
+  @module_search_02
+*/
+
+// Name:            Used Search
+// Description:     Defines styles for Used Search
+//
+// Module:          `search`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@search-price-margin-bottom					   : 5px;
+@search-filter-select-height				   : 30px;
+
+/* ========================================================================
+   Module:  Used Search
+ ========================================================================== */
+
+
+
+// Responsive
+// ========================================================================
+
+.hook-responsive-desktop() {
+}
+
+.hook-responsive-tablet() {
+}
+
+.hook-responsive-mobile() {
+}
+
+// Hooks
+// ========================================================================
+
+.hook-search-misc;
+
+.hook-search-filter-inset() {}
+
+.hook-search-header() {}
+
+.hook-search-header-count() {}
+
+.hook-search-header-count-label() {}
+
+.hook-search-header-count-value() {}
+
+.hook-search-reset-all() {}
+
+.hook-search-bootstrap-select() {}
+
+.hook-search-filter-heading() {}
+
+.hook-search-filter-heading-label() {}
+
+.hook-search-filter-heading-value() {}
+
+.hook-search-filter-heading-icon() {}
+
+.hook-search-filter-make() {}
+
+.hook-search-filter-model() {}
+
+.hook-search-filter-distance() {}
+
+.hook-search-filter-price() {
+
+	& when (@search-price-style = 'outside') {
+
+		.option.inline {
+			padding-top: 7px;
+		}
+
+		.bootstrap-select .btn {
+			background: #fff;
+			color: @search-filter-heading-value-color;
+
+			&:hover {
+				background: #fff;
+				color: @search-filter-heading-value-color;
+			}
+
+		}
+
+	}
+
+}
+
+.hook-search-filter-advanced() {}
+
+.hook-search-filter-advanced-icon() {}
+
+.hook-search-filter-option-label() {}
+
+.hook-search-btn() {}
+
+.hook-search-misc() {}

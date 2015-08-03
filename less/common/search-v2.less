@@ -6,6 +6,20 @@
 // Variables
 // ========================================================================
 
+@search__heading-item--font-size					: 26px;
+
+@search__filter-label--font-size					: 13px;
+@search__filter-label--colour						: #000;
+
+@search__filter--height								: 41px;
+@search__filter--background							: @tertiary-background-offset;
+@search__filter--font-size							: 11px;
+@search__filter-value--colour						: #fff;
+@search__filter-value--font-weight					: 900;
+@search__filter-value--transform					: uppercase;
+
+@search__advanced-icon--color						: "black";
+
 // Full Width Search
 // ========================================================================
 
@@ -20,9 +34,18 @@
 & when(@search-version = 2) {
 
 	.homepage .search {
-		padding: 0;
+		padding: 16px 0 0 0;
 
 		.search-header {
+			text-align: center;
+
+			.heading {
+				float: none;
+				font-weight: normal;
+				color: @tertiary-color;
+				font-family: @base-font-face;
+				.font-size(@search__heading-item--font-size);
+			}
 
 			.reset-all {
 				/* Hide reset all */
@@ -30,63 +53,228 @@
 			}
 
 			.total-count {
-				padding: 0 15px;
-				right: 0;
 				top: 0;
+				right: 0;
+				padding: 0;
+
+				.value,
+				.label {
+					color: #000;
+					font-weight: normal;
+					font-family: @base-font-face;
+					.font-size(@search__heading-item--font-size);
+				}
+
+				.label {
+					padding-right: 0;
+				}
+
+				.value {
+					float: left;
+					padding-right: 10px;
+				}
+
 			}
 
 		}
 
 		/* Move and display the search button */
 		.search-vehicles {
-			text-align: center;
-			position: absolute;
-			display: block;
-			right: 15px;
-			top: 50px;
+			right: 0;
+			top: 86px;
 			padding: 0;
-			width: 125px;
+			display: block;
+			min-width: 120px;
+			position: absolute;
+			text-align: center;
 
 			.btn {
 				/* Change the line height to match the height of the filters */
-				line-height: 47px;
+				color: #fff;
+				font-weight: 900;
+				font-family: @base-font-face;
+				background: @primary-background;
+				line-height: @search__filter--height;
+				.font-size(13px);
+
+				&:hover {
+					background: darken(@primary-background, 10%);
+				}
+
 			}
 
 		}
 
 		.filter-inset {
+			padding-top: 15px;
 			background: @body-background;
+		}
+
+		/*Icon correction without using variable so the intenral is not effected */
+		.filter-heading .icon,
+		.filter-price .price-range-filters .caret {
+			.create-icon(16px; "white";);
+		}
+
+		.filter-vehicle-condition when (@search-condition-style = 'tabs') {
+
+			.option {
+			    background: none;
+				font-weight: normal;
+			    text-transform: none;
+			    
+			    .label {
+			    	color: #d9d9d9;
+			        .font-size(@search__heading-item--font-size);
+			    }
+
+			    &:first-child {
+			        padding-left: 0;
+			    }
+
+			    &.active .label {
+			    	color: @tertiary-color;
+			    }
+
+			}
+
+		}
+
+		.filter-vehicle-type when (@search-type-style = 'radio') {
+			left: 0;
+			top: 23px;
+
+			.option .label {
+				color: @search__filter-label--colour;
+				.font-size(@search__filter-label--font-size);
+			}
+
 		}
 
 		& when (@search-type-style = 'radio') {
 
-			.filter-model {
+			.filter-model,
+			.filter-make {
+				wdith: 14%;
 
 				.filter-heading {
 					margin-top: 32px;
-				}
+					padding-left: 19px;
+					background: @search__filter--background;
 
-				.label, .value {
-					color: @text-color;
-					padding: 0;
-					background: none;
-					border: none;
-					.inline-block;
+					.icon {
+						bottom: 12px;
+					}
+
+					.label, .value {
+						padding: 0;
+						border: none;
+						background: none;
+						font-family: @base-font-face;
+						line-height: @search__filter--height;
+						color: @search__filter-value--colour;
+						font-weight: @search__filter-value--font-weight;
+						text-transform: @search__filter-value--transform;
+						.inline-block;
+						.font-size(@search__filter--font-size);
+					}
+
 				}
 
 			}
 
 			.filter-make {
+				padding-left: 0;
+			}
 
-				.filter-heading {
-					margin-top: 32px;
+			.filter-model {
+				padding-right: 0; 
+				padding-left: 0.5%;
+			}
+
+		}
+
+		.filter-price {
+			width: 35.5%;
+			border: none;
+			padding-left: 3.5%;
+			padding-right: 3.5%;
+
+	        & when (@search-price-style = 'outside') {
+
+	       		.option .label {
+	       			color: @search__filter-label--colour;
+	       			.font-size(@search__filter-label--font-size);
+	       		}
+
+	       		>.option {
+	       			margin-bottom: 6px;
+	       		}
+
+	       		.option.inline {
+					padding-top: 2px;
 				}
 
-				.label, .value {
-					padding: 0;
-					background: none;
+	       		.bootstrap-select {
+
+	       			button {
+	       				font-family: @base-font-face !important; // To overwrite core important
+	       			}
+
+		       		.btn {
+		       			border: none;
+		       			padding-left: 16px;
+		       			height: @search__filter--height;
+		       			color: @search__filter-value--colour;
+		       			background: @search__filter--background;
+		       			font-weight: @search__filter-value--font-weight;
+						text-transform: @search__filter-value--transform;
+						.font-size(@search__filter--font-size);
+
+		       			&:hover {
+		       				color: @search__filter-value--colour;
+		       				background: @search__filter--background;
+		       			}
+
+		       		}
+
+				}
+				
+			}
+
+			.min, 
+			.max {
+				width: 49%;
+			}
+
+	    }
+
+	    .filter-distance {
+	    	width: 11.5%;
+			padding-left: 0;
+			padding-top: 4px;
+
+			.filter-heading {
+
+				.icon {
+					bottom: 11px;
+				}
+
+				.label {
+					padding-bottom: 8px;
+					.font-size(@search__filter-label--font-size);
+				}
+
+				.value {
 					border: none;
-					.inline-block;
+					padding: 0 0 0 16px;
+					font-family: @base-font-face;
+					color: @search__filter-value--colour;
+					line-height: @search__filter--height;
+					background: @search__filter--background;
+					font-weight: @search__filter-value--font-weight;
+					text-transform: @search__filter-value--transform;
+					.font-size(@search__filter--font-size);
 				}
 
 			}
@@ -94,8 +282,24 @@
 		}
 
 		.filter-advanced {
+			width: 13%;
 			float: none;
-			width: 120px;
+
+			.filter-heading {
+				padding-top: 43px;
+
+				.icon {
+					bottom: 10px;
+					.create-icon(16px; @search__advanced-icon--color;);
+				}
+
+				.label {
+					color: @search__filter-label--colour;
+					.font-size(@search__filter-label--font-size);
+				}
+
+			}
+
 		}
 
 	}
