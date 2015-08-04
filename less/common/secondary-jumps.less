@@ -1,0 +1,84 @@
+// Offers, Reevoo, Why Buy
+// ========================================================================
+
+.container-ghe1u {
+    overflow: hidden;
+    position: relative;
+
+    /*&:after {
+        content:  ' ';
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 0 0px 60px 1680px;
+        border-color: transparent transparent @body-background transparent;
+    }*/
+
+    .container {
+        position: relative;
+
+        &:after {
+            content: ' ';
+            top: 0;
+            left: 50%;
+            width: 303px;
+            position: absolute; 
+            margin-left: -264px;
+            border-top: 515px solid #fafafc; 
+            border-left: 110px solid transparent; 
+            border-right: 110px solid transparent;
+        }
+
+    }
+
+    .image-jump.module {
+        min-width: 730px;
+        overflow: hidden;
+        padding-bottom: 0;
+        position: relative;
+
+        &.offers-jump {
+            float: left;
+            margin-left: -255px !important; // To overide the first-child important
+        }
+
+        &.why-buy-jump {
+            float: right;
+            margin-right: -255px;
+        }
+
+        .thumb {
+            padding-bottom: 0;
+        }
+
+        .title,
+        .content,
+        .button {
+            top: 0;
+            position: absolute;
+        }
+
+    }
+
+    .content-jump.module {
+        top: 14%;
+        width: 18%;
+        z-index: 10;
+        position: absolute;
+
+        &.offers-jump-content {
+            left: 5%;
+        }
+
+        &.why-buy-jump-content {
+            right: 5%;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+    }
+
+}

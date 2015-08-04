@@ -1,0 +1,119 @@
+
+// Location Map and Search
+// ========================================================================
+
+.container-cm77r {
+    overflow: hidden;
+    position: relative;
+
+    .jump-locations.module {
+        width: 72.5%;
+        padding-bottom: 0;
+        position: relative;
+        margin-left: -255px !important;
+
+        .image {
+            padding-bottom: 0;
+        }
+
+        &:after {
+            content: ' ';
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            border-style: solid;
+            border-width: 0 814px 29px 0px;
+            border-color: transparent transparent @body-background transparent;
+        }
+
+        &:before {
+            content: ' '; 
+            right: 0;
+            bottom: 0;
+            width: 62px;
+            z-index: 10;
+            position: absolute; 
+            border-right: 0px solid transparent;
+            border-left: 158px solid transparent; 
+            border-top: 722px solid @body-background; 
+        }
+
+    }
+
+    .location-search.module {
+        float: left;
+        margin-top: 50px;
+        padding-bottom: 0;
+        position: relative;
+
+        >.inner {
+           background: none; 
+           padding-bottom: 0;
+        }
+
+        .control-label {
+            font-weight: 100;
+            line-height: normal;
+            margin-bottom: 35px;
+            color: @primary-color;
+            font-family: @base-font-face;
+            .font-size(40px);
+
+            &:after {
+                content: 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
+                display: block;
+                font-weight: 100;
+                padding-top: 20px;
+                color: @secondary-color;
+                font-family: @base-font-face;
+                line-height: @base-line-height;
+                .font-size(16px);
+            }
+
+        }
+
+        input {
+            width: 250px;
+            height: 47px;
+            background: #fff;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+        }
+
+        .btn {
+            padding: 0;
+            margin: 30px 0 0;
+
+            &:before {
+                display: block;
+                margin-top: 5px;
+            }
+
+        }
+
+        .view-all-locations {
+            bottom: -1px;
+            left: 110px;
+            position: absolute;
+
+            a {
+                padding: 0;
+                line-height: 35px;
+                text-decoration: none;
+                #custom-mixins > .primary-button;
+
+                &:before {
+                    margin-top: 5px;
+                }
+
+                &:hover {
+                    #custom-mixins > .primary-button-hover;
+                }
+
+            }
+
+        }
+
+    }
+
+}
