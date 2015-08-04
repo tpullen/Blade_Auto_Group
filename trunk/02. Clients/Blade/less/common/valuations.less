@@ -1,0 +1,62 @@
+
+// Valuation Jump
+// ========================================================================
+
+.container-xnjhm {
+    z-index: 101;
+    overflow: hidden;
+    padding-top: 25px;
+    position: relative;
+    background: #c1ccd2;
+    margin-top: -25px !important; // Overwrite the homepage container styles
+
+    &:before {
+        content: ' ';
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 33px 895px 0 0;
+        border-color: @body-background transparent transparent transparent;
+    }
+
+    &:after {
+        content: ' ';
+        right: 0;
+        top: -81px;
+        width: 623px;
+        z-index: 101;
+        position: absolute;
+        border-left: 181px solid transparent; 
+        border-top: 778px solid @tertiary-background; 
+    }
+
+    .valuation-jump.module {
+        margin-top: 37px;
+        
+        .thumb {
+            float: left;
+            width: 70.3%;
+            margin-left: -186px;
+        }
+
+        .title,
+        .content,
+        .button {
+            width: 30%;
+            float: right;
+            z-index: 102;
+            text-align: left;
+            position: relative;
+        }
+        .title {
+            padding-top: 100px;
+        }
+
+        .button {
+            margin-top: 30px;
+        }
+
+    }
+
+}

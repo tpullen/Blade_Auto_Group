@@ -1,0 +1,106 @@
+
+// Jumps Cycle
+// ========================================================================
+
+.container-iq0m1 {
+    overflow: hidden;
+    position: relative;    
+
+    &:after {
+        content:  ' ';
+        right: 0;
+        bottom: 25px;
+        z-index: 100;
+        position: absolute;
+        border-style: solid;
+        border-width: 0 0 27px 785px;
+        border-color: transparent transparent @tertiary-background transparent
+    }
+
+    .jumps-cycle.module {
+        padding-bottom: 0;
+        margin-right: -255px;
+
+        .inner {
+            margin-bottom: 0;
+        }
+
+        .cycle-next,
+        .cycle-prev {
+            top: 25%;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            background: url('../images/@{franchise-name}/sprite-cycle-arrows.png') 0 0 no-repeat;
+        }
+
+        .cycle-next {
+            top: 34%;
+            background-position: -36px 0;
+        }
+
+        [class*=cycle-pager-container] {
+            top: 47%;
+            bottom: auto;
+            text-align: left;
+
+            ul {
+                width: 17px;
+                margin-left: 9px;
+
+                li a {
+                    float: none;
+                    background-image: url('../images/@{franchise-name}/sprite-cycle-pagi-alt.png');
+                }
+
+            }
+
+        }
+
+        .thumb {
+            width: 62.7%;
+            float: right;
+            padding-bottom: 0;
+            position: relative;  
+
+            &:before {
+                content: ' ';
+                top: 0;
+                left: 0;
+                z-index: 10;
+                position: absolute;
+                border-style: solid;
+                border-width: 0 894px 31px 0;
+                border-color: transparent @body-background transparent transparent;
+            }   
+
+            &:after {
+                content: ' ';
+                top: 0;
+                left: 0;
+                position: absolute;
+                border-style: solid;
+                border-width: 502px 0 0 115px;
+                border-color: transparent transparent transparent @body-background;
+            }
+
+        }
+
+        .strapline,
+        .content,
+        .button {
+            width: 30%;
+            float: right;
+            display: block;
+            text-align: right;
+            margin-right: 46px;
+        }
+
+        .strapline {
+            padding-top: 100px;
+        }
+
+    }
+
+}
