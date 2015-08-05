@@ -13,20 +13,22 @@
     &:before {
         content: ' ';
         top: 0;
-        left: 0;
+        left: 50%;
         position: absolute;
         border-style: solid;
+        margin-left: -840px;
         border-width: 33px 895px 0 0;
         border-color: @body-background transparent transparent transparent;
     }
 
     &:after {
         content: ' ';
-        right: 0;
         top: -81px;
+        right: 50%;
         width: 623px;
         z-index: 101;
         position: absolute;
+        margin-right: -840px;
         border-left: 181px solid transparent; 
         border-top: 778px solid @tertiary-background; 
     }

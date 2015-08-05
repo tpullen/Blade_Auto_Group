@@ -234,6 +234,18 @@
 // Responsive
 // ========================================================================
 
+.hook-responsive-desktop() {
+
+    .header-container {
+
+        .logo {
+            width: 300px;
+        }
+        
+    }
+
+}
+
 .hook-responsive-tablet() {
 
     .header-container {
@@ -244,18 +256,53 @@
             background: @body-background;
         }
 
-        .toggle-nav {
+        .container-296mj {
+            margin-bottom: 125px;
+            background: @secondary-background;
+        }
+
+        .row-4vuwj {
+            padding: 0;
+            text-align: right;
+        }
+
+        .logo {
+            top: 80px;
+            left: 50%;
+            width: auto;
             position: absolute;
+            margin-left: -(172px / 2);
+        }
+
+        .social-icons,
+        .saved-vehicles,
+        .live-chat,
+        .contact-numbers,
+        .button {
+            width: auto;
+            padding: 0 10px;
+        }
+
+        .social-icons {
+            top: 3px;
+            position: relative;
+            padding-right: 100px;
+        }
+
+        .toggle-nav {
             top: 0;
             right: 0;
             width: 100px;
-            line-height: 30px;
-            height: 30px;
+            position: absolute;
             text-align: center;
             z-index: (@zindex-popover - 2);
             -webkit-backface-visibility: hidden;
-            color: contrast(@secondary-background, #404040);
+            color: @header__item--color;
+            height: @header__item--height;
+            line-height: @header__item--height;
+            font-family: @header__item--font-family;
             .transition(all .5s ease-in-out);
+            .font-size(@header__item--font-size);
 
             &:before {
                 content: 'Menu';
@@ -263,7 +310,10 @@
             }
 
             .icon {
+                width: 27px;
+                height: 27px;
                 margin: -5px 0 0 5px;
+                background: url('../images/@{franchise-name}/menu-icon.png') 0 0 no-repeat;
             }
 
         }

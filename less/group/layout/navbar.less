@@ -9,8 +9,10 @@
 // Variables
 // ========================================================================
 
-@nav-item-padding                  : 10px @nav-item-side-padding;
 @nav-item-side-padding             : 35px;
+@nav-item-padding                  : 10px @nav-item-side-padding;
+@nav-item-side-padding-desktop     : 21px;
+@nav-item-padding-desktop          : 10px @nav-item-side-padding-desktop;
 
 @nav-navbar-background             : transparent;
 @nav-item-font-size                : 13px;
@@ -36,6 +38,42 @@
  ========================================================================== */
 
 .hook-responsive-desktop() {
+
+    .nav > li> a {
+        padding: @nav-item-padding-desktop;
+    }
+
+    .dropdown-menu {
+        left: @nav-item-side-padding-desktop;
+    }
+
+}
+
+.hook-responsive-tablet() {
+
+    .nav > li > a > span {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .nav-collapse {
+
+        .nav > li > a {
+            border-bottom: none;
+        }
+
+        .dropdown-menu {
+            background: none;
+
+            > li a {
+                border: none;
+                background: none;
+                color: @secondary-color;
+            }
+
+        }
+
+    }
 
 }
 
@@ -82,6 +120,7 @@
 }
 
 .hook-nav-dropdown() {
+    top: 107%;
     left: @nav-item-side-padding;
 }
 .hook-nav-dropdown-item() {}
