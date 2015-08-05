@@ -20,6 +20,19 @@
 	max-width: 1680px;
 }
 
+// Responsive
+// =========================
+
+/*@media (max-width: 1679px) {
+
+    .homepage #content-wrap .container-wrap {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1680px;
+    }
+
+}*/
+
 // Imports
 // ========================================================================
 
@@ -79,6 +92,45 @@
 
         &:last-child {
             margin-right: 0;
+        }
+
+    }
+
+}
+
+// Responsive
+// =========================
+
+@media (max-width: 1367px) {
+
+    .homepage #content-wrap .container-z9jg1 {
+
+        .container {
+            width: 1170px;
+        }
+
+    }
+
+}
+
+.hook-responsive-desktop() {
+
+    .homepage #content-wrap .container-z9jg1 {
+
+        .container {
+            width: @grid-column-width980;
+        }
+
+    }
+
+}
+
+.hook-responsive-tablet() {
+
+    .homepage #content-wrap .container-z9jg1 {
+
+        .container {
+            width: @grid-column-width768;
         }
 
     }

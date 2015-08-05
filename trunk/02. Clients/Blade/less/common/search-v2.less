@@ -23,14 +23,6 @@
 // Full Width Search
 // ========================================================================
 
-.homepage #content-wrap .container-zk01n {
-
-	.container {
-		width: 1170px;
-	}
-
-}
-
 & when(@search-version = 2) {
 
 	.homepage .search {
@@ -81,7 +73,7 @@
 		/* Move and display the search button */
 		.search-vehicles {
 			right: 0;
-			top: 86px;
+			top: 102px;
 			padding: 0;
 			display: block;
 			min-width: 120px;
@@ -119,6 +111,7 @@
 		.filter-vehicle-condition when (@search-condition-style = 'tabs') {
 
 			.option {
+			    padding: 0 15px;
 			    background: none;
 				font-weight: normal;
 			    text-transform: none;
@@ -312,16 +305,59 @@
 
 		.homepage .search {
 
-			.search-vehicles {
-				right: 10px;
-				top: 107px;
+			.search-header {
+				text-align: right;
 
-				.btn {
-					display: block;
-					line-height: 25px;
+				.total-count {
+					top: 194px;
+					right: 33%;
 				}
 
 			}
+
+			.search-vehicles {
+				top: 189px;
+				width: 24%;
+			}
+
+			& when (@search-type-style = 'radio') {
+
+				.filter-model,
+				.filter-make {
+					width: 25%;
+					padding-bottom: 5px;
+				}
+
+				.filter-model {
+					padding-right: 1%;
+				}
+
+			}
+
+			.filter-price {
+				width: 50%;
+				padding-left: 1%;
+				padding-right: 0;
+				padding-bottom: 5px;
+			}
+
+			.filter-distance {
+	    		width: 26%;
+	    	}
+
+	    	.filter-advanced {
+	    		width: 23%;
+	    		margin-left: 0;
+
+	    		.filter-heading {
+
+					.icon {
+						bottom: 15px;
+					}
+
+				}
+
+	    	}
 
 		}
 
@@ -335,8 +371,12 @@
 
 		.homepage .search {
 
-			.search-vehicles {
-				top: 136px;
+			.search-header {
+
+				.total-count {
+					right: 26.5%;
+				}
+
 			}
 
 		}

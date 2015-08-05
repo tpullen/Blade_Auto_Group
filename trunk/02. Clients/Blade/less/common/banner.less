@@ -31,7 +31,7 @@
 	.banner .caption .caption-inset {
 		left: 50%;
 		max-width: 1170px;
-		padding-top: 60px;
+		padding-top: 30px;
 		margin-left: -(1170px / 2);
 		.font-size(20px);
 
@@ -96,20 +96,12 @@
 
 	}
 
-	/* 4. Un-comment below if needed */
 	.controls {
-		/*text-align: right; // Define the position of the controls left/center/right
-		position: absolute;
-		left: 50%;
-		bottom: 20px;
-		width: @grid-column-width1200;
-		margin-left: -(@grid-column-width1200 / 2);
-		z-index: 200;*/
 
 		.cycle-next,
 		.cycle-prev {
 			top: 50%;
-			left: 8.5%;
+			left: 2.5%;
 			width: 36px;
 			height: 36px;
 			position: absolute;
@@ -118,7 +110,7 @@
 
 		.cycle-next {
 			left: auto;
-			right: 8.5%;
+			right: 2.5%;
 			background-position: -36px 0;
 		}
 
@@ -140,17 +132,29 @@
 	.homepage .home-banner {
 
 		.banner .caption .caption-inset {
-			/* Remove the absolue styles - do not add padding to the sides */
 			padding: 10px 0;
-	        left: 0;
-	        margin-left: 0;
+	        max-width: @grid-column-width980;
+			margin-left: -(@grid-column-width980 / 2);
+
+			.content ul {
+				margin-bottom: 0;
+			}
+
+			.btn {
+				margin-top: 0;
+			}
+
 	    }
 
-	    /* 4. */
-	    /*.controls {
-			width: @grid-column-width980;
-			margin-left: -(@grid-column-width980 / 2);
-		}*/
+		.controls {
+
+			.cycle-pager-container {
+				bottom: 4%;
+				max-width: @grid-column-width980;
+				margin-left: -(@grid-column-width980 / 2);
+			}
+
+		}
 
 	}
 
@@ -163,18 +167,88 @@
 
 		.banner {
 			margin-top: 0;
+
+			&:after {
+				display: none;
+			}
+
 		}
 
-		.banner .caption .caption-inset {
-			// Reduce font size
-			.font-size(14px);
+		.banner .caption {
+			left: auto;
+			background: #fff;
+			padding-top: 15px;
+			position: relative;
+
+			&:after {
+				content: ' ';
+				left: 0;
+				top: -29px;
+				position: absolute;
+				border-style: solid;
+				border-width: 0 0 29px 979px;
+				border-color: transparent transparent #fff transparent;
+			}
+
+			span > span {
+				float: none;
+				text-align: center;
+			}
+
+			.caption-inset {
+			    margin: 0;
+			    width: 100%;
+			    float: none;
+			    max-width: none;
+			    position: static;
+			    text-align: center;
+
+			    .title,
+				.sub-title {
+
+					span {
+						max-width: none;
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+
+				}
+
+				.content ul {
+					padding: 0 30px;
+					max-width: none;
+
+					li {
+						clear: none;
+						float: none;
+						padding-left: 3px;
+						padding-right: 3px;
+						display: inline-block;
+					}
+
+				}
+
+			}
+
 		}
 
-		/* 4. */
-		/* .controls {
-			width: @grid-column-width768;
-			margin-left: -(@grid-column-width768 / 2);
-		} */
+		.controls {
+
+			.cycle-next,
+			.cycle-prev {
+				top: 26%;
+			}
+
+			.cycle-pager-container {
+				display: none;
+				/*left: auto;
+				bottom: 36%;
+				margin-left: 0;
+				max-width: none;
+				text-align: center;*/
+			}
+
+		}
 
 	}
 
