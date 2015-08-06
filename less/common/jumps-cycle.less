@@ -15,7 +15,7 @@
         border-style: solid;
         margin-right: -840px;
         border-width: 0 0 27px 785px;
-        border-color: transparent transparent @tertiary-background transparent
+        border-color: transparent transparent @tertiary-background transparent;
     }
 
     .jumps-cycle.module {
@@ -100,6 +100,55 @@
 
         .strapline {
             padding-top: 100px;
+        }
+
+    }
+
+}
+
+// Responsive
+// =========================
+
+.hook-responsive-desktop() {
+
+    .container-iq0m1 {
+
+        &:after {
+            display: none;
+        }
+
+        .jumps-cycle.module {
+            margin-right: 0;
+
+            &:after {
+                content:  ' ';
+                right: 0;
+                bottom: 0;
+                z-index: 100;
+                position: absolute;
+                border-style: solid;
+                border-width: 0 0 14px 417px;
+                border-color: transparent transparent @tertiary-background transparent;
+            }
+
+            .thumb {
+                width: 50.7%;
+
+                &:after {
+                    border-width: 502px 0 0 114px;
+                }
+ 
+            }
+
+            .strapline {
+                padding-top: 40px;
+                .font-size(@homepage__title--font-size - 8);
+            }
+
+            .content {
+                display: none;
+            }
+
         }
 
     }

@@ -10,6 +10,7 @@
     background: #c1ccd2;
     margin-top: -25px !important; // Overwrite the homepage container styles
 
+    /*Top left triangle*/
     &:before {
         content: ' ';
         top: 0;
@@ -21,6 +22,7 @@
         border-color: @body-background transparent transparent transparent;
     }
 
+    /*Right Shape*/
     &:after {
         content: ' ';
         top: -81px;
@@ -57,6 +59,67 @@
 
         .button {
             margin-top: 30px;
+        }
+
+    }
+
+}
+
+// Responsive
+// =========================
+
+.hook-responsive-desktop() {
+
+    .container-xnjhm {
+        padding-top: 0;
+        background: none;
+        margin-top: 0 !important;
+
+        /*Right Shape*/
+        &:after {
+            display: none;
+        }
+
+        /*Top left triangle*/
+        &:before {
+            z-index: 10;
+        }
+
+        .container {
+            position: relative;
+            background: #c1ccd2;
+
+            /*Right Shape*/
+            &:after {
+                content: ' ';
+                right: 0;
+                top: -81px;
+                width: 330px;
+                z-index: 101;
+                position: absolute;
+                border-left: 105px solid transparent; 
+                border-top: 456px solid @tertiary-background; 
+            }
+
+        }
+
+        .valuation-jump.module {
+            
+            .thumb {
+                width: 60%;
+                margin-left: 0;
+            }
+
+            .title {
+                padding-top: 0;
+            }
+
+            .title,
+            .content,
+            .button {
+                width: 32%;
+            }
+
         }
 
     }
