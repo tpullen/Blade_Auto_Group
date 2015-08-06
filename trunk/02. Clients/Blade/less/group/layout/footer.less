@@ -8,7 +8,11 @@
 //                  'footer-info'
 //                  'switch-view'
 //
-// ========================================================================
+/* ========================================================================
+   Variables
+ ========================================================================== */
+
+@footer__background						: #edf2f5;
 
 /* ========================================================================
    Section: Footer Container
@@ -32,7 +36,7 @@
 .footer-links {
 	padding-top: 60px;
 	position: relative;
-	background: #edf2f5;
+	background: @footer__background;
 
 	&:before {
 		content: ' ';
@@ -102,11 +106,19 @@
 
 .hook-responsive-mobile() {
 
+	.container-c8nrq {
+		background: @footer__background;
+	}
+
  	.footer-nav {
  		display: block;
 
  		.nav-collapse {
  			display: block;
+ 		}
+
+ 		.toggle-nav {
+ 			display: none;
  		}
 
  	}
@@ -128,8 +140,8 @@
  ========================================================================== */
 
 .footer-container .footer-info { 
-	background: #edf2f5;
 	padding-bottom: 10px;
+	background: @footer__background;
 
 	.row-tomp7 {
 		text-align: center;
@@ -151,7 +163,7 @@
 
 	    .chat.button,
 	    .top.button {
-	        width: 120px;
+	        width: 115px;
 	        padding: 0 2%;
 	    }
 	    
@@ -382,6 +394,34 @@
 
 }
 
+// Responsive
+// =========================
+
+.hook-responsive-tablet() {
+
+	.footer-container .footer-info { 
+
+		.container {
+			width: auto;
+		}
+
+		.row-tomp7 {
+
+			.footer-image {
+				padding: 0 1%;	
+			}
+
+			.chat.button,
+			.top.button {
+				padding: 0 0.4%;
+			}
+
+		}
+
+	}
+
+}
+
 .hook-responsive-mobile() {
 
 	.footer-container .footer-info { 
@@ -390,9 +430,35 @@
 			width: auto;
 		}
 
-		.social-icons .title {
-			width: auto;
-			border: none;
+		.row-tomp7 {
+			postion: relative;
+			padding-bottom: 80px;
+
+			.social-icons,
+			.chat.button {
+				display: none;
+			}
+
+			.footer-image {
+			    left: 0;
+			    right: 0;
+			    top: 60px;
+			    padding: 0;
+			    position: absolute;
+			}
+
+			.enquiry.button {
+				float: left;
+			}
+
+			.top.button {
+				float: right;
+			}
+
+		}
+
+		.finance {
+			max-width: none;
 		}
 
 	}

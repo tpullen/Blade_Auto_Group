@@ -360,7 +360,12 @@
             z-index: (@zindex-popover - 4);
         }
 
+        .container-296mj {
+            margin-bottom: 110px;
+        }
+
         .logo {
+            top: 20px;
             padding: 0;
         }
 
@@ -374,84 +379,11 @@
 
         .social-icons,
         .back-to-group,
-        .cc.header-links {
-            display: none;
-        }
-
-        .cc.saved-vehicles {
-            display: block;
-            text-align: center;
-            position: fixed;
-            border: none;
-            background: none;
-            padding: 0;
-            margin: 0;
-            left: 25%;
-            width: 25%;
-            right: auto;
-            top: 0;
-            z-index: (@zindex-popover - 2);
-
-            a {
-                border: none;
-                background: none;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                .font-size(13);
-            }
-
-            a:after {
-                content: 'Saved';
-                height: 42px;
-                line-height: 42px;
-                color: contrast(@secondary-background, #404040);
-                .inline-block;
-            }
-
-            span {
-                display: none;
-            }
-
-            .count {
-                display: inline;
-                .font-size(16px);
-            }
-
-        }
-
-
-        .live-chat.module {
-            position: fixed;
-            top: 0;
-            left: 38%;
-            width: 24%;
-            line-height: 42px;
-            height: 42px;
-            text-align: center;
-            z-index: (@zindex-popover - 2);
-            -webkit-backface-visibility: hidden;
-            color: contrast(@secondary-background, #404040);
-            .transition(all .5s ease-in-out);
-
-            .btn {
-                display: block;
-                padding: 0;
-                line-height: 42px;
-                min-height: 42px;
-                font-family: @sans-font-family;
-                .font-size(13);
-                span {
-                    padding: 0;
-                    line-height: 42px;
-                    min-height: 42px;
-                    display: block;
-                }
-            }
-
-            .icon {
-                display: none !important;
-            }
+        .cc.header-links,
+        .saved-vehicles,
+        .live-chat,
+        .container-dqlqp .contact-numbers {
+            display: none !important
         }
 
         .btn-search {
@@ -474,27 +406,28 @@
             }
 
             .icon {
-                margin: -5px 5px 0 0;
-
-                & when (@header-icon-color = #000000) {
-                    .create-icon(16px; "black"; 35);
-                }
-
-                & when (@header-icon-color = #ffffff) {
-                    .create-icon(16px; "white"; 35);
-                }
+                width: 26px;
+                height: 26px;
+                margin: -4px 7px 0 0;
+                display: inline-block;
+                background: url('../images/@{franchise-name}/search-icon.png') 0 0 no-repeat;
             }
+
         }
 
         .contact-numbers {
-            position: fixed;
             top: 0;
             right: 23%;
-            width: 15%;
-            line-height: 42px;
-            height: 42px;
+            width: 40%;
+            padding: 0;
+            position: fixed;
             text-align: center;
             z-index: (@zindex-popover - 2);
+
+            > a {
+                height: 42px;
+                line-height: 42px;
+            }
 
             .department .label {
                 display: none;
@@ -564,11 +497,6 @@
             height: 42px;
             line-height: 42px;
             .font-size(13);
-
-            .icon {
-                margin-left: 0;
-                margin-right: 3px;
-            }
         }
 
     }

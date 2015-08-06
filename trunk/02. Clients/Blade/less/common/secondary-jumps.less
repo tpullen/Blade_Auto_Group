@@ -5,16 +5,6 @@
     overflow: hidden;
     position: relative;
 
-    /*&:after {
-        content:  ' ';
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        border-style: solid;
-        border-width: 0 0px 60px 1680px;
-        border-color: transparent transparent @body-background transparent;
-    }*/
-
     .container {
         position: relative;
 
@@ -32,18 +22,23 @@
 
     }
 
+    .reevoo-badge {
+        width: auto;
+        margin-left: 0;
+    }
+
     .image-jump.module {
         min-width: 730px;
         overflow: hidden;
         padding-bottom: 0;
         position: relative;
 
-        &.offers-jump {
+        &.left-jump {
             float: left;
             margin-left: -255px !important; // To overide the first-child important
         }
 
-        &.why-buy-jump {
+        &.right-jump {
             float: right;
             margin-right: -255px;
         }
@@ -52,31 +47,82 @@
             padding-bottom: 0;
         }
 
-        .title,
-        .content,
-        .button {
-            top: 0;
-            position: absolute;
-        }
-
     }
 
     .content-jump.module {
         top: 14%;
-        width: 18%;
         z-index: 10;
+        width: 210px;
         position: absolute;
 
-        &.offers-jump-content {
+        &.left-jump-content {
             left: 5%;
         }
 
-        &.why-buy-jump-content {
+        &.right-jump-content {
             right: 5%;
         }
 
         .button {
             margin-top: 20px;
+        }
+
+    }
+
+}
+
+// Responsive
+// =========================
+
+.hook-responsive-desktop() {
+
+    .container-ghe1u {
+
+        .container {
+
+            &:after {
+                left: 50%;
+                width: 141px;
+                margin-left: -137px;
+                border-top: 303px solid #fafafc; 
+                border-left: 67px solid transparent; 
+                border-right: 67px solid transparent;
+            }
+
+        }
+
+        .image-jump.module {
+            min-width: 417px;
+
+            &.left-jump {
+                margin-left: 0 !important; // To overide the first-child important
+            }
+
+            &.right-jump {
+                margin-right: 0;
+            }
+
+        }
+
+        .content-jump.module {
+            top: 10%;
+
+            &.left-jump-content {
+                left: 9%;
+            }
+
+            &.right-jump-content {
+                right: 9%;
+            }
+
+            .title {
+                .font-size(@homepage__title--font-size - 8);
+            }
+
+            .content {
+                display: none;
+            }
+
         }
 
     }

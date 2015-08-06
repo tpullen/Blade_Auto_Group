@@ -4,7 +4,6 @@
 
 .container-ttibi {
     position: relative;
-    background: #fafafc;
 
     &:after {
         content: ' ';
@@ -16,6 +15,9 @@
         border-color: @body-background transparent transparent transparent;
     }
 
+    .container {
+        background: @secondary-background;
+    }
 
     .image-jump.module {
         max-width: 631px;
@@ -27,7 +29,7 @@
             padding-bottom: 0;
         }
 
-        &.used-cars-jump {
+        &.left-jump {
             float: left;
             margin-left: -255px;
 
@@ -38,12 +40,12 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 0 310px 1357px 0;
-                border-color: transparent #fafafc transparent transparent;
+                border-color: transparent @secondary-background transparent transparent;
             }
 
         }
 
-        &.servicing-jump {
+        &.right-jump {
             float: right;
             margin-right: -255px;
 
@@ -54,7 +56,7 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 821px 187px 0 0px;
-                border-color: #fafafc transparent transparent transparent;
+                border-color: @secondary-background transparent transparent transparent;
             }
 
         }
@@ -63,16 +65,16 @@
 
     .content-jump.module {
         top: 60px;
-        width: 13%;
         z-index: 10;
+        width: 219px;
         padding-bottom: 0;
         position: absolute;
 
-        &.used-jump-content {
+        &.left-jump-content {
             left: 33%;
         }
 
-        &.servicing-jump-content {
+        &.right-jump-content {
             left: 53%;
         }
 
@@ -82,6 +84,85 @@
 
         .button {
             margin-top: 20px;
+        }
+
+    }
+
+}
+
+// Responsive
+// =========================
+
+.hook-responsive-desktop() {
+
+    .container-ttibi {
+
+        &:after {
+            display: none;
+        }
+
+        .container {
+            position: relative;
+
+            &:after {
+                content: ' ';
+                top: 0;
+                left: 0;
+                position: absolute;
+                border-style: solid;
+                border-width: 48px 0px 0 940px;
+                border-color: @body-background transparent transparent transparent;
+            }
+
+        }
+
+        .image-jump.module {
+            max-width: 363px;
+
+            &.left-jump {
+                margin-left: 0;
+
+                &:after {
+                    right: 0;
+                    top: -50px;
+                    border-width: 0 97px 425px 0;
+                }
+
+            }
+
+            &.right-jump {
+                margin-right: 0;
+
+                &:after {
+                    left: 0;
+                    top: -265px;
+                    border-width: 644px 147px 0 0px;
+                }
+
+            }
+
+        }
+
+        .content-jump.module {
+            top: 35px;
+            width: 165px;
+
+            &.left-jump-content {
+                left: 32%;
+            }
+
+            &.right-jump-content {
+                left: 51%;
+            }
+
+            .title {
+                .font-size(@homepage__title--font-size - 8px);
+            }
+
+            .content {
+                display: none;
+            }
+
         }
 
     }

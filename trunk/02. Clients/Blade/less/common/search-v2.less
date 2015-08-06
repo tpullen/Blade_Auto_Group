@@ -20,6 +20,8 @@
 
 @search__advanced-icon--color						: "black";
 
+@search__button--font-size							: 13px;
+
 // Full Width Search
 // ========================================================================
 
@@ -87,7 +89,7 @@
 				font-family: @base-font-face;
 				background: @primary-background;
 				line-height: @search__filter--height;
-				.font-size(13px);
+				.font-size(@search__button--font-size);
 
 				&:hover {
 					background: darken(@primary-background, 10%);
@@ -299,6 +301,9 @@
 
 }
 
+// Responsive
+// =========================
+
 .hook-responsive-desktop() {
 
 	& when(@search-version = 2) {
@@ -388,42 +393,107 @@
 .hook-responsive-mobile() {
 
 	& when(@search-version = 2) {
-		.homepage .module-search {
-			padding-bottom: 10px;
-		}
-		/* Reset any styles we applied above */
-		.homepage .search {
-			background: @tertiary-background;
-        	.border-radius(0);
 
-			.search-vehicles {
-				position: static;
-				width: auto;
-				padding: 0 3% 16px;
+		.homepage .search.search {
+			padding-top: 30px;
+			position: relative;
 
-				.btn {
-					line-height: 47px;
+			.search-header {
+				display: block;
+				text-align: center;
+				position: relative;
+				margin-bottom: 5px;
+
+				.total-count {
+					top: 95px;
+					right: 50%;
+					width: 170px;
+					margin-right: -(170px / 2);
+
+					.value,
+					.label {
+						float: none;
+					}
+
 				}
 
 			}
 
-			.filters {
-	            margin-bottom: 0;
-	        }
+			.filter .filter-heading .value {
+				border: none;
+				padding: 0 0 0 16px;
+				background: @search__filter--background;
+			}
 
-			.filter-model,
-			.filter-make {
 
-				.filter-heading {
-					margin-top: 0;
-					padding: 0;
-					border: none;
-					background: none;
+			& when (@search-type-style = 'radio') {
 
-					.label {
-						//padding: @search-filter-heading-label-padding;
+				.filter-model,
+				.filter-make {
+
+					.filter-heading {
+
+						.value {
+							padding-left: 0;
+							display: inline-block;
+						}
+
+						.label {
+							color: @search__filter-value--colour;
+						}
+
 					}
 
+				}
+
+				.filter-model {
+					margin-bottom: 5px;
+
+					.filter-heading {
+						margin-top: 15px;
+					}
+
+				}
+
+				.filter-make {
+
+					.filter-heading {
+						margin-top: 10px;
+					}
+
+				}
+
+			}
+
+			.filter-vehicle-condition when (@search-condition-style = 'tabs') {
+				display: block;
+				text-align: center;
+				margin-bottom: 50px;
+
+				.option {
+					display: inline-block;
+
+					.label {
+						.font-size(@search__heading-item--font-size - 2);
+					}
+
+				}
+
+			}
+
+			.filter-advanced {
+				float: left;
+			}
+
+			.search-vehicles {
+				bottom: 0;
+				top: auto;
+				right: 10px;
+
+				.btn {
+					min-height: 0;
+					line-height: @search__filter--height;
+					.font-size(@search__button--font-size);
 				}
 
 			}
