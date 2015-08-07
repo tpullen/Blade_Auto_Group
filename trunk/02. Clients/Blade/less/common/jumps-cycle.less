@@ -65,6 +65,7 @@
             padding-bottom: 0;
             position: relative;  
 
+            /*Top Triangle*/
             &:before {
                 content: ' ';
                 top: 0;
@@ -76,6 +77,7 @@
                 border-color: transparent @body-background transparent transparent;
             }   
 
+            /*Left Triangle*/
             &:after {
                 content: ' ';
                 top: 0;
@@ -131,6 +133,10 @@
                 border-color: transparent transparent @tertiary-background transparent;
             }
 
+            .cycle-prev {
+                top: 19%;
+            }
+
             .thumb {
                 width: 50.7%;
 
@@ -147,6 +153,84 @@
 
             .content {
                 display: none;
+            }
+
+        }
+
+    }
+
+}
+
+.hook-responsive-tablet() {
+
+    .container-iq0m1 {
+
+        .container {
+            width: 764px;
+        }
+
+        .jumps-cycle.module {
+            margin-right: 0;
+
+            /*Bottom Triangle*/
+            &:after {
+                border-width: 0 0 15px 411px;
+                border-color: transparent transparent #c1ccd2 transparent;
+            }
+
+            .cycle-next,
+            .cycle-prev {
+                top: 81%;
+                left: 50%;
+            }
+
+            [class*=cycle-pager-container] {
+                top: 25%;
+            }
+
+            .cycle-prev {
+                left: 44%;
+            }
+
+            .cycle-slide div {
+                .clearfix;
+            }
+
+            .strapline,
+            .button {
+                left: 10%;
+                float: none;
+                margin-right: 0;
+                text-align: left;
+                position: absolute;
+            }
+
+            .strapline {
+                width: 45%;
+                .font-size(@homepage__title--font-size);
+            }
+
+            .button {
+                top: 71%;
+            }
+
+            .thumb {
+                width: 499px;
+
+                /*Top Triangle*/
+                &:before {
+                    right: 0;
+                    left: auto;
+                    border-width: 0 340px 23px 0;
+                }
+
+                /*Left Triangle*/
+                &:after {
+                    width: 158px;
+                    border-width: 0 115px 502px 0;
+                    border-color: transparent transparent @body-background transparent;
+                }
+
             }
 
         }
