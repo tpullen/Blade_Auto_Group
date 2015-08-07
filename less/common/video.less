@@ -86,16 +86,29 @@
 
     .container-b7qqh {
 
+        .container {
+            width: @grid-column-width980;
+        }
+
         .media.module {
 
             .ytembed-object {
 
                 .text {
-                    top: 2%;
+                    top: 10%;
+                    padding-left: 60px;
                     margin-left: -(@grid-column-width980 / 2);
 
+                    .heading span {
+                        .font-size(@homepage__title--font-size - 8px);
+                    }
+
+                    .sub-heading {
+                        display: none;
+                    }
+
                     .btn {
-                        margin-top: 0;
+                        margin-top: 80px;
                     }
 
                 }
@@ -111,6 +124,10 @@
 .hook-responsive-tablet() {
 
     .container-b7qqh {
+
+        .container {
+            width: 764px;
+        }
 
         .media.module {
 
