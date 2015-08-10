@@ -20,7 +20,7 @@
             font-weight: 100;
             text-align: center;
             padding-bottom: 40px;
-            .font-size(40px);
+            .font-size(@homepage__title--font-size);
         }
 
         .thumb,
@@ -117,5 +117,43 @@
         }
 
     } 
+
+}
+
+// Responsive
+// =========================
+
+.hook-responsive-tablet() {
+
+    .container-iingt {
+
+        .featured-cms.module {
+            margin-top: 40px;
+            text-align: center;
+
+            .item {
+                padding-bottom: 0;
+
+                .inset {
+                    padding: 0 30px;
+                }
+
+            }
+
+            .heading {
+                padding-bottom: 30px;
+                .font-size(@homepage__title--font-size - 16px);
+            }
+
+            .thumb,
+            .title,
+            .content,
+            .date {
+                text-align: center;
+            }
+
+        }
+
+    }
 
 }

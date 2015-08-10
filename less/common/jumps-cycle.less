@@ -174,7 +174,7 @@
 
             /*Bottom Triangle*/
             &:after {
-                border-width: 0 0 15px 411px;
+                border-width: 0 0 15px 361px;
                 border-color: transparent transparent #c1ccd2 transparent;
             }
 
@@ -229,6 +229,96 @@
                     width: 158px;
                     border-width: 0 115px 502px 0;
                     border-color: transparent transparent @body-background transparent;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.hook-responsive-mobile() {
+
+    .container-iq0m1 {
+
+        .container {
+            width: auto;
+        }
+
+        .jumps-cycle.module {
+            margin-right: 0;
+            overflow-x: hidden;
+
+            /*Bottom Triangle*/
+            &:after {
+                left: 0;
+                right: 0;
+                right: auto;
+                border-width: 12px 0 0 500px;
+                border-color: transparent transparent transparent #c1ccd2;
+            }
+
+            .cycle-next,
+            .cycle-prev {
+                top: 29%;
+                right: 5%;
+                left: auto;
+            }
+
+            [class*=cycle-pager-container] {
+                top: 89%;
+                display: block;
+                text-align: center;
+
+                ul {
+                    width: auto;
+                    margin-left: 0;
+                }
+
+            }
+
+            .cycle-prev {
+                left: 5%;
+                right: auto;
+            }
+
+            .inset {
+                padding-bottom: 70px;
+            }
+
+            .strapline,
+            .button {
+                width: 100%;
+                float: left;
+                position: static;
+                text-align: center;
+            }
+
+            .strapline {
+                padding-top: 30px;
+                .font-size(@homepage__title--font-size - 16);
+            }
+
+            .thumb {
+                width: auto;
+                float: left;
+
+                /*Bottom Triangle*/
+                &:before {
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: auto;
+                    width: 0;
+                    height: 0;
+                    border-width: 0 0 13px 500px;
+                    border-color: transparent transparent @body-background transparent;
+                }
+
+                &:after {
+                    display: none;
                 }
 
             }
