@@ -197,3 +197,70 @@
     }
 
 }
+
+.hook-responsive-mobile() {
+
+    .container-xnjhm {
+
+        /*Top left Triangle*/
+        &:before {
+            display: none;
+        }
+
+        .container {
+            width: auto;  
+            background: none;
+        }
+
+        .row-tjt2b {
+            background: #c1ccd2;
+        }
+
+        .valuation-jump.module {
+            margin-top: 0;
+            padding: 10px 0;
+            position: relative;
+
+            // only do for franchises
+            & when not (@franchise-name = "group") {
+            
+                /*Bottom Triangle*/
+                &:after {
+                    content: ' ';
+                    right: 0; 
+                    bottom: 0;
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 0 0 12px 500px;
+                    border-color: transparent transparent @body-background transparent;
+                }
+
+            }
+
+            .content,
+            .thumb {
+                display: none;
+            }
+
+            .title,
+            .button {
+                width: 100%;
+                float: none;
+                background: none;
+                text-align: center;
+            }
+
+            .title {
+                .font-size(@homepage__title--font-size - 16);
+            }            
+
+            .button {
+                margin-top: 0;
+                padding: 0 0 30px;
+            }
+
+        }
+
+    }
+
+}

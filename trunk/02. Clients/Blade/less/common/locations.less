@@ -2,6 +2,13 @@
 // Location Map and Search
 // ========================================================================
 
+// ========================================================================
+
+@homepage__locations--title-mobile      : 'Find your local Blade dealership';
+@homepage__locations--content           : 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
+
+// ========================================================================
+
 .container-cm77r {
     overflow: hidden;
     position: relative;
@@ -62,7 +69,7 @@
             .font-size(40px);
 
             &:after {
-                content: 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
+                content: @homepage__locations--content;
                 display: block;
                 font-weight: 100;
                 padding-top: 20px;
@@ -200,6 +207,104 @@
                 text-align: right;
                 margin-bottom: 25px;
                 .font-size(@homepage__title--font-size);
+            }
+
+        }
+
+    }
+
+}
+
+.hook-responsive-mobile() {
+
+    .container-cm77r {
+
+        .container {
+            width: auto;
+        }
+
+        .row-yj7b5 {
+
+            /*Title*/
+            &:before {
+                content: @homepage__locations--title-mobile;
+                font-weight: 100;
+                text-align: center;
+                line-height: normal;
+                padding: 30px 15% 20px; 
+                color: @primary-color;
+                font-family: @base-font-face;
+                .font-size(@homepage__title--font-size - 16);
+            }
+
+        }
+
+        .jump-locations.module {
+            width: auto;
+            //padding-top: 120px;
+
+            /*Right Triangle*/
+            &:before {
+                display: none;
+            }
+
+            /*Bottom triangle*/
+            &:after {
+                display: none;
+            }
+
+            .responsive-iframe {
+                padding-bottom: 57%;
+            }
+
+        }
+
+        .location-search.module {
+            margin: 20px 0 30px;
+
+            .controls {
+                float: none;
+                margin-top: 20px;
+
+                input {
+                    width: 100%;
+                }
+
+            }
+
+            .control-group {
+                float: none;
+
+                &:before {
+                    content: @homepage__locations--content;
+                    display: block;
+                    font-weight: 100;
+                    line-height: 25px;
+                    text-align: center;
+                    color: @secondary-color;
+                    font-family: @base-font-face;
+                    .font-size(16px);
+                }
+
+            }
+
+            .control-label {
+                display: none;
+            }
+
+            .btn {
+                float: left;
+                margin-top: 10px;
+
+                &:before {
+                    margin-top: 12px;
+                }
+
+            }
+
+            .view-all-locations {
+                left: 95px;
+                bottom: 8px;
             }
 
         }

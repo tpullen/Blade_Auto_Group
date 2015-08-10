@@ -1,0 +1,70 @@
+
+// Define custom mixins
+// This makes it easier to control styles for buttons etc.
+
+#custom-mixins() {
+
+	/* Primary Button */
+	.primary-button {
+		font-weight: @button-font-weight;
+		border-style: @button-border-style;
+		border-width: @button-border-width;
+		border-color: @button-border-color;
+		.border-radius(@button-border-radius);
+
+		&:after {
+			content: ' ';
+			vertical-align: middle;
+			background-image: url("../images/@{franchise-name}/arrow-right.png");
+		    background-position: right center;
+		    background-repeat: no-repeat;
+		    width: 20px;
+		    height: 20px;
+		    padding-left: 10px;
+		    margin-top: -1px;
+		    .inline-block;
+		}
+
+	}
+
+	.primary-button-hover {
+		border-color: @button-hover-border-color;
+	}
+
+	/* Secondary Button */
+	.secondary-button {
+		background: @button-secondary-background;
+		color: @button-secondary-color;
+		border-color: @button-secondary-border-color;
+
+		&:after {
+			background-image: url("../images/@{franchise-name}/icon-arrow.png");
+		}
+
+	}
+
+	.secondary-button-hover {
+		background: @button-secondary-hover-background;
+		color: @button-secondary-hover-color;
+		border-color: @button-secondary-hover-border-color;
+
+		&:after {
+			background-image: url("../images/@{franchise-name}/icon-arrow-invert.png");
+		}
+
+	}
+
+	/* Tertairy Button */
+	.tertairy-button {
+		border-color: @button-tertairy-border-color;
+		background: @button-tertairy-background;
+		color: @button-tertairy-color;
+	}
+
+	.tertairy-button-hover {
+		background: @button-tertairy-hover-background;
+		color: @button-tertairy-hover-color;
+		border-color: @button-tertairy-hover-border-color;
+	}
+
+}

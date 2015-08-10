@@ -222,3 +222,97 @@
     }
 
 }
+
+.hook-responsive-mobile() {
+
+    .container-ghe1u {
+
+        .container {
+            width: auto;
+        }
+
+        .row-o1tdk {
+            position: relative;
+            padding-bottom: 12px;
+            background: @secondary-background;
+
+            &:after {
+                content: ' ';
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                border-style: solid;
+                border-width: 12px 0 0 500px;
+                border-color: transparent transparent transparent @body-background;
+            }
+
+        }
+
+        .reevoo-badge {
+            width: auto;
+            padding: 50px 0;
+            background: none;
+        }
+
+        .content-jump.module {
+
+            &.left-jump-content,
+            &.right-jump-content {
+                margin: 0;
+                padding: 0;
+                float: none;
+                width: auto;
+                min-height: 0;
+                background: none;
+                position: absolute;
+
+                .button {
+                    margin: 0;
+                    float: none;
+                    text-align: center;
+
+                    .btn {
+                        #custom-mixins > .primary-button;
+
+                        &:before {
+                            margin-top: 0;
+                        }
+
+                        &:hover {
+                            #custom-mixins > .primary-button-hover;
+                        }
+
+                    }
+
+                }
+
+                .title,
+                .content {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        .content-jump.module {
+
+            &.left-jump-content {
+                top: 0; 
+                left: 0;
+                right: 0;
+                bottom: auto;
+            }
+
+            &.right-jump-content {
+                left: 0;
+                right: 0;
+                top: auto;
+                bottom: 20px;
+            }
+
+        }
+
+    }
+
+}
