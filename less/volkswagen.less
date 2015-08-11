@@ -8,11 +8,9 @@
 @import "../../../01. Core/src/auto.carcloud.less";
 
 // Manufacturer Base Styles
-@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/mixins.less";
 @import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/variables.less";
 @import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/modules/button.less";
 @import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/modules/adverts.less";
-@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/layout/fonts.less";
 
 // Modules add custom styles to modules by importing or overriding variables
 @import "group/modules/social-icons.less";
@@ -24,6 +22,7 @@
 @import "group/modules/search-v2.less";
 
 // Website Styles
+@import "volkswagen/layout/fonts.less";
 @import "group/layout/animations.less";
 @import "group/layout/navbar.less";
 @import "franchise/layout.less";
@@ -32,9 +31,10 @@
 @import "../../../01. Core/src/auto.responsive.less";
 
 // Variables last to make sure they overide above
+@import "@{franchise-name}/mixins.less";
 @import "common/variables.less";
 @import "@{franchise-name}/variables.less";
 
-@franchise-icons 	: true; // use custom franchise icons
+@franchise-icons 	: false; // use custom franchise icons
 @franchise-name 	: "volkswagen";
 @franchise-version  : "1.0";
