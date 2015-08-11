@@ -7,7 +7,21 @@
     @header__item--padding                      : 0 10px;
     @header__item--color                        : @primary-color;
     @header__item--font-family                  : @base-font-face;
-    @header__item--height                       : @button-line-height;
+    @header__item--height                       : 52px;
+    @header__item-height--correction            : -2px;
+
+    @header__logo--width                        : 360px;
+    @header__logo--width-desktop                : 300px;
+
+    @header__item--padding-tablet               : 0 10px;
+    @header__action-bar--background-tablet      : @secondary-background;
+    @header__franchise-badge--left-tablet       : 35%;
+    @header__logo--left-tablet                  : 50%;
+    @header__logo--margin-tablet                : -(172px / 2);
+
+    @header__logo--left-mobile                  : @header__logo--left-tablet;
+    @header__logo--margin-mobile                : @header__logo--margin-tablet;
+    @header__franchise-badge--left-mobile       : @header__franchise-badge--left-tablet; 
 
 // ========================================================================
 
@@ -48,9 +62,13 @@
             font-family: @header__item--font-family;
             .font-size(@header__item--font-size);
 
+            &:after {
+                display: none;
+            }
+
             span {
-                top: -2px;
                 position: relative;
+                top: @header__item-height--correction;
             }
 
         }
@@ -62,24 +80,29 @@
     .saved-vehicles,
     .live-chat,
     .contact-numbers,
-    .button {
+    .button,
+    .franchise-badge {
         text-align: center;
         display: inline-block;
         vertical-align: middle;
-    }
-
-    .social-icons,
-    .saved-vehicles {
-        width: 160px;
     }
 
     .live-chat,
     .contact-numbers {
         width: 110px;
     }
+
+    & when (@franchise-name = "group") {
+
+        .social-icons,
+        .saved-vehicles {
+            width: 160px;
+        }
+
+    }
     
     .logo {
-        width: 360px;
+        width: @header__logo--width;
     }
 
     .social-icons {
@@ -149,6 +172,27 @@
 
     }
 
+    & when not (@franchise-name = "group") {
+
+        .social-icons {
+            right: 0;
+            top: 34px;
+            padding: 0;
+            position: absolute;
+        }
+
+        .franchise-badge {
+            left: 0;
+            position: absolute;
+        }
+
+        .saved-vehicles,
+        .back-to-group {
+            width: 160px;
+        }
+
+    }
+
     .live-chat {
 
         .btn {
@@ -161,6 +205,23 @@
             }
 
         }        
+
+    }
+
+    .back-to-group {
+
+        .btn {
+
+            .icon {
+                content: ' ';
+                width: 26px;
+                height: 26px;
+                margin: -6px 5px 0 0; 
+                display: inline-block;
+                background: url('../images/@{franchise-name}/to-group-icon.png') 0 0 no-repeat;
+            } 
+
+        }
 
     }
 
@@ -239,7 +300,34 @@
     .header-container {
 
         .logo {
-            width: 300px;
+            width: @header__logo--width-desktop;
+        }
+
+        & when not (@franchise-name = "group") {
+
+            .saved-vehicles {
+                width: 90px;
+
+                a {
+
+                    &:after {
+                        content: 'Saved';
+                        display: inline-block;
+                    }
+
+                    span + span {
+                        display: none;
+                    }
+
+                }
+
+            }
+
+            .live-chat {
+                width: 180px;
+                text-align: left;
+            }
+
         }
         
     }
@@ -258,7 +346,7 @@
 
         .container-296mj {
             margin-bottom: 125px;
-            background: @secondary-background;
+            background: @header__action-bar--background-tablet;
         }
 
         .row-4vuwj {
@@ -268,10 +356,15 @@
 
         .logo {
             top: 80px;
-            left: 50%;
             width: auto;
             position: absolute;
-            margin-left: -(172px / 2);
+            left: @header__logo--left-tablet;
+            margin-left:  @header__logo--margin-tablet;
+        }
+
+        .franchise-badge {
+            top: 80px;
+            left: @header__franchise-badge--left-tablet;
         }
 
         .social-icons,
@@ -280,7 +373,7 @@
         .contact-numbers,
         .button {
             width: auto;
-            padding: 0 10px;
+            padding: @header__item--padding-tablet;
         }
 
         .social-icons {
@@ -356,7 +449,7 @@
             top: 0;
             width: 100%;
             height: 42px;
-            background: @secondary-background;
+            background: @header__action-bar--background-tablet;
             z-index: (@zindex-popover - 4);
         }
 
@@ -367,6 +460,13 @@
         .logo {
             top: 20px;
             padding: 0;
+            left: @header__logo--left-mobile;
+            margin-left:  @header__logo--margin-mobile;
+        }
+
+        .franchise-badge {
+            top: 20px;
+            left: @header__franchise-badge--left-mobile;
         }
 
         .btn {
@@ -394,9 +494,9 @@
             line-height: 42px;
             height: 42px;
             text-align: center;
-            z-index: (@zindex-popover - 2);
             -webkit-backface-visibility: hidden;
-            color: contrast(@secondary-background, #404040);
+            color: @header__item--color;
+            z-index: (@zindex-popover - 2);
             .transition(all .5s ease-in-out);
             .font-size(13);
 
@@ -447,7 +547,6 @@
             a {
                 display: block;
                 text-decoration: none;
-                color: contrast(@secondary-background, #404040);
             }
 
             .close {
@@ -469,11 +568,6 @@
             li {
                 background: @tertiary-background;
                 border-bottom: solid 1px @body-background;
-
-                a {
-                    color: contrast(@tertiary-background, #404040);
-                }
-
             }
 
             .icon {

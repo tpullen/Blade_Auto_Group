@@ -21,6 +21,9 @@
 @nav-item-hover-background         : transparent;
 @nav-item-hover-color              : @tertiary-color;
 
+@nav__active-border--spacing       : 15px;
+
+@nav-item-transform                : uppercase;
 @nav-dropdown-font-size            : @nav-item-font-size;
 @nav-dropdown-padding              : 10px 15px;
 @nav-dropdown-width                : 150px;
@@ -85,6 +88,19 @@
 .hook-nav() {}
 .hook-nav-item() {
 
+    &.motability > a {
+
+        &:before {
+            content: ' ';
+            width: 16px;
+            float: left;
+            height: 16px;
+            margin: 2px 5px 0 0;
+            background: url('../images/nav-motability-icon.png') 0 0 no-repeat;
+        }
+
+    } 
+
     &:first-child a {
         padding-left: 0;
     }
@@ -95,12 +111,12 @@
 
 }
 .hook-nav-link() {
-    text-transform: uppercase; 
     font-family: @base-font-face;
+    text-transform: @nav-item-transform; 
 
     > span {
-        padding-bottom: 15px;
         border-bottom: 3px solid transparent;
+        padding-bottom: @nav__active-border--spacing;
     }
 
 }
@@ -125,8 +141,8 @@
 }
 .hook-nav-dropdown-item() {}
 .hook-nav-dropdown-link() {
-    text-transform: uppercase; 
     font-family: @base-font-face;
+    text-transform: @nav-item-transform; 
 }
 
 .hook-nav-dropdown-hover() {}
