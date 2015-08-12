@@ -2,6 +2,18 @@
 // Servicing and used jumps
 // ========================================================================
 
+// Variables
+// ========================================================================
+
+@homepage__jump--background                     : @secondary-background;
+
+@homepage__primary-jump--width                  : 219px;
+
+@homepage__primary-jump-title--font-size-desktop      : @homepage__title--font-size - 8px;
+@homepage__primary-jump-button--padding-desktop       : @button-padding;
+
+// ========================================================================
+
 .container-ttibi {
     position: relative;
 
@@ -13,11 +25,11 @@
         position: absolute;
         border-style: solid;
         border-width: 60px 0px 0 1680px;
-        border-color: @body-background transparent transparent transparent;
+        border-color: @alt-body-background transparent transparent transparent;
     }
 
     .container {
-        background: @secondary-background;
+        background: @homepage__jump--background;
     }
 
     .image-jump.module {
@@ -42,7 +54,7 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 0 310px 1357px 0;
-                border-color: transparent @secondary-background transparent transparent;
+                border-color: transparent @homepage__jump--background transparent transparent;
             }
 
         }
@@ -58,7 +70,7 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 821px 187px 0 0px;
-                border-color: @secondary-background transparent transparent transparent;
+                border-color: @homepage__jump--background transparent transparent transparent;
             }
 
         }
@@ -68,9 +80,9 @@
     .content-jump.module {
         top: 60px;
         z-index: 10;
-        width: 219px;
         padding-bottom: 0;
         position: absolute;
+        width: @homepage__primary-jump--width;
 
         &.left-jump-content {
             left: 33%;
@@ -113,7 +125,7 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 48px 0px 0 940px;
-                border-color: @body-background transparent transparent transparent;
+                border-color: @alt-body-background transparent transparent transparent;
             }
 
         }
@@ -158,11 +170,15 @@
             }
 
             .title {
-                .font-size(@homepage__title--font-size - 8px);
+                .font-size(@homepage__primary-jump-title--font-size-desktop);
             }
 
             .content {
                 display: none;
+            }
+
+            .button .btn {
+                padding: @homepage__primary-jump-button--padding-desktop;
             }
 
         }
@@ -229,6 +245,11 @@
 
             .button {
                 margin-top: 0;
+
+                .btn {
+                    padding: @button-padding;
+                }
+                
             }
 
         }

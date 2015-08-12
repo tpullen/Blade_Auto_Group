@@ -6,10 +6,21 @@
 // Variables
 // ========================================================================
 
+@homepage__search--background						: @body-background;
+
+@search__header--color								: @tertiary-color;
+
+@search__header-item--font							: @base-font-face;
 @search__heading-item--font-size					: 26px;
+
+@search__count--colour								: #000;	
+
+@search__filter-condition--color					: #d9d9d9;
+@search__filter-condition-active--color				: @tertiary-color;
 
 @search__filter-label--font-size					: 13px;
 @search__filter-label--colour						: #000;
+@search__filter-label--font 						: @sans-font-family;
 
 @search__filter--height								: 41px;
 @search__filter--background							: @tertiary-background-offset;
@@ -18,17 +29,35 @@
 @search__filter-value--font-weight					: 900;
 @search__filter-value--transform					: uppercase;
 
-@search__advanced-icon--color						: "black";
+@search__filter-price--option-bottom 				: 6px;
 
+@search__filter-distance--label-padding				: 6px 0 7px;
+@search__filter-distance--bottom-mobile				: 10px;
+
+@search__filter-advanced--font						: @sans-font-family;
+@search__advanced-icon--color	 					: "homepage";
+
+@search__button--top								: 86px;
 @search__button--font-size							: 13px;
+@search__button--font-weight						: 900;
+@search__button--colour								: #fff;
+@search__button--background							: @primary-background;
+@search__button--background-alt						: @search__button--background;
+@search__button--hover-background 					: darken(@primary-background, 10%);
+@search__button--hover-background-alt	 			: @search__button--hover-background;
 
 // Full Width Search
 // ========================================================================
 
+.container-zk01n {
+	background: @homepage__search--background;
+}
+
 & when(@search-version = 2) {
 
 	.homepage .search {
-		padding: 16px 0 0 0;
+		padding: 0;
+		margin-top: 16px;
 
 		.search-header {
 			text-align: center;
@@ -36,8 +65,8 @@
 			.heading {
 				float: none;
 				font-weight: normal;
-				color: @tertiary-color;
-				font-family: @base-font-face;
+				color: @search__header--color;
+				font-family: @search__header-item--font;
 				.font-size(@search__heading-item--font-size);
 			}
 
@@ -53,9 +82,9 @@
 
 				.value,
 				.label {
-					color: #000;
 					font-weight: normal;
-					font-family: @base-font-face;
+					color: @search__count--colour;
+					font-family: @search__header-item--font;
 					.font-size(@search__heading-item--font-size);
 				}
 
@@ -75,33 +104,55 @@
 		/* Move and display the search button */
 		.search-vehicles {
 			right: 0;
-			top: 102px;
 			padding: 0;
 			display: block;
 			min-width: 120px;
 			position: absolute;
 			text-align: center;
+			top: @search__button--top;
 
 			.btn {
 				/* Change the line height to match the height of the filters */
-				color: #fff;
-				font-weight: 900;
 				font-family: @base-font-face;
-				background: @primary-background;
+				color: @search__button--colour;
 				line-height: @search__filter--height;
+				background: @search__button--background;
+				font-weight: @search__button--font-weight;
 				.font-size(@search__button--font-size);
+				#gradient > .vertical(@search__button--background, @search__button--background-alt);
 
 				&:hover {
-					background: darken(@primary-background, 10%);
+					background: @search__button--hover-background;
+					#gradient > .vertical(@search__button--hover-background, @search__button--hover-background-alt);
 				}
+
+				& when (@franchise-name = "volkswagen") {
+
+					&:hover {
+						border-color: @button-border-color;
+					}
+
+					&:after {
+						content: ' ';
+						height: 10px; 
+						margin: -4px 0 0 10px;
+						display: inline-block;
+						background: url('../images/@{franchise-name}/arrow-down.png') 0 0 no-repeat;
+					}
+
+					span {
+						top: -3px;
+					}
+
+				} 
 
 			}
 
 		}
 
 		.filter-inset {
+			background: none;
 			padding-top: 15px;
-			background: @body-background;
 		}
 
 		/*Icon correction without using variable so the intenral is not effected */
@@ -117,9 +168,10 @@
 			    background: none;
 				font-weight: normal;
 			    text-transform: none;
+			    font-family: @search__header-item--font;
 			    
 			    .label {
-			    	color: #d9d9d9;
+			    	color: @search__filter-condition--color;
 			        .font-size(@search__heading-item--font-size);
 			    }
 
@@ -128,7 +180,7 @@
 			    }
 
 			    &.active .label {
-			    	color: @tertiary-color;
+			    	color: @search__filter-condition-active--color;
 			    }
 
 			}
@@ -141,6 +193,7 @@
 
 			.option .label {
 				color: @search__filter-label--colour;
+				font-family: @search__filter-label--font;
 				.font-size(@search__filter-label--font-size);
 			}
 
@@ -199,11 +252,12 @@
 
 	       		.option .label {
 	       			color: @search__filter-label--colour;
+	       			font-family: @search__filter-label--font;
 	       			.font-size(@search__filter-label--font-size);
 	       		}
 
 	       		>.option {
-	       			margin-bottom: 6px;
+	       			margin-bottom: @search__filter-price--option-bottom;
 	       		}
 
 	       		.option.inline {
@@ -256,7 +310,8 @@
 				}
 
 				.label {
-					padding-bottom: 8px;
+					font-family: @search__filter-label--font;
+					padding: @search__filter-distance--label-padding;
 					.font-size(@search__filter-label--font-size);
 				}
 
@@ -290,6 +345,7 @@
 
 				.label {
 					color: @search__filter-label--colour;
+					font-family: @search__filter-advanced--font;
 					.font-size(@search__filter-label--font-size);
 				}
 
@@ -314,14 +370,14 @@
 				text-align: right;
 
 				.total-count {
-					top: 194px;
+					top: 178px;
 					right: 33%;
 				}
 
 			}
 
 			.search-vehicles {
-				top: 189px;
+				top: 173px;
 				width: 24%;
 			}
 
@@ -395,6 +451,7 @@
 	& when(@search-version = 2) {
 
 		.homepage .search.search {
+			background: none;
 			padding-top: 30px;
 			position: relative;
 
@@ -465,12 +522,35 @@
 
 			}
 
+			
+			.filter-price {
+
+				& when (@search-price-style = 'outside') { 
+
+					.price-range-filters {
+
+						.control-group select {
+							font-family: @base-font-face;
+							color: @search__filter-value--colour;
+			       			background: @search__filter--background;
+			       			font-weight: @search__filter-value--font-weight;
+							text-transform: @search__filter-value--transform;
+							.font-size(@search__filter--font-size);
+						}
+
+					}
+
+				}
+
+			}
+
 			.filter-vehicle-condition when (@search-condition-style = 'tabs') {
 				display: block;
 				text-align: center;
 				margin-bottom: 50px;
 
 				.option {
+					border: none;
 					display: inline-block;
 
 					.label {
@@ -479,6 +559,10 @@
 
 				}
 
+			}
+
+			.filter-distance {
+				margin-bottom: @search__filter-distance--bottom-mobile;
 			}
 
 			.filter-advanced {

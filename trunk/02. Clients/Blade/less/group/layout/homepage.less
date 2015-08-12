@@ -6,9 +6,27 @@
 // Variables
 // ========================================================================
 
+@alt-body-background                         : @body-background;
+
 @homepage__title--font-size                  : 40px;
+@homepage__title--color                      : @primary-color;
+@homepage__title--font                       : @base-font-face;
+@homepage__title--font-weight                : 100;
+
+@homepage__content--font-size                : 16px;
+@homepage__content--color                    : @secondary-color;
+@homepage__content--font                     : @base-font-face;
+@homepage__content--font-weight              : 100;
 
 @homepage__button--padding                   : 0;
+
+@homepage__scroll-to--font-size              : 13px;
+@homepage__scroll-to--colour                 : #000;
+@homepage__scroll-to--font-weight            : 900;
+@homepage__scroll-to--transform              : uppercase;
+@hoempage__scroll-to-icon--margin            : 12px 10px 0 0;
+
+
 
 // Global homepage bits
 // ========================================================================
@@ -70,26 +88,41 @@
 }
 
 .container-z9jg1 {
+    background: @alt-body-background;
 
     .scroll-to {
         display: block;
         margin: 0 15px;
 
         a {
-            color: #000;
-            font-weight: 900;
+            border: none;
+            background: none;
             text-decoration: none;
-            text-transform: uppercase;
             font-family: @base-font-face;
-            .font-size(13px);
+            color: @homepage__scroll-to--colour;
+            font-weight: @homepage__scroll-to--font-weight;
+            text-transform: @homepage__scroll-to--transform;
+            .font-size(@homepage__scroll-to--font-size);
+            #gradient > .vertical(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+
+            &:hover {
+                opacity: 0.8;
+                background: none;
+                #gradient > .vertical(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            }
 
             &:before {
                 content: ' ';
                 width: 27px;
+                float: left;
                 height: 26px;
-                margin-right: 10px;
                 display: inline-block;
+                margin: @hoempage__scroll-to-icon--margin;
                 background: url('../images/@{franchise-name}/scroll-arrow.png') 0 0 no-repeat;
+            }
+
+            &:after {
+                display: none;
             }
 
         }
@@ -150,6 +183,11 @@
 
         .scroll-to {
             padding-top: 15px;
+
+            a {
+                line-height: @button-line-height;
+            }
+
         }
 
         .franchise-jump.module {
@@ -178,11 +216,6 @@
             .btn {
                 margin: 0;
                 padding: 0;
-
-                &:before {
-                    margin-top: 0;
-                }
-
             }
 
         }
@@ -207,19 +240,19 @@
 
 	.title,
     .strapline {
-        font-weight: 100;
         line-height: normal;
-        color: @primary-color;
-        font-family: @base-font-face;
+        color: @homepage__title--color;
+        font-family: @homepage__title--font;
+        font-weight: @homepage__title--font-weight;
         .font-size(@homepage__title--font-size);
 	}
 
 	.content {
-        font-weight: 100;
-        color: @secondary-color;
-        font-family: @base-font-face;
         line-height: @base-line-height;
-        .font-size(16px);
+        color: @homepage__content--color;
+        font-family: @homepage__content--font;
+        font-weight: @homepage__content--font-weight;
+        .font-size(@homepage__content--font-size);
 	}
 
 	.button {

@@ -1,6 +1,13 @@
 // Offers, Reevoo, Why Buy
 // ========================================================================
 
+// Variables
+// ========================================================================
+
+@homepage__secondary-jump-right--background-tablet  : @homepage__jump--background;
+
+// ========================================================================
+
 .container-ghe1u {
     overflow: hidden;
     position: relative;
@@ -17,7 +24,7 @@
             margin-left: -264px;
             border-left: 110px solid transparent; 
             border-right: 110px solid transparent;
-            border-top: 515px solid @secondary-background; 
+            border-top: 515px solid @homepage__jump--background; 
         }
 
     }
@@ -88,7 +95,7 @@
                 margin-left: -137px;
                 border-left: 67px solid transparent; 
                 border-right: 67px solid transparent;
-                border-top: 303px solid @secondary-background; 
+                border-top: 303px solid @homepage__jump--background; 
             }
 
         }
@@ -147,7 +154,7 @@
         .reevoo-badge {
             width: 347px;
             min-height: 278px;
-            background: @secondary-background;
+            background: @homepage__jump--background;
         }
 
         .image-jump.module {
@@ -162,7 +169,7 @@
                     width: 3px;
                     position: absolute; 
                     border-left: 64px solid transparent; 
-                    border-top: 282px solid @secondary-background; 
+                    border-top: 282px solid @homepage__jump--background; 
                 }
 
             }
@@ -178,7 +185,7 @@
                     position: absolute; 
                     border-style: solid;
                     border-width: 278px 65px 0 0;
-                    border-color: @secondary-background transparent transparent transparent;
+                    border-color: @homepage__secondary-jump-right--background-tablet transparent transparent transparent;
                 }
 
             }
@@ -205,7 +212,7 @@
                 min-height: 278px;
                 padding-bottom: 0;
                 padding-left: 60px;
-                background: @secondary-background;
+                background: @homepage__secondary-jump-right--background-tablet;
             }
 
             .title {
@@ -226,20 +233,21 @@
 .hook-responsive-mobile() {
 
     .container-ghe1u {
+        background: @homepage__jump--background;
 
         .container {
             width: auto;
         }
 
         .row-o1tdk {
+            margin-top: 20px;
             position: relative;
             padding-bottom: 12px;
-            background: @secondary-background;
 
             &:after {
                 content: ' ';
-                left: 0;
                 bottom: 0;
+                left: -10px;
                 position: absolute;
                 border-style: solid;
                 border-width: 12px 0 0 500px;
@@ -272,6 +280,7 @@
                     text-align: center;
 
                     .btn {
+                        color: @button-color;
                         #custom-mixins > .primary-button;
 
                         &:before {
@@ -279,6 +288,7 @@
                         }
 
                         &:hover {
+                            color: @button-hover-color;
                             #custom-mixins > .primary-button-hover;
                         }
 

@@ -22,6 +22,11 @@
 
 @homepage__banner-btn--padding				: 0;
 
+@homepage__banner-title--colour-tablet		: @homepage__banner-title--colour;
+@homepage__banner-content--colour-tablet	: inherit;
+
+@banner__button--colour-mobile				: #fff;
+
 
 // Full Home Banner - Responsive
 // ========================================================================
@@ -109,7 +114,7 @@
 			position: absolute;
 			border-style: solid;
 			border-width: 0 0px 60px 1680px;
-			border-color: transparent transparent @body-background transparent;
+			border-color: transparent transparent @alt-body-background transparent;
        	}
 
 	}
@@ -188,6 +193,7 @@
 
 		.banner {
 			margin-top: 0;
+			background: @alt-body-background;
 
 			&:after {
 				display: none;
@@ -197,9 +203,10 @@
 
 		.banner .caption {
 			left: auto;
-			background: #fff;
 			padding-top: 15px;
+			overflow: visible;
 			position: relative;
+			background: @alt-body-background;
 
 			&:after {
 				content: ' ';
@@ -208,7 +215,7 @@
 				position: absolute;
 				border-style: solid;
 				border-width: 0 0 29px 979px;
-				border-color: transparent transparent #fff transparent;
+				border-color: transparent transparent @alt-body-background transparent;
 			}
 
 			span > span {
@@ -233,6 +240,14 @@
 						padding-right: 30px;
 					}
 
+				}
+
+				.title span {
+					color: @homepage__banner-title--colour-tablet;
+				}
+
+				.content ul li {
+					color: @homepage__banner-content--colour-tablet;
 				}
 
 				.content ul {
@@ -291,6 +306,10 @@
             background: #000;
             background: rgba(0, 0, 0, 0.7);
 
+            &:after {
+				display: none;
+			}
+
 	    	.caption-inset {
 	    		background: none !important;
 	    		margin-left: 0;
@@ -319,9 +338,9 @@
 
                 .btn {
                     margin: 0;
-                    padding: 0;
-                    color: #fff;
                 	width: auto;
+                    color: @banner__button--colour-mobile;
+                    padding: @homepage__banner-btn--padding;
 
                 	&:before {
                 		margin-top: 13px;
