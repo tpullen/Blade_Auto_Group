@@ -6,6 +6,7 @@
     overflow: hidden;
     position: relative;    
 
+    /*Bottom Right Triangle*/
     &:after {
         content:  ' ';
         right: 50%;
@@ -15,7 +16,7 @@
         border-style: solid;
         margin-right: -840px;
         border-width: 0 0 27px 785px;
-        border-color: transparent transparent @tertiary-background transparent;
+        border-color: transparent transparent @homepage__tertiary-jump--background-alt transparent;
     }
 
     .jumps-cycle.module {
@@ -104,6 +105,10 @@
             padding-top: 100px;
         }
 
+        .content {
+            .font-size(16px);
+        }
+
     }
 
 }
@@ -122,6 +127,7 @@
         .jumps-cycle.module {
             margin-right: 0;
 
+            /*Bottom Right Triangle*/
             &:after {
                 content:  ' ';
                 right: 0;
@@ -130,7 +136,7 @@
                 position: absolute;
                 border-style: solid;
                 border-width: 0 0 14px 417px;
-                border-color: transparent transparent @tertiary-background transparent;
+                border-color: transparent transparent @homepage__tertiary-jump--background-alt transparent;
             }
 
             .cycle-prev {
@@ -172,10 +178,10 @@
         .jumps-cycle.module {
             margin-right: 0;
 
-            /*Bottom Triangle*/
+            /*Bottom Right Triangle*/
             &:after {
                 border-width: 0 0 15px 361px;
-                border-color: transparent transparent #c1ccd2 transparent;
+                border-color: transparent transparent @homepage__tertiary-jump--background transparent;
             }
 
             .cycle-next,
@@ -257,7 +263,7 @@
                 right: 0;
                 right: auto;
                 border-width: 12px 0 0 500px;
-                border-color: transparent transparent transparent #c1ccd2;
+                border-color: transparent transparent transparent @homepage__tertiary-jump--background;
             }
 
             .cycle-next,
@@ -302,7 +308,7 @@
             }
 
             .thumb {
-                width: auto;
+                width: 100%;
                 float: left;
 
                 /*Bottom Triangle*/

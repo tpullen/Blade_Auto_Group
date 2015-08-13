@@ -2,6 +2,18 @@
 // Video Media
 // ========================================================================
 
+// Variables
+// ========================================================================
+
+@homepage__media-text--top                  : 13%;
+
+@homepage__media-title--width               : 370px;
+@homepage__media-title--font-weight         : 100;
+
+@homepage__meida-button--top-desktop        : 80px;
+
+// ========================================================================
+
 .container-b7qqh {
     position: relative;
 
@@ -13,6 +25,13 @@
         border-style: solid;
         border-width: 0 0 60px 1680px;
         border-color: transparent transparent @body-background transparent;
+
+        & when not (@franchise-name = "group") {
+            left: 0;
+            right: auto;
+            border-width: 0 1680px 60px 0;
+        }
+
     }
 
     .container {
@@ -29,21 +48,21 @@
         .ytembed-object {
 
             .text {
-                top: 13%;
                 left: 50%;
                 padding: 0;
                 position: absolute;
                 margin-left: -(1170px / 2);
+                top: @homepage__media-text--top;
             }
 
             .heading span {
                 color: #fff;
                 padding-left: 0;
-                max-width: 370px;
-                font-weight: 100;
                 background: none;
                 line-height: normal;
                 font-family: @base-font-face;
+                max-width: @homepage__media-title--width;
+                font-weight: @homepage__media-title--font-weight;
                 .font-size(40px);
             }
 
@@ -53,22 +72,22 @@
                 max-width: 280px;
                 font-weight: 100;
                 background: none;
+                line-height: 25px;
                 font-family: @base-font-face;
-                line-height: @base-line-height;
                 .font-size(16px);
             }
 
             .btn {
-                padding-left: 0;
                 margin-top: 40px;
-                background: none;
 
-                &:before {
-                    margin-top: 5px;
-                }
-
-                &:hover {
+                & when (@franchise-name = "group") {
+                    padding-left: 0;
                     background: none;
+
+                    &:hover {
+                        background: none;
+                    }
+
                 }
 
             }
@@ -108,7 +127,7 @@
                     }
 
                     .btn {
-                        margin-top: 80px;
+                        margin-top: @homepage__meida-button--top-desktop;
                     }
 
                 }
@@ -185,6 +204,8 @@
                     text-align: center;
 
                     .heading span {
+                        margin: 0 auto;
+                        max-width: 90%;
                         color: @primary-color;
                         .font-size(@homepage__title--font-size - 16);
                     }

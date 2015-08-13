@@ -7,6 +7,8 @@
 @homepage__locations--title-mobile      : 'Find your local Blade dealership';
 @homepage__locations--content           : 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
 
+@homepage__locations-button--padding    : 0;
+
 // ========================================================================
 
 .container-cm77r {
@@ -90,12 +92,16 @@
         }
 
         .btn {
-            padding: 0;
             margin: 30px 0 0;
+            line-height: 35px;
+            padding: @homepage__locations-button--padding;
 
             &:before {
-                display: block;
-                margin-top: 5px;
+                display: inline-block;
+            }
+
+            &:after {
+                display: inline-block;
             }
 
         }
@@ -106,16 +112,14 @@
             position: absolute;
 
             a {
-                padding: 0;
                 line-height: 35px;
                 text-decoration: none;
+                color: @button-color;
+                padding: @homepage__locations-button--padding;
                 #custom-mixins > .primary-button;
 
-                &:before {
-                    margin-top: 5px;
-                }
-
                 &:hover {
+                    color: @button-hover-color;
                     #custom-mixins > .primary-button-hover;
                 }
 
@@ -209,6 +213,11 @@
                 .font-size(@homepage__title--font-size);
             }
 
+            .view-all-locations {
+                left: auto;
+                right: 5px;
+            }
+
         }
 
     }
@@ -294,17 +303,20 @@
 
             .btn {
                 float: left;
+                min-height: 0;
                 margin-top: 10px;
-
-                &:before {
-                    margin-top: 12px;
-                }
-
+                line-height: @button-line-height;
             }
 
             .view-all-locations {
+                bottom: 0;
                 left: 95px;
-                bottom: 8px;
+
+                a {
+                    min-height: 0;
+                    line-height: @button-line-height;
+                }
+
             }
 
         }

@@ -1,5 +1,13 @@
 
-// Valuation Jump
+// Tertiary Jump
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@homepage__tertiary-jump--background      : #c1ccd2;
+@homepage__tertiary-jump--background-alt  : @tertiary-background;
+
 // ========================================================================
 
 .container-xnjhm {
@@ -7,8 +15,8 @@
     overflow: hidden;
     padding-top: 25px;
     position: relative;
-    background: #c1ccd2;
     margin-top: -25px !important; // Overwrite the homepage container styles
+    background: @homepage__tertiary-jump--background;
 
     /*Top left triangle*/
     &:before {
@@ -32,35 +40,73 @@
         position: absolute;
         margin-right: -840px;
         border-left: 181px solid transparent; 
-        border-top: 778px solid @tertiary-background; 
+        border-top: 778px solid @homepage__tertiary-jump--background-alt; 
     }
 
-    .valuations-jump.module {
+    .tertiary-jump.module {
         margin-top: 37px;
-        
+
         .thumb {
             float: left;
             width: 70.3%;
             margin-left: -186px;
         }
 
-        .title,
-        .content,
-        .button {
-            width: 30%;
-            float: right;
-            z-index: 102;
-            text-align: left;
-            position: relative;
-        }
-        .title {
-            padding-top: 100px;
+        & when (@franchise-name = "group") {
+
+            .title,
+            .content,
+            .button {
+                width: 30%;
+                float: right;
+                z-index: 102;
+                text-align: left;
+                position: relative;
+            }
+
+            .title {
+                padding-top: 100px;
+            }
+
+            .content {
+                .font-size(16px);
+            }
+
+            .button {
+                margin-top: 30px;
+            }
+
         }
 
-        .button {
-            margin-top: 30px;
-        }
+        // only do for franchises
+        & when not (@franchise-name = "group") {
+            .clearfix;
 
+            .title,
+            .content,
+            .button {
+                right: 54%;
+                z-index: 102;
+                text-align: right;
+                position: absolute;
+            }
+
+            .title {
+                top: 0;
+                width: 25%;
+            }
+
+            .content {
+                top: 22%;
+                width: 14%;
+            }
+
+            .button {
+                top: 53%;
+            }
+
+        }
+        
     }
 
 }
@@ -87,7 +133,7 @@
 
         .container {
             position: relative;
-            background: #c1ccd2;
+            background: @homepage__tertiary-jump--background;
 
             /*Right Shape*/
             &:after {
@@ -98,12 +144,12 @@
                 z-index: 101;
                 position: absolute;
                 border-left: 105px solid transparent; 
-                border-top: 456px solid @tertiary-background; 
+                border-top: 456px solid @homepage__tertiary-jump--background-alt; 
             }
 
         }
 
-        .valuations-jump.module {
+        .tertiary-jump.module {
             
             .thumb {
                 width: 60%;
@@ -111,14 +157,44 @@
             }
 
             .title {
-                padding-top: 30px;
                 .font-size(@homepage__title--font-size - 8px);
             }
 
-            .title,
-            .content,
-            .button {
-                width: 32%;
+            & when (@franchise-name = "group") {
+
+                .title {
+                    padding-top: 30px;
+                }
+
+                .title,
+                .content,
+                .button {
+                    width: 32%;
+                }
+
+            }
+
+            // only do for franchises
+            & when not (@franchise-name = "group") {
+                padding-bottom: 0;
+
+                .title,
+                .button {
+                    right: 51%;
+                }
+
+                .title {
+                    top: 6%;
+                }
+
+                .button {
+                    top: 63%;
+                }
+
+                .content {
+                    display: none;
+                }
+
             }
 
         }
@@ -147,16 +223,49 @@
 
         }
 
-        .valuations-jump.module {
+        .tertiary-jump.module {
             padding-bottom: 0;
 
-            .title,
-            .content,
-            .button {
-                width: 100%;
-                float: none;
-                text-align: center;
-                background: @body-background;
+            & when (@franchise-name = "group") {
+
+                .title,
+                .content,
+                .button {
+                    width: 100%;
+                    float: none;
+                    text-align: center;
+                    background: @body-background;
+                }
+
+                .content span {
+                    max-width: 70%;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+            }
+
+            // only do for franchises
+            & when not (@franchise-name = "group") {
+
+                .title {
+                    top: 0;
+                    right: 10%;
+                    width: 250px;
+                }
+
+                .content {
+                    top: 40%;
+                    right: 10%;
+                    width: 155px;
+                    display: block;
+                }
+
+                .button {
+                    top: 71%;
+                    right: 10%;
+                }
+
             }
 
             .title {
@@ -179,12 +288,6 @@
                     border-color: transparent transparent transparent @body-background;
                 }
 
-            }
-
-            .content span {
-                max-width: 70%;
-                margin: 0 auto;
-                display: block;
             }
 
             .button {
@@ -213,10 +316,10 @@
         }
 
         .row-tjt2b {
-            background: #c1ccd2;
+            background: @homepage__tertiary-jump--background;
         }
 
-        .valuation-jumps.module {
+        .tertiary-jump.module {
             margin-top: 0;
             padding: 10px 0;
             position: relative;
@@ -246,6 +349,7 @@
             .button {
                 width: 100%;
                 float: none;
+                position: static;
                 background: none;
                 text-align: center;
             }
@@ -257,6 +361,11 @@
             .button {
                 margin-top: 0;
                 padding: 0 0 30px;
+
+                .btn {
+                    margin: 0 10px;
+                }
+                
             }
 
         }
