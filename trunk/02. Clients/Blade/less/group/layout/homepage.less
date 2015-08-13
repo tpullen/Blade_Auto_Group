@@ -24,7 +24,7 @@
 @homepage__scroll-to--colour                 : #000;
 @homepage__scroll-to--font-weight            : 900;
 @homepage__scroll-to--transform              : uppercase;
-@hoempage__scroll-to-icon--margin            : 12px 10px 0 0;
+@hoempage__scroll-to-icon--margin            : -3px 10px 0 0;
 
 
 
@@ -71,7 +71,9 @@
 @import "../../common/secondary-jumps.less";
 @import "../../common/locations.less";
 @import "../../common/jumps-cycle.less";
-@import "../../common/valuations.less";
+@import "../../common/tertiary-jump.less";
+@import "../../common/valuation-jump.less";
+@import "../../common/featured-stock.less";
 @import "../../common/video.less";
 @import "../../common/cms.less";
 @import "../../common/news.less";
@@ -114,9 +116,9 @@
             &:before {
                 content: ' ';
                 width: 27px;
-                float: left;
                 height: 26px;
                 display: inline-block;
+                vertical-align: middle;
                 margin: @hoempage__scroll-to-icon--margin;
                 background: url('../images/@{franchise-name}/scroll-arrow.png') 0 0 no-repeat;
             }
@@ -216,6 +218,8 @@
             .btn {
                 margin: 0;
                 padding: 0;
+                min-height: 0;
+                line-height: @button-line-height;
             }
 
         }
