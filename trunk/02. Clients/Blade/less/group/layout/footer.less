@@ -14,6 +14,11 @@
 
 @footer__background						: #edf2f5;
 
+@footer__link-title--font				: @base-font-face;
+@footer__link-item--font				: @base-font-face;	
+
+@footer__item-title--font				: @base-font-face;
+
 /* ========================================================================
    Section: Footer Container
  ========================================================================== */
@@ -51,8 +56,9 @@
 	.link-block {
 
 		h4.title {
+			text-transform: none;
 			color: @tertiary-color;
-			font-family: @base-font-face;
+			font-family: @footer__link-title--font;
 			.font-size(16px);
 		}
 
@@ -60,7 +66,7 @@
 			font-weight: 100;
 			text-decoration: none;
 			color: @secondary-color;
-			font-family: @base-font-face;
+			font-family: @footer__link-item--font;
 			.font-size(14px);
 			.transition(all .25s);
 
@@ -81,6 +87,10 @@
 
 		.row-fluid {
 			width: auto;
+		}
+
+		.link-block {
+			display: none;
 		}
 
 		.site-links,
@@ -192,7 +202,8 @@
 	    			background: none;
 	    		}
 
-	    		&:before {
+	    		&:before,
+	    		&:after {
 	    			display: none;
 	    		}
 
@@ -365,7 +376,7 @@
 			padding-bottom: 5px;
 			font-weight: normal;
 			color: @primary-color;
-			font-family: @base-font-face;
+			font-family: @footer__item-title--font;
 			.font-size(16px);
 		}
 
@@ -380,8 +391,10 @@
     	text-align: center;
 
     	.btn {
+    		#gradient > .vertical(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 
-    		&:before {
+    		&:before,
+    		&:after {
     			display: none;
     		}
 
@@ -391,6 +404,10 @@
             	margin: 0 10px 0 0;
             	display: inline-block;
             	background: url('../images/@{franchise-name}/contact-icon.png') 0 0 no-repeat;
+    		}
+
+    		&:hover {
+    			color: @button-color;
     		}
 
     	}

@@ -6,8 +6,10 @@
 // ========================================================================
 
 @homepage__cms-h1--font-weight           : 100;
+@homepage__cms-h1--font                  : @headings-font-family;
 
 @homepage__cms-h2--colour                : @headings-color;
+@homepage__cms-h2--font                  : @headings-font-family;
 
 @homepage__cms-p--font-weight            : 100;
 @homepage__cms-p--font-size              : @base-font-size;
@@ -22,6 +24,7 @@
         margin-top: 70px;
 
         h1 {
+            font-family: @homepage__cms-h1--font;
             font-weight: @homepage__cms-h1--font-weight;
             .font-size(@homepage__title--font-size);
         }
@@ -29,6 +32,7 @@
         h2 {
             font-weight: normal;
             color: @homepage__cms-h2--colour;
+            font-family: @homepage__cms-h2--font; 
             .font-size(20px);
         }
 
