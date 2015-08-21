@@ -2628,7 +2628,7 @@ body{background-color:#fff}
 .homepage .search .search-header .total-count .label,.homepage .search .search-header .total-count .value{font-weight:400;color:#000;font-family:lato,Arial,Verdana,Helvetica,sans-serif;font-size:26px;font-size:1.8571428571428572rem}
 .homepage .search .search-header .total-count .label{padding-right:0}
 .homepage .search .search-header .total-count .value{float:left;padding-right:10px}
-.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:86px}
+.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:92px}
 .homepage .search .search-vehicles .btn{font-family:lato,Arial,Verdana,Helvetica,sans-serif;color:#fff;line-height:41px;background:repeat-x #e52329;font-weight:900;font-size:13px;font-size:.9285714285714286rem;background-image:-moz-linear-gradient(top,#e52329,#e52329);background-image:-webkit-gradient(linear,0 0,0 100%,from(#e52329),to(#e52329));background-image:-webkit-linear-gradient(top,#e52329,#e52329);background-image:-o-linear-gradient(top,#e52329,#e52329);background-image:linear-gradient(to bottom,#e52329,#e52329)}
 .homepage .search .search-vehicles .btn:hover{background:repeat-x #be171c;background-image:-moz-linear-gradient(top,#be171c,#be171c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#be171c),to(#be171c));background-image:-webkit-linear-gradient(top,#be171c,#be171c);background-image:-o-linear-gradient(top,#be171c,#be171c);background-image:linear-gradient(to bottom,#be171c,#be171c)}
 .homepage .search .filter-inset{background:0 0;padding-top:15px}
@@ -2640,26 +2640,26 @@ body{background-color:#fff}
 .homepage .search .filter-vehicle-type{left:0;top:23px}
 .homepage .search .filter-vehicle-type .option .label{color:#000;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.9285714285714286rem}
 .homepage .search .filter-make,.homepage .search .filter-model{wdith:14%}
-.homepage .search .filter-make .filter-heading,.homepage .search .filter-model .filter-heading{margin-top:32px;padding-left:19px;background:#a7b0b5}
+.homepage .search .filter-make .filter-heading,.homepage .search .filter-model .filter-heading{margin-top:38px;padding-left:19px;background:#a7b0b5}
 .homepage .search .filter-make .filter-heading .icon,.homepage .search .filter-model .filter-heading .icon{bottom:12px}
 .homepage .search .filter-make .filter-heading .label,.homepage .search .filter-make .filter-heading .value,.homepage .search .filter-model .filter-heading .label,.homepage .search .filter-model .filter-heading .value{padding:0;border:none;background:0 0;font-family:lato,Arial,Verdana,Helvetica,sans-serif;line-height:41px;color:#fff;font-weight:900;text-transform:uppercase;display:inline-block;font-size:11px;font-size:.7857142857142857rem}
 .homepage .search .filter-make{padding-left:0}
 .homepage .search .filter-model{padding-right:0;padding-left:.5%}
 .homepage .search .filter-price{width:35.5%;border:none;padding-left:3.5%;padding-right:3.5%}
 .homepage .search .filter-price .option .label{color:#000;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.9285714285714286rem}
-.homepage .search .filter-price>.option{margin-bottom:10px}
-.homepage .search .filter-price .option.inline{padding-top:0;padding-bottom:1px}
+.homepage .search .filter-price>.option{margin-bottom:6px}
+.homepage .search .filter-price .option.inline{padding-top:2px;padding-bottom:9px}
 .homepage .search .filter-price .bootstrap-select button{font-family:lato,Arial,Verdana,Helvetica,sans-serif!important}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#a7b0b5;font-weight:900;text-transform:uppercase;font-size:11px;font-size:.7857142857142857rem}
 .homepage .search .filter-price .bootstrap-select .btn:hover{color:#fff;background:#a7b0b5}
 .homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
-.homepage .search .filter-distance .filter-heading .label{font-family:Arial,Verdana,Helvetica,sans-serif;padding:6px 0 7px;font-size:13px;font-size:.9285714285714286rem}
+.homepage .search .filter-distance .filter-heading .label{font-family:Arial,Verdana,Helvetica,sans-serif;padding:6px 0 13px;font-size:13px;font-size:.9285714285714286rem}
 .homepage .search .filter-distance .filter-heading .value{border:none;padding:0 0 0 16px;font-family:lato,Arial,Verdana,Helvetica,sans-serif;color:#fff;line-height:41px;background:#a7b0b5;font-weight:900;text-transform:uppercase;font-size:11px;font-size:.7857142857142857rem}
 .container-cm77r .jump-locations.module:after,.container-ttibi .image-jump.module.left-jump:after,.container-ttibi .image-jump.module.right-jump:after,.container-ttibi:after{border-style:solid;content:' '}
 .homepage .search .filter-advanced{width:13%;float:none}
-.homepage .search .filter-advanced .filter-heading{padding-top:43px}
+.homepage .search .filter-advanced .filter-heading{padding-top:49px}
 .homepage .search .filter-advanced .filter-heading .icon{bottom:10px;width:16px;height:16px;background-image:url(../images/icons/sprite-icons-16-homepage.png)}
 .homepage .search .filter-advanced .filter-heading .label{color:#000;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.9285714285714286rem}
 .container-ttibi{position:relative}
@@ -3688,8 +3688,8 @@ body{background-color:#fff}
 .homepage .home-banner .banner .caption .caption-inset .btn{margin-top:0}
 .homepage .home-banner .controls .cycle-pager-container{bottom:4%;max-width:940px;margin-left:-470px}
 .homepage .search .search-header{text-align:right}
-.homepage .search .search-header .total-count{top:178px;right:33%}
-.homepage .search .search-vehicles{top:173px;width:24%}
+.homepage .search .search-header .total-count{top:190px;right:33%}
+.homepage .search .search-vehicles{top:185px;width:24%}
 .homepage .search .filter-make,.homepage .search .filter-model{width:25%;padding-bottom:5px}
 .homepage .search .filter-model{padding-right:1%}
 .homepage .search .filter-price{width:50%;padding-left:1%;padding-right:0;padding-bottom:5px}

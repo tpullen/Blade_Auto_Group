@@ -1,6 +1,6 @@
 /*!
  * GForces Less 1.0
- * @svn_revision_815
+ * @svn_revision_818
  */
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 .hidden,.invisible,.save-vehicle .btn .icon{visibility:hidden}
@@ -569,11 +569,11 @@ button,input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif!impo
 .alert-block>p,.alert-block>ul{margin-bottom:0}
 .alert-block p+p{margin-top:5px}
 [class*=" icon-"],[class^=icon]{vertical-align:middle;background-repeat:no-repeat}
-.module [class*="-sash"]{position:relative;overflow:hidden;text-align:center;margin:0;font-family:Arial;color:#fff;max-width:70%;padding-right:50px;font-size:15px;font-size:1.25rem}
+.module [class*="-sash"]{position:relative;overflow:hidden;text-align:center;margin:0;font-family:Arial;color:#fff;max-width:70%;padding-right:50px;font-size:13px;font-size:1.0833333333333333rem}
 .module [class*="-sash"]:after,.module [class*="-sash"]:before{content:" ";position:absolute;top:0;height:100%;width:90%;z-index:-1;left:-25px;background:#00b1e5}
 .module [class*="-sash"]:after{display:block;-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-webkit-transform:skew(45deg);-ms-transform:skew(45deg);-o-transform:skew(45deg);transform:skew(45deg)}
 .module [class*="-sash"]:before{display:block;-webkit-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-webkit-transform:skew(-45deg);-ms-transform:skew(-45deg);-o-transform:skew(-45deg);transform:skew(-45deg)}
-.module [class*="-sash"] .rotate{display:block;text-align:center;position:static;line-height:normal;vertical-align:middle;max-width:80%;padding:5px 10px 7px;background:#00b1e5;-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3)}
+.module [class*="-sash"] .rotate{display:block;text-align:center;position:static;line-height:normal;vertical-align:middle;max-width:88%;padding:5px 10px 7px;background:#00b1e5;-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3)}
 .details .used-media.module [class*="-sash"] .rotate{padding:8px 15px 10px;font-size:20px;font-size:1.6666666666666667rem}
 .pagination{padding:0;list-style:none;text-align:center;font-size:0}
 .pagination .pages{list-style-type:none;margin:0;padding:0}
@@ -1988,6 +1988,7 @@ img.adp-marker{height:40px;width:22px}
 .toggle-pane:after,.toggle-pane:before{display:table;content:"";line-height:0}
 .fruit-machine{padding:0 0 20px}
 #fake-machine .inner,.fruit-machine>.inner{text-align:center;padding:0 80px}
+.fruit-machine .loading{position:static;overflow:hidden}
 .fruit-machine .loading .loader{display:block}
 .fruit-machine .loading .locked-items,.fruit-machine .loading .unlocked-items{overflow:hidden}
 .fruit-machine .loader{display:none;position:absolute;left:0;top:0;height:100%;width:100%;z-index:10;background:rgba(255,255,255,.5)}
@@ -2617,16 +2618,17 @@ body{background-color:#fff}
 .container-b7qqh .media.module .inner,.container-iq0m1 .jumps-cycle.module .inner,.homepage .home-banner .banner .inner{margin-bottom:0}
 .homepage .home-banner{position:relative;z-index:5}
 .homepage .home-banner .container{max-width:1680px}
-.homepage .home-banner .banner .caption .caption-inset{left:50%;max-width:1170px;padding-top:30px;margin-left:-585px;font-size:20px;font-size:1.6666666666666667rem}
+.homepage .home-banner .banner .caption .caption-inset{left:50%;max-width:1170px;padding-top:60px;margin-left:-585px;font-size:20px;font-size:1.6666666666666667rem}
 .homepage .home-banner .banner .caption .caption-inset .title span{padding-left:0;padding-right:0;background:0 0;text-transform:none;color:#fff;max-width:470px;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-weight:700;font-size:40px;font-size:3.3333333333333335rem}
 .homepage .home-banner .banner .caption .caption-inset .sub-title span{margin-bottom:0;background:0 0;padding:0 0 10px;text-transform:none;color:#00b1e5;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-size:18px;font-size:1.5rem}
 .homepage .home-banner .banner .caption .caption-inset .content li{font-weight:100;background:0 0;padding:2px 0;font-size:16px;font-size:1.3333333333333333rem}
 .homepage .home-banner .banner .caption .caption-inset .btn{margin-top:10px;padding:0 15px}
 .homepage .home-banner .banner{padding-bottom:0}
 .homepage .home-banner .banner:after{content:' ';left:0;width:0;bottom:0;height:0;z-index:101;position:absolute;border-style:solid;border-width:0 0 60px 1680px;border-color:transparent transparent #e5e5e5}
-.homepage .home-banner .controls .cycle-next,.homepage .home-banner .controls .cycle-prev{top:50%;left:2.5%;width:36px;height:36px;position:absolute;background:url(../images/volkswagen/sprite-cycle-arrows.png) no-repeat}
-.homepage .home-banner .controls .cycle-next{left:auto;right:2.5%;background-position:-36px 0}
+.homepage .home-banner .controls .cycle-next,.homepage .home-banner .controls .cycle-prev{top:50%;left:5%;width:36px;height:36px;position:absolute;background:url(../images/volkswagen/sprite-cycle-arrows.png) no-repeat}
+.homepage .home-banner .controls .cycle-next{left:auto;right:5%;background-position:-36px 0}
 .homepage .home-banner .controls .cycle-pager-container{left:50%;bottom:10%;text-align:left;max-width:1170px;position:absolute;margin-left:-585px}
+.homepage .home-banner .controls .cycle-pager-container ul li{margin:0 12px 0 0}
 .container-zk01n{background:#e5e5e5}
 .homepage .search{padding:0;margin-top:16px}
 .homepage .search .search-header{text-align:center}
@@ -2635,7 +2637,7 @@ body{background-color:#fff}
 .homepage .search .search-header .total-count .label,.homepage .search .search-header .total-count .value{font-weight:400;color:#00b1e5;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-size:26px;font-size:2.1666666666666665rem}
 .homepage .search .search-header .total-count .label{padding-right:0}
 .homepage .search .search-header .total-count .value{float:left;padding-right:10px}
-.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:81px}
+.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:92px}
 .homepage .search .search-vehicles .btn{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;color:#00b1e5;line-height:41px;background:repeat-x #f8f8f8;font-weight:400;font-size:16px;font-size:1.3333333333333333rem;background-image:-moz-linear-gradient(top,#fff,#eee);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eee));background-image:-webkit-linear-gradient(top,#fff,#eee);background-image:-o-linear-gradient(top,#fff,#eee);background-image:linear-gradient(to bottom,#fff,#eee)}
 .homepage .search .search-vehicles .btn:hover{background:repeat-x #f5f5f5;background-image:-moz-linear-gradient(top,#eee,#fff);background-image:-webkit-gradient(linear,0 0,0 100%,from(#eee),to(#fff));background-image:-webkit-linear-gradient(top,#eee,#fff);background-image:-o-linear-gradient(top,#eee,#fff);background-image:linear-gradient(to bottom,#eee,#fff);border-color:#b2b2b2}
 .homepage .search .search-vehicles .btn:after{content:' ';height:10px;margin:-4px 0 0 10px;display:inline-block;background:url(../images/volkswagen/arrow-down.png) no-repeat}
@@ -2649,7 +2651,7 @@ body{background-color:#fff}
 .homepage .search .filter-vehicle-type{left:0;top:23px}
 .homepage .search .filter-vehicle-type .option .label{color:#505050;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;font-size:14px;font-size:1.1666666666666667rem}
 .homepage .search .filter-make,.homepage .search .filter-model{wdith:14%}
-.homepage .search .filter-make .filter-heading,.homepage .search .filter-model .filter-heading{margin-top:32px;padding-left:19px;background:#97999b}
+.homepage .search .filter-make .filter-heading,.homepage .search .filter-model .filter-heading{margin-top:38px;padding-left:19px;background:#97999b}
 .homepage .search .filter-make .filter-heading .icon,.homepage .search .filter-model .filter-heading .icon{bottom:12px}
 .homepage .search .filter-make .filter-heading .label,.homepage .search .filter-make .filter-heading .value,.homepage .search .filter-model .filter-heading .label,.homepage .search .filter-model .filter-heading .value{padding:0;border:none;background:0 0;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;line-height:41px;color:#fff;font-weight:400;text-transform:none;display:inline-block;font-size:13px;font-size:1.0833333333333333rem}
 .homepage .search .filter-make{padding-left:0}
@@ -2657,7 +2659,7 @@ body{background-color:#fff}
 .homepage .search .filter-price{width:35.5%;border:none;padding-left:3.5%;padding-right:3.5%}
 .homepage .search .filter-price .option .label{color:#505050;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;font-size:14px;font-size:1.1666666666666667rem}
 .homepage .search .filter-price>.option{margin-bottom:5px}
-.homepage .search .filter-price .option.inline{padding-top:2px}
+.homepage .search .filter-price .option.inline{padding-top:2px;padding-bottom:9px}
 .homepage .search .filter-price .bootstrap-select button{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif!important}
 .container-b7qqh .media.module .ytembed-object .heading span,.container-b7qqh .media.module .ytembed-object .sub-heading span,.container-cm77r .location-search.module .control-label,.container-cm77r .location-search.module .control-label:after,.homepage .search .filter-advanced .filter-heading .label,.homepage .search .filter-distance .filter-heading .label,.homepage .search .filter-distance .filter-heading .value{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#97999b;font-weight:400;text-transform:none;font-size:13px;font-size:1.0833333333333333rem}
@@ -2665,11 +2667,11 @@ body{background-color:#fff}
 .homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
-.homepage .search .filter-distance .filter-heading .label{padding:7px 0 10px;font-size:14px;font-size:1.1666666666666667rem}
+.homepage .search .filter-distance .filter-heading .label{padding:7px 0 16px;font-size:14px;font-size:1.1666666666666667rem}
 .homepage .search .filter-distance .filter-heading .value{border:none;padding:0 0 0 16px;color:#fff;line-height:41px;background:#97999b;font-weight:400;text-transform:none;font-size:13px;font-size:1.0833333333333333rem}
 .container-cm77r .jump-locations.module:after,.container-ttibi .image-jump.module.left-jump:after,.container-ttibi .image-jump.module.right-jump:after,.container-ttibi:after{border-style:solid;content:' '}
 .homepage .search .filter-advanced{width:13%;float:none}
-.homepage .search .filter-advanced .filter-heading{padding-top:43px}
+.homepage .search .filter-advanced .filter-heading{padding-top:49px}
 .homepage .search .filter-advanced .filter-heading .icon{bottom:10px;width:16px;height:16px;background-image:url(../images/icons/sprite-icons-16-homepage.png)}
 .homepage .search .filter-advanced .filter-heading .label{color:#505050;font-size:14px;font-size:1.1666666666666667rem}
 .container-ttibi{position:relative}
@@ -3655,8 +3657,8 @@ body{background-color:#fff}
 .homepage .home-banner .banner .caption .caption-inset .btn{margin-top:0}
 .homepage .home-banner .controls .cycle-pager-container{bottom:4%;max-width:940px;margin-left:-470px}
 .homepage .search .search-header{text-align:right}
-.homepage .search .search-header .total-count{top:178px;right:33%}
-.homepage .search .search-vehicles{top:173px;width:24%}
+.homepage .search .search-header .total-count{top:190px;right:33%}
+.homepage .search .search-vehicles{top:185px;width:24%}
 .homepage .search .filter-make,.homepage .search .filter-model{width:25%;padding-bottom:5px}
 .homepage .search .filter-model{padding-right:1%}
 .homepage .search .filter-price{width:50%;padding-left:1%;padding-right:0;padding-bottom:5px}
@@ -3730,6 +3732,8 @@ body{background-color:#fff}
 [class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .enquire .btn:after{content:'Enquire';display:inline-block}
 [class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .download-brochure .btn span{display:none}
 [class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .download-brochure .btn:after{content:'Brochure';display:inline-block}
+[class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .button{margin:0 1.3% 20px}
+[class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .button .btn:after,[class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .button .btn:before,[class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .button.chat .btn:after,[class*=capnew][class*=variants].details .sticky-nav .sticky-module .row-fluid .button.chat .btn:before{background:0 0;height:auto;width:auto;vertical-align:top;margin:0}
 [class*=capnew][class*=variants].details .price{padding:25px 0}
 .offers.details .sticky-nav .btn{width:134px}
 .offers.details .sticky-nav .button:first-child .btn{width:136px}
