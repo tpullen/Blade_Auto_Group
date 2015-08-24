@@ -2562,7 +2562,7 @@ body{background-color:#fff}
 .breadcrumb a{vertical-align:top;color:#5a5a5a;float:left;display:inline-block}
 .homepage #pre-footer-wrap .container-wrap,.homepage .footer-container .container-wrap{width:100%;margin:0 auto;max-width:1680px}
 .footer-links{padding-top:60px;position:relative;background:#e5e5e5}
-.footer-links:before{content:' ';top:0;right:0;position:absolute;border-style:solid;border-width:0 1680px 60px 0;border-color:transparent #fff transparent transparent}
+.footer-links:before{content:' ';top:0;right:0;position:absolute;border-style:solid;border-width:0 0 60px 1680px;border-color:transparent transparent transparent #fff}
 .footer-links .link-block h4.title{text-transform:none;color:#00b1e5;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-size:16px;font-size:1.3333333333333333rem}
 .footer-links .link-block li a{font-weight:100;text-decoration:none;color:#797979;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:14px;font-size:1.1666666666666667rem;-webkit-transition:all .25s;-moz-transition:all .25s;-o-transition:all .25s;transition:all .25s}
 .footer-links .link-block li a:hover{padding-left:8px;-webkit-transition:all .25s;-moz-transition:all .25s;-o-transition:all .25s;transition:all .25s}
@@ -2573,7 +2573,7 @@ body{background-color:#fff}
 .footer-container .footer-info .row-tomp7 .enquiry.button,.footer-container .footer-info .row-tomp7 .social-icons{width:160px}
 .footer-container .footer-info .row-tomp7 .chat.button,.footer-container .footer-info .row-tomp7 .top.button{width:115px;padding:0 2%}
 .footer-container .footer-info .row-tomp7 .footer-image{padding:0 7%}
-.footer-container .footer-info .row-tomp7 .button .btn,.footer-container .footer-info .row-tomp7 .chat.button .btn{margin:0;padding:0;background:0 0;font-weight:400;text-transform:none;color:#797979;font-size:14px;font-size:1.1666666666666667rem}
+.footer-container .footer-info .row-tomp7 .button .btn,.footer-container .footer-info .row-tomp7 .chat.button .btn{margin:0;padding:0;border:none;background:0 0;font-weight:400;text-transform:none;color:#797979;font-size:14px;font-size:1.1666666666666667rem}
 .footer-container .footer-info .site-links a,.footer-container .footer-info .social-icons .title{font-size:14px;font-weight:100;color:#797979;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif}
 .footer-container .footer-info .row-tomp7 .button .btn:hover,.footer-container .footer-info .row-tomp7 .chat.button .btn:hover{background:0 0}
 .footer-container .footer-info .row-tomp7 .button .btn:after,.footer-container .footer-info .row-tomp7 .button .btn:before,.footer-container .footer-info .row-tomp7 .chat.button .btn:after,.footer-container .footer-info .row-tomp7 .chat.button .btn:before{display:none}
@@ -2606,7 +2606,7 @@ body{background-color:#fff}
 .footer-container .footer-info .custom-html .copyright,.footer-container .footer-info .custom-html .title{padding-bottom:5px;font-weight:400;color:#505050;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;font-size:16px;font-size:1.3333333333333333rem}
 .footer-container .footer-info .finance{max-width:45%}
 .footer-container .footer-info .contact-us{width:100%;text-align:center}
-.footer-container .footer-info .contact-us .btn{background-color:rgba(255,255,255,0);background-image:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,0)),to(rgba(255,255,255,0)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-o-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0));background-repeat:repeat-x}
+.footer-container .footer-info .contact-us .btn{border:none;background-color:rgba(255,255,255,0);background-image:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,0)),to(rgba(255,255,255,0)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-o-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0));background-repeat:repeat-x}
 .footer-container .footer-info .contact-us .btn:after,.footer-container .footer-info .contact-us .btn:before{display:none}
 .footer-container .footer-info .contact-us .btn .icon{width:26px;height:26px;margin:0 10px 0 0;display:inline-block;background:url(../images/volkswagen/contact-icon.png) no-repeat}
 .footer-container .footer-info .contact-us .btn:hover{color:#797979}
@@ -2637,7 +2637,7 @@ body{background-color:#fff}
 .homepage .search .search-header .total-count .label,.homepage .search .search-header .total-count .value{font-weight:400;color:#00b1e5;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-size:26px;font-size:2.1666666666666665rem}
 .homepage .search .search-header .total-count .label{padding-right:0}
 .homepage .search .search-header .total-count .value{float:left;padding-right:10px}
-.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:92px}
+.homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:91px}
 .homepage .search .search-vehicles .btn{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;color:#00b1e5;line-height:41px;background:repeat-x #f8f8f8;font-weight:400;font-size:16px;font-size:1.3333333333333333rem;background-image:-moz-linear-gradient(top,#fff,#eee);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eee));background-image:-webkit-linear-gradient(top,#fff,#eee);background-image:-o-linear-gradient(top,#fff,#eee);background-image:linear-gradient(to bottom,#fff,#eee)}
 .homepage .search .search-vehicles .btn:hover{background:repeat-x #f5f5f5;background-image:-moz-linear-gradient(top,#eee,#fff);background-image:-webkit-gradient(linear,0 0,0 100%,from(#eee),to(#fff));background-image:-webkit-linear-gradient(top,#eee,#fff);background-image:-o-linear-gradient(top,#eee,#fff);background-image:linear-gradient(to bottom,#eee,#fff);border-color:#b2b2b2}
 .homepage .search .search-vehicles .btn:after{content:' ';height:10px;margin:-4px 0 0 10px;display:inline-block;background:url(../images/volkswagen/arrow-down.png) no-repeat}
@@ -2667,7 +2667,7 @@ body{background-color:#fff}
 .homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
-.homepage .search .filter-distance .filter-heading .label{padding:7px 0 16px;font-size:14px;font-size:1.1666666666666667rem}
+.homepage .search .filter-distance .filter-heading .label{color:#505050;padding:7px 0 16px;font-size:14px;font-size:1.1666666666666667rem}
 .homepage .search .filter-distance .filter-heading .value{border:none;padding:0 0 0 16px;color:#fff;line-height:41px;background:#97999b;font-weight:400;text-transform:none;font-size:13px;font-size:1.0833333333333333rem}
 .container-cm77r .jump-locations.module:after,.container-ttibi .image-jump.module.left-jump:after,.container-ttibi .image-jump.module.right-jump:after,.container-ttibi:after{border-style:solid;content:' '}
 .homepage .search .filter-advanced{width:13%;float:none}
@@ -4344,6 +4344,7 @@ h1{font-size:16px}
 .homepage .search.search .filter-model .filter-heading{margin-top:15px}
 .homepage .search.search .filter-make .filter-heading{margin-top:10px}
 .homepage .search.search .filter-price .price-range-filters .control-group select{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;color:#fff;background:#97999b;font-weight:400;text-transform:none;font-size:13px;font-size:1.0833333333333333rem}
+.homepage .search.search .filter-advanced .filter-heading .label,.homepage .search.search .filter-distance .filter-heading .label{color:#505050}
 .homepage .search.search .filter-vehicle-condition{display:block;text-align:center;margin-bottom:50px}
 .homepage .search.search .filter-vehicle-condition .option{border:none;display:inline-block}
 .container-ttibi .container:after,.container-ttibi .content-jump.module .content,.container-ttibi .image-jump.module.left-jump:after,.container-ttibi .image-jump.module.right-jump:after{display:none}
