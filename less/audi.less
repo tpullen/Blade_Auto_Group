@@ -1,0 +1,42 @@
+// out: ../css/styles.min.css, compress: true, strictMath: false, sourceMap: true
+
+// Core site styles
+@import "../../../01. Core/src/auto.variables.less";
+@import "../../../01. Core/src/auto.scaffolding.less";
+@import "../../../01. Core/src/auto.modules.less";
+@import "../../../01. Core/src/auto.layout.less";
+@import "../../../01. Core/src/auto.carcloud.less";
+
+// Manufacturer Base Styles
+@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/mixins.less";
+@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/variables.less";
+@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/modules/button.less";
+@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/modules/adverts.less";
+@import "../../../01. Core/src/manufacturer/@{franchise-name}/@{franchise-version}/layout/fonts.less";
+@import "@{franchise-name}/mixins.less";
+
+// Modules add custom styles to modules by importing or overriding variables
+@import "group/modules/social-icons.less";
+@import "group/modules/whatcar-badge.less";
+@import "group/modules/reevoo-badge.less";
+@import "group/modules/featured-offers.less";
+@import "group/modules/fruit-machine.less";
+@import "group/modules/finance-example.less";
+@import "group/modules/search-v2.less";
+
+// Website Styles
+@import "audi/layout/fonts.less";
+@import "group/layout/animations.less";
+@import "group/layout/navbar.less";
+@import "franchise/layout.less";
+
+// Website Responsive Styles
+@import "../../../01. Core/src/auto.responsive.less";
+
+// Variables last to make sure they overide above
+@import "common/variables.less";
+@import "@{franchise-name}/variables.less";
+
+@franchise-icons 	: true; // use custom franchise icons
+@franchise-name 	: "audi";
+@franchise-version  : "1.0";

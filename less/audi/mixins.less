@@ -1,0 +1,70 @@
+
+// Define custom mixins
+// This makes it easier to control styles for buttons etc.
+
+#custom-mixins() {
+
+	/* Primary Button */
+	.primary-button {
+		font-weight: normal;
+		border: none;
+		.border-radius(0);
+		background: #cc0033;
+		color: #fff;
+		font-family: @base-font-face;
+		//#gradient > .vertical(#fff, #eee);
+
+
+		//&:after {
+		//	content: ' ';
+		//    width: 10px;
+		//    height: 10px;
+		//    margin-top: -2px;
+		//    padding-left: 10px;
+		//	vertical-align: middle;
+		//    background-repeat: no-repeat;
+		//    background-position: right center;
+		//	background-image: url("../images/@{franchise-name}/arrow-right.png");
+		//    .inline-block;
+		//}
+
+		span {
+			top: -1px;
+			position: relative;
+		}
+
+	}
+
+	.primary-button-hover {
+		background: lighten(#cc0033,10%);
+		//#gradient > .vertical(@button-hover-background, @button-hover-background); 
+
+		//&:after {
+		//	background-image: url("../images/@{franchise-name}/arrow-right-invert.png");
+		//}
+
+	}
+
+	/* Secondary Button */
+	.secondary-button {
+
+
+	}
+
+	.secondary-button-hover {
+
+
+	}
+
+	/* Tertairy Button */
+	.tertairy-button {
+
+
+	}
+
+	.tertairy-button-hover {
+
+
+	}
+
+}

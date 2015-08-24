@@ -1,7 +1,106 @@
+// Variables
+// ========================================================================
+
+@featured-stock__title--font-size						: 24px;
+@featured-stock__title--text-color						: #000;
+@featured-stock__title--font-family						: @base-font-face;
+
+@featured-stock__variant--font-size						: 16px;
+@featured-stock__variant--text-color					: #6d7579;
+@featured-stock__variant--font-family					: @alt-font-face;
+
+@featured-stock__price-now--text-color					: #c52831;
+@featured-stock__price-now--font-size					: 20px;
+@featured-stock__price-now--font-family					: @base-font-face;
+
+@featured-stock__price-was--text-color					: #6d7579;
+@featured-stock__price-was--font-size					: 14px;
+@featured-stock__price-was--font-family					: @base-font-face;
+
+@featured-stock__price-saving--text-color				: #6d7579;
+@featured-stock__price-saving--font-size				: 14px;
+@featured-stock__price-saving--font-family				: @base-font-face;
+
 
 // Featured Stock
 // ========================================================================
 
 .container-l6ym7 {
 	background: @homepage__tertiary-jump--background;
+
+	.featured-stock {
+
+		.inner {
+			padding: 0 0 10px;
+		}
+
+		.item {
+			width: 25%;
+
+			.inset {
+				padding: 0;
+				border: 0;
+			}
+		}
+
+		.featured-sash {
+			display: none;
+		}
+
+		.make,
+		.model {
+			.font-size(@featured-stock__title--font-size);
+			font-family: @featured-stock__title--font-family;
+			color: @featured-stock__title--text-color;
+		}
+
+		.variant {
+			display: block;
+			.font-size(@featured-stock__variant--font-size);
+			color: @featured-stock__variant--text-color;
+			font-family: @featured-stock__variant--font-family;
+			font-weight: normal;
+			margin-top: 10px;
+		}
+
+		.price-now {
+			display: block;
+			color: @featured-stock__price-now--text-color;
+			.font-size(@featured-stock__price-now--font-size);
+			font-family: @featured-stock__price-now--font-family;
+			margin: 10px 0;
+		}
+
+		.price-was {
+			text-decoration: line-through;
+			display: inline;
+			color: @featured-stock__price-was--text-color;
+			.font-size(@featured-stock__price-was--font-size);
+			font-family: @featured-stock__price-was--font-family;
+		}
+
+		.price-saving {
+			display: inline;
+			color: @featured-stock__price-saving--text-color;
+			.font-size(@featured-stock__price-saving--font-size);
+			font-family: @featured-stock__price-saving--font-family;
+		}
+
+		.location-name {
+			min-height: 0px;
+			margin: 5px 0 10px;
+		}
+
+		.button {
+			margin-top: 10px;
+			text-align: left;
+
+			.btn {
+				display: inline-block;
+				line-height: 35px;
+				.font-size(15px);
+			}
+		}
+
+	}
 }
