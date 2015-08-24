@@ -1,0 +1,36 @@
+// out: ../css/styles.min.css, compress: true, strictMath: false, sourceMap: true
+
+// Core site styles
+@import "../../../01. Core/src/auto.variables.less";
+@import "../../../01. Core/src/auto.scaffolding.less";
+@import "../../../01. Core/src/auto.modules.less";
+@import "../../../01. Core/src/auto.layout.less";
+@import "../../../01. Core/src/auto.carcloud.less";
+
+@import "group/mixins.less";
+
+// Modules add custom styles to modules by importing or overriding variables
+@import "group/modules/button.less";
+@import "group/modules/social-icons.less";
+@import "group/modules/adverts.less";
+@import "group/modules/whatcar-badge.less";
+@import "group/modules/reevoo-badge.less";
+@import "group/modules/featured-offers.less";
+@import "group/modules/fruit-machine.less";
+@import "group/modules/finance-example.less";
+@import "group/modules/search-v2.less";
+
+// Website Styles
+@import "group/layout/fonts.less";
+@import "group/layout/animations.less";
+@import "group/layout/navbar.less";
+@import "group/layout.less";
+
+// Website Responsive Styles
+@import "../../../01. Core/src/auto.responsive.less";
+
+// Variables last to make sure they overide above
+@import "common/variables.less";
+@import "group/variables.less";
+
+@franchise-name	: "motability";

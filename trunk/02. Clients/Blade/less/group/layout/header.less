@@ -16,6 +16,7 @@
     @header__item--padding-tablet               : 0 10px;
     @header__action-bar--background-tablet      : @secondary-background;
     @header__franchise-badge--left-tablet       : 35%;
+    @header__franchise-badge--top               : auto;
     @header__logo--left-tablet                  : 50%;
     @header__logo--margin-tablet                : -(172px / 2);
 
@@ -184,11 +185,15 @@
         .franchise-badge {
             left: 0;
             position: absolute;
+            top: @header__franchise-badge--top;
         }
 
         .saved-vehicles,
-        .back-to-group {
-            width: 160px;
+        .back-to-group,
+        .button .btn,
+        .live-chat {
+            width: auto;
+            .box-shadow(none);
         }
 
     }
@@ -198,10 +203,10 @@
         .btn {
 
             .icon {
+                .create-icon(25px,custom,5);
                 width: 26px;
                 height: 26px;
                 margin: -3px 10px 0 0;
-                background: url('../images/@{franchise-name}/header-chat-icon.png') 0 0 no-repeat;
             }
 
         }        
@@ -213,12 +218,10 @@
         .btn {
 
             .icon {
-                content: ' ';
+                .create-icon(25px,custom,8);
                 width: 26px;
                 height: 26px;
-                margin: -6px 5px 0 0; 
-                display: inline-block;
-                background: url('../images/@{franchise-name}/to-group-icon.png') 0 0 no-repeat;
+                margin: -6px 5px 0 0;
             } 
 
         }
@@ -260,11 +263,11 @@
             .font-size(@header__item--font-size);
 
             .icon {
+                .create-icon(25,custom,4);
                 width: 26px;
                 height: 26px;
                 margin: -4px 7px 0 0;
                 display: inline-block;
-                background: url('../images/@{franchise-name}/header-phone-icon.png') 0 0 no-repeat;
             }
 
         }
@@ -403,10 +406,10 @@
             }
 
             .icon {
+                .create-icon(25px,custom,3);
                 width: 27px;
                 height: 27px;
                 margin: -5px 0 0 5px;
-                background: url('../images/@{franchise-name}/menu-icon.png') 0 0 no-repeat;
             }
 
         }
@@ -506,11 +509,10 @@
             }
 
             .icon {
+                .create-icon(25px,custom,1);
                 width: 26px;
                 height: 26px;
                 margin: -4px 7px 0 0;
-                display: inline-block;
-                background: url('../images/@{franchise-name}/search-icon.png') 0 0 no-repeat;
             }
 
         }

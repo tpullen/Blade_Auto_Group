@@ -1,0 +1,213 @@
+
+/*!
+ * CSS Member: Tom Rochard-Pulen
+ */
+
+/*Button Ammends*/
+// ============================
+
+@button-height                       	: 33px;
+@button-line-height                  	: 33px;
+
+@button-font-weight						: normal;
+@button-font-size						: 15px;
+@button-font-family						: @alt-font-face;
+@button-border-width					: 1px;
+
+@button-background         				: #ffffff;
+@button-border-color       				: #b2b2b2;
+@button-color              				: @secondary-color;
+@button-hover-background   				: @primary-background;
+@button-hover-border-color 				: #2768a8;
+@button-hover-color        				: #fff;
+@button-active-background  				: @button-hover-background;
+@button-active-color       				: #fff;
+
+@button-secondary-background            : @primary-background;
+@button-secondary-border-color          : #2768a8;
+@button-secondary-color                 : #fff;
+@button-secondary-hover-background      : #ffffff;
+@button-secondary-hover-border-color    : #b2b2b2;
+@button-secondary-hover-color           : @secondary-color;
+@button-secondary-active-background     : @button-secondary-hover-background;
+@button-secondary-active-color          : @button-secondary-hover-color;
+
+@button-tertairy-background         	: @secondary-background;
+@button-secondary-border-color          : @button-tertairy-background;
+@button-tertairy-color              	: #fff;
+@button-tertairy-hover-background   	: #dadcdd;
+@button-secondary-hover-border-color    : @button-tertairy-hover-background;
+@button-tertairy-hover-color        	: @secondary-color;
+@button-tertairy-active-background  	: @button-tertairy-hover-background;
+@button-tertairy-active-color       	: @button-tertairy-hover-color;
+
+/*UI KIT Variables*/
+// ============================
+
+@base-font-face							: 'VW-text', Arial, Verdana, Helvetica, sans-serif;
+@alt-font-face							: 'VW-head', Arial, Verdana, Helvetica, sans-serif;
+
+/*Header & Nav Variables*/
+// ============================
+
+@header__item--font-size                : 15px;
+@header__item--color					: @secondary-color;
+@header__item-height--correction		: -3px;		
+
+@header__logo--width					: 235px;
+@header__logo--width-desktop			: 180px;
+
+@header__item--padding-tablet			: 0 8px;
+@header__action-bar--background-tablet 	: @tertiary-background;
+@header__logo--margin-tablet            : 0;
+@header__franchise-badge--left-tablet	: 35%;
+
+@header__franchise-badge--left-mobile	: 11%;
+@header__logo--left-mobile				: @header__franchise-badge--left-mobile;
+@header__logo--margin-mobile			: 72px; // Franchise badge width + 20px space
+
+//Nav
+@nav-item-side-padding             		: 34px;
+@nav-item-side-padding-desktop			: 20px;
+@nav-item-font-size                		: 16px;
+@nav-item-transform                		: none;
+@nav-item-color                    		: @primary-color;
+
+@nav__active-border--spacing       		: 11px;
+
+/*Homepage Variables*/
+// ============================
+
+@alt-body-background					: @tertiary-background;
+@homepage__jump--background				: @alt-body-background;
+
+@homepage__title--font-size             : 38px;
+@homepage__title--color                 : @primary-color;
+@homepage__title--font                  : @alt-font-face;
+@homepage__title--font-weight           : normal;
+
+@homepage__content--font-size           : 18px;
+@homepage__content--color               : @secondary-color;
+@homepage__content--font                : @base-font-face;
+@homepage__content--font-weight         : normal;
+
+@homepage__button--padding				: @button-padding;
+
+//Scroll to button
+//----------------
+@homepage__scroll-to--font-size         : 16px;
+@homepage__scroll-to--colour			: @tertiary-color;
+@homepage__scroll-to--font-weight       : normal;
+@homepage__scroll-to--transform			: none;
+@hoempage__scroll-to-icon--margin		: 0 10px 0 0;
+
+//Banner
+//------
+@homepage__banner-title--font			: @alt-font-face;
+@homepage__banner-title--colour			: #fff;
+@homepage__banner-title--font-weight	: bold;
+@homepage__banner-title--width			: 470px;
+
+@homepage__banner-sub-title--font		: @alt-font-face;
+@homepage__banner-sub-title--colour		: @tertiary-color;
+@homepage__banner-sub-title--font-size	: 18px;
+
+@homepage__banner-content--padding		: 2px 0;
+
+@homepage__banner-btn--padding			: @button-padding;
+
+@homepage__banner-title--colour-tablet	: @primary-color;
+@homepage__banner-content--colour-tablet: @homepage__banner-title--colour-tablet;
+
+@banner__button--colour-mobile			: @button-color;
+
+//Search
+//------
+@homepage__search--background			: @tertiary-background;
+
+@search__header--color					: @primary-color;
+@search__header-item--font				: @alt-font-face;
+@search__filter-condition--color		: #c6c5c5;
+@search__filter-condition-active--color	: @primary-color;
+
+@search__count--colour					: @tertiary-color;
+
+@search__button--top					: 91px;
+@search__button--background				: #fff;
+@search__button--font-size				: 16px;
+@search__button--font-weight			: normal;
+@search__button--colour					: @tertiary-color;
+@search__button--background-alt			: #eee;
+@search__button--hover-background 		: #eee;
+@search__button--hover-background-alt	: #fff;
+
+@search__filter-label--colour			: @primary-color;
+@search__filter-label--font 			: @base-font-face;
+@search__filter-label--font-size		: 14px;
+
+@search__filter--background				: @secondary-background;
+@search__filter--font-size				: 13px;
+@search__filter-value--font-weight		: normal;
+@search__filter-value--transform		: none;
+
+@search__filter-price--option-bottom	: 5px;
+
+@search__filter-distance--label-padding	: 7px 0 16px;
+
+@search__filter-advanced--font			: @base-font-face;
+@search__filter-distance--bottom-mobile : 10px;
+
+//Primary Jumps
+//-------------
+@homepage__primary-jump--width 			: 230px;
+
+@homepage__primary-jump-title--font-size-desktop	: 27px;
+@homepage__primary-jump-button--padding-desktop		: 0 5px;
+
+//Secondary Jumps
+//---------------
+@homepage__secondary-jump-right--background-tablet	: #e3dfdf;
+
+//Locations
+//---------
+@homepage__locations--content			: 'Our Gloucester showroom is part of the authorised Volkswagen Blade Group respected car dealerships in the South West. Enter your details below to find directions.';
+
+@homepage__locations-button--padding	: @button-padding;
+
+//Tertiary Jump
+//-------------
+@homepage__tertiary-jump--background	: @tertiary-background;
+@homepage__tertiary-jump--background-alt: @body-background;
+
+//Video
+//-------------
+@homepage__media-text--top				: 3%;
+
+@homepage__media-title--width           : 270px;
+@homepage__media-title--font-weight     : bold;
+
+@homepage__meida-button--top-desktop	: 50px;
+
+//CMS
+//---
+@homepage__cms-h1--font-weight			: normal;
+@homepage__cms-h1--font 				: @alt-font-face;
+
+@homepage__cms-h2--colour				: @tertiary-color;
+@homepage__cms-h2--font					: @alt-font-face;
+
+@homepage__cms-p--font-weight           : normal;
+@homepage__cms-p--font-size				: 14px;
+
+//NEWS
+//----
+@homepage__news-button--font			: @sans-font-family;
+@homepage__news-button--font-weight     : normal;
+
+/*Footer Variables*/
+// ============================
+
+@footer__background						: @tertiary-background;
+
+@footer__link-title--font				: @alt-font-face;
+@footer__link-item--font				: @sans-font-family;
