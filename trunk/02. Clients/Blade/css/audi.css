@@ -6,8 +6,7 @@
 .bootstrap-select .btn,.tab-nav,body{font-family:Verdana,Arial,Helvetica,sans-serif}
 .datepicker table,.slider .ui-slider-handle{-webkit-touch-callout:none;-khtml-user-select:none}
 .hidden,.invisible,.save-vehicle .btn .icon{visibility:hidden}
-.config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-o-animation-iteration-count:infinite;-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
-.adp-directions,.cms table,.datepicker table,.locations-hours table{border-collapse:collapse}
+.config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
 audio,canvas,video{display:inline-block}
 audio:not([controls]){display:none}
@@ -221,7 +220,7 @@ input.field-name-marketing-global{margin-top:0;width:18px;height:18px}
 .bootstrap-select .dropdown-menu li>a dt small{font-weight:400}
 .bootstrap-select .dropdown-menu li.selected>a,.bootstrap-select .dropdown-menu li.selected>a:focus,.bootstrap-select .dropdown-menu li.selected>a:hover{text-decoration:none;outline:0;color:#404040;background-color:#dae1e4;background-image:-moz-linear-gradient(top,#e0e6e8,#d1dadd);background-image:-webkit-gradient(linear,0 0,0 100%,from(#e0e6e8),to(#d1dadd));background-image:-webkit-linear-gradient(top,#e0e6e8,#d1dadd);background-image:-o-linear-gradient(top,#e0e6e8,#d1dadd);background-image:linear-gradient(to bottom,#e0e6e8,#d1dadd);background-repeat:repeat-x}
 .bootstrap-select .dropdown-menu li.disabled>a,.bootstrap-select .dropdown-menu li.disabled>a:focus,.bootstrap-select .dropdown-menu li.disabled>a:hover{color:#ccc;text-decoration:none;background-color:transparent;background-image:none;cursor:default;filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
-.tabs-left,.tabs-right{width:32px;line-height:32px;background-image:url(../images/audi/icons/sprite-icons-32-black.png);height:32px}
+.tabs-left,.tabs-right{width:32px;height:32px;line-height:32px;background-image:url(../images/audi/icons/sprite-icons-32-black.png)}
 .bootstrap-select .dropdown-menu dt{display:block;padding:4px 6px;cursor:default;color:#444}
 .bootstrap-select .dropdown-menu dt small{font-weight:400}
 .bootstrap-select.open{z-index:951}
@@ -608,7 +607,7 @@ button,input,select,textarea{font-family:Verdana,Arial,Helvetica,sans-serif!impo
 .datepicker-inline{width:220px}
 .datepicker>div{display:none}
 .datepicker.days div.datepicker-days,.datepicker.months div.datepicker-months,.datepicker.years div.datepicker-years{display:block}
-.datepicker table{margin:0;width:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.datepicker table{margin:0;border-collapse:collapse;width:100%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .datepicker td,.datepicker th{text-align:center;width:30px;height:30px;border:none}
 .table-striped .datepicker table tr td,.table-striped .datepicker table tr th{background-color:transparent}
 .datepicker table tr td.day{border:1px solid #d1d2d2;background-color:#e6e6e6;background-image:-moz-linear-gradient(top,#ececec,#dedede);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ececec),to(#dedede));background-image:-webkit-linear-gradient(top,#ececec,#dedede);background-image:-o-linear-gradient(top,#ececec,#dedede);background-image:linear-gradient(to bottom,#ececec,#dedede);background-repeat:repeat-x;-webkit-box-shadow:inset 1px 1px 1px #f0f0f0;-moz-box-shadow:inset 1px 1px 1px #f0f0f0;box-shadow:inset 1px 1px 1px #f0f0f0;font-size:12px;font-size:.8571428571428571rem}
@@ -703,7 +702,7 @@ img.loading{width:auto;margin:0 auto;padding:10px;background:#000;opacity:.7;fil
 5%{-webkit-transform:translate(0,-7px);-moz-transform:translate(0,-7px);-ms-transform:translate(0,-7px);-o-transform:translate(0,-7px);transform:translate(0,-7px)}
 15%{-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-ms-transform:translate(0,-3px);-o-transform:translate(0,-3px);transform:translate(0,-3px)}
 }
-.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
+.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
 .nddf .nddf-container{position:fixed;right:0;bottom:0;width:300px;border-top-left-radius:14px;z-index:1060;background-color:#c03}
 .nddf .nddf-container .nddf-header{text-align:center;padding:4% 5%;border-top-left-radius:10px;background:#8b8e96}
 .nddf .nddf-container .nddf-header .button-end .icon,.nddf .nddf-container .nddf-header .button-minimise .icon,.nddf .nddf-container .nddf-header .button-minimise .icon.minimised,.nddf .nddf-container .nddf-header h4 .icon,.nddf.nddf-send-email .nddf-container .nddf-header h4 .icon{line-height:16px;background-image:url(../images/audi/icons/sprite-icons-16-white.png);display:inline-block}
@@ -761,13 +760,14 @@ button,input[type=button]{min-height:33px}
 10%{opacity:.5;filter:Alpha(Opacity=50 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 50 )}
 }
 .chat .btn{-webkit-backface-visibility:hidden;color:#fff;background:#c03;-webkit-animation-iteration-count:2;-moz-animation-iteration-count:2;-o-animation-iteration-count:2;-ms-animation-iteration-count:2;animation-iteration-count:2;-webkit-animation-name:chatAnimation;-moz-animation-name:chatAnimation;-o-animation-name:chatAnimation;-ms-animation-name:'chatAnimation';animation-name:chatAnimation;-webkit-animation-duration:4s;-moz-animation-duration:4s;-o-animation-duration:4s;-ms-animation-duration:4s;animation-duration:4s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
-.cyclr .caption .title span,.save-vehicle .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cyclr .item.cycle-slide-active .caption .title span,.save-vehicle .btn{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s}
+.cyclr .caption .title span,.save-vehicle .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .chat .btn:after,.chat .btn:before{display:none}
 .chat .btn .icon,.chat .btn:hover .icon,.save-vehicle .btn .icon{width:16px;height:16px;display:inline-block;line-height:16px}
 .chat .btn .icon{margin:0 5px 0 0;background-image:url(../images/audi/icons/sprite-icons-16-white.png);background-position:-666px 0}
 .chat .btn:hover{color:#fff;background:#990026}
 .chat .btn:hover .icon{background-image:url(../images/audi/icons/sprite-icons-16-white.png);background-position:-666px 0}
-.save-vehicle .btn{padding:0 20px;-webkit-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both;animation-fill-mode:both}
+.save-vehicle .btn{padding:0 20px;-webkit-animation-delay:.15s;animation-delay:.15s;-o-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
 .save-vehicle .btn .icon{margin:-1px 5px 0 0;-webkit-transition:max-width 1s ease-in-out;-moz-transition:max-width 1s ease-in-out;-o-transition:max-width 1s ease-in-out;transition:max-width 1s ease-in-out;background-image:url(../images/audi/icons/sprite-icons-16-black.png);background-position:-888px -74px;max-width:0}
 .save-vehicle .btn:after,.save-vehicle .btn:before{display:none}
 .save-vehicle.animate-in .btn,.save-vehicle.animate-out .btn{-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
@@ -802,7 +802,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .cms{padding:0}
 .cms ol,.cms ul{margin:0 0 20px;padding:0 0 0 40px}
 .cms h1,.cms h2,.cms h3{color:#2b2f33}
-.cms table{border-spacing:0;border:1px solid #ddd;max-width:100%;empty-cells:show}
+.cms table{border-collapse:collapse;border-spacing:0;border:1px solid #ddd;max-width:100%;empty-cells:show}
 .cms table td,.cms table th{vertical-align:top;border-bottom:1px solid #eee;border-right:none;padding:3px}
 .cms table td:last-child,.cms table th:last-child{border-right:none}
 .cms table tfoot td,.cms table tfoot th{background:#f4f4f4}
@@ -1121,7 +1121,7 @@ img.adp-marker{height:40px;width:22px}
 .adp-list img,.adp-substep img{height:15px;margin-right:3px;position:relative;top:2px;width:15px}
 .adp-distance{white-space:nowrap}
 .adp-step,.adp-text{width:100%}
-.adp-directions{cursor:pointer}
+.adp-directions{border-collapse:collapse;cursor:pointer}
 .adp-list .gm-arrow{height:9px;margin:5px 0 3px;width:8px}
 .adp-agencies{font-size:80%;margin:5px 0}
 .adp-summary-duration{white-space:nowrap;float:right;margin-left:7px}
@@ -1155,7 +1155,7 @@ img.adp-marker{height:40px;width:22px}
 .location-numbers .control-group,.location-numbers form,.location-numbers select{margin:0}
 .locations-hours .loc-hours-dep{float:left}
 .locations-hours .hours{float:right}
-.locations-hours table{width:100%}
+.locations-hours table{width:100%;border-collapse:collapse}
 .locations-hours table td{padding:0 10px 5px 0;font-size:15px;font-size:1.0714285714285714rem}
 .location-numbers{padding:0 0 40px}
 .location-numbers .inner{font-size:15px;font-size:1.0714285714285714rem}
@@ -1463,6 +1463,7 @@ img.adp-marker{height:40px;width:22px}
 .no-touch .page-layout .list-view:hover .icon,.page-layout .list-view .icon,.page-layout .list-view.active .icon{line-height:25px;height:25px;width:25px;display:inline-block}
 .page-layout a{display:block}
 .page-layout .title{padding:1px 10px 0 0;display:inline-block;display:none}
+.reevoo-badge,.search{padding:0 0 20px}
 .page-layout .list-view{text-align:left;height:38px;width:38px;display:inline-block}
 .page-layout .list-view span{display:none}
 .page-layout .list-view .icon{margin:5px 0 0 6px;background-image:url(../images/audi/icons/sprite-icons-25-black.png);background-position:-1628px 0}
@@ -1480,7 +1481,6 @@ img.adp-marker{height:40px;width:22px}
 .page-layout .tile-view.active{background:#fff}
 .page-layout .tile-view.active .icon{background-image:url(../images/audi/icons/sprite-icons-25-black.png);background-position:-1554px 0}
 .reevoo-badge:after,.reevoo-badge:before,.reevoo-badge>.inner:after,.reevoo-badge>.inner:before{display:table;content:"";line-height:0}
-.reevoo-badge{padding:0 0 20px}
 .reevoo-badge a{text-decoration:none;color:#6d6d6d}
 .reevoo-badge .title{text-transform:uppercase;margin:0;padding:0 0 20px;color:#2b2f33;font-size:20px;font-size:1.4285714285714286rem}
 .reevoo-badge.simplified,.reevoo-badge.small{padding-bottom:0}
@@ -1578,9 +1578,10 @@ img.adp-marker{height:40px;width:22px}
 .loading:not(img):not(.listing):not(.module-search)>.icon{vertical-align:middle;width:40px;height:40px;position:relative;text-align:center;display:inline-block;-webkit-animation:rotate 2s infinite linear;-moz-animation:rotate 2s infinite linear;-o-animation:rotate 2s infinite linear;-ms-animation:rotate 2s infinite linear;animation:rotate 2s infinite linear}
 .ie9 .loading:not(img):not(.listing):not(.module-search)>.icon{width:64px;height:64px;background-image:url(../images/ajax-loading.gif)}
 .loading:not(img):not(.listing):not(.module-search)>.icon:after,.loading:not(img):not(.listing):not(.module-search)>.icon:before{content:' ';width:60%;height:60%;position:absolute;top:0;background-color:#fff;display:inline-block;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;-webkit-animation:scaleUpDown 2s infinite ease-in-out;-moz-animation:scaleUpDown 2s infinite ease-in-out;-o-animation:scaleUpDown 2s infinite ease-in-out;-ms-animation:scaleUpDown 2s infinite ease-in-out;animation:scaleUpDown 2s infinite ease-in-out}
+.config-foot .previous:hover .icon,.cssanimate.infinite{-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite}
 .ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:after,.ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:before{display:none}
 .loading:not(img):not(.listing):not(.module-search)>.icon:after{top:auto;bottom:0;-webkit-animation-delay:-1s;-moz-animation-delay:-1s;-o-animation-delay:-1s;-ms-animation-delay:-1s;animation-delay:-1s}
-.search{line-height:inherit;position:relative;padding:0 0 20px;z-index:1020}
+.search{line-height:inherit;position:relative;z-index:1020}
 .search>.inner{font-size:0}
 .search>.inner:after,.search>.inner:before{display:table;content:"";line-height:0}
 .search .no-results.modal{text-align:center;padding:30px 10px;width:205px;height:165px;border:1px solid #ccc;background:#fff;color:#404040;margin-left:-112.5px;-webkit-box-shadow:0 0 0 20px rgba(225,225,225,.3);-moz-box-shadow:0 0 0 20px rgba(225,225,225,.3);box-shadow:0 0 0 20px rgba(225,225,225,.3);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;font-size:13px;font-size:.9285714285714286rem}
@@ -1600,18 +1601,17 @@ img.adp-marker{height:40px;width:22px}
 .search .buttons{padding:5px;background:#e0e6e8;border-top:solid 1px #e0e6e8}
 .search .buttons:after,.search .buttons:before{display:table;content:"";line-height:0}
 .search a.btn{margin:0;background-image:none;line-height:25px;padding:0 10px;background-color:#fff;color:#5c6066;font-size:15px;font-size:1.0714285714285714rem;display:block}
-.search .cancel .btn,.search .clear .btn{-webkit-box-shadow:none;-moz-box-shadow:none;font-size:14px}
 .search a.btn:after,.search a.btn:before{display:none}
 .search a.btn:focus,.search a.btn:hover{background-color:#c03;color:#fff}
 .search a.btn span{border:none;background:0 0;padding:0;margin:0}
 .search .cancel{float:left}
-.search .cancel .btn{background:0 0;border:none;padding:0 10px;margin-left:5px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;box-shadow:none;font-size:1rem}
+.search .cancel .btn{background:0 0;border:none;padding:0 10px;margin-left:5px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;font-size:14px;font-size:1rem}
 .search .cancel .btn .icon,.search .clear .btn .icon{margin:0 7px 0 0;width:16px;height:16px;line-height:16px;display:inline-block}
 .search .cancel .btn .icon{vertical-align:middle;background-image:url(../images/audi/icons/sprite-icons-16-black.png);background-position:-740px 0}
 .search .cancel .btn:focus,.search .cancel .btn:hover{background-color:inherit;color:inherit}
 .search .cancel .btn span{top:0;vertical-align:middle;display:inline-block}
 .search .clear{clear:none;float:left;display:inline-block}
-.search .clear .btn{background:0 0;border:none;padding:0 10px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;box-shadow:none;font-size:1rem}
+.search .clear .btn{background:0 0;border:none;padding:0 10px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;font-size:14px;font-size:1rem}
 .search .clear .btn .icon{background-image:url(../images/audi/icons/sprite-icons-16-black.png);background-position:-518px -74px}
 .search .clear .btn:focus,.search .clear .btn:hover{background-color:inherit;color:inherit}
 .search .clear .btn span{top:0;vertical-align:middle;display:inline-block}
@@ -1808,7 +1808,7 @@ img.adp-marker{height:40px;width:22px}
 .cyclr .adverts-terms-conditions{line-height:30px;width:auto;height:auto;font-family:Arial;background:#000;background:rgba(0,0,0,.5);position:absolute;bottom:10px;padding:0 10px;color:#fff;right:10px;font-size:11px;font-size:.7857142857142857rem}
 .cyclr .adverts-terms-conditions:hover{background:#000}
 .cyclr .item.cycle-slide-active .caption{visibility:visible}
-.cyclr .item.cycle-slide-active .caption .title span{visibility:visible;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;-ms-animation-name:bounceInDown;animation-name:bounceInDown}
+.cyclr .item.cycle-slide-active .caption .title span{visibility:visible;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;-ms-animation-name:bounceInDown;animation-name:bounceInDown}
 .cyclr .item.cycle-slide-active .caption .sub-title span{visibility:visible;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInLeft;-moz-animation-name:bounceInLeft;-o-animation-name:bounceInLeft;-ms-animation-name:bounceInLeft;animation-name:bounceInLeft}
 .cyclr .item.cycle-slide-active .caption .content ul{visibility:visible;-webkit-animation-delay:2s;-moz-animation-delay:2s;-o-animation-delay:2s;-ms-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInLeft;-moz-animation-name:bounceInLeft;-o-animation-name:bounceInLeft;-ms-animation-name:bounceInLeft;animation-name:bounceInLeft}
 .cyclr .item.cycle-slide-active .caption .btn{visibility:visible;-webkit-animation-delay:3s;-moz-animation-delay:3s;-o-animation-delay:3s;-ms-animation-delay:3s;animation-delay:3s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInUp;-moz-animation-name:bounceInUp;-o-animation-name:bounceInUp;-ms-animation-name:bounceInUp;animation-name:bounceInUp}
@@ -1817,18 +1817,18 @@ img.adp-marker{height:40px;width:22px}
 .cyclr .caption span{display:block;clear:both}
 .cyclr .caption span>span{float:left}
 .cyclr .caption .caption-inset{height:auto;vertical-align:top;color:#404040;padding:22px 0;width:100%;box-sizing:border-box;display:inline-block;font-size:14px;font-size:1rem}
-.cyclr .caption .sub-title span,.cyclr .caption .title span{padding:15px 20px;background:#c03;visibility:hidden;-webkit-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both;max-width:400px;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif;text-transform:uppercase}
+.cyclr .caption .sub-title span,.cyclr .caption .title span{padding:15px 20px;background:#c03;visibility:hidden;-webkit-animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif;text-transform:uppercase}
 .cyclr .caption.font-black .caption-inset{color:#404040}
 .cyclr .caption.font-white .caption-inset,:not(.banner).cyclr .caption .sub-title span,:not(.banner).cyclr .caption .title span{color:#fff}
-.cyclr .caption .title span{font-size:2.142857142857143em;animation-delay:.15s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
-.cyclr .caption .content ul,.cyclr .caption .sub-title span{-o-animation-delay:.15s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
-.cyclr .caption .sub-title span{margin-bottom:10px;font-size:1.2857142857142858em;-moz-animation-delay:.15s;animation-delay:.15s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
-.cyclr .caption .btn,.cyclr .caption .content ul{-ms-animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both;visibility:hidden}
-.cyclr .caption .content ul{list-style-type:none;overflow:hidden;margin:0 0 10px;padding:0;background:0 0;max-width:400px;font-size:1.0714285714285714em;display:inline-block;-webkit-animation-delay:.15s;-moz-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
-.cssanimate,.cyclr .caption .btn{-o-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cyclr .caption .title span{max-width:400px;font-size:2.142857142857143em;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .content ul,.cyclr .caption .sub-title span{max-width:400px;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cyclr .caption .sub-title span{margin-bottom:10px;font-size:1.2857142857142858em;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .btn,.cyclr .caption .content ul{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both;visibility:hidden}
+.cyclr .caption .content ul{list-style-type:none;overflow:hidden;margin:0 0 10px;padding:0;background:0 0;font-size:1.0714285714285714em;display:inline-block;-webkit-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
+.cssanimate,.cyclr .caption .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .cyclr .caption .content li{list-style-type:none;float:left;clear:both;padding:8px 20px;background:#fff;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif}
 :not(.banner).cyclr .caption .content li{color:#000}
-.cyclr .caption .btn{clear:both;margin:0;line-height:33px;padding:0 20px;font-size:15px;font-size:1.0714285714285714rem;display:inline-block;-webkit-animation-delay:.15s;-moz-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .btn{clear:both;margin:0;line-height:33px;padding:0 20px;font-size:15px;font-size:1.0714285714285714rem;display:inline-block;-webkit-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
 .cyclr .caption .btn span{float:none!important;display:inline-block}
 .cyclr .caption[class*=left] span>span{text-align:left;float:left}
 .cyclr .caption[class*=right] .caption-inset{text-align:right}
@@ -2492,8 +2492,8 @@ div.register,div.sign-in{max-width:550px;margin:0 auto}
 100%{opacity:0;filter:Alpha(Opacity=0 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 0 );-webkit-transform:translate(0,-80px);-moz-transform:translate(0,-80px);-ms-transform:translate(0,-80px);-o-transform:translate(0,-80px);transform:translate(0,-80px)}
 }
 .fadeOutUp{-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
-.cssanimate{-webkit-animation-delay:.15s;-moz-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
-.cssanimate.infinite{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite}
+.cssanimate{-webkit-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
+.cssanimate.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
 .cssanimate.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-o-animation-duration:2s;-ms-animation-duration:2s;animation-duration:2s}
 body{background-color:#fff}
 .aftersales-widget{margin-bottom:30px}
@@ -2605,7 +2605,6 @@ body{background-color:#fff}
 .homepage .page-info,.homepage .search .search-header .reset-all{display:none}
 .footer-container .switch-view .switch-links{margin-bottom:30px;padding:0 20px;background:#e0e6e8}
 .homepage #content-wrap .container-wrap{width:100%;margin:0 auto;max-width:1680px}
-.container-iq0m1 .jumps-cycle.module .inner,.homepage .home-banner .banner .inner{margin-bottom:0}
 .homepage .home-banner{position:relative;z-index:5}
 .homepage .home-banner .container{max-width:1680px}
 .homepage .home-banner .banner .caption .caption-inset{left:50%;max-width:1170px;padding-top:60px;margin-left:-585px;font-size:20px;font-size:1.4285714285714286rem}
@@ -2614,6 +2613,7 @@ body{background-color:#fff}
 .homepage .home-banner .banner .caption .caption-inset .content li{font-weight:100;background:0 0;padding:2px 0;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:16px;font-size:1.1428571428571428rem}
 .homepage .home-banner .banner .caption .caption-inset .btn{margin-top:10px;padding:0 20px}
 .homepage .home-banner .banner{padding-bottom:0}
+.homepage .home-banner .banner .inner{margin-bottom:0}
 .homepage .home-banner .banner:after{content:' ';left:0;width:0;bottom:0;height:0;z-index:101;position:absolute;border-style:solid;border-width:0 0 60px 1680px;border-color:transparent transparent #e0e6e8}
 .homepage .home-banner .controls .cycle-next,.homepage .home-banner .controls .cycle-prev{top:50%;left:5%;width:36px;height:36px;position:absolute;background:url(../images/audi/sprite-cycle-arrows.png) no-repeat}
 .homepage .home-banner .controls .cycle-next{left:auto;right:5%;background-position:-36px 0}
@@ -2649,7 +2649,7 @@ body{background-color:#fff}
 .homepage .search .filter-price>.option{margin-bottom:5px}
 .homepage .search .filter-price .option.inline{padding-top:2px;padding-bottom:9px}
 .homepage .search .filter-price .bootstrap-select button{font-family:audi_type,Arial,Verdana,Helvetica,sans-serif!important}
-.container-cm77r .location-search.module .control-label,.container-cm77r .location-search.module .control-label:after,.container-cm77r .location-search.module .view-all-locations a,.container-l6ym7 .featured-stock .make,.container-l6ym7 .featured-stock .model,.homepage .search .filter-advanced .filter-heading .label,.homepage .search .filter-distance .filter-heading .label,.homepage .search .filter-distance .filter-heading .value{font-family:audi_type,Arial,Verdana,Helvetica,sans-serif}
+.container-cm77r .location-search.module .control-label,.container-cm77r .location-search.module .control-label:after,.container-cm77r .location-search.module .view-all-locations a,.homepage .search .filter-advanced .filter-heading .label,.homepage .search .filter-distance .filter-heading .label,.homepage .search .filter-distance .filter-heading .value{font-family:audi_type,Arial,Verdana,Helvetica,sans-serif}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#8b8e96;font-weight:400;text-transform:none;font-size:13px;font-size:.9285714285714286rem}
 .homepage .search .filter-price .bootstrap-select .btn:hover{color:#fff;background:#8b8e96}
 .homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
@@ -2705,12 +2705,13 @@ body{background-color:#fff}
 .container-cm77r .location-search.module .view-all-locations a span{top:-1px;position:relative}
 .container-cm77r .location-search.module .view-all-locations a:hover{color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(73%,rgba(225,225,225,0)),color-stop(100%,rgba(225,225,225,.5)));background-image:-webkit-linear-gradient(top,rgba(225,225,225,0) 73%,rgba(225,225,225,.5) 100%);background-image:-o-linear-gradient(top,rgba(225,225,225,0) 73%,rgba(225,225,225,.5) 100%);background:#ff0040}
 .container-iq0m1{overflow:hidden;position:relative}
-.container-iq0m1:after{content:' ';right:50%;bottom:25px;z-index:100;position:absolute;border-style:solid;margin-right:-840px;border-width:0 0 27px 785px;border-color:transparent}
+.container-iq0m1:after{content:' ';right:50%;bottom:25px;z-index:100;position:absolute;border-style:solid;margin-right:-840px;border-width:0 0 27px 785px;border-color:transparent transparent #d5d9d8}
 .container-iq0m1 .jumps-cycle.module{padding-bottom:0;margin-right:-255px}
+.container-iq0m1 .jumps-cycle.module .inner{margin-bottom:0}
 .container-iq0m1 .jumps-cycle.module .cycle-next,.container-iq0m1 .jumps-cycle.module .cycle-prev{top:25%;left:0;width:36px;height:36px;position:absolute;background:url(../images/audi/sprite-cycle-arrows.png) no-repeat}
 .container-iq0m1 .jumps-cycle.module .cycle-next{top:34%;background-position:-36px 0}
 .container-iq0m1 .jumps-cycle.module [class*=cycle-pager-container]{top:47%;bottom:auto;text-align:left}
-.container-iq0m1 .jumps-cycle.module .thumb:after,.container-iq0m1 .jumps-cycle.module .thumb:before,.container-xnjhm:before{content:' ';top:0;border-style:solid}
+.container-iq0m1 .jumps-cycle.module .thumb:after,.container-iq0m1 .jumps-cycle.module .thumb:before,.container-xnjhm:before{top:0;border-style:solid;content:' '}
 .container-iq0m1 .jumps-cycle.module [class*=cycle-pager-container] ul{width:17px;margin-left:9px}
 .container-iq0m1 .jumps-cycle.module [class*=cycle-pager-container] ul li a{float:none;background-image:url(../images/audi/sprite-cycle-pagi-alt.png)}
 .container-iq0m1 .jumps-cycle.module .thumb{width:62.7%;float:right;padding-bottom:0;position:relative}
@@ -2721,7 +2722,7 @@ body{background-color:#fff}
 .container-iq0m1 .jumps-cycle.module .content{font-size:16px;font-size:1.1428571428571428rem}
 .container-xnjhm{z-index:101;overflow:hidden;padding-top:25px;position:relative;margin-top:-25px!important;background:#fff}
 .container-xnjhm:before{left:50%;position:absolute;margin-left:-840px;border-width:33px 895px 0 0;border-color:#fff transparent transparent}
-.container-xnjhm:after{top:-81px;right:50%;width:623px;z-index:101;position:absolute;margin-right:-840px;border-left:181px solid transparent;border-top:778px solid transparent}
+.container-xnjhm:after{content:' ';top:-81px;right:50%;width:623px;z-index:101;position:absolute;margin-right:-840px;border-left:181px solid transparent;border-top:778px solid #d5d9d8}
 .container-xnjhm .tertiary-jump.module{margin-top:37px}
 .container-xnjhm .tertiary-jump.module .thumb{float:left;width:70.3%;margin-left:-186px}
 .container-xnjhm .tertiary-jump.module:after,.container-xnjhm .tertiary-jump.module:before{display:table;content:"";line-height:0}
@@ -2742,9 +2743,11 @@ body{background-color:#fff}
 .container-xnjhm .valuation-jump .btns a{margin:0}
 .container-l6ym7{background:#fff}
 .container-l6ym7 .featured-stock .inner{padding:0 0 10px}
+.container-l6ym7 .featured-stock .inner>.count{font-size:14px;font-size:1rem;font-family:Arial,Verdana,Helvetica,sans-serif;color:#6d7579;right:140px;font-weight:400}
+.container-l6ym7 .featured-stock .heading{padding:20px 0 40px;text-align:center}
 .container-l6ym7 .featured-stock .item{width:25%}
 .container-l6ym7 .featured-stock .item .inset{padding:0;border:0}
-.container-l6ym7 .featured-stock .make,.container-l6ym7 .featured-stock .model{font-size:24px;font-size:1.7142857142857142rem;color:#000}
+.container-l6ym7 .featured-stock .make,.container-l6ym7 .featured-stock .model{font-size:24px;font-size:1.7142857142857142rem;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif;color:#000}
 .container-l6ym7 .featured-stock .variant{display:block;font-size:16px;font-size:1.1428571428571428rem;color:#6d7579;font-family:Arial,Verdana,Helvetica,sans-serif;font-weight:400;margin-top:10px}
 .container-l6ym7 .featured-stock .price-now{display:block;color:#c52831;font-size:20px;font-size:1.4285714285714286rem;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif;margin:10px 0}
 .container-l6ym7 .featured-stock .price-saving,.container-l6ym7 .featured-stock .price-was{display:inline;color:#6d7579;font-family:audi_type,Arial,Verdana,Helvetica,sans-serif}
@@ -2753,6 +2756,8 @@ body{background-color:#fff}
 .container-l6ym7 .featured-stock .location-name{min-height:0;margin:5px 0 10px}
 .container-l6ym7 .featured-stock .button{margin-top:10px;text-align:left}
 .container-l6ym7 .featured-stock .button .btn{display:inline-block;line-height:35px;font-size:15px;font-size:1.0714285714285714rem}
+.container-l6ym7 .featured-stock .module-footer{position:absolute;top:5px;right:0}
+.container-l6ym7 .featured-stock .module-footer .btn{background:0 0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;line-height:40px;color:#c52831;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:14px;font-size:1rem;text-decoration:underline}
 .container-b7qqh{position:relative}
 .container-b7qqh:after{content:' ';bottom:0;position:absolute;border-style:solid;border-color:transparent transparent #fff;left:0;right:auto;border-width:0 1680px 60px 0}
 .container-b7qqh .container{width:auto}
@@ -3168,7 +3173,7 @@ body{background-color:#fff}
 .config-foot .next .icon,.config-foot .previous .icon{width:32px;height:32px;line-height:32px;background-image:url(../images/audi/icons/sprite-icons-32-black.png);display:inline-block}
 .config-foot .previous{margin-right:10%}
 .config-foot .previous .icon{margin:-3px 10px 0 0;background-position:-1776px 0}
-.config-foot .previous:hover .icon{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;animation-delay:.15s;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounceLeft;-moz-animation-name:bounceLeft;-o-animation-name:bounceLeft;-ms-animation-name:bounceLeft;animation-name:bounceLeft;animation-duration:3s}
+.config-foot .previous:hover .icon{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;animation-delay:.15s;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounceLeft;-moz-animation-name:bounceLeft;-o-animation-name:bounceLeft;-ms-animation-name:bounceLeft;animation-name:bounceLeft;animation-duration:3s}
 .config-foot .next{float:right}
 .config-foot .next .icon{float:right;margin:-3px 0 0 10px;background-position:-1850px 0}
 .config-steps .tab-nav,.config-steps .tab-nav>li{position:static;background:0 0;padding:0;margin:0}
@@ -3692,7 +3697,7 @@ body{background-color:#fff}
 .container-cm77r .jump-locations.module:after{border-width:0 464px 18px 0}
 .container-cm77r .location-search.module{margin-top:20px}
 .container-cm77r .location-search.module .control-label{margin-bottom:25px;font-size:24px;font-size:1.7142857142857142rem}
-.container-iq0m1 .jumps-cycle.module:after{right:0;bottom:0;z-index:100;border-width:0 0 14px 417px;border-color:transparent}
+.container-iq0m1 .jumps-cycle.module:after{right:0;bottom:0;z-index:100;border-width:0 0 14px 417px;border-color:transparent transparent #d5d9d8}
 .container-iq0m1 .jumps-cycle.module .cycle-prev{top:19%}
 .container-iq0m1 .jumps-cycle.module .thumb{width:50.7%}
 .container-iq0m1 .jumps-cycle.module .thumb:after{border-width:502px 0 0 114px}
@@ -3701,7 +3706,7 @@ body{background-color:#fff}
 .container-xnjhm{padding-top:0;background:0 0;margin-top:0!important}
 .container-xnjhm:before{z-index:10}
 .container-xnjhm .container{position:relative;background:#fff}
-.container-xnjhm .container:after{content:' ';right:0;top:-81px;width:330px;z-index:101;position:absolute;border-left:105px solid transparent;border-top:456px solid transparent}
+.container-xnjhm .container:after{content:' ';right:0;top:-81px;width:330px;z-index:101;position:absolute;border-left:105px solid transparent;border-top:456px solid #d5d9d8}
 .container-xnjhm .tertiary-jump.module{padding-bottom:0}
 .container-xnjhm .tertiary-jump.module .thumb{width:60%;margin-left:0}
 .container-xnjhm .tertiary-jump.module .title{font-size:24px;font-size:1.7142857142857142rem;top:6%}

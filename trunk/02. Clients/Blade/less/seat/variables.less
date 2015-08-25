@@ -14,38 +14,38 @@
 @button-font-family						: @alt-font-face;
 @button-border-width					: 1px;
 
-@button-background         				: #ffffff;
-@button-border-color       				: #b2b2b2;
-@button-color              				: @secondary-color;
-@button-hover-background   				: @primary-background;
-@button-hover-border-color 				: #2768a8;
+@button-background         				: #c52831;
+@button-border-color       				: transparent;
+@button-color              				: #fff;
+@button-hover-background   				: #941d24;
+@button-hover-border-color 				: transparent;
 @button-hover-color        				: #fff;
 @button-active-background  				: @button-hover-background;
 @button-active-color       				: #fff;
 
-@button-secondary-background            : @primary-background;
-@button-secondary-border-color          : #2768a8;
-@button-secondary-color                 : #fff;
-@button-secondary-hover-background      : #ffffff;
-@button-secondary-hover-border-color    : #b2b2b2;
-@button-secondary-hover-color           : @secondary-color;
+@button-secondary-background            : #fff;
+@button-secondary-border-color          : #d6d6d6;
+@button-secondary-color                 : #c52831;
+@button-secondary-hover-background      : #cccccc;
+@button-secondary-hover-border-color    : #d6d6d6;
+@button-secondary-hover-color           : #fff;
 @button-secondary-active-background     : @button-secondary-hover-background;
 @button-secondary-active-color          : @button-secondary-hover-color;
 
-@button-tertairy-background         	: @secondary-background;
-@button-secondary-border-color          : @button-tertairy-background;
+@button-tertairy-background         	: #000;
+@button-secondary-border-color          : transparent;
 @button-tertairy-color              	: #fff;
-@button-tertairy-hover-background   	: #dadcdd;
-@button-secondary-hover-border-color    : @button-tertairy-hover-background;
-@button-tertairy-hover-color        	: @secondary-color;
+@button-tertairy-hover-background   	: #fff;
+@button-secondary-hover-border-color    : transparent;
+@button-tertairy-hover-color        	: #c52831;
 @button-tertairy-active-background  	: @button-tertairy-hover-background;
 @button-tertairy-active-color       	: @button-tertairy-hover-color;
 
 /*UI KIT Variables*/
 // ============================
 
-@base-font-face							: 'VW-text', Arial, Verdana, Helvetica, sans-serif;
-@alt-font-face							: 'VW-head', Arial, Verdana, Helvetica, sans-serif;
+//@base-font-face							: 'VW-text', Arial, Verdana, Helvetica, sans-serif;
+@alt-font-face							: Arial, Verdana, Helvetica, sans-serif;
 
 /*Header & Nav Variables*/
 // ============================
@@ -60,15 +60,15 @@
 @header__item--padding-tablet			: 0 8px;
 @header__action-bar--background-tablet 	: @tertiary-background;
 @header__logo--margin-tablet            : 0;
+@header__franchise-badge--top			: 35px;
 @header__franchise-badge--left-tablet	: 35%;
-
 @header__franchise-badge--left-mobile	: 11%;
 @header__logo--left-mobile				: @header__franchise-badge--left-mobile;
 @header__logo--margin-mobile			: 72px; // Franchise badge width + 20px space
 
 //Nav
-@nav-item-side-padding             		: 34px;
-@nav-item-side-padding-desktop			: 20px;
+@nav-item-side-padding             		: 19px;
+@nav-item-side-padding-desktop			: 5px;
 @nav-item-font-size                		: 16px;
 @nav-item-transform                		: none;
 @nav-item-color                    		: @primary-color;
@@ -79,16 +79,16 @@
 // ============================
 
 @alt-body-background					: @tertiary-background;
-@homepage__jump--background				: @alt-body-background;
+@homepage__jump--background				: #bbbfc2;
 
-@homepage__title--font-size             : 38px;
-@homepage__title--color                 : @primary-color;
-@homepage__title--font                  : @alt-font-face;
+@homepage__title--font-size             : 32px;
+@homepage__title--color                 : #000;
+@homepage__title--font                  : @base-font-face;
 @homepage__title--font-weight           : normal;
 
 @homepage__content--font-size           : 18px;
-@homepage__content--color               : @secondary-color;
-@homepage__content--font                : @base-font-face;
+@homepage__content--color               : #6a7179;
+@homepage__content--font                : @alt-font-face;
 @homepage__content--font-weight         : normal;
 
 @homepage__button--padding				: @button-padding;
@@ -103,16 +103,17 @@
 
 //Banner
 //------
-@homepage__banner-title--font			: @alt-font-face;
-@homepage__banner-title--colour			: #fff;
+@homepage__banner-title--font			: @base-font-face;
+@homepage__banner-title--colour			: #000;
 @homepage__banner-title--font-weight	: bold;
 @homepage__banner-title--width			: 470px;
 
-@homepage__banner-sub-title--font		: @alt-font-face;
+@homepage__banner-sub-title--font		: @base-font-face;
 @homepage__banner-sub-title--colour		: @tertiary-color;
 @homepage__banner-sub-title--font-size	: 18px;
 
 @homepage__banner-content--padding		: 2px 0;
+@homepage__banner-content--font			: @alt-font-face;
 
 @homepage__banner-btn--padding			: @button-padding;
 
@@ -143,7 +144,7 @@
 
 @search__filter-label--colour			: @primary-color;
 @search__filter-label--font 			: @base-font-face;
-@search__filter-label--font-size		: 14px;
+@search__filter-label--font-size		: 13px;
 
 @search__filter--background				: @secondary-background;
 @search__filter--font-size				: 13px;
@@ -176,8 +177,8 @@
 
 //Tertiary Jump
 //-------------
-@homepage__tertiary-jump--background	: @tertiary-background;
-@homepage__tertiary-jump--background-alt: @body-background;
+@homepage__tertiary-jump--background	: #fff;
+@homepage__tertiary-jump--background-alt: #d5d9d8;
 
 //Video
 //-------------

@@ -19,6 +19,8 @@
 
 @footer__item-title--font				: @base-font-face;
 
+@footer-button-color					: @button-color;
+
 /* ========================================================================
    Section: Footer Container
  ========================================================================== */
@@ -207,7 +209,7 @@
 	    		background: none;
 	    		font-weight: normal;
 	    		text-transform: none;
-	    		color: @button-color;
+	    		color: @footer-button-color;
 	    		.font-size(14px);
 
 	    		&:hover {
@@ -401,6 +403,7 @@
 
     	.btn {
     		border: none;
+    		color: @footer-button-color;
     		#gradient > .vertical(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 
     		&:before,
@@ -416,7 +419,7 @@
     		}
 
     		&:hover {
-    			color: @button-color;
+    			color: @footer-button-color;
     		}
 
     	}

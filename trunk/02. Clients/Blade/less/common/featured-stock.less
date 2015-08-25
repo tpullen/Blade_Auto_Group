@@ -21,6 +21,13 @@
 @featured-stock__price-saving--font-size				: 14px;
 @featured-stock__price-saving--font-family				: @base-font-face;
 
+@featured-stock__count--text-color						: #6d7579;
+@featured-stock__count--font-size						: 14px;
+@featured-stock__count--font-family						: @alt-font-face;
+
+@featured-stock__view-all--color						: #c52831;
+@featured-stock__view-all--font-family					: @alt-font-face;
+@featured-stock__view-all--font-size					: 14px;
 
 // Featured Stock
 // ========================================================================
@@ -32,6 +39,19 @@
 
 		.inner {
 			padding: 0 0 10px;
+
+			> .count {
+				.font-size(@featured-stock__count--font-size);
+				font-family: @featured-stock__count--font-family;
+				color: @featured-stock__count--text-color;
+				right: 140px;
+				font-weight: normal;
+			}
+		}
+
+		.heading {
+			padding: 20px 0 40px;
+			text-align: center;
 		}
 
 		.item {
@@ -99,6 +119,23 @@
 				display: inline-block;
 				line-height: 35px;
 				.font-size(15px);
+			}
+		}
+
+		.module-footer {
+			position: absolute;
+			top: 5px;
+			right: 0;
+
+			.btn {
+				background: none;
+				.box-shadow(none);
+				.border-radius(0);
+				line-height: 40px;
+				color: @featured-stock__view-all--color;
+				font-family: @featured-stock__view-all--font-family;
+				.font-size(@featured-stock__view-all--font-size);
+				text-decoration: underline;
 			}
 		}
 
