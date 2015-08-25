@@ -7,6 +7,9 @@
 @homepage__locations--title-mobile      : 'Find your local Blade dealership';
 @homepage__locations--content           : 'Blade Group operates dealerships for Audi, Honda, SEAT, ŠKODA, Suzuki and Volkswagen in the South West. Enter your postcode to find your nearest Blade.';
 
+@location__title--font                  : @base-font-face;
+@location__title--font-weight           : normal;
+
 @homepage__locations-button--padding    : 0;
 
 // ========================================================================
@@ -67,7 +70,8 @@
             line-height: normal;
             margin-bottom: 35px;
             color: @primary-color;
-            font-family: @base-font-face;
+            font-family: @location__title--font;
+            font-weight: @location__title--font-weight;
             .font-size(40px);
 
             &:after {
