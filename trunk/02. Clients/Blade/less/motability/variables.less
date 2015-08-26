@@ -14,38 +14,38 @@
 @button-font-family						: @alt-font-face;
 @button-border-width					: 1px;
 
-@button-background         				: #ffffff;
-@button-border-color       				: #b2b2b2;
-@button-color              				: @secondary-color;
-@button-hover-background   				: @primary-background;
-@button-hover-border-color 				: #2768a8;
-@button-hover-color        				: #fff;
-@button-active-background  				: @button-hover-background;
-@button-active-color       				: #fff;
+@button-background         				: rgba(0,0,0,0);
+@button-border-color       				: transparent;
+@button-color              				: #000;
+@button-hover-background   				: rgba(0,0,0,0);
+@button-hover-border-color 				: transparent;
+@button-hover-color        				: #000;
+@button-active-background  				: rgba(0,0,0,0);
+@button-active-color       				: #000;
 
-@button-secondary-background            : @primary-background;
-@button-secondary-border-color          : #2768a8;
+@button-secondary-background            : #000;
+@button-secondary-border-color          : transparent;
 @button-secondary-color                 : #fff;
-@button-secondary-hover-background      : #ffffff;
-@button-secondary-hover-border-color    : #b2b2b2;
-@button-secondary-hover-color           : @secondary-color;
-@button-secondary-active-background     : @button-secondary-hover-background;
-@button-secondary-active-color          : @button-secondary-hover-color;
+@button-secondary-hover-background      : #000;
+@button-secondary-hover-border-color    : transparent;
+@button-secondary-hover-color           : #fff;
+@button-secondary-active-background     : #000;
+@button-secondary-active-color          : #fff;
 
-@button-tertairy-background         	: @secondary-background;
-@button-secondary-border-color          : @button-tertairy-background;
-@button-tertairy-color              	: #fff;
-@button-tertairy-hover-background   	: #dadcdd;
-@button-secondary-hover-border-color    : @button-tertairy-hover-background;
-@button-tertairy-hover-color        	: @secondary-color;
-@button-tertairy-active-background  	: @button-tertairy-hover-background;
-@button-tertairy-active-color       	: @button-tertairy-hover-color;
+@button-tertairy-background         	: rgba(0,0,0,0);
+@button-tertiary-border-color         	: transparent;
+@button-tertairy-color              	: #000;
+@button-tertairy-hover-background   	: rgba(0,0,0,0);
+@button-tertiary-hover-border-color  	: transparent;
+@button-tertairy-hover-color        	: #000;
+@button-tertairy-active-background  	: rgba(0,0,0,0);
+@button-tertairy-active-color       	: #000;
 
 /*UI KIT Variables*/
 // ============================
 
-@base-font-face							: 'VW-text', Arial, Verdana, Helvetica, sans-serif;
-@alt-font-face							: 'VW-head', Arial, Verdana, Helvetica, sans-serif;
+@base-font-face							: 'lato', Arial, Verdana, Helvetica, sans-serif;
+@alt-font-face							: Arial, Verdana, Helvetica, sans-serif;
 
 /*Header & Nav Variables*/
 // ============================
@@ -78,17 +78,17 @@
 /*Homepage Variables*/
 // ============================
 
-@alt-body-background					: @tertiary-background;
-@homepage__jump--background				: @alt-body-background;
+@alt-body-background					: #fff;
+@homepage__jump--background				: #fff;
 
 @homepage__title--font-size             : 38px;
 @homepage__title--color                 : @primary-color;
-@homepage__title--font                  : @alt-font-face;
+@homepage__title--font                  : @base-font-face;
 @homepage__title--font-weight           : normal;
 
 @homepage__content--font-size           : 18px;
 @homepage__content--color               : @secondary-color;
-@homepage__content--font                : @base-font-face;
+@homepage__content--font                : @alt-font-face;
 @homepage__content--font-weight         : normal;
 
 @homepage__button--padding				: @button-padding;
@@ -103,12 +103,12 @@
 
 //Banner
 //------
-@homepage__banner-title--font			: @alt-font-face;
-@homepage__banner-title--colour			: #fff;
-@homepage__banner-title--font-weight	: bold;
+@homepage__banner-title--font			: @base-font-face;
+@homepage__banner-title--colour			: #000;
+@homepage__banner-title--font-weight	: 500;
 @homepage__banner-title--width			: 470px;
 
-@homepage__banner-sub-title--font		: @alt-font-face;
+@homepage__banner-sub-title--font		: @base-font-face;
 @homepage__banner-sub-title--colour		: @tertiary-color;
 @homepage__banner-sub-title--font-size	: 18px;
 
@@ -123,7 +123,7 @@
 
 //Search
 //------
-@homepage__search--background			: @tertiary-background;
+@homepage__search--background			: #fff;
 
 @search__header--color					: @primary-color;
 @search__header-item--font				: @alt-font-face;
@@ -185,6 +185,7 @@
 
 @homepage__media-title--width           : 270px;
 @homepage__media-title--font-weight     : bold;
+@homepage__media--text-color			: #000;
 
 @homepage__meida-button--top-desktop	: 50px;
 
