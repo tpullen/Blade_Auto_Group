@@ -9,6 +9,7 @@
 
 @location__title--font                  : @base-font-face;
 @location__title--font-weight           : normal;
+@location__title--text-transform        : none;
 
 @homepage__locations-button--padding    : 0;
 
@@ -37,6 +38,10 @@
             border-style: solid;
             border-width: 0 814px 29px 0px;
             border-color: transparent transparent @body-background transparent;
+
+            & when (@franchise-name = "motability") {
+                display: none;
+            }
         }
 
         /*Right Triangle*/
@@ -72,6 +77,7 @@
             color: @primary-color;
             font-family: @location__title--font;
             font-weight: @location__title--font-weight;
+            text-transform: @location__title--text-transform;
             .font-size(40px);
 
             &:after {

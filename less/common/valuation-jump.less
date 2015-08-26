@@ -1,4 +1,8 @@
 
+@valuations__title--font-family				: @base-font-face;
+@valuations__title--text-transform			: none;
+@valuations__title--font-weight				: normal;
+
 // Tertiary Jump
 // ========================================================================
 
@@ -12,7 +16,9 @@
 		position: absolute !important; // To overwite the is-consistant class
 
 		h3.title {
-			text-transform: none;
+			text-transform: @valuations__title--text-transform;
+			font-family: @valuations__title--font-family;
+			font-weight: @valuations__title--font-weight;
 		}
 
 		.content {
