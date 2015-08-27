@@ -3,15 +3,89 @@
  * CSS Member: Tom Rochard-Pulen
  */
 
+
+/*!
+ * CSS Member: Tom Rochard-Pullen
+ */
+
+@primary-color                   : #000;
+@secondary-color                 : #7a7a7a;
+@tertiary-color                  : #2f85c2;
+
+@primary-background              : #2f85c2;
+@secondary-background            : #fafafc;
+@tertiary-background             : #fff;
+@tertiary-background-offset      : #edf2f5;
+
+@body-background                 : #fff;
+
+@base-box-shadow                 : none;
+@base-border-radius              : 0;
+
+// Links
+@link-color                      : #2f85c2;
+@link-color-hover                : darken(@link-color, 15%);
+
+// Typography
+@text-color                      : #797979;
+@text-color-invert               : contrast(@text-color, black, white);
+@sans-font-family                : Arial, Verdana, Helvetica, sans-serif;
+@serif-font-family               : Georgia, "Times New Roman", Times, serif;
+@mono-font-family                : Monaco, Menlo, Consolas, "Courier New", monospace;
+@base-font-face                  : 'lato', Arial, Verdana, Helvetica, sans-serif;
+
+@base-font-size                  : 14px;
+@base-font-family                : @base-font-face;
+@base-line-height                : 24px;
+@alt-font-family                 : @sans-font-family;
+@alt-font-face	                 : @sans-font-family;
+
+@paragraph-padding               : 0 0 20px;
+
+@headings-transform              : none;
+@headings-font-family            : @base-font-face;
+@headings-font-weight            : normal;
+@headings-color                  : @primary-color;
+@headings-padding                : 0 0 20px;
+
+@h1-transform                    : none;
+@h1-font-size                    : 38px;
+@h1-padding                      : 0 0 30px;
+@h1-font-family                  : @base-font-face;
+
+@h2-transform                    : none;
+@h2-font-size                    : 26px;
+@h2-padding                      : 0 0 20px;
+@h2-font-family                  : @base-font-face;
+
+@input-height                    : 30px;
+@input-padding-horizontal        : 9px;
+@input-border                    : #7a7a7a;
+@input-text-color                : #7a7a7a;
+@input-background                : #fff;
+
+@dropdown-background             : @input-background;
+@dropdown-border                 : rgba(0,0,0,.2);
+@dropdown-divider-top            : #e5e5e5;
+@dropdown-divider-bottom         : #fff;
+
+@dropdown-link-color             : #333;
+@dropdown-link-color-hover       : #fff;
+@dropdown-link-color-active      : #fff;
+
+@dropdown-link-background-active : @link-color;
+@dropdown-link-background-hover  : @dropdown-link-background-active;
+
+
 /*Button Ammends*/
 // ============================
 
 @button-height                       	: 33px;
 @button-line-height                  	: 33px;
 
-@button-font-weight						: normal;
-@button-font-size						: 15px;
-@button-font-family						: @alt-font-face;
+@button-font-weight						: 900;
+@button-font-size						: 13px;
+@button-font-family						: @base-font-face;
 @button-border-width					: 1px;
 
 @button-background         				: rgba(0,0,0,0);
@@ -23,13 +97,13 @@
 @button-active-background  				: rgba(0,0,0,0);
 @button-active-color       				: #000;
 
-@button-secondary-background            : #000;
+@button-secondary-background            : rgba(0,0,0,0);
 @button-secondary-border-color          : transparent;
 @button-secondary-color                 : #fff;
-@button-secondary-hover-background      : #000;
+@button-secondary-hover-background      : rgba(0,0,0,0);
 @button-secondary-hover-border-color    : transparent;
 @button-secondary-hover-color           : #fff;
-@button-secondary-active-background     : #000;
+@button-secondary-active-background     : rgba(0,0,0,0);
 @button-secondary-active-color          : #fff;
 
 @button-tertairy-background         	: rgba(0,0,0,0);
@@ -60,15 +134,17 @@
 @header__item--padding-tablet			: 0 8px;
 @header__action-bar--background-tablet 	: @tertiary-background;
 @header__logo--margin-tablet            : 0;
-@header__franchise-badge--left-tablet	: 35%;
 
+@header__franchise-badge--left-tablet	: 35%;
 @header__franchise-badge--left-mobile	: 11%;
+@header__franchise-badge--top			: 35px;
+
 @header__logo--left-mobile				: @header__franchise-badge--left-mobile;
 @header__logo--margin-mobile			: 72px; // Franchise badge width + 20px space
 
 //Nav
-@nav-item-side-padding             		: 34px;
-@nav-item-side-padding-desktop			: 20px;
+@nav-item-side-padding             		: 85px;
+@nav-item-side-padding-desktop			: 56px;
 @nav-item-font-size                		: 16px;
 @nav-item-transform                		: none;
 @nav-item-color                    		: @primary-color;
@@ -91,7 +167,7 @@
 @homepage__content--font                : @alt-font-face;
 @homepage__content--font-weight         : normal;
 
-@homepage__button--padding				: @button-padding;
+@homepage__button--padding				: 0;
 
 //Scroll to button
 //----------------
@@ -212,3 +288,4 @@
 
 @footer__link-title--font				: @alt-font-face;
 @footer__link-item--font				: @sans-font-family;
+

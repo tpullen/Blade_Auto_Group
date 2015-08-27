@@ -1,11 +1,12 @@
 /*!
  * GForces Less 1.0
- * @svn_revision_818
+ * @svn_revision_819
  */
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 .bootstrap-select .btn,.tab-nav,body{font-family:Arial,Verdana,Helvetica,sans-serif}
 .datepicker table,.slider .ui-slider-handle{-webkit-touch-callout:none;-khtml-user-select:none}
 .hidden,.invisible,.save-vehicle .btn .icon{visibility:hidden}
+.nddf.nddf-notification .nddf-container,.save-vehicle .btn{-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both}
 .config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
 .adp-directions,.cms table,.datepicker table,.locations-hours table{border-collapse:collapse}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
@@ -25,7 +26,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
 button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
 button,input[type=button],input[type=reset],input[type=submit],input[type=radio],input[type=checkbox],label,select{cursor:pointer}
 input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}
-#nddCustomerDetails img,.thumbnails.module .item,button,input,select,textarea{-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.thumbnails.module .item,button,input,select,textarea{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 textarea{overflow:auto}
 fieldset{padding:0}
@@ -320,7 +321,6 @@ body,html{position:relative;height:100%}
 #wrap{min-height:100%}
 .footer-clear{display:block;padding-top:0}
 .row-fluid:after,.row-fluid:before,[class*=" layout-"]:after,[class*=" layout-"]:before,[class^=layout-]:after,[class^=layout-]:before{display:table;content:"";line-height:0}
-h1,h2,p{padding:0 0 20px}
 .footer-container{margin-top:0;min-height:0;position:relative;z-index:100}
 .full .container{width:auto;max-width:1368px}
 .dropdown-menu>li a>img,.nav>li>a>img{max-width:none}
@@ -498,6 +498,9 @@ div.listing .inner>.list-item .thumbs img.loading{position:relative;z-index:20;m
 address,body,p{margin:0}
 #__ndcc_footerContainer:after,#__ndcc_footerContainer:before{display:table;content:"";line-height:0}
 #__ndcc_footerContainer a{float:none;display:inline-block}
+#__ndcc_cookieImpliedConsent{padding:10px!important;text-align:center;font-size:12px;font-size:.8rem}
+#__ndcc_cookieImpliedConsent p{padding-bottom:12px}
+h1,h2,p{padding:0 0 20px}
 #__ndcc_cookieImpliedConsent .btns.btns{width:auto;overflow:hidden;text-align:center}
 #__ndcc_cookieImpliedConsent .btns.btns a{cursor:pointer;width:46%}
 html{-webkit-font-smoothing:antialiased;line-height:20px;font-size:15px!important;direction:ltr}
@@ -703,7 +706,7 @@ img.loading{width:auto;margin:0 auto;padding:10px;background:#000;opacity:.7;fil
 5%{-webkit-transform:translate(0,-7px);-moz-transform:translate(0,-7px);-ms-transform:translate(0,-7px);-o-transform:translate(0,-7px);transform:translate(0,-7px)}
 15%{-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-ms-transform:translate(0,-3px);-o-transform:translate(0,-3px);transform:translate(0,-3px)}
 }
-.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
+.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
 .nddf .nddf-container{position:fixed;right:0;bottom:0;width:300px;border-top-left-radius:14px;z-index:1060;background-color:#c00}
 .nddf .nddf-container .nddf-header{text-align:center;padding:4% 5%;border-top-left-radius:10px;background:#f8f8f8}
 .nddf .nddf-container .nddf-header .button-end .icon,.nddf .nddf-container .nddf-header .button-minimise .icon,.nddf .nddf-container .nddf-header .button-minimise .icon.minimised,.nddf .nddf-container .nddf-header h4 .icon,.nddf.nddf-send-email .nddf-container .nddf-header h4 .icon{line-height:16px;background-image:url(../images/icons/sprite-icons-16-black.png);display:inline-block}
@@ -761,13 +764,14 @@ button,input[type=button]{min-height:33px}
 10%{opacity:.5;filter:Alpha(Opacity=50 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 50 )}
 }
 .chat .btn{-webkit-backface-visibility:hidden;color:#fff;background:#c00;-webkit-animation-iteration-count:2;-moz-animation-iteration-count:2;-o-animation-iteration-count:2;-ms-animation-iteration-count:2;animation-iteration-count:2;-webkit-animation-name:chatAnimation;-moz-animation-name:chatAnimation;-o-animation-name:chatAnimation;-ms-animation-name:'chatAnimation';animation-name:chatAnimation;-webkit-animation-duration:4s;-moz-animation-duration:4s;-o-animation-duration:4s;-ms-animation-duration:4s;animation-duration:4s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
-.cyclr .caption .title span,.save-vehicle .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cyclr .item.cycle-slide-active .caption .title span,.save-vehicle .btn{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s}
+.cyclr .caption .title span,.save-vehicle .btn{-webkit-animation-delay:.15s;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .chat .btn:after,.chat .btn:before{display:none}
 .chat .btn .icon{margin:0 5px 0 0;width:16px;height:16px;line-height:16px;background-image:url(../images/icons/sprite-icons-16-white.png);background-position:-666px 0;display:inline-block}
 .chat .btn:hover{color:#fff;background:#900}
 .chat .btn:hover .icon,.save-vehicle .btn .icon{width:16px;height:16px;background-image:url(../images/icons/sprite-icons-16-white.png);display:inline-block;line-height:16px}
 .chat .btn:hover .icon{background-position:-666px 0}
-.save-vehicle .btn{padding:0 20px;-webkit-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
+.save-vehicle .btn{padding:0 20px;animation-delay:.15s;-o-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
 .save-vehicle .btn .icon{margin:-1px 5px 0 0;-webkit-transition:max-width 1s ease-in-out;-moz-transition:max-width 1s ease-in-out;-o-transition:max-width 1s ease-in-out;transition:max-width 1s ease-in-out;background-position:-888px -74px;max-width:0}
 .save-vehicle .btn:after,.save-vehicle .btn:before{display:none}
 .save-vehicle.animate-in .btn,.save-vehicle.animate-out .btn{-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
@@ -1399,7 +1403,7 @@ img.adp-marker{height:40px;width:22px}
 #nddContainer,#nddHeading{width:100%;border:none;padding:0}
 #nddEnterYourDetails{width:50%;float:none;padding:20px}
 #nddContainer .nddBtnGreenLarge,#nddContainer .nddBtnGreyLarge,#nddContainer .nddBtnRedLarge{padding:9px 15px;font-weight:400}
-#nddCustomerDetails img{float:none;margin:20px 20px 0;max-width:293px!important;width:84%!important;border:10px solid #fff;box-sizing:border-box}
+#nddCustomerDetails img{float:none;margin:20px 20px 0;max-width:293px!important;width:84%!important;border:10px solid #fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #nddContainer .nddBtnGreenLarge{color:#fff;background:#cc0001}
 #nddContainer .nddBtnGreenLarge.hover,#nddContainer .nddBtnGreenLarge:hover{background:#990001}
 #nddContainer .nddBtnRedLarge{color:#fff;background:red}
@@ -1461,7 +1465,6 @@ img.adp-marker{height:40px;width:22px}
 .no-touch .page-layout .list-view:hover .icon,.page-layout .list-view .icon,.page-layout .list-view.active .icon{line-height:25px;height:25px;width:25px;display:inline-block}
 .page-layout a{display:block}
 .page-layout .title{padding:1px 10px 0 0;display:inline-block;display:none}
-.reevoo-badge,.search{padding:0 0 20px}
 .page-layout .list-view{text-align:left;height:38px;width:38px;display:inline-block}
 .page-layout .list-view span{display:none}
 .page-layout .list-view .icon{margin:5px 0 0 6px;background-image:url(../images/icons/sprite-icons-25-black.png);background-position:-1628px 0}
@@ -1479,6 +1482,7 @@ img.adp-marker{height:40px;width:22px}
 .page-layout .tile-view.active{background:#fff}
 .page-layout .tile-view.active .icon{background-image:url(../images/icons/sprite-icons-25-black.png);background-position:-1554px 0}
 .reevoo-badge:after,.reevoo-badge:before,.reevoo-badge>.inner:after,.reevoo-badge>.inner:before{display:table;content:"";line-height:0}
+.reevoo-badge{padding:0 0 20px}
 .reevoo-badge a{text-decoration:none;color:#6d6d6d}
 .reevoo-badge .title{text-transform:uppercase;margin:0;padding:0 0 20px;color:#404040;font-size:20px;font-size:1.3333333333333333rem}
 .reevoo-badge.simplified,.reevoo-badge.small{padding-bottom:0}
@@ -1580,7 +1584,7 @@ img.adp-marker{height:40px;width:22px}
 .config-foot .previous:hover .icon,.cssanimate.infinite{-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite}
 .ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:after,.ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:before{display:none}
 .loading:not(img):not(.listing):not(.module-search)>.icon:after{top:auto;bottom:0;-webkit-animation-delay:-1s;-moz-animation-delay:-1s;-o-animation-delay:-1s;-ms-animation-delay:-1s;animation-delay:-1s}
-.search{line-height:inherit;position:relative;z-index:1020}
+.search{line-height:inherit;position:relative;padding:0 0 20px;z-index:1020}
 .search>.inner{font-size:0}
 .search>.inner:after,.search>.inner:before{display:table;content:"";line-height:0}
 .search .no-results.modal{text-align:center;padding:30px 10px;width:205px;height:165px;border:1px solid #ccc;background:#fff;color:#404040;margin-left:-112.5px;-webkit-box-shadow:0 0 0 20px rgba(225,225,225,.3);-moz-box-shadow:0 0 0 20px rgba(225,225,225,.3);box-shadow:0 0 0 20px rgba(225,225,225,.3);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;font-size:13px;font-size:.8666666666666667rem}
@@ -1599,18 +1603,17 @@ img.adp-marker{height:40px;width:22px}
 .search .buttons{padding:5px;background:#f8f8f8;border-top:solid 1px #f8f8f8}
 .search .buttons:after,.search .buttons:before{display:table;content:"";line-height:0}
 .search a.btn{margin:0;background-image:none;line-height:27px;padding:0 10px;background-color:#cc0001;color:#fff;font-size:15px;font-size:1rem;display:block}
-.search .cancel .btn,.search .clear .btn{-webkit-box-shadow:none;-moz-box-shadow:none;font-size:14px}
 .search a.btn:after,.search a.btn:before{display:none}
 .search a.btn:focus,.search a.btn:hover{background-color:#9c0203;color:#fff}
 .search a.btn span{border:none;background:0 0;padding:0;margin:0}
 .search .cancel{float:left}
-.search .cancel .btn{background:0 0;border:none;padding:0 10px;margin-left:5px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;box-shadow:none;font-size:.9333333333333333rem}
+.search .cancel .btn{background:0 0;border:none;padding:0 10px;margin-left:5px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;font-size:14px;font-size:.9333333333333333rem}
 .search .cancel .btn .icon,.search .clear .btn .icon{margin:0 7px 0 0;width:16px;height:16px;line-height:16px;display:inline-block}
 .search .cancel .btn .icon{vertical-align:middle;background-image:url(../images/icons/sprite-icons-16-black.png);background-position:-740px 0}
 .search .cancel .btn:focus,.search .cancel .btn:hover{background-color:inherit;color:inherit}
 .search .cancel .btn span{top:0;vertical-align:middle;display:inline-block}
 .search .clear{clear:none;float:left;display:inline-block}
-.search .clear .btn{background:0 0;border:none;padding:0 10px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;box-shadow:none;font-size:.9333333333333333rem}
+.search .clear .btn{background:0 0;border:none;padding:0 10px;color:#404040;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;font-size:14px;font-size:.9333333333333333rem}
 .search .clear .btn .icon{background-image:url(../images/icons/sprite-icons-16-black.png);background-position:-518px -74px}
 .search .clear .btn:focus,.search .clear .btn:hover{background-color:inherit;color:inherit}
 .search .clear .btn span{top:0;vertical-align:middle;display:inline-block}
@@ -1807,7 +1810,7 @@ img.adp-marker{height:40px;width:22px}
 .cyclr .adverts-terms-conditions{line-height:30px;width:auto;height:auto;font-family:Arial;background:#000;background:rgba(0,0,0,.5);position:absolute;bottom:10px;padding:0 10px;color:#fff;right:10px;font-size:11px;font-size:.7333333333333333rem}
 .cyclr .adverts-terms-conditions:hover{background:#000}
 .cyclr .item.cycle-slide-active .caption{visibility:visible}
-.cyclr .item.cycle-slide-active .caption .title span{visibility:visible;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;-ms-animation-name:bounceInDown;animation-name:bounceInDown}
+.cyclr .item.cycle-slide-active .caption .title span{visibility:visible;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInDown;-moz-animation-name:bounceInDown;-o-animation-name:bounceInDown;-ms-animation-name:bounceInDown;animation-name:bounceInDown}
 .cyclr .item.cycle-slide-active .caption .sub-title span{visibility:visible;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInLeft;-moz-animation-name:bounceInLeft;-o-animation-name:bounceInLeft;-ms-animation-name:bounceInLeft;animation-name:bounceInLeft}
 .cyclr .item.cycle-slide-active .caption .content ul{visibility:visible;-webkit-animation-delay:2s;-moz-animation-delay:2s;-o-animation-delay:2s;-ms-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInLeft;-moz-animation-name:bounceInLeft;-o-animation-name:bounceInLeft;-ms-animation-name:bounceInLeft;animation-name:bounceInLeft}
 .cyclr .item.cycle-slide-active .caption .btn{visibility:visible;-webkit-animation-delay:3s;-moz-animation-delay:3s;-o-animation-delay:3s;-ms-animation-delay:3s;animation-delay:3s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInUp;-moz-animation-name:bounceInUp;-o-animation-name:bounceInUp;-ms-animation-name:bounceInUp;animation-name:bounceInUp}
@@ -1816,17 +1819,17 @@ img.adp-marker{height:40px;width:22px}
 .cyclr .caption span{display:block;clear:both}
 .cyclr .caption span>span{float:left}
 .cyclr .caption .caption-inset{height:auto;vertical-align:top;color:#404040;padding:22px 0;width:100%;box-sizing:border-box;display:inline-block;font-size:14px;font-size:.9333333333333333rem}
-.cyclr .caption .sub-title span,.cyclr .caption .title span{padding:15px 20px;background:#c00;visibility:hidden;-webkit-animation-delay:.15s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;text-transform:uppercase}
+.cyclr .caption .sub-title span,.cyclr .caption .title span{padding:15px 20px;background:#c00;visibility:hidden;-webkit-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;text-transform:uppercase}
 .cyclr .caption.font-black .caption-inset{color:#404040}
 .cyclr .caption.font-white .caption-inset,:not(.banner).cyclr .caption .sub-title span,:not(.banner).cyclr .caption .title span{color:#fff}
-.cyclr .caption .title span{max-width:400px;font-size:2.142857142857143em;animation-delay:.15s;-webkit-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
-.cyclr .caption .content ul,.cyclr .caption .sub-title span{max-width:400px;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
-.cyclr .caption .sub-title span{margin-bottom:10px;font-size:1.2857142857142858em;animation-delay:.15s;-webkit-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
-.cyclr .caption .btn,.cyclr .caption .content ul{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both;visibility:hidden}
+.cyclr .caption .title span{max-width:400px;font-size:2.142857142857143em;animation-delay:.15s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .content ul,.cyclr .caption .sub-title span{max-width:400px;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cyclr .caption .sub-title span{margin-bottom:10px;font-size:1.2857142857142858em;-webkit-animation-delay:.15s;animation-delay:.15s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .btn,.cyclr .caption .content ul{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both;visibility:hidden}
 .cyclr .caption .content ul{list-style-type:none;overflow:hidden;margin:0 0 10px;padding:0;background:0 0;font-size:1.0714285714285714em;display:inline-block;-webkit-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
-.cssanimate,.cyclr .caption .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.cssanimate,.cyclr .caption .btn{-webkit-animation-delay:.15s;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .cyclr .caption .content li{list-style-type:none;float:left;clear:both;padding:8px 20px;background:#fff;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif}
-.cyclr .caption .btn{clear:both;margin:0;line-height:33px;padding:0 20px;font-size:15px;font-size:1rem;display:inline-block;-webkit-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
+.cyclr .caption .btn{clear:both;margin:0;line-height:33px;padding:0 20px;font-size:15px;font-size:1rem;display:inline-block;animation-delay:.15s;animation-duration:1s;animation-fill-mode:both}
 .cyclr .caption .btn span{float:none!important;display:inline-block}
 .cyclr .caption[class*=left] span>span{text-align:left;float:left}
 .cyclr .caption[class*=right] .caption-inset{text-align:right}
@@ -2489,7 +2492,7 @@ div.register,div.sign-in{max-width:550px;margin:0 auto}
 100%{opacity:0;filter:Alpha(Opacity=0 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 0 );-webkit-transform:translate(0,-80px);-moz-transform:translate(0,-80px);-ms-transform:translate(0,-80px);-o-transform:translate(0,-80px);transform:translate(0,-80px)}
 }
 .fadeOutUp{-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
-.cssanimate{-webkit-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
+.cssanimate{animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both;animation-fill-mode:both}
 .cssanimate.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
 .cssanimate.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-o-animation-duration:2s;-ms-animation-duration:2s;animation-duration:2s}
 body{background-color:#fff}
@@ -2626,11 +2629,10 @@ body{background-color:#fff}
 .homepage .search .search-header .total-count .value{float:left;padding-right:10px}
 .homepage .search .search-vehicles{right:0;padding:0;display:block;min-width:120px;position:absolute;text-align:center;top:91px}
 .homepage .search .search-vehicles .btn{font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;color:#c00;line-height:41px;background:repeat-x #f8f8f8;font-weight:400;font-size:16px;font-size:1.0666666666666667rem;background-image:-moz-linear-gradient(top,#fff,#eee);background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#eee));background-image:-webkit-linear-gradient(top,#fff,#eee);background-image:-o-linear-gradient(top,#fff,#eee);background-image:linear-gradient(to bottom,#fff,#eee)}
-.container-cm77r .location-search.module .view-all-locations a,.container-l6ym7 .featured-stock .inner>.count,.homepage .search .filter-vehicle-condition .option{font-family:VW-head,Arial,Verdana,Helvetica,sans-serif}
 .homepage .search .search-vehicles .btn:hover{background:repeat-x #f5f5f5;background-image:-moz-linear-gradient(top,#eee,#fff);background-image:-webkit-gradient(linear,0 0,0 100%,from(#eee),to(#fff));background-image:-webkit-linear-gradient(top,#eee,#fff);background-image:-o-linear-gradient(top,#eee,#fff);background-image:linear-gradient(to bottom,#eee,#fff)}
 .homepage .search .filter-inset{background:0 0;padding-top:15px}
 .homepage .search .filter-heading .icon,.homepage .search .filter-price .price-range-filters .caret{width:16px;height:16px;background-image:url(../images/icons/sprite-icons-16-white.png)}
-.homepage .search .filter-vehicle-condition .option{padding:0 15px;background:0 0;font-weight:400;text-transform:none}
+.homepage .search .filter-vehicle-condition .option{padding:0 15px;background:0 0;font-weight:400;text-transform:none;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif}
 .homepage .search .filter-vehicle-condition .option .label{color:#c6c5c5;font-size:26px;font-size:1.7333333333333334rem}
 .homepage .search .filter-vehicle-condition .option:first-child{padding-left:0}
 .homepage .search .filter-vehicle-condition .option.active .label{color:#000}
@@ -2693,13 +2695,13 @@ body{background-color:#fff}
 .container-cm77r .jump-locations.module:before{content:' ';right:0;bottom:0;width:62px;z-index:10;position:absolute;border-right:0 solid transparent;border-left:158px solid transparent;border-top:722px solid #fff}
 .container-cm77r .location-search.module{float:left;margin-top:50px;padding-bottom:0;position:relative}
 .container-cm77r .location-search.module>.inner{background:0 0;padding-bottom:0}
-.container-cm77r .location-search.module .control-label{line-height:normal;margin-bottom:35px;color:#000;font-weight:400;font-size:40px;font-size:2.6666666666666665rem}
+.container-cm77r .location-search.module .control-label{line-height:normal;margin-bottom:35px;color:#000;font-weight:400;text-transform:none;font-size:40px;font-size:2.6666666666666665rem}
 .container-cm77r .location-search.module .control-label:after{content:'Our Gloucester showroom is part of the authorised Volkswagen Blade Group respected car dealerships in the South West. Enter your details below to find directions.';display:block;font-weight:100;padding-top:20px;color:#5c5c5c;line-height:20px;font-size:16px;font-size:1.0666666666666667rem}
 .container-cm77r .location-search.module input{width:250px;height:47px;background:#fff;text-align:center;border:1px solid #dbdbdb}
 .container-cm77r .location-search.module .btn{margin:30px 0 0;line-height:35px;padding:0 20px}
 .container-cm77r .location-search.module .btn:after,.container-cm77r .location-search.module .btn:before{display:inline-block}
 .container-cm77r .location-search.module .view-all-locations{bottom:-1px;left:110px;position:absolute}
-.container-cm77r .location-search.module .view-all-locations a{line-height:35px;text-decoration:none;color:#fff;padding:0 20px;text-transform:uppercase}
+.container-cm77r .location-search.module .view-all-locations a{line-height:35px;text-decoration:none;color:#fff;padding:0 20px;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;text-transform:uppercase}
 .container-cm77r .location-search.module .view-all-locations a:after{content:' ';vertical-align:middle;background-image:url(../images/honda/icon-arrow.png);background-position:left top;background-repeat:no-repeat;width:20px;height:19px;margin:0 0 0 30px;display:inline-block}
 .container-cm77r .location-search.module .view-all-locations a:hover{color:#fff}
 .container-iq0m1{overflow:hidden;position:relative}
@@ -2731,7 +2733,7 @@ body{background-color:#fff}
 .container-xnjhm .tertiary-jump.module .content{top:22%;width:14%}
 .container-xnjhm .tertiary-jump.module .button{top:53%}
 .container-xnjhm .valuation-jump{top:11%;left:65%;z-index:102;width:353px;position:absolute!important}
-.container-xnjhm .valuation-jump h3.title{text-transform:none}
+.container-xnjhm .valuation-jump h3.title{text-transform:none;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;font-weight:400}
 .container-xnjhm .valuation-jump .content{padding-bottom:30px;line-height:25px!important;font-size:16px!important;font-size:1.0666666666666667rem!important}
 .container-xnjhm .valuation-jump form .control-group{width:47%;float:left;margin-right:6%}
 .container-xnjhm .valuation-jump form .control-group:nth-child(3){margin-right:0}
@@ -2741,7 +2743,7 @@ body{background-color:#fff}
 .container-xnjhm .valuation-jump .btns a{margin:0}
 .container-l6ym7{background:#fff}
 .container-l6ym7 .featured-stock .inner{padding:0 0 10px}
-.container-l6ym7 .featured-stock .inner>.count{font-size:14px;font-size:.9333333333333333rem;color:#6d7579;right:140px;font-weight:400}
+.container-l6ym7 .featured-stock .inner>.count{font-size:14px;font-size:.9333333333333333rem;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;color:#6d7579;right:140px;font-weight:400}
 .container-l6ym7 .featured-stock .heading{padding:20px 0 40px;text-align:center}
 .container-l6ym7 .featured-stock .item{width:25%}
 .container-l6ym7 .featured-stock .item .inset{padding:0;border:0}
@@ -2800,7 +2802,7 @@ body{background-color:#fff}
 @media (max-width:1367px){.homepage #content-wrap .container-z9jg1 .container{width:1170px}
 }
 .is-consistant.module{position:relative}
-.is-consistant.module .strapline,.is-consistant.module .title{line-height:normal;color:#000;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-weight:400;font-size:38px;font-size:2.533333333333333rem}
+.is-consistant.module .strapline,.is-consistant.module .title{line-height:normal;color:#000;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;font-weight:400;text-transform:normal;font-size:38px;font-size:2.533333333333333rem}
 .is-consistant.module .content{line-height:20px;color:#5c5c5c;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;font-weight:400;font-size:18px;font-size:1.2rem}
 .is-consistant.module .button{float:left}
 .is-consistant.module .button .btn{margin:0;padding:0 20px}
@@ -3834,9 +3836,10 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .header-container .row-4vuwj{padding:0;text-align:right}
 .header-container .logo{top:80px;width:auto;position:absolute;left:50%;margin-left:0}
 .header-container .franchise-badge{top:80px;left:35%}
-.header-container .button,.header-container .contact-numbers,.header-container .live-chat,.header-container .saved-vehicles,.header-container .social-icons{width:auto;padding:0 8px}
+.header-container .button,.header-container .contact-numbers,.header-container .live-chat,.header-container .saved-vehicles,.header-container .social-icons{width:auto;padding:0 8px;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif!important}
+.header-container .button .btn,.header-container .button>a,.header-container .contact-numbers .btn,.header-container .contact-numbers>a,.header-container .live-chat .btn,.header-container .live-chat>a,.header-container .saved-vehicles .btn,.header-container .saved-vehicles>a,.header-container .social-icons .btn,.header-container .social-icons>a{font-family:VW-head,Arial,Verdana,Helvetica,sans-serif!important}
 .header-container .social-icons{top:3px;position:relative;padding-right:100px}
-.header-container .toggle-nav{top:0;right:0;width:100px;position:absolute;text-align:center;z-index:1028;-webkit-backface-visibility:hidden;color:#5c5c5c;height:52px;line-height:52px;font-family:VW-text,Arial,Verdana,Helvetica,sans-serif;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;font-size:15px;font-size:1rem}
+.header-container .toggle-nav{top:0;right:0;width:100px;position:absolute;text-align:center;z-index:1028;-webkit-backface-visibility:hidden;color:#5c5c5c;height:52px;line-height:52px;font-family:VW-head,Arial,Verdana,Helvetica,sans-serif;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;font-size:15px;font-size:1rem}
 .header-container .toggle-nav:before{content:'Menu';display:inline-block}
 .header-container .toggle-nav .icon{line-height:25px;background-image:url(../images/icons/sprite-icons-25-custom.png);background-position:-222px 0;display:inline-block;width:27px;height:27px;margin:-5px 0 0 5px}
 #primary-menu .container{border:none}
@@ -3881,7 +3884,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .container-ghe1u .content-jump.module.left-jump-content{top:0;left:60px;text-align:left}
 .container-ghe1u .content-jump.module.left-jump-content .button{float:left}
 .container-ghe1u .content-jump.module.right-jump-content{float:left;position:static;min-height:278px;padding-bottom:0;padding-left:60px;background:#e3dfdf}
-.container-ghe1u .content-jump.module .title{padding-top:40px;font-size:38px;font-size:2.533333333333333rem}
+.container-ghe1u .content-jump.module .title{padding-top:40px;font-size:38px;font-size:2.533333333333333rem;text-transform:normal}
 .container-ghe1u .content-jump.module .button{margin-top:40px}
 .container-cm77r .container{width:764px}
 .container-cm77r .jump-locations.module{width:424px}
@@ -3910,7 +3913,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .container-xnjhm .container{width:764px}
 .container-xnjhm .container:after{display:none}
 .container-xnjhm .tertiary-jump.module{padding-bottom:0}
-.container-xnjhm .tertiary-jump.module .title{top:0;right:10%;width:250px;font-size:38px;font-size:2.533333333333333rem}
+.container-xnjhm .tertiary-jump.module .title{top:0;right:10%;width:250px;font-size:38px;font-size:2.533333333333333rem;text-transform:normal}
 .container-xnjhm .tertiary-jump.module .content{top:40%;right:10%;width:155px;display:block}
 .container-xnjhm .tertiary-jump.module .thumb{width:60%;float:none;position:relative;padding-bottom:28px}
 .container-xnjhm .tertiary-jump.module .thumb:after,.container-xnjhm:after{content:' ';position:absolute;border-style:solid;bottom:0}

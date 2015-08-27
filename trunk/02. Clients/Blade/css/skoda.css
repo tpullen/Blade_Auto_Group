@@ -1,6 +1,6 @@
 /*!
  * GForces Less 1.0
- * @svn_revision_818
+ * @svn_revision_819
  */
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 .datepicker table,.slider .ui-slider-handle{-webkit-touch-callout:none;-khtml-user-select:none}
@@ -320,7 +320,6 @@ body,html{position:relative;height:100%}
 #wrap{min-height:100%}
 .footer-clear{display:block;padding-top:0}
 .row-fluid:after,.row-fluid:before,[class*=" layout-"]:after,[class*=" layout-"]:before,[class^=layout-]:after,[class^=layout-]:before{display:table;content:"";line-height:0}
-h1,h2,p{padding:0 0 20px}
 .footer-container{margin-top:0;min-height:0;position:relative;z-index:100}
 .full .container{width:auto;max-width:1368px}
 .dropdown-menu>li a>img,.nav>li>a>img{max-width:none}
@@ -498,6 +497,9 @@ div.listing .inner>.list-item .thumbs img.loading{position:relative;z-index:20;m
 address,body,p{margin:0}
 #__ndcc_footerContainer:after,#__ndcc_footerContainer:before{display:table;content:"";line-height:0}
 #__ndcc_footerContainer a{float:none;display:inline-block}
+#__ndcc_cookieImpliedConsent{padding:10px!important;text-align:center;font-size:12px;font-size:1rem}
+#__ndcc_cookieImpliedConsent p{padding-bottom:12px}
+h1,h2,p{padding:0 0 20px}
 #__ndcc_cookieImpliedConsent .btns.btns{width:auto;overflow:hidden;text-align:center}
 #__ndcc_cookieImpliedConsent .btns.btns a{cursor:pointer;width:46%}
 html{-webkit-font-smoothing:antialiased;line-height:20px;font-size:12px!important;direction:ltr}
@@ -2601,7 +2603,7 @@ body{background-color:#fff}
 .footer-container .footer-info .custom-html .copyright,.footer-container .footer-info .custom-html .title{padding-bottom:5px;font-weight:400;color:#4ba346;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:16px;font-size:1.3333333333333333rem}
 .footer-container .footer-info .finance{max-width:45%}
 .footer-container .footer-info .contact-us{width:100%;text-align:center}
-.footer-container .footer-info .contact-us .btn{border:none;background-color:rgba(255,255,255,0);background-image:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,0)),to(rgba(255,255,255,0)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-o-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0));background-repeat:repeat-x}
+.footer-container .footer-info .contact-us .btn{border:none;color:#fff;background-color:rgba(255,255,255,0);background-image:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,0)),to(rgba(255,255,255,0)));background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:-o-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0));background-image:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0));background-repeat:repeat-x}
 .footer-container .footer-info .contact-us .btn:after,.footer-container .footer-info .contact-us .btn:before{display:none}
 .footer-container .footer-info .contact-us .btn .icon{line-height:25px;background-image:url(../images/skoda/icons/sprite-icons-25-custom.png);background-position:-518px 0;display:inline-block;width:26px;height:26px;margin:0 10px 0 0}
 .footer-container .footer-info .contact-us .btn:hover{color:#fff}
@@ -2699,7 +2701,7 @@ body{background-color:#fff}
 .container-cm77r .jump-locations.module:before{content:' ';right:0;bottom:0;width:62px;z-index:10;position:absolute;border-right:0 solid transparent;border-left:158px solid transparent;border-top:722px solid #fff}
 .container-cm77r .location-search.module{float:left;margin-top:50px;padding-bottom:0;position:relative}
 .container-cm77r .location-search.module>.inner{background:0 0;padding-bottom:0}
-.container-cm77r .location-search.module .control-label{line-height:normal;margin-bottom:35px;color:#4ba346;font-family:skodapro,Verdana,Helvetica,sans-serif;font-weight:700;font-size:40px;font-size:3.3333333333333335rem}
+.container-cm77r .location-search.module .control-label{line-height:normal;margin-bottom:35px;color:#4ba346;font-family:skodapro,Verdana,Helvetica,sans-serif;font-weight:700;text-transform:none;font-size:40px;font-size:3.3333333333333335rem}
 .container-cm77r .location-search.module .control-label:after{content:'Our Gloucester showroom is part of the authorised Volkswagen Blade Group respected car dealerships in the South West. Enter your details below to find directions.';display:block;font-weight:100;padding-top:20px;color:#050607;font-family:Verdana,Arial,Helvetica,sans-serif;line-height:20px;font-size:16px;font-size:1.3333333333333333rem}
 .container-cm77r .location-search.module input{width:250px;height:47px;background:#fff;text-align:center;border:1px solid #dbdbdb}
 .container-cm77r .location-search.module .btn{margin:30px 0 0;line-height:35px;padding:0 20px}
@@ -2738,7 +2740,7 @@ body{background-color:#fff}
 .container-xnjhm .tertiary-jump.module .content{top:22%;width:14%}
 .container-xnjhm .tertiary-jump.module .button{top:53%}
 .container-xnjhm .valuation-jump{top:11%;left:65%;z-index:102;width:353px;position:absolute!important}
-.container-xnjhm .valuation-jump h3.title{text-transform:none}
+.container-xnjhm .valuation-jump h3.title{text-transform:none;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight:400}
 .container-xnjhm .valuation-jump .content{padding-bottom:30px;line-height:25px!important;font-size:16px!important;font-size:1.3333333333333333rem!important}
 .container-xnjhm .valuation-jump form .control-group{width:47%;float:left;margin-right:6%}
 .container-xnjhm .valuation-jump form .control-group:nth-child(3){margin-right:0}
@@ -2806,7 +2808,7 @@ body{background-color:#fff}
 @media (max-width:1367px){.homepage #content-wrap .container-z9jg1 .container{width:1170px}
 }
 .is-consistant.module{position:relative}
-.is-consistant.module .strapline,.is-consistant.module .title{line-height:normal;color:#4ba346;font-family:skodapro,Verdana,Helvetica,sans-serif;font-weight:700;font-size:36px;font-size:3rem}
+.is-consistant.module .strapline,.is-consistant.module .title{line-height:normal;color:#4ba346;font-family:skodapro,Verdana,Helvetica,sans-serif;font-weight:700;text-transform:normal;font-size:36px;font-size:3rem}
 .is-consistant.module .content{line-height:20px;color:#050607;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight:400;font-size:18px;font-size:1.5rem}
 .is-consistant.module .button{float:left}
 .is-consistant.module .button .btn{margin:0;padding:0 20px}
@@ -3783,6 +3785,7 @@ body{background-color:#fff}
 [class*=advancedrecruitment].details .sticky-module .button .btn{text-align:center;display:block}
 [class*=advancedrecruitment].details .sticky-module .button .btn:before{content:'Apply';display:inline-block}
 [class*=advancedrecruitment].details .sticky-module .button span{display:none}
+.header-container .social-icons{margin-right:0}
 }
 @media (max-width:979px){body{width:100%;overflow-x:hidden}
 body.open-search,body.save-compare-open{overflow:hidden}
@@ -3866,9 +3869,10 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .header-container .row-4vuwj{padding:0;text-align:right}
 .header-container .logo{top:80px;width:auto;position:absolute;left:50%;margin-left:0}
 .header-container .franchise-badge{top:80px;left:35%}
-.header-container .button,.header-container .contact-numbers,.header-container .live-chat,.header-container .saved-vehicles,.header-container .social-icons{width:auto;padding:0 8px}
+.header-container .button,.header-container .contact-numbers,.header-container .live-chat,.header-container .saved-vehicles,.header-container .social-icons{width:auto;padding:0 8px;font-family:Verdana,Helvetica,sans-serif!important}
+.header-container .button .btn,.header-container .button>a,.header-container .contact-numbers .btn,.header-container .contact-numbers>a,.header-container .live-chat .btn,.header-container .live-chat>a,.header-container .saved-vehicles .btn,.header-container .saved-vehicles>a,.header-container .social-icons .btn,.header-container .social-icons>a{font-family:Verdana,Helvetica,sans-serif!important}
 .header-container .social-icons{top:3px;position:relative;padding-right:100px}
-.header-container .toggle-nav{top:0;right:0;width:100px;position:absolute;text-align:center;z-index:1028;-webkit-backface-visibility:hidden;color:#050607;height:52px;line-height:52px;font-family:Verdana,Arial,Helvetica,sans-serif;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;font-size:15px;font-size:1.25rem}
+.header-container .toggle-nav{top:0;right:0;width:100px;position:absolute;text-align:center;z-index:1028;-webkit-backface-visibility:hidden;color:#050607;height:52px;line-height:52px;font-family:Verdana,Helvetica,sans-serif;-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;font-size:15px;font-size:1.25rem}
 .header-container .toggle-nav:before{content:'Menu';display:inline-block}
 .header-container .toggle-nav .icon{line-height:25px;background-image:url(../images/skoda/icons/sprite-icons-25-custom.png);background-position:-222px 0;display:inline-block;width:27px;height:27px;margin:-5px 0 0 5px}
 #primary-menu .container{border:none}
@@ -3913,7 +3917,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .container-ghe1u .content-jump.module.left-jump-content{top:0;left:60px;text-align:left}
 .container-ghe1u .content-jump.module.left-jump-content .button{float:left}
 .container-ghe1u .content-jump.module.right-jump-content{float:left;position:static;min-height:278px;padding-bottom:0;padding-left:60px;background:#e3dfdf}
-.container-ghe1u .content-jump.module .title{padding-top:40px;font-size:36px;font-size:3rem}
+.container-ghe1u .content-jump.module .title{padding-top:40px;font-size:36px;font-size:3rem;text-transform:normal}
 .container-ghe1u .content-jump.module .button{margin-top:40px}
 .container-cm77r .container{width:764px}
 .container-cm77r .jump-locations.module{width:424px}
@@ -3942,7 +3946,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .container-xnjhm .container{width:764px}
 .container-xnjhm .container:after{display:none}
 .container-xnjhm .tertiary-jump.module{padding-bottom:0}
-.container-xnjhm .tertiary-jump.module .title{top:0;right:10%;width:250px;font-size:36px;font-size:3rem}
+.container-xnjhm .tertiary-jump.module .title{top:0;right:10%;width:250px;font-size:36px;font-size:3rem;text-transform:normal}
 .container-xnjhm .tertiary-jump.module .content{top:40%;right:10%;width:155px;display:block}
 .container-xnjhm .tertiary-jump.module .thumb{width:60%;float:none;position:relative;padding-bottom:28px}
 .container-xnjhm .tertiary-jump.module .thumb:after,.container-xnjhm:after{content:' ';position:absolute;border-style:solid;bottom:0}
@@ -4064,6 +4068,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 [class*=advancedrecruitment].listing .listing .content{float:none;width:auto;padding-bottom:20px}
 [class*=advancedrecruitment].details .sticky-module{display:none}
 .container-gk5ty .container{width:724px}
+.header-container .container-296mj{margin-top:0}
 }
 @media (max-width:767px){.locations-hours table tr,.locations-hours tbody tr,.locations-hours td tr,.locations-hours th tr,.locations-hours thead tr,.locations-hours tr tr,.media.module.tour-360{overflow:hidden}
 #aside,#main-container{float:none;width:auto;margin-left:0}

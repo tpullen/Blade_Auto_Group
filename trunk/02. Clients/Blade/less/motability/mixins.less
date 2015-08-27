@@ -6,38 +6,32 @@
 
 	/* Primary Button */
 	.primary-button {
+		color: @button-color;
+		background: @button-background;
 		font-weight: @button-font-weight;
-		border: 1px solid @button-border-color;
-		.border-radius(@button-border-radius);
-		#gradient > .vertical(#fff, #eee);
+		font-family: @button-font-family;
+		text-transform: @button-text-transform;
+		.font-size(@button-font-size);
+		padding: 0;
 
-
-		&:after {
+		&:before {
 			content: ' ';
-		    width: 10px;
-		    height: 10px;
-		    margin-top: -2px;
-		    padding-left: 10px;
+			width: 27px;
+			height: 26px;
+			display: inline-block;
 			vertical-align: middle;
-		    background-repeat: no-repeat;
-		    background-position: right center;
-			background-image: url("../images/@{franchise-name}/arrow-right.png");
-		    .inline-block;
-		}
-
-		span {
-			top: -1px;
-			position: relative;
+			background: url('../images/motability/primary-button-icon.png') 0 0 no-repeat;
+			margin: @button-icon-margin;
 		}
 
 	}
 
 	.primary-button-hover {
-		border-color: @button-hover-border-color;
-		#gradient > .vertical(@button-hover-background, @button-hover-background); 
+		color: @button-hover-color;
+		background: @button-hover-background;
 
-		&:after {
-			background-image: url("../images/@{franchise-name}/arrow-right-invert.png");
+		&:before {
+			background-position: -27px 0;
 		}
 
 	}
@@ -46,11 +40,10 @@
 	.secondary-button {
 		color: @button-secondary-color;
 		background: @button-secondary-background;
-		border-color: @button-secondary-border-color;
-		#gradient > .vertical(@button-secondary-background, @button-secondary-background);
+		padding: 0;
 
-		&:after {
-			background-image: url("../images/@{franchise-name}/arrow-right-invert.png");
+		&:before {
+			background: url('../images/motability/secondary-button-icon.png') 0 0 no-repeat;
 		}
 
 	}
@@ -58,11 +51,9 @@
 	.secondary-button-hover {
 		color: @button-secondary-hover-color;
 		background: @button-secondary-hover-background;
-		border-color: @button-secondary-hover-border-color;
-		#gradient > .vertical(#fff, #eee);
 
-		&:after {
-			background-image: url("../images/@{franchise-name}/arrow-right.png");
+		&:before {
+			background-position: -27px 0;
 		}
 
 	}
@@ -71,10 +62,10 @@
 	.tertairy-button {
 		color: @button-tertairy-color;
 		background: @button-tertairy-background;
-		border-color: @button-tertairy-border-color;
+		padding: 0;
 
-		&:after {
-			background-image: url("../images/@{franchise-name}/arrow-right-invert.png");
+		&:before {
+			background: url('../images/motability/tertiary-button-icon.png') 0 0 no-repeat;
 		}
 
 	}
@@ -82,10 +73,9 @@
 	.tertairy-button-hover {
 		color: @button-tertairy-hover-color;
 		background: @button-tertairy-hover-background;
-		border-color: @button-tertairy-hover-border-color;
 
-		&:after {
-			background-image: url("../images/@{franchise-name}/arrow-right-alt.png");
+		&:before {
+			background-position: -27px 0;
 		}
 
 	}
