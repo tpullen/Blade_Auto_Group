@@ -7,6 +7,7 @@
     @header__item--padding                      : 0 10px;
     @header__item--color                        : @primary-color;
     @header__item--font-family                  : @base-font-face;
+    @header__item--font-family-tablet           : @alt-font-face;
     @header__item--height                       : 52px;
     @header__item-height--correction            : -2px;
 
@@ -222,10 +223,15 @@
                 width: 26px;
                 height: 26px;
                 margin: -6px 5px 0 0;
-            } 
+            }
 
+            &:before {
+
+                & when (@franchise-name = "motability") {                
+                    display: none !important;
+                }
+            }
         }
-
     }
 
     .saved-vehicles {
@@ -377,6 +383,12 @@
         .button {
             width: auto;
             padding: @header__item--padding-tablet;
+            font-family: @header__item--font-family-tablet !important;
+
+            .btn,
+            &> a {
+                font-family: @header__item--font-family-tablet !important;
+            }
         }
 
         .social-icons {
@@ -396,7 +408,7 @@
             color: @header__item--color;
             height: @header__item--height;
             line-height: @header__item--height;
-            font-family: @header__item--font-family;
+            font-family: @header__item--font-family-tablet;
             .transition(all .5s ease-in-out);
             .font-size(@header__item--font-size);
 
