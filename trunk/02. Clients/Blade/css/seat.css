@@ -5,6 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 .bootstrap-select .btn,.tab-nav,body,h1,h2,h3,h4,h5,h6{font-family:Arial,Verdana,Helvetica,sans-serif}
 .datepicker table,.slider .ui-slider-handle{-webkit-touch-callout:none;-khtml-user-select:none}
+.nddf.nddf-notification .nddf-container,.save-vehicle .btn{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
 .adp-directions,.cms table,.datepicker table,.locations-hours table{border-collapse:collapse}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
@@ -704,7 +705,7 @@ img.loading{width:auto;margin:0 auto;padding:10px;background:#000;opacity:.7;fil
 5%{-webkit-transform:translate(0,-7px);-moz-transform:translate(0,-7px);-ms-transform:translate(0,-7px);-o-transform:translate(0,-7px);transform:translate(0,-7px)}
 15%{-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-ms-transform:translate(0,-3px);-o-transform:translate(0,-3px);transform:translate(0,-3px)}
 }
-.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
+.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
 .nddf .nddf-container{position:fixed;right:0;bottom:0;width:300px;border-top-left-radius:14px;z-index:1060;background-color:#c62831}
 .nddf .nddf-container .nddf-header{text-align:center;padding:4% 5%;border-top-left-radius:10px;background:#7e8185}
 .nddf .nddf-container .nddf-header .button-end .icon,.nddf .nddf-container .nddf-header .button-minimise .icon,.nddf .nddf-container .nddf-header .button-minimise .icon.minimised,.nddf .nddf-container .nddf-header h4 .icon,.nddf.nddf-send-email .nddf-container .nddf-header h4 .icon{line-height:16px;background-image:url(../images/seat/icons/sprite-icons-16-white.png);display:inline-block}
@@ -761,13 +762,13 @@ button,input[type=button]{min-height:33px}
 10%{opacity:.5;filter:Alpha(Opacity=50 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 50 )}
 }
 .chat .btn{-webkit-backface-visibility:hidden;color:#fff;background:#000;-webkit-animation-iteration-count:2;-moz-animation-iteration-count:2;-o-animation-iteration-count:2;-ms-animation-iteration-count:2;animation-iteration-count:2;-webkit-animation-name:chatAnimation;-moz-animation-name:chatAnimation;-o-animation-name:chatAnimation;-ms-animation-name:'chatAnimation';animation-name:chatAnimation;-webkit-animation-duration:4s;-moz-animation-duration:4s;-o-animation-duration:4s;-ms-animation-duration:4s;animation-duration:4s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
-.cyclr .caption .title span,.save-vehicle .btn{-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.save-vehicle .btn,.search .search-vehicles{-o-animation-duration:1s;-ms-animation-duration:1s;-ms-animation-fill-mode:both}
 .chat .btn:after,.chat .btn:before{display:none}
 .chat .btn .icon{margin:0 5px 0 0;width:16px;height:16px;line-height:16px;background-image:url(../images/seat/icons/sprite-icons-16-white.png);background-position:-666px 0;display:inline-block}
 .chat .btn:hover{color:#fff;background:#1a1a1a}
 .chat .btn:hover .icon,.save-vehicle .btn .icon{width:16px;height:16px;background-image:url(../images/seat/icons/sprite-icons-16-white.png);display:inline-block;line-height:16px}
 .chat .btn:hover .icon{background-position:-666px 0}
-.save-vehicle .btn{padding:0 20px;-webkit-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
+.save-vehicle .btn{padding:0 20px;-webkit-animation-delay:.15s;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
 .save-vehicle .btn .icon{margin:-1px 5px 0 0;-webkit-transition:max-width 1s ease-in-out;-moz-transition:max-width 1s ease-in-out;-o-transition:max-width 1s ease-in-out;transition:max-width 1s ease-in-out;background-position:-888px -74px;visibility:hidden;max-width:0}
 .save-vehicle .btn:after,.save-vehicle .btn:before{display:none}
 .save-vehicle.animate-in .btn,.save-vehicle.animate-out .btn{-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
@@ -803,8 +804,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .cms ol,.cms ul{margin:0 0 20px;padding:0 0 0 40px}
 .cms h1,.cms h2,.cms h3{color:#c62831}
 .cms table{border-spacing:0;border:1px solid #ddd;max-width:100%;empty-cells:show}
-.cms table td,.cms table th{vertical-align:top;border-bottom:1px solid #eee;border-right:none;padding:3px}
-.cms table td:last-child,.cms table th:last-child{border-right:none}
+.cms table td,.cms table th{vertical-align:top;border-bottom:1px solid #eee;padding:3px}
 .cms table tfoot td,.cms table tfoot th{background:#f4f4f4}
 .cms table.table-bordered td,.cms table.table-bordered th{border:1px solid #ddd}
 .cms table.table-simple caption,.cms table.table-simple td,.cms table.table-simple th{border:0;padding-left:0}
@@ -1513,13 +1513,12 @@ img.adp-marker{height:40px;width:22px}
 .sc-alert{margin-bottom:10px;border:1px solid #7b621d;background:#514026;color:#e1ba7e;padding:10px}
 .sc-btn{padding:8px 12px 7px;margin-bottom:0;cursor:pointer;background-color:#7e8185;color:#fff;font-size:15px;font-size:1rem}
 .sc-btn:focus,.sc-btn:hover{text-decoration:none;color:#fff;background-color:#e27177}
-.sc-editable,.search .filter-advanced .value{text-decoration:underline}
 .sc-btn.sc-btn-cancel{background:#cd181d}
 .sc-controls{padding:0 20px 10px 0}
 .sc-controls .sc-sort{padding-top:7px;float:left}
 .sc-controls .sc-btns{display:none;float:right}
 #sc-retrieve,#sc-save{padding-right:20px}
-.sc-editable{color:#5abef7;cursor:pointer}
+.sc-editable{color:#5abef7;text-decoration:underline;cursor:pointer}
 .sc-shortlist{width:520px;float:left}
 .sc-shortlist ul{height:270px;list-style-type:none;margin:0;padding:0 20px 20px 0}
 .sc-shortlist .sc-action,.sc-shortlist .sc-trash,.sc-shortlist .sc-view{border:1px solid #6f6f6f;height:36px;cursor:pointer;overflow:hidden;text-indent:-999px}
@@ -1560,7 +1559,6 @@ img.adp-marker{height:40px;width:22px}
 /*!
   @module_search_02
 */
-[class^=used].listing .search-vehicles{display:none}
 @-webkit-keyframes rotate{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}
 }
 @keyframes rotate{100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}
@@ -1579,6 +1577,7 @@ img.adp-marker{height:40px;width:22px}
 .config-foot .previous:hover .icon,.cssanimate.infinite{-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite}
 .ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:after,.ie9 .loading:not(img):not(.listing):not(.module-search)>.icon:before{display:none}
 .loading:not(img):not(.listing):not(.module-search)>.icon:after{top:auto;bottom:0;-webkit-animation-delay:-1s;-moz-animation-delay:-1s;-o-animation-delay:-1s;-ms-animation-delay:-1s;animation-delay:-1s}
+.cyclr .caption .title span,.search .search-vehicles{-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
 .search{line-height:inherit;position:relative;z-index:1020}
 .search>.inner{font-size:0}
 .search>.inner:after,.search>.inner:before{display:table;content:"";line-height:0}
@@ -1697,20 +1696,21 @@ img.adp-marker{height:40px;width:22px}
 .search .filter-price .bootstrap-select .btn,.search .filter-price .bootstrap-select .btn:hover{background:#fff;color:#404040}
 .search .filter-price>.option{margin-bottom:5px}
 .search .filter-price>.option .label{color:#000;display:inline-block}
-.search .filter-advanced .filter-heading .value,.search .filter-price .monthly-budget-filters .label{display:none}
 .search .filter-price .filter-heading{position:relative}
 .search .filter-price .filter-heading .icon{position:absolute;top:8px;right:8px}
 .search .filter-price .price-range-filters{clear:both}
 .search .filter-price .price-range-filters .min{padding-left:0;margin-bottom:0}
 .search .filter-price .price-range-filters .max{padding-right:0;margin-bottom:0}
+.search .filter-price .monthly-budget-filters .label{display:none}
 .search .filter-price .bootstrap-select{margin:0}
 .search .filter-price .bootstrap-select .dropdown-menu{height:200px}
 .search .filter-price .deposit,.search .filter-price .min,.search .filter-price .term{padding:0 1%;width:48%;float:left}
 .search .filter-price .max{padding:0 1%;width:48%;float:right}
-.search .filter-advanced{margin-right:0;width:11%;float:right}
-.search .filter-advanced .icon{width:16px;height:16px;background-image:url(../images/seat/icons/sprite-icons-16-black.png);bottom:8px}
+.search .filter-advanced{margin-right:0;width:11%}
+.search .filter-advanced .value{text-decoration:underline;display:none}
+.search .filter-advanced .icon{width:16px;height:16px;background-image:url(../images/seat/icons/sprite-icons-16-black.png);bottom:2px}
 .search .filter-advanced .filter-heading{background:0 0;border:none;padding:39px 5px 7px}
-.search .filter-advanced .filter-heading .label{padding-bottom:0;font-weight:400;color:#c62831;font-size:14px;font-size:.9333333333333333rem}
+.search .filter-advanced .label{position:relative;padding-bottom:0;font-weight:400;color:#c62831;font-size:14px;font-size:.9333333333333333rem}
 .search .filter-options.advanced{clear:both;position:static;width:auto;margin:0;background:0 0;border:none;padding:10px 0}
 .search .filter-options.advanced .inset{margin:0;padding:10px}
 .search .filter-options.advanced .inset:after,.search .filter-options.advanced .inset:before{left:84%}
@@ -1736,7 +1736,9 @@ img.adp-marker{height:40px;width:22px}
 .search .filter-options.advanced .total-count .padding{padding:8px 10px}
 .search .filter-options.advanced .total-count .value{font-weight:700;font-size:20px;font-size:1.3333333333333333rem}
 .search .search-jobs{display:none;padding:15px 10px}
-.search .search-vehicles{padding:15px 10px}
+.search .search-vehicles{position:absolute;text-align:center;top:69px;width:100px;right:15px;-webkit-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s;animation-fill-mode:both}
+.search .search-vehicles .btn{line-height:30px;font-size:14px;font-size:.9333333333333333rem}
+.search .search-vehicles.btn-before-click{-webkit-animation-name:pulse;-moz-animation-name:pulse;-o-animation-name:pulse;-ms-animation-name:'pulse';animation-name:pulse}
 .service-plan-box{padding:0 0 20px}
 .service-plan-box>.inset{background:#ccc;padding:10px;font-size:13px;font-size:.8666666666666667rem;min-height:205px}
 .service-plan-box>.inset:after,.service-plan-box>.inset:before{display:table;content:"";line-height:0}
@@ -2931,10 +2933,6 @@ body{background-color:#fff}
 [class^=used].details .sticky-module .location-no.module{line-height:normal;padding:8px 0 0;color:#fff;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:18px;font-size:1.2rem;float:left}
 [class^=used].details .sticky-module .location-no.module a,[class^=used].details .sticky-module .location-no.module a:hover{text-decoration:none;color:#fff;display:block;padding-right:25px;text-align:right}
 [class^=used].details .sticky-module .button{padding:3px 20px 6px 0;float:right;text-align:right}
-[class^=used].details .row-lygzn .span9 .link{text-align:center;float:right}
-[class^=used].details .row-lygzn .span9 .link .btn{border-right:solid 1px #afb2b5;padding:0 15px;font-size:16px;font-size:1.0666666666666667rem}
-[class^=used].details .row-lygzn .span9 .link .btn:hover{background:0 0}
-[class^=used].details .row-lygzn .span9 .link:first-child .btn{border-right:none}
 [class^=used].details .row-gtude{margin-bottom:20px}
 [class^=used].details .row-gtude .span3 .layout-11{min-height:486px;background:#afb2b5;color:#000;padding:12px 0 6px;border:1px solid #95989c}
 [class^=used].details .row-gtude .span3 .layout-11 .span12>div{display:block;margin:0 auto;max-width:250px;padding-top:10px}
@@ -2969,12 +2967,13 @@ body{background-color:#fff}
 [class^=used].details .finance-price.module a{font-weight:400;display:block;color:#000}
 [class^=used].details .finance-price.module a .price{font-weight:700;font-size:19px;font-size:1.2666666666666666rem}
 [class^=used].details .finance-price.module .label{font-weight:400;font-size:15px;font-size:1rem}
-[class^=used].details .save-vehicle.link .btn{text-decoration:none;height:auto;background:0 0;border:none;font-weight:400;text-transform:none;margin:0;padding:3px 10px;line-height:normal;font-family:Arial,Verdana,Helvetica,sans-serif;color:#2f905d;display:inline-block;font-size:16px;font-size:1.0666666666666667rem;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+[class^=used].details .save-vehicle.link{text-align:center;float:right}
+[class^=used].details .save-vehicle.link .btn{text-decoration:none;height:auto;background:0 0;border:none;font-weight:400;text-transform:none;margin:0;padding:3px 10px;line-height:normal;border-right:solid 1px #afb2b5;font-family:Arial,Verdana,Helvetica,sans-serif;color:#2f905d;display:inline-block;font-size:16px;font-size:1.0666666666666667rem;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
 [class^=used].details .save-vehicle.link .btn span{top:0;border:none;background:0 0;margin:0;padding:3px 0}
 [class^=used].details .save-vehicle.link .btn .icon{top:0;float:right;margin:4px 0 0 7px;width:16px;height:16px;background-image:url(../images/seat/icons/sprite-icons-16-green.png)}
 [class^=used].details .save-vehicle.link .btn:after,[class^=used].details .save-vehicle.link .btn:before{display:none}
 [class^=used].details .save-vehicle.link.animated .btn:after{display:inline-block}
-[class^=used].details .print-details.link{opacity:.8;filter:Alpha(Opacity=80 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 80 )}
+[class^=used].details .print-details.link{opacity:.8;filter:Alpha(Opacity=80 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 80 );float:right}
 [class^=used].details .print-details.link .btn{text-decoration:none;border:none;background:0 0;font-weight:400;text-transform:none;margin:0;line-height:normal;font-family:Arial,Verdana,Helvetica,sans-serif;color:#404040;padding:3px 0 3px 10px;text-align:right;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-size:16px;font-size:1.0666666666666667rem}
 [class^=used].details .print-details.link .btn span{top:0;border:none;background:0 0;margin:0;padding:3px 0}
 [class^=used].details .print-details.link .btn .icon{vertical-align:middle;top:0;float:right;margin:3px 0 0 7px;width:16px;height:16px;line-height:16px;background-image:url(../images/seat/icons/sprite-icons-16-black.png);background-position:-888px 0;display:inline-block}
@@ -3633,14 +3632,14 @@ body{background-color:#fff}
 #sc-compare-list th{width:106px}
 #sc-compare-list td{width:122px}
 #sc-compare-list .sc-thumb img{width:112px}
-.search .search-header .total-count{top:109px}
-.search .search-header .total-count .reset-all{top:-110px}
-.search .filter-advanced{float:left;margin-left:640px;width:14%}
+.search .search-header .total-count{top:109px;right:150px}
+.search .search-header .total-count .reset-all{top:-110px;right:-150px}
+.search .filter-advanced{float:left;width:14%;margin-left:490px}
 .search .filter-advanced .filter-heading{padding:0 5px 12px}
-.search .filter-advanced .filter-heading .icon{bottom:13px}
 .search .filter-make,.search .filter-model{width:18%}
 .search .filter-price{width:38%}
 .search .filter-distance{width:26%}
+.search .search-vehicles{top:108px}
 .featured-offers .cycle-sentinal,.featured-offers .item{width:100%}
 .cw-plugin.cw-plugin .cw-finance-options .cw-control-label{min-height:48px}
 .cw-plugin.cw-plugin .cw-button,.cw-plugin.cw-plugin .cw-call-to-action{margin:4px 2px;padding:0 14px}
@@ -3801,8 +3800,8 @@ body.open-search,body.save-compare-open{overflow:hidden}
 #sc-compare-list tr:nth-of-type(5) td:before{content:"Fuel Type"}
 #sc-compare-list tr:nth-of-type(6) td:before{content:"MPG"}
 #sc-compare-list tr:nth-of-type(7) td:before{content:"Tax"}
-.search .search .search-header .total-count{position:static;padding-right:70px}
-.search .search .search-header .reset-all{right:0}
+.search .search-header .total-count{position:static;padding-right:70px}
+.search .search-header .total-count .reset-all{top:0;right:0}
 .search .filter-distance{padding-top:0}
 .search .filter-advanced{float:none;width:17%;margin-left:60px}
 .search .filter-advanced .filter-heading{padding-top:30px}
@@ -3810,6 +3809,7 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .search .filter-price{width:49%;padding-right:0;margin-right:0;border-right:none}
 .search .filter-distance{width:25%}
 .search .filter-options.advanced .selected{max-width:70%}
+.search .search-vehicles{top:138px}
 .tech-data .column{min-height:550px;width:46%;margin:0 2%}
 .fruit-machine .cycle-next,.fruit-machine .cycle-prev{width:32px;height:32px;line-height:32px;background-image:url(../images/seat/icons/sprite-icons-32-black.png);display:inline-block;left:-38px;background-position:-296px 0}
 .fruit-machine .cycle-next{left:auto;right:-38px;background-position:-370px 0}
@@ -4188,7 +4188,8 @@ h1{font-size:16.67px}
 .search.search .search-jobs,.search.search .search-vehicles{clear:both;display:block;background:#afb2b5}
 .search.search .update .btn{font-size:13px;font-size:.8666666666666667rem}
 .search.search .button .btn{margin:0;display:block;text-align:center;line-height:43px;padding:0 15px;font-size:13px;font-size:.8666666666666667rem}
-.search.search .search-vehicles .btn{font-size:18px;font-size:1.2rem}
+.search.search .search-vehicles{position:static;width:auto;padding:15px 10px}
+.search.search .search-vehicles .btn{line-height:43px}
 .search.search .option{padding:5px 10px 0 0}
 .search.search .filters{float:none;width:auto;display:block;margin-bottom:0}
 .search.search .filter-inset{padding:0;border-radius:0}
@@ -4208,7 +4209,7 @@ h1{font-size:16.67px}
 .search.search .filter-vehicle-condition .option.active{order:10}
 .search.search .filter-advanced{float:right;width:162px}
 .search.search .filter-advanced .filter-heading{padding:7px 5px}
-.search.search .filter-advanced .filter-heading .label .icon{bottom:9px}
+.search.search .filter-advanced .filter-heading .label .icon{bottom:5px}
 .search.search .filter-options.advanced{clear:both;position:static;width:auto;margin:0;padding:0 10px 10px;border:none;color:#000;background:#afb2b5}
 .search.search .filter-options.advanced .inset{padding:10px 10px 0;color:#000;background:#fff}
 .search.search .filter-options.advanced .tab-content{margin:0;padding:0;border:none;background:#fff}
@@ -4495,8 +4496,6 @@ h1{font-size:16.67px}
 [class^=used].listing .box-list .list-item .title h3{min-height:0}
 [class^=used].listing .box-list .list-item .overview-data,[class^=used].listing .box-list .list-item .overview-data .cell{padding:0}
 [class^=used].listing .box-list .list-item .location-name,[class^=used].listing .box-list .list-item .price.module,[class^=used].listing .box-list .list-item .title a{text-align:left}
-[class^=used].details .row-lygzn .span9 .link{float:none;text-align:center}
-[class^=used].details .row-lygzn .span9 .link .btn{border:none}
 [class^=used].details .row-gtude .approved-badge{width:70px}
 [class^=used].details .row-gtude .span2{display:block;margin-bottom:12px}
 [class^=used].details .row-gtude .span2 .thumbnails.module{display:block!important;z-index:900}
@@ -4521,6 +4520,8 @@ h1{font-size:16.67px}
 [class^=used].details .price.module{float:none;padding:0 0 10px;text-align:left;font-size:20px;font-size:1.3333333333333333rem}
 [class^=used].details .price.module.alternative-currency{padding:10px 0 0}
 [class^=used].details .location-no.module{font-size:20px;font-size:1.3333333333333333rem}
+[class^=used].details .save-vehicle.link{float:none;text-align:center}
+[class^=used].details .save-vehicle.link .btn{border:none}
 [class^=used].details .save-vehicle.link .btn .icon{order:2;margin:4px 0 0 7px}
 [class^=used].details .hero{width:auto}
 [class^=used].details .hero .custom-html{font-size:19px;font-size:1.2666666666666666rem}
