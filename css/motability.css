@@ -4,8 +4,8 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Lato:900);
 .datepicker table,.slider .ui-slider-handle{-webkit-touch-callout:none;-khtml-user-select:none}
-.nddf.nddf-notification .nddf-container,.save-vehicle .btn{-webkit-animation-fill-mode:both;-ms-animation-fill-mode:both}
-.config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-moz-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
+.nddf.nddf-notification .nddf-container,.save-vehicle .btn{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both}
+.config-foot .previous:hover .icon,.nddf.nddf-notification .nddf-container{-webkit-animation-duration:3s;-moz-animation-duration:3s;-o-animation-duration:3s;-ms-animation-duration:3s}
 .adp-directions,.cms table,.datepicker table,.locations-hours table{border-collapse:collapse}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}
 audio,canvas,video{display:inline-block}
@@ -136,7 +136,7 @@ button,input,select,textarea{display:block;width:100%;min-height:30px;-webkit-bo
 .uneditable-textarea{width:auto;height:auto}
 button,input[type=button],textarea{height:auto;min-height:0}
 select[multiple],select[size]{height:auto}
-input[type=radio],input[type=checkbox]{margin:4px 0 0;margin-top:1px\9;line-height:normal;padding:0;min-height:0}
+input[type=radio],input[type=checkbox]{height:auto;margin:4px 0 0;margin-top:1px\9;line-height:normal;padding:0;min-height:0}
 input[type=button],input[type=reset],input[type=file],input[type=image],input[type=submit],input[type=radio],input[type=checkbox]{width:auto}
 input[type=file],select{height:auto;line-height:normal;padding:1px}
 .radio-btn label,.tick-box label{margin:0;background-repeat:no-repeat;padding-left:22px}
@@ -238,7 +238,7 @@ input.field-name-marketing-global{margin-top:0;width:18px;height:18px}
 .vertical .tab-nav{float:left;width:200px}
 .tab-nav>li{text-align:center;vertical-align:top;display:inline-block}
 .tab-nav>li>a{text-decoration:none;display:block;font-weight:700;border:1px solid transparent;padding:10px 15px;background-color:none;color:#797979;font-size:20px;font-size:1.4285714285714286rem}
-.vertical .tab-nav>li>a,address,h1,h2,h3,h4,h5,h6,html,p{font-weight:400}
+h1,h2,h3,h4,h5,h6,html,p{font-weight:400}
 .tab-nav>li.active>a,.tab-nav>li.active>a:focus,.tab-nav>li.active>a:hover,.tab-nav>li>a:hover{text-decoration:none;border:1px solid #f2f2f2;border-bottom-color:#fff;color:#000;background-color:#fff}
 .vertical .tab-nav>li.active>a,.vertical .tab-nav>li.active>a:focus,.vertical .tab-nav>li.active>a:hover{border-top:none;border-bottom:solid 1px #f2f2f2;background:#fff;color:#000;position:relative}
 .vertical .tab-nav>li.active>a:after,.vertical .tab-nav>li.active>a:before,.vertical .tab-nav>li.active>a:focus:after,.vertical .tab-nav>li.active>a:focus:before,.vertical .tab-nav>li.active>a:hover:after,.vertical .tab-nav>li.active>a:hover:before{content:" ";position:absolute;width:0;height:0}
@@ -246,7 +246,7 @@ input.field-name-marketing-global{margin-top:0;width:18px;height:18px}
 .vertical .tab-nav>li.active>a:before,.vertical .tab-nav>li.active>a:focus:before,.vertical .tab-nav>li.active>a:hover:before{left:100%;top:20px;margin-top:-21px;border-top:21px solid transparent;border-bottom:21px solid transparent;border-left:21px solid;border-left-color:#f2f2f2}
 .vertical .tab-nav>li{display:block;border-right:none;text-align:left}
 .vertical .tab-nav>li:first-child{border-top:solid 1px #f2f2f2}
-.vertical .tab-nav>li>a{border:1px solid #f2f2f2;border-top:none;border-right:none;font-size:14px;font-size:1rem}
+.vertical .tab-nav>li>a{font-weight:400;border:1px solid #f2f2f2;border-top:none;border-right:none;font-size:14px;font-size:1rem}
 dfn,h1,h2,strong{font-weight:700}
 .tab-content{top:-1px;position:relative;clear:both;padding:20px 0;border-top:solid 1px #f2f2f2}
 .tab-content .tab-pane{display:none}
@@ -298,9 +298,10 @@ dfn,h1,h2,strong{font-weight:700}
 .tooltip.tooltip-bottom .tooltip-content{bottom:auto;top:50%;margin-top:10px;margin-bottom:0}
 .tooltip.tooltip-bottom .tooltip-content .tooltip-arrow{bottom:auto;top:-10px;border-left:10px solid transparent;border-right:10px solid transparent;border-top:none;border-bottom:10px solid #737373}
 .modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;height:100%;background-color:#000}
+#dialog-loading,.modal{position:fixed;left:50%}
 .modal-backdrop.fade{opacity:0;filter:Alpha(Opacity=0 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 0 )}
 .modal-backdrop,.modal-backdrop.fade.in{opacity:.8;filter:Alpha(Opacity=80 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 80 )}
-.modal{text-shadow:none;position:fixed;top:10%;left:50%;width:860px;margin-left:-430px;z-index:1050;background-color:#fff;border:1px solid #e6e6e6;-webkit-box-shadow:0 3px 7px rgba(0,0,0,.3);-moz-box-shadow:0 3px 7px rgba(0,0,0,.3);box-shadow:0 3px 7px rgba(0,0,0,.3);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;outline:0}
+.modal{text-shadow:none;top:10%;width:860px;margin-left:-430px;z-index:1050;background-color:#fff;border:1px solid #e6e6e6;-webkit-box-shadow:0 3px 7px rgba(0,0,0,.3);-moz-box-shadow:0 3px 7px rgba(0,0,0,.3);box-shadow:0 3px 7px rgba(0,0,0,.3);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;outline:0}
 .nav>.dropdown:hover>a>span,.nav>li.active>a:focus>span,.nav>li.active>a:hover>span,.nav>li.active>a>span,.nav>li.current>a:focus>span,.nav>li.current>a:hover>span,.nav>li.current>a>span,.nav>li>a:focus>span,.nav>li>a:hover>span{border-color:#2f85c2}
 .modal.fade{top:-25%;-webkit-transition:opacity .3s linear,top .3s ease-out;-moz-transition:opacity .3s linear,top .3s ease-out;-o-transition:opacity .3s linear,top .3s ease-out;transition:opacity .3s linear,top .3s ease-out}
 .modal.fade.in{top:10%}
@@ -511,7 +512,7 @@ a{text-decoration:underline;color:#2f85c2}
 a:focus,a:hover{text-decoration:none;color:#205b84}
 dfn,em{font-style:italic}
 sub,sup{line-height:0}
-address{font-style:normal}
+address{font-weight:400;font-style:normal}
 blockquote{margin:1em}
 .nav,.nav>li{margin:0;padding:0;position:relative}
 button,input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif!important;font-size:14px;font-size:1rem}
@@ -570,9 +571,9 @@ button,input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif!impo
 .alert-block p+p{margin-top:5px}
 [class*=" icon-"],[class^=icon]{vertical-align:middle;background-repeat:no-repeat}
 .module [class*="-sash"]{position:relative;overflow:hidden;text-align:center;margin:0;font-family:Arial;color:#fff;max-width:70%;padding-right:50px;font-size:13px;font-size:.9285714285714286rem}
-.module [class*="-sash"]:after,.module [class*="-sash"]:before{content:" ";position:absolute;top:0;height:100%;width:90%;z-index:-1;left:-25px;display:block;background:#2f85c2}
-.module [class*="-sash"]:after{-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-webkit-transform:skew(45deg);-ms-transform:skew(45deg);-o-transform:skew(45deg);transform:skew(45deg)}
-.module [class*="-sash"]:before{-webkit-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-webkit-transform:skew(-45deg);-ms-transform:skew(-45deg);-o-transform:skew(-45deg);transform:skew(-45deg)}
+.module [class*="-sash"]:after,.module [class*="-sash"]:before{content:" ";position:absolute;top:0;height:100%;width:90%;z-index:-1;left:-25px;background:#2f85c2}
+.module [class*="-sash"]:after{display:block;-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-webkit-transform:skew(45deg);-ms-transform:skew(45deg);-o-transform:skew(45deg);transform:skew(45deg)}
+.module [class*="-sash"]:before{display:block;-webkit-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);box-shadow:inset -4px 0 0 0 rgba(0,0,0,.3);-webkit-transform:skew(-45deg);-ms-transform:skew(-45deg);-o-transform:skew(-45deg);transform:skew(-45deg)}
 .module [class*="-sash"] .rotate{display:block;text-align:center;position:static;line-height:normal;vertical-align:middle;max-width:88%;padding:5px 10px 7px;background:#2f85c2;-webkit-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);-moz-box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3);box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.3)}
 .details .used-media.module [class*="-sash"] .rotate{padding:8px 15px 10px;font-size:20px;font-size:1.4285714285714286rem}
 .pagination{padding:0;list-style:none;text-align:center;font-size:0}
@@ -592,7 +593,7 @@ button,input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif!impo
 .pagination .pages li.btn-last>a{border:none;background:url(../images/sprite-pagination.png) -57px center no-repeat;width:19px;padding:0;opacity:.6;filter:Alpha(Opacity=60 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 60 )}
 .pagination .pages li.btn-last>a:hover{opacity:1;filter:Alpha(Opacity=100 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 100 )}
 .pagination .pages li.ellipsis>span{border:none;background:0 0}
-#dialog-loading{width:190px;position:fixed;margin-left:-105px;left:50%;top:40%;z-index:999;z-index:25;padding:20px 10px 40px;min-height:20px;background:#000;opacity:.7;filter:Alpha(Opacity=70 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 70 );-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+#dialog-loading{width:190px;margin-left:-105px;top:40%;z-index:999;z-index:25;padding:20px 10px 40px;min-height:20px;background:#000;opacity:.7;filter:Alpha(Opacity=70 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 70 );-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 #dialog-loading img{margin:0 63px}
 #dialog-loading span{display:block;color:#fff;font-size:16px;position:absolute;top:90px;left:45px}
 .affix,.fixed{position:fixed}
@@ -707,7 +708,7 @@ img.loading{width:auto;margin:0 auto;padding:10px;background:#000;opacity:.7;fil
 5%{-webkit-transform:translate(0,-7px);-moz-transform:translate(0,-7px);-ms-transform:translate(0,-7px);-o-transform:translate(0,-7px);transform:translate(0,-7px)}
 15%{-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-ms-transform:translate(0,-3px);-o-transform:translate(0,-3px);transform:translate(0,-3px)}
 }
-.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
+.nddf.nddf-notification .nddf-container{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;-moz-animation-name:bounce;-o-animation-name:bounce;-ms-animation-name:bounce;animation-name:bounce;animation-duration:3s;-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}
 .nddf .nddf-container{position:fixed;right:0;bottom:0;width:300px;border-top-left-radius:14px;z-index:1060;background-color:#2f85c2}
 .nddf .nddf-container .nddf-header{text-align:center;padding:4% 5%;border-top-left-radius:10px;background:#fafafc}
 .nddf .nddf-container .nddf-header .button-end .icon,.nddf .nddf-container .nddf-header .button-minimise .icon,.nddf .nddf-container .nddf-header .button-minimise .icon.minimised,.nddf .nddf-container .nddf-header h4 .icon,.nddf.nddf-send-email .nddf-container .nddf-header h4 .icon{line-height:16px;background-image:url(../images/motability/icons/sprite-icons-16-black.png);display:inline-block}
@@ -775,7 +776,7 @@ button,input[type=button]{min-height:33px}
 .chat .btn:hover{color:#fff;background:rgba(26,26,26,0)}
 .chat .btn:hover .icon,.save-vehicle .btn .icon{width:16px;height:16px;background-image:url(../images/motability/icons/sprite-icons-16-white.png);display:inline-block;line-height:16px}
 .chat .btn:hover .icon{background-position:-666px 0}
-.save-vehicle .btn{padding:0 20px;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both}
+.save-vehicle .btn{padding:0 20px;-moz-animation-delay:.15s;-o-animation-delay:.15s;-ms-animation-delay:.15s;animation-delay:.15s;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;-ms-animation-fill-mode:both;animation-fill-mode:both}
 .save-vehicle .btn .icon{margin:-1px 5px 0 0;-webkit-transition:max-width 1s ease-in-out;-moz-transition:max-width 1s ease-in-out;-o-transition:max-width 1s ease-in-out;transition:max-width 1s ease-in-out;background-position:-888px -74px;visibility:hidden;max-width:0}
 .save-vehicle .btn:after,.save-vehicle .btn:before{display:none}
 .save-vehicle.animate-in .btn,.save-vehicle.animate-out .btn{-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-name:fadeOutUp;-moz-animation-name:fadeOutUp;-o-animation-name:fadeOutUp;-ms-animation-name:fadeOutUp;animation-name:fadeOutUp}
@@ -1534,7 +1535,7 @@ img.adp-marker{height:40px;width:22px}
 .sc-editable{color:#5abef7;text-decoration:underline;cursor:pointer}
 .sc-shortlist{width:520px;float:left}
 .sc-shortlist ul{height:270px;list-style-type:none;margin:0;padding:0 20px 20px 0}
-.sc-shortlist .sc-action,.sc-shortlist .sc-trash,.sc-shortlist .sc-view{border:1px solid #6f6f6f;height:36px;cursor:pointer;overflow:hidden;text-indent:-999px}
+.sc-shortlist .sc-action,.sc-shortlist .sc-trash,.sc-shortlist .sc-view{border:1px solid #6f6f6f;height:36px;text-indent:-999px;cursor:pointer;overflow:hidden}
 .sc-shortlist ul li{list-style-type:none;padding:4px;margin:0;background:#252525}
 .sc-shortlist ul li:after,.sc-shortlist ul li:before{display:table;content:"";line-height:0}
 .sc-shortlist ul li.sc-active{background:#4c4c4c}
@@ -1721,7 +1722,7 @@ img.adp-marker{height:40px;width:22px}
 .search .filter-price .max{padding:0 1%;width:48%;float:right}
 .search .filter-advanced{margin-right:0;width:11%}
 .search .filter-advanced .value{text-decoration:underline;display:none}
-.search .filter-advanced .icon{width:16px;height:16px;background-image:url(../images/motability/icons/sprite-icons-16-black.png);bottom:2px}
+.search .filter-advanced .icon{width:16px;height:16px;background-image:url(../images/motability/icons/sprite-icons-16-black.png);bottom:4px}
 .search .filter-advanced .filter-heading{background:0 0;border:none;padding:39px 5px 7px}
 .search .filter-advanced .label{position:relative;padding-bottom:0;font-weight:400;color:#2f85c2;font-size:14px;font-size:1rem}
 .search .filter-options.advanced{clear:both;position:static;width:auto;margin:0;background:0 0;border:none;padding:10px 0}
@@ -1998,6 +1999,7 @@ img.adp-marker{height:40px;width:22px}
 .fruit-machine .loader span{display:block;position:absolute;left:50%;top:50%;padding:10px;background:url(../images/ajax-loading.gif) center center no-repeat #000;height:64px;width:64px;margin:-32px 0 0 -32px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 .fruit-machine .cycle-next,.fruit-machine .cycle-prev{width:50px;height:50px;line-height:50px;background-image:url(../images/motability/icons/sprite-icons-50-black.png);display:inline-block;top:145px;left:-55px;margin:0;background-position:-296px 0}
 .fruit-machine .cycle-next{left:auto;right:-55px;background-position:-370px 0}
+.fruit-machine [class*=cycle-pager-container]{top:auto}
 .fruit-machine .locked-items,.fruit-machine .unlocked-items{height:auto;position:relative;width:100%;float:left}
 .fruit-machine .locked-items{right:-40px}
 .fruit-machine .locked-items .item{width:100%;display:inline-block}
@@ -2544,6 +2546,13 @@ body{background-color:#fff}
 .header-container .contact-numbers{padding:0 10px}
 .header-container .contact-numbers>a{color:#7a7a7a;font-size:15px;font-size:1.0714285714285714rem}
 .header-container .contact-numbers>a .icon{line-height:25;background-image:url(../images/motability/icons/sprite-icons-25-custom.png);background-position:-296px 0;width:26px;height:26px;margin:-4px 7px 0 0;display:inline-block}
+.header-container .contact-numbers .toggle-body{left:0;top:100%;width:100%;z-index:1250;padding:10px;background:#fff;position:absolute}
+.header-container .contact-numbers .toggle-body .inset{position:relative}
+.header-container .contact-numbers .toggle-body .inset li[class*=location]{padding:0;float:left;width:25%;min-height:86px;margin-bottom:15px}
+.header-container .contact-numbers .toggle-body .inset li[class*=location] a{border:0;color:#000;height:auto;text-align:left;line-height:initial;text-decoration:none;font-family:lato,Arial,Verdana,Helvetica,sans-serif;font-size:12px;font-size:.8571428571428571rem}
+.header-container .contact-numbers .toggle-body .inset li[class*=location] span.location,.header-container .contact-numbers .toggle-body .inset li[class*=location]>a{font-weight:700;font-size:14px;font-size:1rem}
+.header-container .contact-numbers .toggle-body .department{display:block}
+.header-container .contact-numbers .toggle-body .close{top:0;right:-27px;z-index:100;padding:5px;border-left:0;cursor:pointer;position:absolute;text-indent:-999999px}
 .container-un2g5{position:relative;z-index:1021}
 #primary-menu{z-index:1021}
 #primary-menu .toggle-nav,.navbar .nav .back-to-group{display:none}
@@ -3183,7 +3192,7 @@ body{background-color:#fff}
 .config-foot .next .icon,.config-foot .previous .icon{width:32px;height:32px;line-height:32px;background-image:url(../images/motability/icons/sprite-icons-32-black.png);display:inline-block}
 .config-foot .previous{margin-right:10%}
 .config-foot .previous .icon{margin:-3px 10px 0 0;background-position:-1776px 0}
-.config-foot .previous:hover .icon{-webkit-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;animation-delay:.15s;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounceLeft;-moz-animation-name:bounceLeft;-o-animation-name:bounceLeft;-ms-animation-name:bounceLeft;animation-name:bounceLeft;animation-duration:3s}
+.config-foot .previous:hover .icon{-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;animation-delay:.15s;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounceLeft;-moz-animation-name:bounceLeft;-o-animation-name:bounceLeft;-ms-animation-name:bounceLeft;animation-name:bounceLeft;animation-duration:3s}
 .config-foot .next{float:right}
 .config-foot .next .icon{float:right;margin:-3px 0 0 10px;background-position:-1850px 0}
 .config-steps .tab-nav,.config-steps .tab-nav>li{position:static;background:0 0;padding:0;margin:0}
@@ -3617,7 +3626,7 @@ body{background-color:#fff}
 [class*=used].cmfdetails .price:after,[class*=used].cmfdetails .price:before{display:table;content:"";line-height:0}
 [class*=used].cmfdetails .price:after{clear:both}
 [class*=used].cmfdetails .price .price-now{float:left;margin-right:20px}
-[class*=used].cmfdetails .price .price-was{float:left;font-weight:400;color:#797979;font-size:15px;font-size:1.0714285714285714rem;opacity:.8;filter:Alpha(Opacity=80 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 80 )}
+[class*=used].cmfdetails .price .price-was{font-weight:400;color:#797979;opacity:.8;filter:Alpha(Opacity=80 );-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 80 );font-size:15px;font-size:1.0714285714285714rem;float:left}
 [class*=used].cmfdetails .location-no{padding:0 0 35px;color:#797979;font-size:22px;font-size:1.5714285714285714rem}
 [class*=used].cmfdetails .location-no .number{font-weight:700}
 [class*=used].cmfdetails .location-no a,[class*=used].cmfdetails .location-no a:hover{text-decoration:none;color:#797979}
@@ -3694,7 +3703,7 @@ body{background-color:#fff}
 #sc-compare-list td{width:122px}
 #sc-compare-list .sc-thumb img{width:112px}
 .search .search-header .total-count{top:109px;right:150px}
-.search .search-header .total-count .reset-all{top:-110px;right:-150px}
+.search .search-header .total-count .reset-all{top:109px;right:-150px}
 .search .filter-advanced{float:left;width:14%;margin-left:490px}
 .search .filter-advanced .filter-heading{padding:0 5px 12px}
 .search .filter-make,.search .filter-model{width:18%}
@@ -3841,9 +3850,9 @@ body.open-search,body.save-compare-open{overflow:hidden}
 .link-block .link-group{padding:0 0 10px}
 .location-numbers .name,.location-numbers .no{float:none;display:block}
 #sc-compare-list th,.page-controls .pagination .control-group,.used-media .gallery-icon{display:none}
-.media{margin-bottom:25px}
-.media a{color:#797979}
-.media .gallery-icon,.media .image-count,.media .tour360,.media .video-count{bottom:-25px;top:auto}
+.used-media{margin-bottom:25px}
+.used-media a{color:#797979}
+.used-media .gallery-icon,.used-media .image-count,.used-media .tour360,.used-media .video-count{bottom:-25px;top:auto}
 .per-page{width:20%;font-size:15px;font-size:1.0714285714285714rem}
 .sort-order{width:40%}
 .page-controls .pagination{width:25%}
@@ -4213,7 +4222,7 @@ h2{font-size:17.33px}
 .location-search .controls{float:none;padding:0 10px}
 .location-search input{width:100%}
 .location-search .btn{display:block;clear:both;float:none;line-height:52px}
-.media .gallery-icon{display:none!important}
+.used-media .gallery-icon{display:none!important}
 .mg-head-left{display:none}
 .mg-head-center .mg-inset{margin:0 40px 0 0}
 .mg-toggle-media a{padding:0 2px}
@@ -4332,12 +4341,12 @@ h2{font-size:17.33px}
 .whatcar-reviews .tab-nav,.whatcar-reviews .tab-pane,.whatcar-reviews .verdict-thumb{display:none}
 .whatcar-reviews #tab-whatcar-full-review-content,.whatcar-reviews #tab-whatcar-overview-content{display:block}
 .whatcar-badge .button{float:left}
-[class*=used]:not([class*=offers]).details .toggle-heading{padding:10px}
-[class*=used]:not([class*=offers]).details .toggle-heading h4{font-size:15px;font-size:1.0714285714285714rem}
-[class*=used]:not([class*=offers]).details .toggle-heading .icon{margin-top:-4px;width:25px;height:25px;line-height:25px;background-image:url(../images/motability/icons/sprite-icons-25-black.png);background-position:-1554px -74px;display:inline-block}
-[class*=used]:not([class*=offers]).details .toggle-heading.active .icon{width:25px;height:25px;line-height:25px;background-image:url(../images/motability/icons/sprite-icons-25-black.png);background-position:0 0;display:inline-block}
-[class*=used]:not([class*=offers]).details .toggle-body{display:block}
-[class*=used]:not([class*=offers]).details .toggle-body.active{display:none}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-heading{padding:10px}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-heading h4{font-size:15px;font-size:1.0714285714285714rem}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-heading .icon{margin-top:-4px;width:25px;height:25px;line-height:25px;background-image:url(../images/motability/icons/sprite-icons-25-black.png);background-position:-1554px -74px;display:inline-block}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-heading.active .icon{width:25px;height:25px;line-height:25px;background-image:url(../images/motability/icons/sprite-icons-25-black.png);background-position:0 0;display:inline-block}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-body{display:block}
+[class*=used]:not([class*=offers]).details #content-wrap .toggle-body.active{display:none}
 #fake-machine .inner,.fruit-machine>.inner{padding-left:45px;padding-right:45px}
 .fruit-machine .button.view-vehicle .btn{line-height:52px}
 .parallax{background-image:none!important}
