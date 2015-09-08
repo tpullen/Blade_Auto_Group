@@ -278,6 +278,67 @@
 
         }
 
+        .toggle-body {
+            left: 0;
+            top: 100%;
+            width: 100%;
+            z-index: 1250;
+            padding: 10px;
+            background: #fff;
+            position: absolute;
+
+            .inset {
+                position: relative;
+
+                li[class*="location"] {
+                    padding: 0;
+                    float: left;
+                    width: 100% / 4;
+                    min-height: 86px;
+                    margin-bottom: 15px;
+
+                    a {
+                        border: 0;
+                        color: #000;
+                        height: auto;
+                        text-align: left;
+                        line-height: initial;
+                        text-decoration: none;
+                        font-family: @base-font-face;
+                        .font-size(12px);
+                    }
+
+                    span.location {
+                        font-weight: bold;
+                        .font-size(14px);
+                    }
+
+                    & > a  {
+                        font-weight: bold;
+                        .font-size(14px);
+                    }
+
+                }
+
+            }
+
+            .department {
+                display: block;
+            }
+
+            .close {
+                top: 0;
+                right: -27px;
+                z-index: 100;
+                padding: 5px;
+                border-left: 0;
+                cursor: pointer;
+                position: absolute;
+                text-indent: -999999px;
+            }
+
+        }
+
     }
 
 }
