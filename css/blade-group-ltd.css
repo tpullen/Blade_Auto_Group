@@ -2668,7 +2668,7 @@ body{background-color:#fff}
 .homepage .search .filter-price .bootstrap-select button{font-family:lato,Arial,Verdana,Helvetica,sans-serif!important}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#a7b0b5;font-weight:900;text-transform:uppercase;font-size:11px;font-size:.7857142857142857rem}
 .homepage .search .filter-price .bootstrap-select .btn:hover{color:#fff;background:#a7b0b5}
-.homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
+.homepage .search .filter-price .price-range-filters>.max,.homepage .search .filter-price .price-range-filters>.min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
 .homepage .search .filter-distance .filter-heading .label{color:#000;font-family:Arial,Verdana,Helvetica,sans-serif;padding:6px 0 13px;font-size:13px;font-size:.9285714285714286rem}
@@ -3010,12 +3010,12 @@ body{background-color:#fff}
 [class^=used].details .location-name.module a{text-decoration:none}
 [class^=used].details .location-name.module a .location{text-decoration:underline;display:inline-block;padding:0 4px;color:#000;background:#fafafc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 [class^=used].details .distance.module{text-align:center;display:block;margin:0 auto 20px;max-width:250px;font-size:13px;font-size:.9285714285714286rem}
-[class^=used].details .hero{padding:20px 27px;background:#fafafc;color:#000;font-size:32px;font-size:2.2857142857142856rem}
+[class^=used].details .hero{padding:20px 27px;background:#a7b0b5;color:#fff;font-size:32px;font-size:2.2857142857142856rem}
 [class^=used].details .hero .custom-html{line-height:normal;vertical-align:bottom}
 [class^=used].details .hero .custom-html span{display:block;font-size:19px;font-size:1.3571428571428572rem}
-[class^=used].details .hero .valuation-jump{clear:none;padding:0;margin-bottom:0;background:#fafafc}
+[class^=used].details .hero .valuation-jump{clear:none;padding:0;margin-bottom:0;background:#a7b0b5}
 [class^=used].details .hero .valuation-jump .control-group{width:30%;margin-bottom:0;float:left;margin-left:3%}
-[class^=used].details .hero .valuation-jump .control-group .control-label{float:none;width:auto;padding:4px 0 3px;min-height:25px;color:#000;font-size:18px;font-size:1.2857142857142858rem}
+[class^=used].details .hero .valuation-jump .control-group .control-label{float:none;width:auto;padding:4px 0 3px;min-height:25px;color:#fff;font-size:18px;font-size:1.2857142857142858rem}
 [class^=used].details .hero .valuation-jump .control-group .controls{margin-left:0}
 [class^=used].details .hero .valuation-jump .control-group .controls input{text-align:center;border-radius:3px;height:33px;border:0;font-size:21px;font-size:1.5rem}
 [class^=used].details .hero .valuation-jump .control-group .controls input#vehicle-registration{background:url(../images/reg-plate.png) no-repeat;max-width:187px;padding-left:30px}
@@ -3457,7 +3457,7 @@ body{background-color:#fff}
 .locations.listing .location-search>.inner form .bootstrap-select .dropdown-toggle{padding-right:28px;float:none}
 .locations.listing .location-search>.inner form #loc-postcode-search{padding:0 40px}
 .locations.listing .row-5rf1y>.listing>.inner{padding-top:18px}
-.locations.listing .row-5rf1y>.listing>.inner>.list-item{position:relative;z-index:700;text-align:left;width:5.40372671%;margin-bottom:1.73913043%;margin-left:1.73913043%}
+.locations.listing .row-5rf1y>.listing>.inner>.list-item{position:relative;z-index:700;text-align:left;width:12.54658385%;margin-bottom:1.73913043%;margin-left:1.73913043%}
 .locations.listing .row-5rf1y>.listing>.inner>.list-item .franchise-badge{margin-bottom:5px}
 .locations.listing .row-5rf1y>.listing>.inner>.list-item .franchise-badge img{display:block;margin:0 auto}
 .locations.listing .row-5rf1y>.listing>.inner>.list-item .franchise-name a{display:block;text-decoration:none;text-align:center;min-height:42px;padding:0 10px 10px;font-size:12px;font-size:.8571428571428571rem}

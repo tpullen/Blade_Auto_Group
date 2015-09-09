@@ -2999,12 +2999,12 @@ body{background-color:#fff}
 [class^=used].details .location-name.module a{text-decoration:none}
 [class^=used].details .location-name.module a .location{text-decoration:underline;display:inline-block;padding:0 4px;color:#000;background:#f8f8f8;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 [class^=used].details .distance.module{text-align:center;display:block;margin:0 auto 20px;max-width:250px;font-size:13px;font-size:.8666666666666667rem}
-[class^=used].details .hero{padding:20px 27px;background:#f8f8f8;color:#000;font-size:32px;font-size:2.1333333333333333rem}
+[class^=used].details .hero{padding:20px 27px;background:#787878;color:#fff;font-size:32px;font-size:2.1333333333333333rem}
 [class^=used].details .hero .custom-html{line-height:normal;vertical-align:bottom}
 [class^=used].details .hero .custom-html span{display:block;font-size:19px;font-size:1.2666666666666666rem}
-[class^=used].details .hero .valuation-jump{clear:none;padding:0;margin-bottom:0;background:#f8f8f8}
+[class^=used].details .hero .valuation-jump{clear:none;padding:0;margin-bottom:0;background:#787878}
 [class^=used].details .hero .valuation-jump .control-group{width:30%;margin-bottom:0;float:left;margin-left:3%}
-[class^=used].details .hero .valuation-jump .control-group .control-label{float:none;width:auto;padding:4px 0 3px;min-height:25px;color:#000;font-size:18px;font-size:1.2rem}
+[class^=used].details .hero .valuation-jump .control-group .control-label{float:none;width:auto;padding:4px 0 3px;min-height:25px;color:#fff;font-size:18px;font-size:1.2rem}
 [class^=used].details .hero .valuation-jump .control-group .controls{margin-left:0}
 [class^=used].details .hero .valuation-jump .control-group .controls input{text-align:center;border-radius:3px;height:33px;border:0;font-size:21px;font-size:1.4rem}
 [class^=used].details .hero .valuation-jump .control-group .controls input#vehicle-registration{background:url(../images/reg-plate.png) no-repeat;max-width:187px;padding-left:30px}
