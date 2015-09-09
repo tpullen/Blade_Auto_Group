@@ -530,7 +530,7 @@ button,input,select,textarea{font-family:Verdana,Arial,Helvetica,sans-serif!impo
 .nav>li.active>a,.nav>li.active>a:focus,.nav>li.active>a:hover,.nav>li.current>a,.nav>li.current>a:focus,.nav>li.current>a:hover{text-decoration:none;color:#535353;background:0 0}
 .navbar{overflow:visible;position:relative;background:0 0;color:#000;z-index:950;font-size:0}
 .navbar .nav>li{font-size:14px;font-size:1.1666666666666667rem;display:inline-block}
-.dropdown-menu{display:none;position:absolute;margin:0;list-style:none;padding:0;width:150px;background:#4ba346;top:107%;left:34px}
+.dropdown-menu{display:none;position:absolute;margin:0;list-style:none;padding:0;width:150px;background:#4ba346;top:107%;left:10px}
 .dropdown-menu>li,.nav>.dropdown:hover .dropdown-menu{display:block}
 .dropdown-menu>li a{display:block;background:#4ba346;padding:10px 15px;color:#fff}
 .dropdown-menu>li a:focus,.dropdown-menu>li a:hover,.dropdown-menu>li.active>a,.dropdown-menu>li.active>a:focus,.dropdown-menu>li.active>a:hover,.dropdown-menu>li.current>a,.dropdown-menu>li.current>a:focus,.dropdown-menu>li.current>a:hover{color:#535353;background:#fff}
@@ -2667,7 +2667,7 @@ body{background-color:#fff}
 .homepage .search .filter-price .bootstrap-select button{font-family:Verdana,Arial,Helvetica,sans-serif!important}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#9d9ea2;font-weight:400;text-transform:none;font-size:13px;font-size:1.0833333333333333rem}
 .homepage .search .filter-price .bootstrap-select .btn:hover{color:#fff;background:#9d9ea2}
-.homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
+.homepage .search .filter-price .price-range-filters>.max,.homepage .search .filter-price .price-range-filters>.min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
 .homepage .search .filter-distance .filter-heading .label{color:#4ba346;font-family:Verdana,Arial,Helvetica,sans-serif;padding:7px 0 16px;font-size:14px;font-size:1.1666666666666667rem}
@@ -3622,13 +3622,14 @@ body{background-color:#fff}
 .aftersales .box-list .title h3,.contentsection .box-list .title h3{padding:0 0 20px;min-height:40px;font-size:16px;font-size:1.3333333333333333rem}
 .aftersales .box-list .title a,.contentsection .box-list .title a{text-align:center;color:#000}
 .header-container .skoda-branding{background:url(../images/skoda/skoda-branding.jpg) center no-repeat;height:100px}
-.header-container .row-4vuwj{text-align:right;padding:20px 0 0}
+.header-container .row-4vuwj{text-align:left;padding:20px 0 0}
 .header-container .social-icons{position:static;margin-right:100px}
 .header-container .social-icons .icon.icon-facebook,.header-container .social-icons a:hover .icon.icon-facebook{width:16px;height:16px;line-height:16px;background-image:url(../images/skoda/icons/sprite-icons-16-black.png);background-position:-1258px 0;display:inline-block}
 .header-container .social-icons .icon.icon-twitter,.header-container .social-icons a:hover .icon.icon-twitter{width:16px;height:16px;line-height:16px;background-image:url(../images/skoda/icons/sprite-icons-16-black.png);background-position:-962px -74px;display:inline-block}
 .header-container .social-icons .icon.icon-youtube,.header-container .social-icons a:hover .icon.icon-youtube{width:16px;height:16px;line-height:16px;background-image:url(../images/skoda/icons/sprite-icons-16-black.png);background-position:-1406px -74px;display:inline-block}
 .header-container .social-icons .icon.icon-blogger,.header-container .social-icons a:hover .icon.icon-blogger{width:16px;height:16px;line-height:16px;background-image:url(../images/skoda/icons/sprite-icons-16-black.png);background-position:-1702px -74px;display:inline-block}
 .header-container .social-icons .title{padding:0}
+.header-container .navbar{float:right}
 .header-container .navbar .container{width:auto}
 .header-container .navbar .container .nav>li>a>span{border:none}
 .header-container .franchise-badge{text-align:left}
@@ -3689,8 +3690,8 @@ body{background-color:#fff}
 .container-ghe1u .image-jump.module.right-jump,.container-iq0m1 .jumps-cycle.module,.container-ttibi .image-jump.module.right-jump{margin-right:0}
 .home-banner{min-height:250px}
 .loading-height,.loading-height .inner{min-height:100px}
-.nav>li>a{padding:10px 20px}
-.dropdown-menu{left:20px}
+.nav>li>a{padding:10px 9px}
+.dropdown-menu{left:9px}
 .header-container .logo{width:180px}
 .header-container .saved-vehicles{width:90px}
 .header-container .saved-vehicles a:after{content:'Saved';display:inline-block}

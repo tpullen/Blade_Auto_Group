@@ -518,17 +518,17 @@ button,input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif!impo
 .nav{list-style-type:none}
 .nav>li{list-style:none}
 .nav>li.motability>a:before{content:' ';width:16px;height:16px;margin:-6px 5px 0 0;display:inline-block;vertical-align:middle;background:url(../images/nav-motability-icon.png) no-repeat}
-.nav>.dropdown:hover>a,.nav>li>a,.nav>li>a:focus,.nav>li>a:hover,.navbar{background:0 0;color:#c62831}
 .nav>li:first-child a{padding-left:0}
 .nav>li:last-child a{padding-right:0}
-.nav>li>a{display:block;padding:10px 19px;font-size:16px;font-size:1.0666666666666667rem}
+.nav>li>a{display:block;background:0 0;padding:10px 32px;color:#505050;font-size:16px;font-size:1.0666666666666667rem}
 .nav>li>a>span{border-bottom:3px solid transparent;padding-bottom:11px}
-.nav>li>a:focus,.nav>li>a:hover{text-decoration:none}
+.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;color:#c62831;background:0 0}
+.nav>.dropdown:hover>a{color:#c62831;background:0 0}
 .nav>.dropdown .icon{display:none}
 .nav>li.active>a,.nav>li.active>a:focus,.nav>li.active>a:hover,.nav>li.current>a,.nav>li.current>a:focus,.nav>li.current>a:hover{text-decoration:none;color:#c62831;background:0 0}
-.navbar{overflow:visible;position:relative;z-index:950;font-size:0}
+.navbar{overflow:visible;position:relative;background:0 0;color:#505050;z-index:950;font-size:0}
 .navbar .nav>li{font-size:16px;font-size:1.0666666666666667rem;display:inline-block}
-.dropdown-menu{display:none;position:absolute;margin:0;list-style:none;padding:0;width:150px;background:#c62831;top:107%;left:19px}
+.dropdown-menu{display:none;position:absolute;margin:0;list-style:none;padding:0;width:150px;background:#c62831;top:107%;left:32px}
 .dropdown-menu>li,.nav>.dropdown:hover .dropdown-menu{display:block}
 .dropdown-menu>li a{display:block;background:#c62831;padding:10px 15px;color:#fff}
 .dropdown-menu>li a:focus,.dropdown-menu>li a:hover,.dropdown-menu>li.active>a,.dropdown-menu>li.active>a:focus,.dropdown-menu>li.active>a:hover,.dropdown-menu>li.current>a,.dropdown-menu>li.current>a:focus,.dropdown-menu>li.current>a:hover{color:#c62831;background:#fff}
@@ -2190,7 +2190,7 @@ img.adp-marker{height:40px;width:22px}
 .cc-header .sub-heading{padding:10px 0;background:#afb2b5}
 .cc-header .sub-heading .inner{text-align:center;padding:10px;font-size:20px;font-size:1.3333333333333333rem}
 .my-vehicles-menu{position:relative}
-.my-vehicles-menu .next,.my-vehicles-menu .prev{position:absolute;top:50%;margin-top:-8px;z-index:10;width:16px;height:16px;line-height:16px;background-image:url(../images/seat/icons/sprite-icons-16-black.png);cursor:pointer}
+.my-vehicles-menu .next,.my-vehicles-menu .prev{position:absolute;top:50%;margin-top:-8px;width:16px;height:16px;line-height:16px;background-image:url(../images/seat/icons/sprite-icons-16-black.png);z-index:10;cursor:pointer}
 .my-vehicles-menu .prev{left:10px;background-position:-222px 0;display:inline-block}
 .my-vehicles-menu .prev span{display:none}
 .my-vehicles-menu .next{right:10px;background-position:-1480px -74px;display:inline-block}
@@ -2646,31 +2646,32 @@ body{background-color:#fff}
 .homepage .search .filter-vehicle-condition .option:first-child{padding-left:0}
 .homepage .search .filter-vehicle-condition .option.active .label{color:#c62831}
 .homepage .search .filter-vehicle-type{left:0;top:23px}
-.homepage .search .filter-vehicle-type .option .label{color:#c62831;font-family:amble,Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.8666666666666667rem}
+.homepage .search .filter-vehicle-type .option .label{color:#333;font-family:amble,Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.8666666666666667rem}
 .homepage .search .filter-make,.homepage .search .filter-model{wdith:14%}
 .homepage .search .filter-make .filter-heading,.homepage .search .filter-model .filter-heading{margin-top:38px;padding-left:19px;background:#7e8185}
+.container-ghe1u .content-jump.module .button,.container-ttibi .content-jump.module .button{margin-top:20px}
 .homepage .search .filter-make .filter-heading .icon,.homepage .search .filter-model .filter-heading .icon{bottom:12px}
 .homepage .search .filter-make .filter-heading .label,.homepage .search .filter-make .filter-heading .value,.homepage .search .filter-model .filter-heading .label,.homepage .search .filter-model .filter-heading .value{padding:0;border:none;background:0 0;font-family:amble,Arial,Verdana,Helvetica,sans-serif;line-height:41px;color:#fff;font-weight:400;text-transform:none;display:inline-block;font-size:13px;font-size:.8666666666666667rem}
 .homepage .search .filter-make{padding-left:0}
 .homepage .search .filter-model{padding-right:0;padding-left:.5%}
 .homepage .search .filter-price{width:35.5%;border:none;padding-left:3.5%;padding-right:3.5%}
-.homepage .search .filter-price .option .label{color:#c62831;font-family:amble,Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.8666666666666667rem}
+.homepage .search .filter-price .option .label{color:#333;font-family:amble,Arial,Verdana,Helvetica,sans-serif;font-size:13px;font-size:.8666666666666667rem}
 .homepage .search .filter-price>.option{margin-bottom:5px}
 .homepage .search .filter-price .option.inline{padding-top:2px;padding-bottom:9px}
 .homepage .search .filter-price .bootstrap-select button{font-family:amble,Arial,Verdana,Helvetica,sans-serif!important}
 .container-cm77r .location-search.module .control-label,.container-cm77r .location-search.module .control-label:after,.homepage .search .filter-advanced .filter-heading .label,.homepage .search .filter-distance .filter-heading .label,.homepage .search .filter-distance .filter-heading .value{font-family:amble,Arial,Verdana,Helvetica,sans-serif}
 .homepage .search .filter-price .bootstrap-select .btn{border:none;padding-left:16px;height:41px;color:#fff;background:#7e8185;font-weight:400;text-transform:none;font-size:13px;font-size:.8666666666666667rem}
 .homepage .search .filter-price .bootstrap-select .btn:hover{color:#fff;background:#7e8185}
-.homepage .search .filter-price .max,.homepage .search .filter-price .min{width:49%}
+.homepage .search .filter-price .price-range-filters>.max,.homepage .search .filter-price .price-range-filters>.min{width:49%}
 .homepage .search .filter-distance{width:11.5%;padding-left:0;padding-top:4px}
 .homepage .search .filter-distance .filter-heading .icon{bottom:11px}
-.homepage .search .filter-distance .filter-heading .label{color:#c62831;padding:7px 0 16px;font-size:13px;font-size:.8666666666666667rem}
+.homepage .search .filter-distance .filter-heading .label{color:#333;padding:7px 0 16px;font-size:13px;font-size:.8666666666666667rem}
 .homepage .search .filter-distance .filter-heading .value{border:none;padding:0 0 0 16px;color:#fff;line-height:41px;background:#7e8185;font-weight:400;text-transform:none;font-size:13px;font-size:.8666666666666667rem}
 .container-cm77r .jump-locations.module:after,.container-ttibi .image-jump.module.left-jump:after,.container-ttibi .image-jump.module.right-jump:after,.container-ttibi:after{border-style:solid;content:' '}
 .homepage .search .filter-advanced{width:13%;float:none}
 .homepage .search .filter-advanced .filter-heading{padding-top:49px}
 .homepage .search .filter-advanced .filter-heading .icon{bottom:10px;width:16px;height:16px;background-image:url(../images/seat/icons/sprite-icons-16-homepage.png)}
-.homepage .search .filter-advanced .filter-heading .label{color:#c62831;font-size:13px;font-size:.8666666666666667rem}
+.homepage .search .filter-advanced .filter-heading .label{color:#333;font-size:13px;font-size:.8666666666666667rem}
 .container-ttibi{position:relative}
 .container-ttibi:after{top:0;left:0;position:absolute;border-width:60px 0 0 1680px;border-color:#afb2b5 transparent transparent}
 .container-ttibi .container{background:#bbbfc2}
@@ -2685,7 +2686,6 @@ body{background-color:#fff}
 .container-ttibi .content-jump.module.left-jump-content{left:33%}
 .container-ttibi .content-jump.module.right-jump-content{left:53%}
 .container-ttibi .content-jump.module .content{font-size:18px;font-size:1.2rem}
-.container-ttibi .content-jump.module .button{margin-top:20px}
 .container-ghe1u{overflow:hidden}
 .container-ghe1u .container:after{content:' ';top:0;left:50%;width:303px;position:absolute;margin-left:-264px;border-left:110px solid transparent;border-right:110px solid transparent;border-top:515px solid #bbbfc2}
 .container-ghe1u .reevoo-badge{width:auto;margin-left:0;padding-bottom:0}
@@ -2696,7 +2696,6 @@ body{background-color:#fff}
 .container-ghe1u .content-jump.module{top:14%;z-index:10;width:210px;position:absolute}
 .container-ghe1u .content-jump.module.left-jump-content{left:5%}
 .container-ghe1u .content-jump.module.right-jump-content{right:5%}
-.container-ghe1u .content-jump.module .button{margin-top:20px}
 .container-cm77r{overflow:hidden;position:relative}
 .container-cm77r .jump-locations.module{width:72.5%;padding-bottom:0;position:relative;margin-left:-255px!important}
 .container-cm77r .jump-locations.module .image{padding-bottom:0}
@@ -3655,8 +3654,8 @@ body{background-color:#fff}
 .container-ghe1u .image-jump.module.right-jump,.container-iq0m1 .jumps-cycle.module,.container-ttibi .image-jump.module.right-jump{margin-right:0}
 .home-banner{min-height:250px}
 .loading-height,.loading-height .inner{min-height:100px}
-.nav>li>a{padding:10px 5px}
-.dropdown-menu{left:5px}
+.nav>li>a{padding:10px 18px}
+.dropdown-menu{left:18px}
 .header-container .logo{width:180px}
 .header-container .saved-vehicles{width:90px}
 .header-container .saved-vehicles a:after{content:'Saved';display:inline-block}
@@ -4358,7 +4357,7 @@ h1{font-size:16.67px}
 .homepage .search.search .filter-model .filter-heading{margin-top:15px}
 .homepage .search.search .filter-make .filter-heading{margin-top:10px}
 .homepage .search.search .filter-price .price-range-filters .control-group select{font-family:amble,Arial,Verdana,Helvetica,sans-serif;color:#fff;background:#7e8185;font-weight:400;text-transform:none;font-size:13px;font-size:.8666666666666667rem}
-.homepage .search.search .filter-advanced .filter-heading .label,.homepage .search.search .filter-distance .filter-heading .label{color:#c62831}
+.homepage .search.search .filter-advanced .filter-heading .label,.homepage .search.search .filter-distance .filter-heading .label{color:#333}
 .homepage .search.search .filter-vehicle-condition{display:block;text-align:center;margin-bottom:50px}
 .homepage .search.search .filter-vehicle-condition .option{border:none;display:inline-block}
 .container-ghe1u .row-o1tdk:after,.container-iq0m1 .jumps-cycle.module:after{border-width:12px 0 0 500px;border-color:transparent transparent transparent #fff}
