@@ -22,6 +22,7 @@
 @nav-item-hover-color              : @tertiary-color;
 
 @nav__active-border--spacing       : 15px;
+@nav__active-border--color         : @primary-background;
 
 @nav-item-transform                : uppercase;
 @nav-dropdown-font-size            : @nav-item-font-size;
@@ -124,14 +125,14 @@
 .hook-nav-hover() {
 
     > span {
-        border-color: @primary-background;
+        border-color: @nav__active-border--color;
     }
 
 }
 .hook-nav-active() {
 
     > span {
-        border-color: @primary-background;
+        border-color: @nav__active-border--color;
     }
     
 }

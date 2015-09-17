@@ -22,6 +22,8 @@
 @search__filter-label--colour						: #000;
 @search__filter-label--font 						: @sans-font-family;
 
+@homepage-search__icon--color						: "white";
+
 @search__filter--height								: 41px;
 @search__filter--background							: @tertiary-background-offset;
 @search__filter--font-size							: 11px;
@@ -35,6 +37,8 @@
 @search__filter-distance--bottom-mobile				: 10px;
 
 @search__filter-advanced--font						: @sans-font-family;
+@search__advanced-icon--bottom						: 10px;
+@search__advanced-icon--bottom-desktop				: 15px;
 @search__advanced-icon--color	 					: "homepage";
 
 @search__button--top								: 92px;
@@ -158,7 +162,7 @@
 		/*Icon correction without using variable so the intenral is not effected */
 		.filter-heading .icon,
 		.filter-price .price-range-filters .caret {
-			.create-icon(16px; "white";);
+			.create-icon(16px; @homepage-search__icon--color;);
 		}
 
 		.filter-vehicle-condition when (@search-condition-style = 'tabs') {
@@ -345,7 +349,7 @@
 				padding-top: 49px;
 
 				.icon {
-					bottom: 10px;
+					bottom: @search__advanced-icon--bottom;
 					.create-icon(16px; @search__advanced-icon--color;);
 				}
 
@@ -419,7 +423,7 @@
 	    		.filter-heading {
 
 					.icon {
-						bottom: 15px;
+						bottom: @search__advanced-icon--bottom-desktop;
 					}
 
 				}
@@ -442,6 +446,7 @@
 
 				.total-count {
 					right: 26.5%;
+					position: absolute;
 				}
 
 			}
@@ -587,6 +592,11 @@
 
 					.label {
 						color: @search__filter-label--colour;
+
+						.icon {
+							right: 0;
+						}
+
 					}
 
 				}

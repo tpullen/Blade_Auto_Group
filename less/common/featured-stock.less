@@ -38,14 +38,15 @@
 	.featured-stock {
 
 		.inner {
+			background: none;
 			padding: 0 0 10px;
 
 			> .count {
-				.font-size(@featured-stock__count--font-size);
-				font-family: @featured-stock__count--font-family;
-				color: @featured-stock__count--text-color;
 				right: 140px;
 				font-weight: normal;
+				color: @featured-stock__count--text-color;
+				font-family: @featured-stock__count--font-family;
+				.font-size(@featured-stock__count--font-size);
 			}
 		}
 
@@ -56,6 +57,7 @@
 
 		.item {
 			width: 25%;
+			background: none;
 
 			.inset {
 				padding: 0;
@@ -69,45 +71,46 @@
 
 		.make,
 		.model {
-			.font-size(@featured-stock__title--font-size);
-			font-family: @featured-stock__title--font-family;
 			color: @featured-stock__title--text-color;
+			font-family: @featured-stock__title--font-family;
+			.font-size(@featured-stock__title--font-size);
 		}
 
 		.variant {
 			display: block;
-			.font-size(@featured-stock__variant--font-size);
+			margin-top: 10px;
+			font-weight: normal;
 			color: @featured-stock__variant--text-color;
 			font-family: @featured-stock__variant--font-family;
-			font-weight: normal;
-			margin-top: 10px;
+			.font-size(@featured-stock__variant--font-size);
 		}
 
 		.price-now {
 			display: block;
-			color: @featured-stock__price-now--text-color;
-			.font-size(@featured-stock__price-now--font-size);
-			font-family: @featured-stock__price-now--font-family;
 			margin: 10px 0;
+			color: @featured-stock__price-now--text-color;
+			font-family: @featured-stock__price-now--font-family;
+			.font-size(@featured-stock__price-now--font-size);
 		}
 
 		.price-was {
-			text-decoration: line-through;
 			display: inline;
+			text-decoration: line-through;
 			color: @featured-stock__price-was--text-color;
-			.font-size(@featured-stock__price-was--font-size);
 			font-family: @featured-stock__price-was--font-family;
+			.font-size(@featured-stock__price-was--font-size);
 		}
 
 		.price-saving {
 			display: inline;
 			color: @featured-stock__price-saving--text-color;
-			.font-size(@featured-stock__price-saving--font-size);
 			font-family: @featured-stock__price-saving--font-family;
+			.font-size(@featured-stock__price-saving--font-size);
 		}
 
 		.location-name {
 			min-height: 0px;
+			background: none;
 			margin: 5px 0 10px;
 		}
 
@@ -129,15 +132,40 @@
 
 			.btn {
 				background: none;
-				.box-shadow(none);
-				.border-radius(0);
 				line-height: 40px;
+				text-decoration: underline;
 				color: @featured-stock__view-all--color;
 				font-family: @featured-stock__view-all--font-family;
+				.box-shadow(none);
+				.border-radius(0);
 				.font-size(@featured-stock__view-all--font-size);
-				text-decoration: underline;
 			}
+
 		}
 
 	}
+
+}
+
+.hook-responsive-mobile() {
+
+	.container-l6ym7 {
+
+		.featured-stock {
+
+			.module-footer {
+				left: 0;
+				top: 45px;
+
+				.btn {
+					margin: 0;
+					padding: 0;
+				}
+
+			}
+
+		}
+
+	}
+
 }
