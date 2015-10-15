@@ -121,6 +121,15 @@
         padding-bottom: @nav__active-border--spacing;
     }
 
+    &:last-child:hover {
+
+        .dropdown-menu {
+            right: 0;
+        }
+
+    }
+
+
 }
 .hook-nav-hover() {
 
@@ -157,4 +166,11 @@
 .hook-toggle-nav() {}
 .hook-toggle-nav-icon() {}
 
-.hook-nav-misc() {}
+.hook-nav-misc() {
+
+    li:last-child .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+
+}
