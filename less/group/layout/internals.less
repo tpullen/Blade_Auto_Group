@@ -81,12 +81,23 @@
 /* --------------------------------------------------------------------------
    07.1 Used Listing
    -------------------------------------------------------------------------- */
+.usedcars.listing .listing .button .btn {
+  background-color: @primary-background !important;
+  color: contrast(@primary-background) !important;
 
+  &:before {
+    background-image: url(../images/secondary-button-icon.png);
+  }
+}
 
 /* --------------------------------------------------------------------------
    07.2 Used Detail
    -------------------------------------------------------------------------- */
-
+.usedcars.details .row-gtude .span3 .button.secondary .btn {
+   background: @primary-background !important;
+   border-color: @primary-background !important;
+  color: contrast(@primary-background) !important;
+}
 
 /* ==========================================================================
    08. New Vehicles
