@@ -1,0 +1,409 @@
+@import "/pub/widget/images/variables.less";
+@import "/pub/widget/images/mixins.less"; 
+
+.aftersales-widget {
+	margin: 0 0 20px 0;
+    font-family: @base-font-family;
+
+    a {
+    	text-decoration: underline;
+    }
+
+	.aw-alert {
+		border: 0;
+	}
+
+    .aw-control-group {
+        margin-bottom: 10px !important;
+    }
+
+	.aw-action a { 
+		font-weight: normal;
+		font-family: @base-font-family-bold;
+	}
+
+	.overlay-loading-message {
+		height: 24px;
+		width: 24px;
+		div {
+			display: none;
+		}
+	}
+
+	.aw-title {
+		font-weight: normal;
+		font-family: @base-font-family-bold;
+	}
+
+	.aw-tabs-nav { 
+		li {
+			padding: 0;
+			overflow: visible;
+			text-align: left;
+			a {
+				padding: 5px 20px;
+				line-height: normal;
+				span  {
+					font-family: @base-font-family-bold;
+					font-weight: normal;
+					.font-size(13);
+					&.aw-step {
+						font-family: @base-font-family;
+						.font-size(12);
+					}
+				}
+			}
+			&#aw-step-1-nav {
+				border-left:none;
+			}
+		}
+	}
+
+	.aw-booking-summary {
+		.aw-bs-heading { 
+			padding: 13px 20px 14px;
+		}
+	}
+
+	.aw-additional-services,
+	.aw-date-picker {
+		padding: 15px;
+        box-sizing: border-box;
+		margin-top: 15px;
+	}
+
+	.aw-vehicle-lookup,
+	.aw-vehicle-lookup.aw-vin  {
+        margin-left: 0;
+        float: right;
+        .aw-controls input {
+        	font-size: 14px;
+        	font-weight: bold;
+        }
+        .aw-automatic-lookup p {
+			font-weight: normal;
+			font-family: @base-font-family-bold;
+		}
+		.aw-reg-number {
+			.aw-controls {
+				input.js-aw-input-vrm {
+					width: 280px;
+					max-width: 280px;
+					background-image: url(/pub/widget/images/reg-plate.png); 
+				}
+			}
+		}
+	}
+
+	.aw-vehicle-lookup {
+		.aw-controls {
+			float: none;
+
+			select {
+				width: 100%;
+			}
+		}
+	}
+
+    .aw-tabs .aw-pane-info { 
+        padding: 15px; 
+        box-sizing: border-box;
+    }
+
+	.aw-tabs .aw-pane-info .aw-title {
+		font-family: @base-font-family-bold;
+		font-weight: normal;
+	}
+
+	.aw-service-list {
+		.aw-service-item {
+			.aw-inset {	
+			 	.aw-prices {
+			 		background: none;
+					.aw-name{visibility:hidden;}
+					.aw-actions{float:left;}
+			 	}
+			 	.aw-item-info {
+				 	.aw-actions .aw-tickbox label {
+				 		height: 37px;
+				 		margin: 0;
+				 	}
+				}
+			}
+		}
+	}
+    
+    .nd-service:not(.responsive-disabled) & .aw-additional-services {
+        width: 38.51895%;
+    }
+    
+    .nd-service:not(.responsive-disabled) & .aw-date-picker {
+        width: 60.148688%;
+    }
+
+	.aw-date-picker {
+		.aw-calendar {
+		    .aw-controls label {
+		        float: none;
+		    }
+			.aw-calendar-content {
+				.aw-calendar-dates-inset {
+					.aw-week-day {
+						padding-left: 9px;
+					}
+				}
+			}
+		}
+	}
+
+	.aw-booking-form {
+		width: 64.889%;
+		form {
+			width: 94%;
+			input,
+			textarea {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.aw-terms {
+		padding-left: 30px;
+		label {
+			float: left; 
+			margin-right: 10px;
+		}
+		input {
+			float: left;
+		}
+	}
+	#acceptTermsConditions {
+		input {
+			width: 14px !important;
+		}
+	}
+}
+
+@media (max-width: 568px) {
+    
+    .aftersales-widget {
+    
+        .nd-service:not(.responsive-disabled) & .aw-additional-services {
+            width: 100%;
+        }
+
+        .nd-service:not(.responsive-disabled) & .aw-date-picker {
+           width: 100%;
+        }
+        
+    }
+    
+}
+
+// -------------------------------------------------------------------------------------------------
+// COLOURS
+// -------------------------------------------------------------------------------------------------
+.aftersales-widget .aw-vehicle-lookup-info,
+.aftersales-widget .aw-location-search,
+.aftersales-widget .aw-location-select,
+.aftersales-widget .aw-additional-services,
+.aftersales-widget .aw-pane-info,
+.aftersales-widget .aw-date-picker,
+.aftersales-widget .aw-booking-form-info,
+.aftersales-widget .aw-booking-form { background: @tertiary-color; }
+
+.aftersales-widget {
+	color: @text-color !important;
+	a {
+    	color: @text-color;
+    }
+	.aw-alert,
+	.aw-alert h4 {
+		color: @primary-color;
+	}
+    .aw-action a { 
+		background: @button-color;
+		border-color: @button-color;
+		&:hover,
+		&.hover {
+			border-color: @button-color;
+			background: darken(@button-color, 10%); 
+		}
+	}
+    .aw-highlight {
+    	color: @primary-color;
+    }
+
+	.aw-tickbox label i { 
+		background-color: @primary-color !important; 
+	}
+
+	.aw-radio label i { 
+		background-image: url(/pub/widget/images/sprite-radio.png); 
+	}
+
+	.aw-tabs-nav { 
+		li {
+			background: @tertiary-color;
+			border-color: @body-background;
+			&:active,
+			&:hover,
+			&:hover a {
+				background: @tertiary-color;
+			}
+			a {
+				background: @tertiary-color;
+				color: #404040;
+				border-color: @body-background;
+				&:active,
+				&:hover {
+					background: @tertiary-color;
+					color: @secondary-color;
+				}
+			}
+			&.aw-step-active {
+				 a {
+					background: @primary-color; 
+					.arrow(5px, @primary-color, bottom, 50%, 0, @primary-color);
+					span {
+						color: #fff;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.aw-booking-summary {
+		.aw-bs-heading {
+			color: contrast(@text-color, black, white, 50%); 
+			background: @primary-color;
+		}
+		.aw-accordion-group {
+			background: @tertiary-color;
+			border-color: @tertiary-color;
+		}
+		.aw-accordion-toggle {
+			.aw-head a,
+			.aw-edit-step a {
+				color: @text-color;
+			}
+		}
+		#aw-summary-location a {
+			color: @text-color;
+		}
+		#aw-summary-details {
+			background: @primary-color;
+			border-color: @primary-color;
+			.aw-action a {
+				background: @secondary-color;
+				color: #fff; 
+			}
+			.aw-summary-list {
+				border-color: darken(@primary-color, 10%)
+			}
+		}
+	}
+
+	.aw-location-list {
+		.aw-location,
+		.aw-location.selected {
+			background: @tertiary-color;
+			.aw-title {
+				background: @primary-color;
+			}
+			.aw-location-services,
+			.aw-hours {
+				border-color: darken(@secondary-color, 10%)
+			}
+			.aw-hours table tr td,
+			.aw-hours table tr th,
+			.aw-location-services .aw-toggle-services a {
+				color: @text-color;
+			}
+			&.aw-location-featured {
+				.aw-location-heading {
+					background: @primary-color;
+				}
+			}
+			&.aw-location-featured {
+				background: @tertiary-color;
+			}
+		}
+	}
+
+	.aw-service-list {
+		.aw-service-item {
+			.aw-inset {
+				background: @tertiary-color;
+				.aw-prices {
+			 		background: none;
+			 		.aw-price {
+			 			color: @text-color;
+			 		}
+			 		.aw-save,
+			 		.aw-was {
+			 			color: @text-color;
+			 		}
+			 	}
+			 	.aw-item-info {
+				 	.aw-actions .aw-tickbox label {
+				 		background: @primary-color;
+				 	}
+				 	.aw-desc .aw-toggle-more {
+				 		color: @text-color;
+				 	}
+				}
+			}
+			&.aw-js-additional-service-item .aw-inset {
+				background: darken(@tertiary-color, 5%);
+			}
+		}
+	}
+
+	.aw-vehicle-lookup,
+	.aw-vehicle-lookup.aw-vin  {
+        background: @tertiary-color !important;
+		.aw-manual-lookup, 
+		.aw-automatic-lookup,
+		.aw-lookup-results .aw-lookup-details,
+		.aw-lookup-results .aw-lookup-incorrect {
+			background: @tertiary-color;
+            border-left-color: @body-background;
+		}
+	}
+
+	.aw-date-picker {
+		.aw-calendar {
+			background: @body-background;
+			.aw-calendar-header {
+				.aw-time span { 
+					background: @primary-color; 
+				}
+				.aw-calendar-controls {
+					a {
+						background: @tertiary-color;
+						span {
+							background-image: url(/pub/widget/images/sprite-arrows.png); 
+						}
+					}
+				}
+			}
+			.aw-calendar-content {
+				.aw-calendar-dates-inset {
+					.aw-week-day,
+					.aw-available {
+						border-color: @body-background;
+						background: @tertiary-color;
+					}
+				}
+			}
+			.aw-calendar-footer {
+				background: @tertiary-color;
+				.aw-time span { 
+					background: @primary-color; 
+				}
+			}
+		}
+	}
+}
