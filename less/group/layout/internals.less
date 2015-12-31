@@ -100,28 +100,102 @@
       }
 
     }
+
+    .search-vehicles {
+      top: 74px;
+      background-color: @secondary-background;
+
+      a.btn span {
+        color: @primary-color;
+      }
+
+      &:hover {
+        background-color: darken(@secondary-background, 10%);
+    
+        a.btn span {
+          color: lighten(@primary-color, 10%);
+        }
+
+      }
+
+    }
   
   }
 
-  .listing .button .btn {
-    background-color: @primary-background !important;
-    color: contrast(@primary-background) !important;
+  .listing .button {
+    
+    .btn {
+      background-color: @primary-background !important;
+      color: contrast(@primary-background) !important;
 
-    &:before {
-      background-image: url(../images/secondary-button-icon.png);
-      float: left;
-      margin: 5px 10px 0 0;
+      &:before {
+        background-image: url(../images/secondary-button-icon.png);
+        float: left;
+        margin: 5px 10px 0 0;
+      }
+    
     }
+    
+    & when(@franchise-name = 'volkswagen') {
+      &:not(.chat) .btn {
+
+        span {
+          color: #00b1e5 !important;
+          text-shadow: none !important;
+        }
+
+        &:hover span {
+          color: #fff !important;   
+        }
+   
+      }
+   
+    }
+
   }
+
 }
 
+.listing[class^="used"] .listing .save-vehicle.link {
+
+  .btn {
+
+    .icon {
+      margin: 6px 0 0;
+    }
+
+    span {
+      margin: 0 7px;
+      
+      & when(@franchise-name = 'volkswagen') {
+        color: #fff !important;
+      }
+
+    }
+
+    &:hover {
+      padding-right: 7px;
+    }
+
+  }
+
+}
 /* --------------------------------------------------------------------------
    07.2 Used Detail
    -------------------------------------------------------------------------- */
-.usedcars.details .row-gtude .span3 .button.secondary .btn {
-   background: @primary-background !important;
-   border-color: @primary-background !important;
-  color: contrast(@primary-background) !important;
+.usedcars.details .row-gtude .span3 .button.secondary {
+  
+  .btn {
+    background: @primary-background !important;
+    border-color: @primary-background !important;
+    color: contrast(@primary-background) !important;
+  }
+  
+  &:hover .btn {
+    background: darken(@primary-background, 10%) !important;
+    color: lighten(contrast(@primary-background), 10%) !important;
+  }
+
 }
 
 .usedcars.details {
@@ -129,6 +203,10 @@
  .sticky-module .button .btn,
  .hero .valuation-jump .btns .btn{
   #custom-mixins > .primary-button;
+
+    &:hover {
+      #custom-mixins > .primary-button-hover;
+    }
 
     .icon {
       display: none;
