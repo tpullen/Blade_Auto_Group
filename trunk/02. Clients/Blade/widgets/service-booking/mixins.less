@@ -1,0 +1,166 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+// UTILITY MIXINS
+// --------------------------------------------------
+
+// Font size to rem with px fallback
+.font-size(@sizeValue){
+  @remValue: @sizeValue/16;
+  @pxValue: @sizeValue;
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+.font-size(@sizeValue, @sizeIncrease){
+    @remValue: (@sizeValue + @sizeIncrease)/16;
+    @pxValue: @sizeValue + @sizeIncrease;
+    font-size: ~"@{pxValue}px"; 
+    font-size: ~"@{remValue}rem";
+}
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/* Usage
+ * .arrow(size, color, direction, offset, border-size, border-color); 
+ */
+
+/* Where
+ * Size is the with of the arrow
+ * Color is the color of the arrow (plain color required)
+ * Direction is the orientation of the arrow (top, right, bottom, left)
+ * Offset is the position of the arrow on its axis (px / em)
+ * Border-size is the width of the border if there is one (optional; default "0")
+ * Border-color is the color of the border if there is one (optional; default "inherit"); 
+ */
+
+/* Extra
+ * Drop-shadows can be used on the element to create a shadow on the arrow as well 
+ */
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: inherit) {
+  position: relative;
+  &:after, 
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: inherit) when (@direction = top) {
+  @m-size: @size + (@border-size*2);
+
+  &:after {
+    bottom: 100%;
+    left: @offset;
+    margin-left: -@size;
+
+    border-left: @size solid transparent;
+    border-right: @size solid transparent;
+    border-bottom: @size solid @color;
+  }
+  
+  &:before {
+    bottom: 100%;
+    left: @offset;
+    margin-left: -@m-size;
+
+    border-left: @m-size solid transparent;
+    border-right: @m-size solid transparent;
+    border-bottom: @m-size solid;
+    border-bottom-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: inherit) when (@direction = bottom) {
+  @m-size: @size + (@border-size*2);
+
+  &:after {
+    top: 100%;
+    left: @offset;
+    margin-left: -@size;
+
+    border-left: @size solid transparent;
+    border-right: @size solid transparent;
+    border-top: @size solid @color;
+  }
+
+  &:before {
+    top: 100%;
+    left: @offset;
+    margin-left: -@m-size;
+    border-left: @m-size solid transparent;
+    border-right: @m-size solid transparent;
+    border-top: @m-size solid;
+    border-top-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: inherit) when (@direction = right) {
+  @m-size: @size + (@border-size*2);
+
+  &:after {
+    left: 100%;
+    top: @offset;
+    margin-top: -@size;
+
+    border-top: @size solid transparent;
+    border-bottom: @size solid transparent;
+    border-left: @size solid @color;
+  }
+  &:before {
+    left: 100%;
+    top: @offset;
+    margin-top: -@m-size;
+
+    border-top: @m-size solid transparent;
+    border-bottom: @m-size solid transparent;
+    border-left: @m-size solid;
+    border-left-color: @border-color;
+  }
+}
+
+.arrow(@size, @color, @direction, @offset, @border-size: 0, @border-color: inherit) when (@direction = left) {
+  @m-size: @size + (@border-size*2);
+
+  &:after {
+    right: 100%;
+    top: @offset;
+    margin-top: -@size;
+
+    border-top: @size solid transparent;
+    border-bottom: @size solid transparent;
+    border-right: @size solid @color;
+  } 
+  &:before {
+    right: 100%;
+    top: @offset;
+    margin-top: -@m-size;
+
+    border-top: @m-size solid transparent;
+    border-bottom: @m-size solid transparent;
+    border-right: @m-size solid;
+    border-right-color: @border-color;
+  }
+}
