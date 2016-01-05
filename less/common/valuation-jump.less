@@ -15,55 +15,10 @@
 		width: 353px;
 		position: absolute !important; // To overwite the is-consistant class
 
-		h3.title {
-			text-transform: @valuations__title--text-transform;
-			font-family: @valuations__title--font-family;
-			font-weight: @valuations__title--font-weight;
-		}
-
 		.content {
-			padding-bottom: 30px;
-			line-height: 25px !important; // To overwite the is-consistant class
-			.font-size(16px) !important; // To overwite the is-consistant class
+			padding: 18px 0 55px;
 		}
-
-		form {
-
-			.control-group {
-				width: 47%;
-				float: left;
-				margin-right: 6%;
-
-				&:nth-child(3) {
-					margin-right: 0;
-				}
-
-			}
-
-			.controls {
-				margin-left: 0;
-			}
-
-			input {
-				height: 47px;
-				text-align: center;
-				.font-size(14px);
-			}
-
-		}
-
-		.btns {
-			float: left;
-			padding: 60px 0 0;
-
-			a {
-				margin: 0;
-			}
-
-		}
-
 	}
-
 }
 
 // Responsive
@@ -79,17 +34,16 @@
 			left: auto;
 			width: 320px;
 
-			h3.title {
-				padding-bottom: 30px;
-                .font-size(@homepage__title--font-size - 8);
-            }
+			.title {
+				.font-size(@homepage__title--font-size - 8px);
+			}
 
             .content {
                 display: none;
             }
 
-            .btns {
-            	padding-top: 30px;
+            .button {
+            	padding-top: 115px;
             }
 
 		}
@@ -130,30 +84,14 @@
 			background: @body-background;
 			.clearfix;
 
-			h3.title {
-				padding-bottom: 20px;
-                .font-size(@homepage__title--font-size);
-
-                span {
-                	max-width: 53%;
-                	margin: 0 auto;
-                	display: block;
-                }
-
-            }
-
 			.content {
 				max-width: 57%;
 				margin: 0 auto;
 				display: block;
 			}
 
-			form {
-				max-width: 45%;
-				margin: 0 auto;
-			}
-
-			.btns {
+			.button {
+				padding: 0;
 				float: none;
 				display: inline-block;
 			}
@@ -175,25 +113,9 @@
 				border-width: 0 764px 28px 0;
 			}
 
-			h3.title {
-                .font-size(@homepage__title--font-size - 16);
-
-                span {
-                	max-width: 65%;
-                }
-
-            } 
-
             .content {
             	max-width: none;
             }
-
-            form {
-            	max-width: 90%;
-            }
-
 		}
-
 	}
-
 }
