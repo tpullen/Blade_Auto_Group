@@ -200,8 +200,17 @@
 
 .usedcars.details {
 
+  & when (@franchise-name = "volkswagen") {
+
+    .chat .btn {
+      color: @button-color;
+    }
+
+  }
+
  .sticky-module .button .btn,
- .hero .valuation-jump .btns .btn{
+ .sticky-module .chat.chat .btn,
+ .hero .valuation-jump .btns .btn {
   #custom-mixins > .primary-button;
 
     &:hover {
@@ -291,10 +300,31 @@
    10.2 Location Listing
    -------------------------------------------------------------------------- */
 
+   .hook-responsive-tablet() {
+
+    .locations.listing .location-search>.inner form #loc-postcode-search {
+      padding: 0 20px;
+    }
+   }
+   
+
 
 /* --------------------------------------------------------------------------
    10.3 Location Details
    -------------------------------------------------------------------------- */
+
+  .locations.details .row-6j5pb .btn.btn {
+    #custom-mixins > .primary-button;
+
+    .icon {
+      display: none !important;
+    }
+
+    &:hover {
+      #custom-mixins > .primary-button-hover;
+    }
+
+  }
 
 
 /* ==========================================================================
@@ -379,4 +409,18 @@
 /* --------------------------------------------------------------------------
    21.2 CMS Detail
    -------------------------------------------------------------------------- */
+
+   // Service and repairs - Group
+
+   & when (@franchise-name = "group") {
+
+     .aftersales.service-repairs {
+
+      .cyclr .item.cycle-slide-active .caption .btn {
+        color: #fff;
+      }
+
+     }
+
+   }
 
