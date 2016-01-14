@@ -7,6 +7,19 @@
 		right: 35%;
 		top: 5%;
 		z-index: 100;
+
+		.title {
+			position: absolute;
+			text-align: center;
+			right: 14%;
+			left: 12%;
+			bottom: 28%;
+			font-weight: 100;
+			text-transform: @homepage__title--text-transform;
+			font-weight: @homepage__title--font-weight;
+			font-family: @homepage__title--font;
+			.font-size(@reevoo__jump__title__font-size);
+		}
 	}
 	
 }
@@ -16,7 +29,12 @@
 	.homepage .container-ghe1u {
 
 		.reevoo {
-			top: 0%;
+			top: -50px;
+
+			.title {
+				.font-size(@homepage__title--font-size - 8px);
+			}
+
 		}
 
 	}
@@ -28,10 +46,35 @@
 	.homepage .container-ghe1u {
 
 		.reevoo {
-			left: auto;
+			left: 56%;
 			right: 5%;
+
+			.title {
+				bottom: 26%;
+				left: 0;
+				right: 0;
+				.font-size(40px);
+			}
+
 		}
 
 	}
 
+}
+
+.hook-responsive-mobile() {
+
+	.homepage .container-ghe1u {
+
+		.reevoo {
+			top: 5%;
+			left: 15%;
+			right: 15%;
+
+			.title {
+				bottom: 26%;
+				.font-size(24px);
+			}
+		}
+	}
 }
